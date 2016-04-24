@@ -18,3 +18,7 @@ https://hub.docker.com/_/java/
 
 ### Installing Docker on OSX. 
 You might need to install boot2docker. 
+
+### Thanks to 
+
+  - http://zeroturnaround.com/rebellabs/docker-for-java-developers-how-to-sandbox-your-app-in-a-clean-environment/
