@@ -21,10 +21,30 @@ Could not understand it well, but there was something interesting here.
 // TODO : Come back 
 https://hub.docker.com/_/java/
 
-
 ### Installing Docker on OSX. 
 
   - You might need to install boot2docker. 
+  - [How to install Docker on OSX](https://docs.docker.com/engine/installation/mac/#installation)
+
+
+```
+
+                        ##         .
+                  ## ## ##        ==
+               ## ## ## ## ##    ===
+           /"""""""""""""""""\___/ ===
+      ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
+           \______ o           __/
+             \    \         __/
+              \____\_______/
+
+
+docker is configured to use the default machine with IP 192.168.99.100
+For help getting started, check out the docs at https://docs.docker.com
+
+$ 
+
+```
 
 ### Thanks to 
 
