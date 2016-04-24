@@ -21,4 +21,4 @@ You might need to install boot2docker.
 
 ### Thanks to 
 
-  - http://zeroturnaround.com/rebellabs/docker-for-java-developers-how-to-sandbox-your-app-in-a-clean-environment/
+  - [Docker for Java Developers](http://zeroturnaround.com/rebellabs/docker-for-java-developers-how-to-sandbox-your-app-in-a-clean-environment/)
