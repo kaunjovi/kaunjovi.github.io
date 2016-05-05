@@ -6,6 +6,10 @@ summary:    Notes on Docker
 categories: notes docker
 ---
 
+### HBase 
+
+  - [Home page.](https://hbase.apache.org)
+
 
 
 ### Docker
@@ -45,6 +49,29 @@ For help getting started, check out the docs at https://docs.docker.com
 $ 
 
 ```
+
+### Verify that Docker got installed properly. 
+
+docker run hello-world
+
+### What is this yml file all about? 
+TODO 
+
+### Gradle 
+TODO
+
+  - [Home page](http://gradle.org/getting-started-gradle-java/)
+
+### Does Gradle play nice with Eclipse? 
+TODO 
+
+
+
+### Maven vs Gradle 
+TODO 
+
+
+
 
 ### Thanks to 
 

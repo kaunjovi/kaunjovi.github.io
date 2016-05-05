@@ -11,3 +11,4 @@ https://medium.com/the-year-of-the-looking-glass/average-manager-vs-great-manage
 Simple pics but powerful message. 
 
 
+
