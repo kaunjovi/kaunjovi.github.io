@@ -9,3 +9,10 @@ Sublime Text 3
 
 Shortcuts 
   ctrl shift p | Command Palette 
+
+Sidebar Enhancements 
+  
+
+Package control 
+  https://packagecontrol.io/installation#st3
+  
