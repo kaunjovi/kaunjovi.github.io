@@ -24,7 +24,10 @@ https://github.com/kaunjovi/kaunjovi.github.io/blob/master/_posts/notes.md
 
   - [Sublime Text 3 for Python development](http://piotr.banaszkiewicz.org/blog/2013/08/24/sublime-text-3-for-python-development/)
   - [Setting Up Sublime Text 3 for Full Stack Python Development](https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/)
-
+  - Add Package Control. This is the first thing to do and the only manual install to do. 
+  - Add Git 
+  - Add GitGutter 
+  - Add some themes and colors. It does not hurt to be cool.
 
 ### Themes of Sublime ### 
 
