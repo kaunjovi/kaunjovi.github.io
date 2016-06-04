@@ -29,10 +29,6 @@ https://github.com/kaunjovi/kaunjovi.github.io/blob/master/_posts/notes.md
   - Add GitGutter 
   - Add some themes and colors. It does not hurt to be cool.
 
-  git add --all && git commit -m "new version" && git push
-  let's try again 
-  
-
 ### Themes of Sublime ### 
 
   -   
