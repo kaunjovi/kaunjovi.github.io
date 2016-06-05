@@ -19,6 +19,30 @@ Package control
 
 https://github.com/kaunjovi/kaunjovi.github.io/blob/master/_posts/notes.md
 
+### Sublime shortcuts ###
+
+  - Open two folders in the same Sublime? 
+  - Toggle between two sublimes with keyboard? 
+  - Compile and run a python program? 
+    - Install Anaconda. 
+
+### Which version of Python to use now ###
+
+  - Install Python 3 - if you are a showoff
+  - Use Python 2, if you want to achieve something with it. 
+
+### What all do we need in the editor? ### 
+Git integration 
+autocomplete - anaconda 
+
+
+### References ###
+
+  - [Python 3 & Python 2.7 dual install - the right way on OSX](https://www.youtube.com/watch?v=c9LlK2iu7OA)
+  - [Learn Python Through Public Data Hacking](https://www.youtube.com/watch?v=RrPZza_vZ3w)
+  - 
+
+
 
 ### How to setup Sublime 3 for Python development on Mac? 
 
@@ -28,7 +52,3 @@ https://github.com/kaunjovi/kaunjovi.github.io/blob/master/_posts/notes.md
   - Add Git 
   - Add GitGutter 
   - Add some themes and colors. It does not hurt to be cool.
-
-### Themes of Sublime ### 
-
-  -   
