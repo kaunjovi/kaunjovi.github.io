@@ -14,18 +14,38 @@ Welcome me to github.io. blog. Let's blog like a hacker man. :)
   * https://help.github.com/articles/set-up-git/
   * https://help.github.com/articles/generating-a-new-ssh-key/
   * https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+  * https://help.github.com/articles/set-up-git/
+  * https://help.github.com/articles/caching-your-github-password-in-git/
+  * [Pushing to GitHub with HTTPS and 2-Factor Authentication](https://www.youtube.com/watch?v=hJLaXNMz8zw)
 
-### Online md editor 
-
-  * http://dillinger.io
 
 ### How to setup git command line to connect with github account? 
 
 ```
-cd /Users/kaunjovi/kaunjovi.github.io/_posts
+
 git config --global user.name "kaunjovi"
 git config --global user.email "kaunjovi@gmail.com"
+
+// Where is this git from? 
+git remote -v 
+
+// How many files are there to be checked in? 
+git status 
+
+// What are the changes
+git diff 
+
+// Add the file in  
+git add filename
+git commit -m "blah"
+git push 
+
 ```
+
+
+
+
+
 
 ### A pedantic way to push changes to git. 
 ```

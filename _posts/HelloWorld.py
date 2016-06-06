@@ -9,3 +9,5 @@ data = url.read()
 file = open("route.xml", "wb")
 file.write(data)
 file.close()
+
+url.close()

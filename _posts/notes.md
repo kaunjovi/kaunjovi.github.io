@@ -32,8 +32,9 @@ https://github.com/kaunjovi/kaunjovi.github.io/blob/master/_posts/notes.md
   - Use Python 2, if you want to achieve something with it. 
 
 ### What all do we need in the editor? ### 
-Git integration 
-autocomplete - anaconda 
+  
+  - Git integration 
+  - autocomplete - anaconda 
 
 
 ### References ###
