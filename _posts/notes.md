@@ -1,3 +1,35 @@
+
+https://incometaxindiaefiling.gov.in
+https://incometaxindiaefiling.gov.in/e-Filing/UserLogin/LoginHome.html
+PAN 
+
+
+
+
+# Fitness 
+
+Get help. Pick the right kind of workout. Burn fat for 40+. 
+Get rid of bellyfat. That brings down T. 
+
+Enjoy it. Else there is no point really. 
+Look good. In cheap shirts too. 
+
+https://www.youtube.com/watch?v=ijsu8GFZBTg
+
+
+Use grill. Lean meat. Fish. 
+Correct type of snacks. 
+
+multijoint excercise. 
+
+
+[Smart Cardio For Full-Body Fat Loss: Functional Cardio Day](https://www.youtube.com/watch?v=pGdScp-Kn6w)
+[What Men Over 40 Need To Eat In Order To Get Six Pack Abs](https://www.youtube.com/watch?v=kWSRFwwQjnU)
+[3 Tips To Boost Your Testosterone -- For Men Over 40 Only](https://www.youtube.com/watch?v=i4aN-typhlo)
+[Can I still TRANSFORM my body when OVER 40?](https://www.youtube.com/watch?v=6G222Kx4r40)
+
+
+
 Sublime Text 3 
 
   User setting 
