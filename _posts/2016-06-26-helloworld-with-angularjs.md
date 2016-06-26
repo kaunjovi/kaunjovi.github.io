@@ -40,7 +40,7 @@ categories: howto angularjs
 
 ### The first vanilla AngularJs page. 
 
-```
+```html 
 <!DOCTYPE html> 
 
 <!-- It is not any old HTML now. It is an angular application  -->
