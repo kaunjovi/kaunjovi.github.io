@@ -31,16 +31,16 @@ categories: howto angularjs
 
 ```
 <!-- Add some model -->
-<input type="text" ng-model="hello-model"></input> 
+<input type="text" ng-model="hello"/> 
 <!-- And show that up -->
-<h1>{{hello-model}}</h1>
+<h1 ng-bind="hello"></h1>
 
 ```
 
 
 ### The first vanilla AngularJs page. 
 
-```html 
+``` 
 <!DOCTYPE html> 
 
 <!-- It is not any old HTML now. It is an angular application  -->
@@ -57,7 +57,7 @@ categories: howto angularjs
   <!-- Add some model -->
   <input type="text" ng-model="hello"/> 
   <!-- And show that up -->
-  <h1>{{hello}}</h1>
+  <h1 ng-bind="hello"></h1>
 
 </body>
 
@@ -70,4 +70,5 @@ categories: howto angularjs
 </html>
 
 <!-- https://egghead.io/lessons/first-step-adding-to-project -->
+
 ```
