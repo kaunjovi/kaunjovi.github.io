@@ -1,4 +1,55 @@
 
+/learnAngular/LearnAngular00010.html
+
+
+## Why are js files added at the end of the HTML files? Why not at the header? 
+TODO
+
+
+
+##When would Angular be a poor choice to use as a framework? 
+During writing games, because ... 
+
+## Yeoman 
+http://yeoman.io
+THE WEB'S SCAFFOLDING TOOL FOR MODERN WEBAPPS
+Get started and then find a generator
+Yeoman can build (any of these for you)[http://yeoman.io/generators/]. 
+
+
+```
+$ node -v
+v4.2.3
+
+// npm is the package manager for Node.js and comes bundled with it.
+$ npm -version 
+2.14.7
+
+// Install yo using npm
+sudo npm install -g yo
+
+// Install the needed generator(s)
+sudo npm install -g generator-angular
+
+// Go to your developer directory 
+yo angular twentyfourtyeight
+
+```
+
+## Building the 2048 game in AngularJS
+
+To build our app, we’ll create a basic app (we used the yeoman angular generator to generate the structure of our app, but it’s not necessary. We only use it as a starting point, but quickly diverge from its structure). We’ll create the app directory which will house the entire application. We’ll place the test/ directory as a sibling to the app/ directory.
+
+
+
+http://www.ng-newsletter.com/posts/building-2048-in-angularjs.html
+
+
+#Songs
+[Biroho madhur holo aaji madhurate](https://www.youtube.com/watch?v=87pb_7EZ8Jg)
+
+
+
 https://incometaxindiaefiling.gov.in
 https://incometaxindiaefiling.gov.in/e-Filing/UserLogin/LoginHome.html
 PAN 

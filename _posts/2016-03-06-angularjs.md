@@ -15,8 +15,31 @@ AngularJS is a very powerful JavaScript Framework. It is used in Single Page App
   * Inside the app, create a model 
   * Display the model. 
 
+### Code snippets 
 
-The total code 
+
+```
+<!-- Add the magic. AngularJs that is.  -->
+<script 
+  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js">
+  </script>
+```
+
+```
+<!-- It is not any old HTML now. It is an angular application  -->
+<html ng-app>
+```
+
+```
+  <!-- Add some model -->
+  <input type="text" ng-model="hello-model"></input> 
+  <!-- And show that up -->
+  <h1>{{hello-model}}</h1>
+
+```
+
+
+### The first vanilla AngularJs page. 
 
 ```
 <!DOCTYPE html>
