@@ -69,4 +69,5 @@ categories: howto angularjs
 
 </html>
 
-<!-- https://egghead.io/lessons/first-step-adding-to-project -->```
+<!-- https://egghead.io/lessons/first-step-adding-to-project -->
+```
