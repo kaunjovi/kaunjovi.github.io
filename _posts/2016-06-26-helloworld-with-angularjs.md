@@ -30,10 +30,10 @@ categories: howto angularjs
 ```
 
 ```
-  <!-- Add some model -->
-  <input type="text" ng-model="hello-model"></input> 
-  <!-- And show that up -->
-  <h1>{{hello-model}}</h1>
+<!-- Add some model -->
+<input type="text" ng-model="hello-model"></input> 
+<!-- And show that up -->
+<h1>{{hello-model}}</h1>
 
 ```
 
