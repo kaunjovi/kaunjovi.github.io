@@ -6,6 +6,7 @@ summary:    Getting started Angularjs. Just pure vanilla stuff.
 categories: howto angularjs
 ---
 
+Would this show up? 
 
 # Write a vanilla angularjs 
   * Create a HTML file
