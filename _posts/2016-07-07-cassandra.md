@@ -42,3 +42,21 @@ http://stackoverflow.com/questions/2634955/when-not-to-use-cassandra
 # Use java to read from Cassandra. 
 http://www.tutorialspoint.com/cassandra/cassandra_read_data.htm
 
+
+
+# What is the most popular database? 
+http://db-engines.com/en/ranking
+
+
+# What are the uses of different NoSQL databases? 
+MongoDB is fit for usecases where your system demands schema-less document store. 
+
+HBase, like Cassandra a column-oriented key-value store.
+HBase might be fit for Search engines, Analysing log data, Any place where scanning huge, two-dimensional join-less tables are a requirement. 
+Redis is built to provide In-Memory search for varieties of data structures like tree, queue, link list etc and can be good fit for making real time leaderboard, pub-sub kind of system. 
+Similarly there are other database in this category (Including Cassandra) which are fit for different problem statement.
+Being a part of NoSQL family Cassandra offers solution for problem where your requirement is to have very heavy write system and you want to have quite responsive reporting system on top of that stored data.
+http://stackoverflow.com/questions/2634955/when-not-to-use-cassandra
+
+
+
