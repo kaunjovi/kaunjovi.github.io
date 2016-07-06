@@ -2,9 +2,9 @@
 title:       Kaunjovi
 email:       kaunjovi@gmail.com
 author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+description: "Simple notes and stuff."
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "http://kaunjovi.github.io"
 date_format: "%b %-d, %Y"
 
 # Google services

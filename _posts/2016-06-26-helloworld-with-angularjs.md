@@ -7,14 +7,14 @@ categories: howto angularjs
 ---
 
 
-### Write a vanilla angularjs 
+# Write a vanilla angularjs 
   * Create a HTML file
   * Add angularjs file to your HTML 
   * Declare an app
   * Inside the app, create a model 
   * Display the model. 
 
-### Code snippets 
+# Code snippets 
 
 
 ```
