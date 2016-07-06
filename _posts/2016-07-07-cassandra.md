@@ -1,10 +1,11 @@
 ---
 layout:     post
-title:      Cassandra
+title:      cassandra
 date:       2016-07-07 
-summary:    Cassandra
-categories: howto Cassandra
+summary:    cassandra
+categories: howto cassandra
 ---
+
 
 # Cassandra 
 http://cassandra.apache.org
