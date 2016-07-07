@@ -6,7 +6,6 @@ summary:    cassandra
 categories: howto cassandra
 ---
 
-
 # Cassandra 
 http://cassandra.apache.org
 Scalable, Available, Performant 
