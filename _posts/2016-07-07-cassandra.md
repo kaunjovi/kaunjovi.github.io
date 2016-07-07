@@ -14,6 +14,9 @@ http://db-engines.com/en/ranking
   - Scalable, Available, Performant 
   - Supports column indexes
   - Best replication across data centers. 
+  - Cassandra descends from both Bigtable and Amazon's Dynamo
+  - Cassandra has implemented CQL (Cassandra Query Language), the syntax of which is obviously modeled after SQL.
+  - [Cassandra Stays Ahead Of The NoSQL Pack](http://www.networkworld.com/article/2222246/opensource-subnet/cassandra-stays-ahead-of-the-nosql-pack.html)
 
 
 ### Cassandra is good for. 
@@ -61,10 +64,64 @@ http://www.tutorialspoint.com/cassandra/cassandra_read_data.htm
   - https://mpouttuclarke.wordpress.com/2013/12/12/titan-cassandra-vs-hazelcast-persistence-benchmark/
   - Hazelcast is ten times faster than Cassandra on reads and faster also on writes
 
-### HBase 
+### HBase vs. Cassandra
 
   - HBase, like Cassandra a column-oriented key-value store.
   - HBase might be fit for Search engines, Analysing log data, Any place where scanning huge, two-dimensional join-less tables are a requirement. 
+  - HBase describes itself as an "open source Bigtable implementation."
+  - [Big data showdown: Cassandra vs. HBase](http://www.infoworld.com/article/2610656/database/big-data-showdown--cassandra-vs--hbase.html)
+
+### Column oriented database 
+
+  - Data is apparently arranged initially by row, and a table's primary key is the row key. 
+  - However, unlike a relational database, no two rows in a column-oriented database need have the same columns. 
+  - You can add columns to a row on the fly (after the table has been created). 
+
+
+### Working of column oriented db e.g. Cassandra, HBase etc 
+
+  - Write paths begin with logging write operations to a log file to ensure durability. 
+  - Even if the remainder of the write fails, the operation saved in the log can be replayed. 
+  - Next, the data is written to a memory cache. 
+  - Then finally to disk via a large, sequential write (essentially a copy of the memory cache). 
+  - The overall memory-and-disk data structure used by both Cassandra and HBase is more or less a log-structured merge tree. 
+  - The disk component in Cassandra is the SSTable; in HBase it is the HFile.
+
+### NoSQL comparison
+
+  - [A vendor-independent comparison of NoSQL databases: Cassandra, HBase, MongoDB, Riak](http://www.networkworld.com/article/2160905/tech-primers/a-vendor-independent-comparison-of-nosql-databases--cassandra--hbase--mongodb--riak.html)
+  - Column family store 
+    - HBase
+    - Cassandra
+  - Document-oriented database 
+    - MongoDB 
+  - Key-value store
+    - Riak
+
+### Internal working of Cassandra 
+
+  - https://academy.datastax.com/resources/brief-introduction-apache-cassandra
+  - In Cassandra, all nodes play an identical role; there is no concept of a master node. 
+  - With all nodes communicating with each other via a distributed, scalable protocol called "gossip."
+  - Cassandra’s built-for-scale architecture means that it is capable of handling large amounts of data and thousands of concurrent users or operations per second—​even across multiple data centers—​as easily as it can manage much smaller amounts of data and user traffic. 
+  - To add more capacity, you simply add new nodes to an existing cluster without having to take it down first.
+  - Cassandra’s architecture also means that, unlike other master-slave or sharded systems, it has no single point of failure and therefore is capable of offering true continuous availability and uptime.
+
+### Writing data on a Cassandra node. 
+
+  - Data written to a Cassandra node is first recorded in an on-disk commit log
+  - then written to a memory-based structure called a memtable. 
+  - When a memtable’s size exceeds a configurable threshold, the data is written to an immutable file on disk called an SSTable. 
+  - Buffering writes in memory in this way allows writes always to be a fully sequential operation, with many megabytes of disk I/O happening at the same time, rather than one at a time over a long period. 
+  - Because of the way Cassandra writes data, many SSTables can exist for a single Cassandra logical data table. A process called compaction occurs on a periodic basis, coalescesing multiple SSTables into one for faster read access.
+  - https://academy.datastax.com/resources/brief-introduction-apache-cassandra
+
+### Reading data from Cassandra node. 
+
+  - Cassandra consults an in-memory data structure called a Bloom filter that checks the probability of an SSTable having the needed data. 
+  - The Bloom filter can tell very quickly whether the file probably has the needed data, or certainly does not have it. If answer is a tenative yes, Cassandra consults another layer of in-memory caches, then fetches the compressed data on disk. 
+  - If the answer is no, Cassandra doesn’t trouble with reading that SSTable at all, and moves on to the next.
+  - https://academy.datastax.com/resources/brief-introduction-apache-cassandra
 
 
 
