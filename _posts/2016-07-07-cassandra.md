@@ -9,7 +9,7 @@ categories: howto cassandra
 # What is the most popular database? 
 http://db-engines.com/en/ranking
 
-# [http://cassandra.apache.org](Cassandra)
+# [Cassandra](http://cassandra.apache.org)
 
   - Scalable, Available, Performant 
   - Supports column indexes
@@ -26,9 +26,13 @@ http://db-engines.com/en/ranking
   - http://stackoverflow.com/questions/2892729/mongodb-vs-cassandra
 
 # What is the use case for Cassandra? 
+
 # Where is Cassandra not applicble? 
+
 # "Hello world" with Cassandra. 
+
 # CQL (Cassandra Query Language)
+
 # Use java to read from Cassandra. 
 http://www.tutorialspoint.com/cassandra/cassandra_read_data.htm
 
