@@ -146,20 +146,28 @@ Typically, variables that refer to executor objects are declared as one of these
 
 
 ### mohe shyam rang daide. 
-.. embrace the truth. And it will have a fair bit of dark side. 
-.. and the devil smiled. 
+
+  - embrace the truth. And it will have a fair bit of dark side. 
+  - and the devil smiled. 
 
 
 
-### Grunt 
+# Grunt 
+
   - [Home page](http://gruntjs.com) 
+  - [Get Up And Running With Grunt](https://www.smashingmagazine.com/2013/10/get-up-running-grunt/)  
   - Automate your tasks. 
-  - 
+
+### Install Grunt
 
 ```
-
 $ sudo npm install -g grunt-cli
 ...
+```
+
+### Check that it installed alright. 
+
+```
 $ grunt --version 
 grunt-cli v1.2.0
 
