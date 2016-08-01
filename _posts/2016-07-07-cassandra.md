@@ -124,6 +124,48 @@ http://www.tutorialspoint.com/cassandra/cassandra_read_data.htm
   - https://academy.datastax.com/resources/brief-introduction-apache-cassandra
 
 
+### Makeover 
+  - Clothing 
+    - [15 Must-Haves For Every Indian Guy's Wardrobe](http://www.mensxp.com/fashion/style-guide/23793-15-musthaves-for-every-indian-guys-wardrobe.html)
+    - [Build your wardrobe](https://www.pinterest.com/pin/98516310578296339/)
+    - http://www.wikihow.com/Look-Rich-Without-Being-Rich-(for-Guys)
+    - http://www.justforhim.com.au/mens-styling-advice-just-for-him/how-to-dress-smart-casual/
+    - http://www.dmarge.com/2016/05/smart-casual-defined-and-wear-style.html
+    - http://www.grana.com/granaworld/the-beginners-guide-to-mens-smart-casual/
+
+### Java Executor Framework 
+
+  - https://docs.oracle.com/javase/tutorial/essential/concurrency/executors.html
+
+
+
+Executor, a simple interface that supports launching new tasks.
+ExecutorService, a subinterface of Executor, which adds features that help manage the lifecycle, both of the individual tasks and of the executor itself.
+ScheduledExecutorService, a subinterface of ExecutorService, supports future and/or periodic execution of tasks.
+Typically, variables that refer to executor objects are declared as one of these three interface types, not with an executor class type.
+
+
+### mohe shyam rang daide. 
+.. embrace the truth. And it will have a fair bit of dark side. 
+.. and the devil smiled. 
+
+
+
+### Grunt 
+  - [Home page](http://gruntjs.com) 
+  - Automate your tasks. 
+  - 
+
+$ npm install -g grunt-cli
+
+
+
+
+
+
+
+
+
 
 
 
