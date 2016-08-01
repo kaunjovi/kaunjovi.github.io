@@ -156,7 +156,14 @@ Typically, variables that refer to executor objects are declared as one of these
   - Automate your tasks. 
   - 
 
-$ npm install -g grunt-cli
+```
+
+$ sudo npm install -g grunt-cli
+...
+$ grunt --version 
+grunt-cli v1.2.0
+
+```
 
 
 
