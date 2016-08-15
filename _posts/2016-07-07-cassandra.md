@@ -196,7 +196,7 @@ POJO to JSON and back
 [Jackson 2 – Convert Java Object to / from JSON](http://www.mkyong.com/java/jackson-2-convert-java-object-to-from-json/)
 
 
-SpringBoot with AngularJS 
+### SpringBoot with AngularJS 
   - [Spring Boot and AngularJS](https://examples.javacodegeeks.com/enterprise-java/spring/boot/spring-boot-and-angularjs-integration-tutorial/)
   - [Spring Boot Starter Parent](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent)
   - [Spring Boot Web Starter maven repo]()
@@ -209,6 +209,11 @@ SpringBoot with AngularJS
     - Create the main method. 
     - Create the SpringApplication.run(...)
     - ... 
+
+
+### Sublime and git push 
+  - Quick commit 
+  - Push 
 
 
 
