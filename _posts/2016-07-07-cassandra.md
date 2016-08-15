@@ -186,14 +186,15 @@ Can we get Good to send ping only for a meeting and not emails.
 
 
 ### Properties files 
-Should the load at the start of the application only? 
-Should we be able to make a change in the properties of a running application? 
-What is the best format for keeping properties - XML, JSON, simple list? 
-[Java Properties file examples](https://www.mkyong.com/java/java-properties-file-examples/)
+
+  - Should the load at the start of the application only? 
+  - Should we be able to make a change in the properties of a running application? 
+  - What is the best format for keeping properties - XML, JSON, simple list? 
+  - [Java Properties file examples](https://www.mkyong.com/java/java-properties-file-examples/)
 
 
-POJO to JSON and back 
-[Jackson 2 – Convert Java Object to / from JSON](http://www.mkyong.com/java/jackson-2-convert-java-object-to-from-json/)
+### POJO to JSON and back 
+  - [Jackson 2 – Convert Java Object to / from JSON](http://www.mkyong.com/java/jackson-2-convert-java-object-to-from-json/)
 
 
 ### SpringBoot with AngularJS 
