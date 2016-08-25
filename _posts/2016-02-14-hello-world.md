@@ -6,9 +6,6 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
-Welcome me to github.io. blog. Let's blog like a hacker man. :) 
-
-
 ### Thanks to
 
   * https://help.github.com/articles/set-up-git/

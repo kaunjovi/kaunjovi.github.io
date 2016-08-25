@@ -6,14 +6,6 @@ summary:    Notes on Docker
 categories: notes docker
 ---
 
-Sublime Text 3 
- - [Home page](http://www.sublimetext.com/3)
- - [Anaconda, makes Sublime a Python IDE](http://damnwidget.github.io/anaconda/)
-Hmmm - GitGutter seems nice. Check it out. 
-
-
-
-
 Python
   
   Can Python be coded on Mac, using Xcode?
