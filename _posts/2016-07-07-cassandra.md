@@ -213,10 +213,6 @@ Can we get Good to send ping only for a meeting and not emails.
     - ... 
 
 
-### Sublime and git push 
-  - Quick commit 
-  - Push 
-
 
 
 

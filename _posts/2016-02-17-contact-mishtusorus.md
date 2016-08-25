@@ -68,16 +68,6 @@ $ git add --all && git commit -m "new version" && git push
   * https://medium.com
   * http://dilbert.com
 
-
-
-### Sublime shortcuts 
-
-  * https://www.youtube.com/watch?v=0ZnVBVaQpWs
-
-
-### Configure blog 
-
-
 ### Examples of blog 
 
   * https://spring.io/blog | Search 

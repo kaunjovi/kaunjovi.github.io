@@ -6,37 +6,23 @@ summary:    List of cutomizations for the blog
 categories: howto 
 ---
 
-### What all needs fixing? 
+### What all is there to customize?  
 
   * The font is just right. At least the single hash definitely is. Actually it is growing on me. I am liking it. Just the single has was too grotesque.  
+  * [pixyll home page](https://github.com/johnotander/pixyll)
   * We still need some sort of automated way to push changes. And something that is not too heavy. 
   * I actually like the way it shows up on iPhone. It is nice and minimalistic.
   * Get rid of the link to Pixyll. And About Pixyll. And do something to the Say Hello. 
-  * http://themes.gohugo.io/theme/pixyll/tags
-  * How to add tags
-  * 
-  * http://shubhamdokania.me
-  * Show the email along with the email sign. 
-  * 
-  * http://shubhamdokania.me/blog/
-  * The font seems to be working for this one. 
-  * And I guess not having the name of the blog out there, is not that big a deal either. 
-  * 
-  * http://erjjones.github.io/blog/Part-two-how-I-built-my-blog/
-  * He has done a lot of customizations. I like the regular pixyll one better though. 
-  * 
-  * http://themes.gohugo.io/theme/pixyll/tags
-  * He has got the tags working, but I dont know how. 
+  
+### Add tags
 
-### Add search 
-TODO 
+### Add search
 
-### Add tags 
-TODO 
+### Add archive
 
-### Add code from gist 
-```
-{% gist parkr/931c1c8d465a04042403 %}
-```
-
-
+## Other pixyll based blogs with interesting customization
+  - [Has got the tags in](http://zpbappi.com/making-of-this-blog-using-jekyll-pixyll/)
+  - [Seems to have got it all sorted](https://github.com/azmelanar/hugo-theme-pixyll)
+  - [This one is better](http://zdf615328619.github.io/jekyll/pixyll/2014/06/11/welcome-to-pixyll/)
+  - [Not too bad](http://phillippuleo.com)
+  - [This is getting interesting](http://www.ybrikman.com/writing/2015/04/20/migrating-from-blogger-to-github-pages/)

@@ -97,33 +97,6 @@ multijoint excercise.
 
 
 
-Sublime Text 3 
-
-  User setting 
-    https://generalassemb.ly/blog/sublime-text-3-tips-tricks-shortcuts/
-
-  Shortcuts 
-    Horizontal split 
-      http://www.macdrifter.com/2012/07/sublime-text-working-with-multiple-panes.html
-
-Shortcuts 
-  ctrl shift p | Command Palette 
-
-Sidebar Enhancements 
-  
-
-Package control 
-  https://packagecontrol.io/installation#st3
- 
-
-https://github.com/kaunjovi/kaunjovi.github.io/blob/master/_posts/notes.md
-
-### Sublime shortcuts ###
-
-  - Open two folders in the same Sublime? 
-  - Toggle between two sublimes with keyboard? 
-  - Compile and run a python program? 
-    - Install Anaconda. 
 
 ### Which version of Python to use now ###
 
