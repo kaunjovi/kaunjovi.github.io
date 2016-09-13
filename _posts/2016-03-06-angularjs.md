@@ -13,7 +13,7 @@ categories: howto angularjs
   - Create HTML 
   - Add js for Angularjs 
     + [Link for Angularjs are available at](https://developers.google.com/speed/libraries/)
-    + <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    + ```<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>```
   - Create an app 
   - Create a controller
   - Add a Hello world to $scope. 
