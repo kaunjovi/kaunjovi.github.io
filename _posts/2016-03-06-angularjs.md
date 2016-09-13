@@ -8,6 +8,7 @@ categories: howto angularjs
 
 ### Reference 
   - http://tutorials.jenkov.com/angularjs/index.html
+  - [w3schools](http://www.w3schools.com/angular/)
 
 ## Hello world with AngularJs 
   - Create HTML 
@@ -22,15 +23,11 @@ A basic Hello world from Angularjs.
 
 {% gist 859bc8c2931123487c6861a70ec9f72e %}
 
+Overwriting the variable in HTML 
 
-AngularJS is a very powerful JavaScript Framework. It is used in Single Page Application (SPA) projects.
+{% gist 1fd4bb942628fd2c41c88d4c5b4dd8bd %}
 
 
-You can initialize models. 
-
-```
-<div ng-app="" ng-init="firstName='John'">
-```
 
 ### Expressions
   * You could run maths 
@@ -111,49 +108,15 @@ $scope.arrayOfNames = ['mishtu', 'sorous'] ;
 
 [Hosted js libraries with Google](https://developers.google.com/speed/libraries/#libraries)
 
-Add AngularJs to HTML
 
-```
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-```
-
-Create an app. 
-
-```
-<body ng-app = "myapp">
-</body>
-```
-
-Create a view 
-
-```
-<div ng-controller = "HelloController" >
-   <h2>Welcome {{helloTo.title}} to the world of Tutorialspoint!</h2>
-</div>
-```
-
-Create a controller and model 
-
-```
-<script>
-   angular.module("myapp", [])
-   
-   .controller("HelloController", function($scope) {
-      $scope.helloTo = {};
-      $scope.helloTo.title = "AngularJS";
-   });
-</script>
-```
-
-//TODO: Ng+Leaflet Application
 
 //TODO: Ng+D3 Application 
 http://www.ng-newsletter.com/posts/d3-on-angular.html
 Scalable Vector Graphics (SVG)
 
-Reference 
-[Nice. But there should be a easier way to marry D3 with Angular](http://briantford.com/blog/angular-d3)
-[Nice. But too complicated](http://www.sitepoint.com/creating-charting-directives-using-angularjs-d3-js/)
+### Angularjs, D3
+  - [Nice. But there should be a easier way to marry D3 with Angular](http://briantford.com/blog/angular-d3)
+  - [Nice. But too complicated](http://www.sitepoint.com/creating-charting-directives-using-angularjs-d3-js/)
 
 
 [Nice way to show the list of blogs.Simple and effective. Like the fact that he could show up the blogs that were shown somewhere else as well.](http://briantford.com/blog/)
@@ -298,15 +261,6 @@ Setting up Spring Boot
 pom.xml file
 
 https://medium.com/@krebs.bruno/spring-boot-rest-tdd-from-scratch-15f13ed799e0#.mg44l0lor
-
-lin benjamin 
-niraj gilja 
-iasello, anthony p 
-tolani, rajesh 
-
-herman,
-nirav 
-sandeep and neelam 
 
 
 
