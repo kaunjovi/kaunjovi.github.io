@@ -6,6 +6,24 @@ summary:    Getting started Angularjs. Just pure vanilla stuff.
 categories: howto angularjs
 ---
 
+### Reference 
+  - http://tutorials.jenkov.com/angularjs/index.html
+
+## Hello world with AngularJs 
+  - Create HTML 
+  - Add js for Angularjs 
+    + [Link for Angularjs are available at](https://developers.google.com/speed/libraries/)
+    + <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  - Create an app 
+  - Create a controller
+  - Add a Hello world to $scope. 
+
+```html 
+todo
+```
+
+
+
 AngularJS is a very powerful JavaScript Framework. It is used in Single Page Application (SPA) projects.
 
 
@@ -84,6 +102,7 @@ $scope.arrayOfNames = ['mishtu', 'sorous'] ;
 
 
 ### Ref
+
   * http://www.w3schools.com/angular/
   * http://www.w3schools.com/angular/angular_intro.asp
   * http://www.w3schools.com/angular/angular_expressions.asp
