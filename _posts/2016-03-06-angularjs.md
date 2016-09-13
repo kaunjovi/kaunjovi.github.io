@@ -20,31 +20,7 @@ categories: howto angularjs
 
 A basic Hello world from Angularjs. 
 
-```html 
-<html>
-
-<head>
-    <title>Hello world from Angular</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-</head>
-
-<body>
-    <h1>Hello world from Angular</h1>
-    <div ng-app="myApp" ng-controller="myController">
-        <h2>{{ message }} </h2>
-    </div>
-</body>
-
-<script> 
-angular.module('myApp', [])
-    .controller('myController', function( $scope ){
-        $scope.message = 'Hello world from AngularJs.' ; 
-    }) ; 
-</script>
-
-</html>
-```
-
+{% gist 859bc8c2931123487c6861a70ec9f72e %}
 
 
 AngularJS is a very powerful JavaScript Framework. It is used in Single Page Application (SPA) projects.
