@@ -12,14 +12,37 @@ categories: howto angularjs
 ## Hello world with AngularJs 
   - Create HTML 
   - Add js for Angularjs 
-    + [Link for Angularjs are available at](https://developers.google.com/speed/libraries/)
+    + [Angularjs and other js are hosted here.](https://developers.google.com/speed/libraries/)
     + ```<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>```
   - Create an app 
   - Create a controller
   - Add a Hello world to $scope. 
 
+A basic Hello world from Angularjs. 
+
 ```html 
-todo
+<html>
+
+<head>
+    <title>Hello world from Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+
+<body>
+    <h1>Hello world from Angular</h1>
+    <div ng-app="myApp" ng-controller="myController">
+        <h2>{{ message }} </h2>
+    </div>
+</body>
+
+<script> 
+angular.module('myApp', [])
+    .controller('myController', function( $scope ){
+        $scope.message = 'Hello world from AngularJs.' ; 
+    }) ; 
+</script>
+
+</html>
 ```
 
 
