@@ -42,7 +42,7 @@ Overwriting the variable in HTML
   - Configure routeProvider. On "/" provide a HTML. 
   - Provide an ng-view div to house that HTML.  
 
-{% gist f00270e4b36d30152167321f91ef2b41 }
+{% gist f00270e4b36d30152167321f91ef2b41 %}
 
 ## Vanilla HTML template. 
   - TODO 
