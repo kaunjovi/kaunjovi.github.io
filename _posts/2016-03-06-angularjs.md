@@ -34,7 +34,8 @@ Overwriting the variable in HTML
 
 ## Why routing
   - If you want to navigate to different pages in your application, but you also want the application to be a SPA (Single Page Application), with no page reloading, you can use the ngRoute module.
-  - With the $routeProvider you can define what page to display when a user clicks a link.
+  - Change content of the page on click of a link. 
+  - Without reloading. Yahooooo. 
 
 ## Vanilla HTML. No template. 
   - Create HTML. Add angular.js and angular-route.js. 
@@ -42,7 +43,11 @@ Overwriting the variable in HTML
   - Configure routeProvider. On "/" provide a HTML. 
   - Provide an ng-view div to house that HTML.  
 
+Just the routing. Of no practical use really. 
 {% gist f00270e4b36d30152167321f91ef2b41 %}
+
+Routing changing the content of HTML without reloading it. 
+{% gist c85d9a55f03a0b2eeba2e1902ca5f614 %}
 
 ## Vanilla HTML template. 
   - TODO 
