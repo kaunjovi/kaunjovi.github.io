@@ -9,6 +9,7 @@ categories: howto angularjs
 ### Reference 
   - http://tutorials.jenkov.com/angularjs/index.html
   - [w3schools](http://www.w3schools.com/angular/)
+  - [AngularJS Views And Directives](http://tutorials.jenkov.com/angularjs/views-and-directives.html)
 
 ## Hello world with AngularJs 
   - Create HTML 
@@ -26,6 +27,23 @@ A basic Hello world from Angularjs.
 Overwriting the variable in HTML 
 
 {% gist 1fd4bb942628fd2c41c88d4c5b4dd8bd %}
+
+
+# routing in Angularjs 
+  - [w3schools](http://www.w3schools.com/angular/angular_routing.asp)
+  - If you want to navigate to different pages in your application, but you also want the application to be a SPA (Single Page Application), with no page reloading, you can use the ngRoute module.
+  - Applications can only have one ng-view directive, and this will be the placeholder for all views provided by the route.
+  - With the $routeProvider you can define what page to display when a user clicks a link.
+  - Vanilla template. 
+  - Vanilla template + controllers 
+  - You have to have ng-view 
+  - You have to have a ngRoute 
+  - And then you configure the $routeProvider 
+  
+
+# $q in Angulars 
+  - [api doc](https://docs.angularjs.org/api/ng/service/$q)
+  - TODO
 
 
 
