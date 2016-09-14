@@ -31,15 +31,29 @@ Overwriting the variable in HTML
 
 # routing in Angularjs 
   - [w3schools](http://www.w3schools.com/angular/angular_routing.asp)
+
+## Why routing
   - If you want to navigate to different pages in your application, but you also want the application to be a SPA (Single Page Application), with no page reloading, you can use the ngRoute module.
-  - Applications can only have one ng-view directive, and this will be the placeholder for all views provided by the route.
   - With the $routeProvider you can define what page to display when a user clicks a link.
-  - Vanilla template. 
-  - Vanilla template + controllers 
-  - You have to have ng-view 
-  - You have to have a ngRoute 
-  - And then you configure the $routeProvider 
-  
+
+## Vanilla HTML. No template. 
+  - Create HTML. Add angular.js and angular-route.js. 
+  - In the script, create an app and import ngRoute. 
+  - Configure routeProvider. On "/" provide a HTML. 
+  - Provide an ng-view div to house that HTML.  
+
+{% gist f00270e4b36d30152167321f91ef2b41 }
+
+## Vanilla HTML template. 
+  - TODO 
+
+## Vanilla HTML template with controllers 
+  - TODO
+
+
+# Vocal
+  - [Introductory episode: Basic theory of Indian Classical Music](https://www.youtube.com/watch?v=9VQjH0RrdXU)
+  - 
 
 # $q in Angulars 
   - [api doc](https://docs.angularjs.org/api/ng/service/$q)
