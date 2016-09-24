@@ -12,7 +12,8 @@ categories: notes Spring Boot
   - [Nice writeup. Why Spring Boot?](https://dzone.com/articles/why-springboot)
   - [For when you have time. Spring Boot Reference Guide](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/)
   - [For when you have time. Source code. And good documentation.](https://github.com/spring-projects/spring-boot)
-  - 
+  - [Learn Spring Boot](https://github.com/kaunjovi/learnSpringBoot)
+
 
 ### [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
   - Create src/main/java/hello 
@@ -31,3 +32,4 @@ categories: notes Spring Boot
     + read more ... 
   - Integration tests 
     + This is also interesting. //TODO: read and make notes. 
+  - ```-e clean install exec:java -Dexec.mainClass="fun.and.games.MyApplication"```
