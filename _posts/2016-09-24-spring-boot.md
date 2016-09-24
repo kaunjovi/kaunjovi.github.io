@@ -6,6 +6,14 @@ summary:    Notes on Spring Boot
 categories: notes Spring Boot
 ---
 
+[Link to self](http://kaunjovi.github.io/notes/spring/boot/2016/09/24/spring-boot/)
+
+### Reference 
+  - [Nice writeup. Why Spring Boot?](https://dzone.com/articles/why-springboot)
+  - [For when you have time. Spring Boot Reference Guide](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/)
+  - [For when you have time. Source code. And good documentation.](https://github.com/spring-projects/spring-boot)
+  - 
+
 ### [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
   - Create src/main/java/hello 
   - In pom.xml
