@@ -10,3 +10,6 @@ categories: notes Spring Boot
   - Create src/main/java/hello 
   - In pom.xml
     + Add Spring Boot Maven plugin 
+      * Builds a single uber jar. Should this be more cloud friendly then? 
+  - Create a controller class which is ```@RestController```
+  - Create a method. Mark it as ```@RequestMapping("/")```
