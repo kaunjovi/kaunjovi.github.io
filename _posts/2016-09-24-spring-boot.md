@@ -13,3 +13,13 @@ categories: notes Spring Boot
       * Builds a single uber jar. Should this be more cloud friendly then? 
   - Create a controller class which is ```@RestController```
   - Create a method. Mark it as ```@RequestMapping("/")```
+  - Create a ```MyApplication``` class. Mark it ```@SpringBootApplication```. It contains. 
+    + Add a few ...
+    + ```SpringApplication.run()``` launches the current class as application. 
+  - Compile and run 
+    + ```mvn package && java -jar target/gs-spring-boot-0.1.0.jar```
+  - Unit test the stuff 
+    + You need this one ```spring-boot-starter-test```
+    + read more ... 
+  - Integration tests 
+    + This is also interesting. //TODO: read and make notes. 
