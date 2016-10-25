@@ -97,10 +97,16 @@ public class Person {
   - Slant 
   - 
 
+## Todo 
+  - How to get a patent? 
+  - 
 
 We need a way to safeguard identity online? 
 
 What the heck is Tor? 
+
+
+Function
 
 
 
