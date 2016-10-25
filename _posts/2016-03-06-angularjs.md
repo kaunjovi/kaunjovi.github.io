@@ -65,6 +65,11 @@ Routing changing the content of HTML without reloading it.
   - TODO
 
 
+## idea - linky 
+  - Add links 
+  - Add tags to links 
+  - http://lorenzofox3.github.io/smart-table-website/
+
 
 ### Expressions
   * You could run maths 

@@ -32,4 +32,75 @@ categories: notes Spring Boot
     + read more ... 
   - Integration tests 
     + This is also interesting. //TODO: read and make notes. 
-  - ```-e clean install exec:java -Dexec.mainClass="fun.and.games.MyApplication"```
+  - ```mvn -e clean install exec:java -Dexec.mainClass="fun.and.games.MyApplication"```
+
+
+### Spring Boot, REST and H2. 
+
+
+<parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.3.6.RELEASE</version>
+    </parent>
+
+<artifactId>spring-boot-starter-data-rest</artifactId>
+<artifactId>spring-boot-starter-data-jpa</artifactId>
+
+
+<artifactId>h2</artifactId>
+
+
+<artifactId>spring-boot-maven-plugin</artifactId>
+
+
+@SpringBootApplication
+public class Application {
+ 
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+}
+
+mvn spring-boot:run 
+
+curl localhost:8080
+
+
+
+@Entity
+public class Person {
+ 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+
+
+
+@Entity
+public class Person {
+ 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+
+
+
+## How to show one page aside at pixel 
+  - [The daily WTF](http://thedailywtf.com)
+  - [Dilbert](http://dilbert.com)
+  - [Twitter](https://twitter.com)    
+  - [Stack overflow](http://stackoverflow.com)
+  - [Gists](https://gist.github.com/kaunjovi)
+  - [Java revisited](http://javarevisited.blogspot.in)
+  - [pinterest](https://in.pinterest.com)
+  - Slant 
+  - 
+
+
+We need a way to safeguard identity online? 
+
+What the heck is Tor? 
+
+
+
