@@ -86,7 +86,7 @@ public class Person {
 
 
 
-## How to show one page aside at pixel 
+## Links
   - [The daily WTF](http://thedailywtf.com)
   - [Dilbert](http://dilbert.com)
   - [Twitter](https://twitter.com)    

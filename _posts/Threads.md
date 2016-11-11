@@ -49,15 +49,6 @@ https://medium.com/@cdixon/what-s-next-in-computing-e54b870b80cc#.4sxvdf2ox
 https://medium.com/@thefatshadow/a-love-letter-from-your-fat-friend-9bda9628d06a#.stiu2bkpp
 
 
-### What Maven is for Java, X is for JS? 
-https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8#.v6lc52ahn
-
-
-# Gulp 
-
-
-
-### Grunt vs Gulp
 
 
 
