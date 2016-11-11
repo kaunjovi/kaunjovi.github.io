@@ -32,6 +32,6 @@ categories: howto
   + P - search file by name 
 
 | command |     |
-| ---     | --- |
+| ----    | ---- |
 | P | Search file by name | 
 | T | Search file by name | 
