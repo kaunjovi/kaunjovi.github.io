@@ -30,3 +30,8 @@ categories: howto
 - command 
   + T - search file by name 
   + P - search file by name 
+
+| command |     |
+| ---     | --- |
+| P | Search file by name | 
+| T | Search file by name | 
