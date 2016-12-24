@@ -83,7 +83,18 @@ $ npm -v
 2.14.7
 ```
 
-9560945666 - anirban
+```
+sudo npm install -g typescript
+npm list -g typescript 
+```
+
+Typescript plugin from Microsoft 
+package control 
+
+
+http://amanvirk.me/setting-up-typescript-for-sublime-text-on-mac/
+https://blogs.msdn.microsoft.com/typescript/2015/06/05/developing-in-typescript-on-a-mac-with-sublime/
+
 
 
 ### Angular 2 

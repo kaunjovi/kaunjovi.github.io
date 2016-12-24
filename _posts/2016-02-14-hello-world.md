@@ -6,6 +6,32 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+
+# Sublime
+## Sublime, git 
+
+
+# TypeScript
+
+## How to install
+  - How to check if typescript has been installed correctly? TBD
+
+```json 
+sudo npm install -verbose -g typescript
+npm list -g --depth=0 
+```
+
+## How to complie ts files? 
+
+```json 
+tsc helloworld.ts
+```
+
+
+# What are the benefits of using ts over js
+
+
+
 ### Thanks to
 
   * https://help.github.com/articles/set-up-git/
