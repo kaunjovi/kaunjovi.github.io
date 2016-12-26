@@ -7,10 +7,6 @@ categories: howto
 ---
 
 
-# How to create a vanilla java application on IntelliJ? 
-  - Get started with a Maven project. 
-  - Find out the Java home in your mac. 
-  - Pick "Project SDK" as that Java home. 
 
 # Where is Java installed on my mac? 
 
