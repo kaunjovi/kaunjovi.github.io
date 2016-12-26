@@ -1,0 +1,14 @@
+---
+layout:     post
+title:      IntelliJ
+date:       2016-12-26
+summary:    IntelliJ 
+categories: IntelliJ 
+---
+
+# How to create a vanilla java application on IntelliJ? 
+  - Get started with a Maven project. 
+  - Find out the Java home in your mac. 
+  - Pick "Project SDK" as that Java home. 
+  - Maven projects need to be autoimported. Meaning???
+  - 
