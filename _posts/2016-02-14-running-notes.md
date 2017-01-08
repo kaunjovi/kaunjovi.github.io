@@ -6,6 +6,26 @@ summary:    First home of the notes before they find a proper home.
 categories: howto 
 ---
 
+
+# How is https://www.codingame.com/start?
+
+
+
+
+# Microservices 
+
+  - [What microservices architecture really means](http://www.javaworld.com/article/2683277/architecture-scalability/what-microservices-architecture-really-means.html)
+  - [Microservices with Spring](https://spring.io/blog/2015/07/14/microservices-with-spring)
+
+# Why is Eclipse complaining about the spelling of the packages? 
+  - http://stackoverflow.com/questions/25458629/how-to-disable-spell-checker-in-eclipse
+
+# How to start a Maven build in Eclipse using keyboard? 
+  - Shift+Alt+X 
+
+
+
+
 ### Should we start with the big data? 
 
   * Hortonworks installation - VMware flavour - won't work. It is paid. 
@@ -36,7 +56,22 @@ categories: howto
 # Javascript 
 
   - https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
-  - 
+  - [codingame with Javascript](https://www.codingame.com/ide/66095220104dcab34ebde2a460a63bdf3348eb0)
+
+
+```javascript
+    var enemy1 = readline(); // name of enemy 1
+    var dist1 = parseInt(readline()); // distance to enemy 1
+    var enemy2 = readline(); // name of enemy 2
+    var dist2 = parseInt(readline()); // distance to enemy 2
+```
+
+
+```javascript
+while (true) {
+  // your logic here. 
+}
+```
 
 # Connection 
   - Show connection of different types of elements. 
