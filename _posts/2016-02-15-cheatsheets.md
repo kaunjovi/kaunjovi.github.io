@@ -21,16 +21,18 @@ categories: howto
   - http://apple.stackexchange.com/questions/92756/how-do-you-change-mac-terminal-theme-so-that-it-doesnt-go-back-to-basic-every/92769?newreg=eb105f02addc4dc59348a7feaf868367
 
 
-# Markdown 
-## Table 
-
 
 # Sublime shortcut
-- [Keyboard Shortcuts - OSX](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html)
-- command 
-  + T - search file by name 
-  + P - search file by name 
-- 
+
+
+
+  - [Keyboard Shortcuts - OSX](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html)
+  - command 
+    + T - search file by name 
+    + P - search file by name 
+    + 
+  - mac + alt + enter : open the link in a browser 
+  - mac + ctl + up / down : move line up and down. 
 
 
 

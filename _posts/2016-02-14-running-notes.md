@@ -7,6 +7,27 @@ categories: howto
 ---
 
 
+28jan
+
+
+bo_eps1@licindia.com.
+
+
+# code 
+
+  - js based games. 
+    + tic tac toe 
+    + towers of hanoi 
+    + chess 
+    + [js Game Scripts](http://www.javascriptsource.com/games/)
+    + [js made easy](http://www.jsmadeeasy.com/javascripts/games/list_test.asp)
+
+# Read 
+  
+  - [Facebook](https://www.facebook.com)
+  - [Make effective communication your prerogative!](https://www.linkedin.com/pulse/make-effective-communication-your-prerogative-guru-bhat?trk=hp-feed-article-title-like)
+  - [Garage Door Opener](https://www.linkedin.com/pulse/garage-door-opener-app-pi-my-way-amit-parnerkar?trk=hp-feed-article-title-like)
+
 # How is https://www.codingame.com/start?
 
 
@@ -64,6 +85,18 @@ categories: howto
     var dist1 = parseInt(readline()); // distance to enemy 1
     var enemy2 = readline(); // name of enemy 2
     var dist2 = parseInt(readline()); // distance to enemy 2
+```
+
+
+
+
+
+
+  - ternary operator 
+
+
+```javascript
+print(dist1 < dist2 ? enemy1 : enemy2);
 ```
 
 
