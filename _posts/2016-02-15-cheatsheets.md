@@ -24,8 +24,6 @@ categories: howto
 
 # Sublime shortcut
 
-
-
   - [Keyboard Shortcuts - OSX](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html)
   - command 
     + T - search file by name 

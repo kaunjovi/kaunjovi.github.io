@@ -7,6 +7,62 @@ categories: howto
 ---
 
 
+# What should software developers concentrate on in 2017? 
+
+  - https://techbeacon.com/6-code-framework-trends-you-should-follow-2017
+  - Progressive web apps (PWAs) emerged as a major new paradigm in mobile web development
+  - [Google Go or Node.js for web development? Which is better?](https://www.topcoder.com/blog/google-go-or-node-js-for-web-development-which-is-better/)
+  - Is Go better for web development than Node.js and JavaScript ?? 
+
+
+# [Go](https://golang.org)
+
+  - [Home page](https://golang.org)
+  - [Building Go Web Apps](https://www.topcoder.com/blog/building-go-web-apps/)
+
+
+
+
+# What is Progressive web apps (PWAs)? 
+  - ??
+
+
+
+# [Eloquent JavaScript](http://eloquentjavascript.net)
+  
+  - TOREAD
+
+# [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+
+  - TOREAD 
+
+
+# Javascript 
+
+  - [This looks very detailed and interesting](http://eloquentjavascript.net)
+  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+  - [codingame with Javascript](https://www.codingame.com/ide/66095220104dcab34ebde2a460a63bdf3348eb0)
+
+```javascript
+    var enemy1 = readline(); // name of enemy 1
+    var dist1 = parseInt(readline()); // distance to enemy 1
+    var enemy2 = readline(); // name of enemy 2
+    var dist2 = parseInt(readline()); // distance to enemy 2
+```
+  - ternary operator 
+
+
+```javascript
+print(dist1 < dist2 ? enemy1 : enemy2);
+```
+
+
+```javascript
+while (true) {
+  // your logic here. 
+}
+```
+
 
 # Where is Java installed on my mac? 
 

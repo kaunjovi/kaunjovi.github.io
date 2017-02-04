@@ -13,14 +13,14 @@ categories: howto
 bo_eps1@licindia.com.
 
 
-# code 
+# Code some js based code.  
 
-  - js based games. 
-    + tic tac toe 
-    + towers of hanoi 
-    + chess 
-    + [js Game Scripts](http://www.javascriptsource.com/games/)
-    + [js made easy](http://www.jsmadeeasy.com/javascripts/games/list_test.asp)
+  + [js Game Scripts](http://www.javascriptsource.com/games/)
+  + [js made easy](http://www.jsmadeeasy.com/javascripts/games/list_test.asp)
+  + [HTML Game Example](http://www.w3schools.com/graphics/game_intro.asp)
+  + tic tac toe 
+  + towers of hanoi 
+  + chess 
 
 # Read 
   
