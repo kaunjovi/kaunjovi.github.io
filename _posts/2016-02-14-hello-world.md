@@ -7,6 +7,182 @@ categories: howto
 ---
 
 
+# Upgrade node.js on your mac. 
+
+  Check your versios before starting. 
+
+```bash 
+$ node --version 
+v4.2.3
+$ npm --version 
+2.14.7
+```
+
+  Run these commands. 
+
+```bash
+$ sudo npm cache clean -f 
+npm WARN using --force I sure hope you know what you are doing.
+$ sudo npm install -g n 
+/usr/local/bin/n -> /usr/local/lib/node_modules/n/bin/n
+n@2.1.4 /usr/local/lib/node_modules/n
+$ sudo n stable 
+
+     install : node-v7.4.0
+       mkdir : /usr/local/n/versions/node/7.4.0
+       fetch : https://nodejs.org/dist/v7.4.0/node-v7.4.0-darwin-x64.tar.gz
+######################################################################## 100.0%
+   installed : v7.4.0
+```
+
+  Check your node version again. 
+
+```bash
+$ node --version 
+v7.4.0
+$ npm --version 
+4.0.5
+```
+
+  Thanks to [solution provided at stackoverflow](http://stackoverflow.com/questions/11284634/upgrade-nodejs-to-the-latest-version-on-mac-os)
+
+
+# Build Apps for Free on Heroku
+
+https://www.heroku.com/free
+Heroku Postgres
+  What is Postgres used for ?? 
+
+Heroku Redis 
+  What is Redis used for ?? 
+
+Is it free? 
+  [This is a free dyno concept. Is that good enough?](https://blog.heroku.com/heroku-free-dynos)
+
+What is good about Heroku??
+  Good according to http://www.toptenreviews.com/services/web-hosting/best-cloud-hosting/heroku-review/
+
+What is bad about Heroku? 
+  [Someone got locked out](http://augustin-riedinger.fr/en/resources/the-day-i-stopped-using-heroku/)
+
+What are the alternatives to Heroku? 
+  AWS 
+  Nodejitsu
+
+
+# How to deploy a node.js app in Heroku? 
+
+  https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
+  You should have a Heroku account. A free one is good enough for now.
+  https://dashboard.heroku.com/apps. kaunjovi@gmail.com. 
+  You should have node.js and npm installed locally.
+
+```bash
+$ node --version 
+v4.2.3
+$ npm --version 
+2.14.7
+```
+
+   https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
+   Install the Heroku Command Line Interface (CLI)
+
+
+
+
+# How to write your money making app or website ? 
+
+
+
+
+# Follow https://tests4geeks.com/oauth2-javascript-tutorial/
+  - Login with google and then logout 
+  - You have to register your application with OAuth provider e.g. ??who are the different OAuth provider?? 
+  - Go to API manager / Dashboard and enable Google+ API.  
+
+
+
+```html
+<script src="static/hello.all.js"></script>
+<script>
+  hello.init({
+    google: "Client-ID-From-Google-Dev-Console"     // not real id
+  });
+</script>
+```
+
+```html 
+<button onclick="hello('google').login()">google</button>
+<button onclick="hello('google').logout()">logout</button>
+```
+
+
+# How to create a single page website using Node.js? 
+
+  - http://www.clock.co.uk/blog/a-simple-website-in-node-js-2016-edition
+  - https://shapeshed.com/creating-a-basic-site-with-node-and-express/
+
+```bash 
+$ node -v
+v4.2.3
+$ npm -v 
+2.14.7
+
+mkdir simple-website && cd simple-website
+npm init
+
+npm i --save express@4 morgan@1
+npm i --save nodemon@1.9
+npm i --save hellojs
+
+{
+  "build-css": "stylus source/stylesheets/index.styl -o static/css",
+  "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
+  "clean": "rm -rf static/css && mkdir -p static/css",
+  "build": "npm run clean && npm run build-css",
+  "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
+  "start": "node server"
+ }
+
+```
+
+
+server.js 
+
+```javascript
+var express = require('express')
+  , logger = require('morgan')
+  , app = express()
+  , template = require('jade').compileFile(__dirname + '/source/templates/homepage.jade')
+
+app.use(logger('dev'))
+app.use(express.static(__dirname + '/static'))
+
+app.get('/', function (req, res, next) {
+  try {
+    var html = template({ title: 'Home' })
+    res.send(html)
+  } catch (e) {
+    next(e)
+  }
+})
+
+app.listen(process.env.PORT || 3000, function () {
+  console.log('Listening on http://localhost:' + (process.env.PORT || 3000))
+})
+```
+
+
+# How to configure Google Credentials For OAuth with our App
+  - Navigate to the Google Developer Console and select Credentials in the API Manager.
+    + https://console.developers.google.com/projectselector/apis/credentials
+    + Project name : loginLogoff 
+    + click Create Credentials/OAuth Client Id.
+    + Put the origin and redirect as http://localhost:5000
+    + clientId : 528837191694-lr65jsi83hmsl1dti2jakh3mo586f1nb.apps.googleusercontent.com
+    + clientSecret : PfmplOVEr96Vm8yRsK_5Yp7B
+
+
 # What should software developers concentrate on in 2017? 
 
   - https://techbeacon.com/6-code-framework-trends-you-should-follow-2017
@@ -15,12 +191,63 @@ categories: howto
   - Is Go better for web development than Node.js and JavaScript ?? 
 
 
-# [Go](https://golang.org)
+# How to mine LinkedIn data using code? 
+  - ?? 
+  - LinkedIn relies on the industry standard OAuth 2.0 protocol for granting access
+  - interacting with LinkedIn's REST APIs. 
+  - if you are developing a front-end JavaScript LinkedIn provide SDKs to handle the authentication process for you. 
+
+  - Using the JavaScript SDK requires you to have an application registered with LinkedIn.  
+  - If you have not already done so, create an application. 
+  - If you have an existing application, select it to modify its settings.
+
+  - Create an application
+  - Register that with LinkedIn
+  - 
+
+# Twitter for developers. 
+  - https://dev.twitter.com
+  - [Twitter Developer Documentation](https://dev.twitter.com/overview/api)
+  - [Twitter Libraries in different technologies](https://dev.twitter.com/resources/twitter-libraries)
+  - Twitter APIs in Java 
+    - [The simple OAuth client Java lib](https://github.com/scribejava/scribejava)
+    - [A Java HTTP client for consuming Twitter's Streaming API](https://github.com/twitter/hbc)
+    - http://twitter4j.org/en/index.html
+  - Python 
+    - [Example app using Python to get Twitter data.](https://github.com/x0rz/tweets_analyzer/blob/master/secrets.py)
+  
+
+# What is wrong with Javascript? 
+
+  - https://whydoesitsuck.com/why-does-javascript-suck/ ?? 
+  - 
+  - 
+
+# [Go, or the Golang](https://golang.org)
+
+  - Create a web app using Go 
+  - Apparently Go is as good as or better than Node.js 
+  - Host it on Heroku. 
+
+## Go vs Node.js 
+
+  - [Node.js vs Golang: Battle of the Next-Gen Languages](http://www.hostingadvice.com/blog/nodejs-vs-golang/)
+
+## Why should I bother about learning Go? 
+
+  - https://whydoesitsuck.com/why-does-javascript-suck/ ?? 
+  - 
+
+
+## Resources on Go
 
   - [Home page](https://golang.org)
   - [Building Go Web Apps](https://www.topcoder.com/blog/building-go-web-apps/)
-
-
+  - [An Introduction to Programming in Go](http://www.golang-book.com/books/intro)
+  - [Learning Go - a free PDF for learning the Go language.](https://github.com/miekg/gobook)
+  - [Go Bootcamp](http://www.golangbootcamp.com/book/)
+  - [Learn X in Y minutes](https://learnxinyminutes.com/docs/go/)
+  - 
 
 
 # What is Progressive web apps (PWAs)? 

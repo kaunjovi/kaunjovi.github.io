@@ -7,10 +7,6 @@ categories: howto
 ---
 
 
-28jan
-
-
-bo_eps1@licindia.com.
 
 
 # Code some js based code.  
@@ -74,46 +70,6 @@ bo_eps1@licindia.com.
 ? When to use npm and when to use bower? 
 
 
-# Javascript 
-
-  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
-  - [codingame with Javascript](https://www.codingame.com/ide/66095220104dcab34ebde2a460a63bdf3348eb0)
-
-
-```javascript
-    var enemy1 = readline(); // name of enemy 1
-    var dist1 = parseInt(readline()); // distance to enemy 1
-    var enemy2 = readline(); // name of enemy 2
-    var dist2 = parseInt(readline()); // distance to enemy 2
-```
-
-
-
-
-
-
-  - ternary operator 
-
-
-```javascript
-print(dist1 < dist2 ? enemy1 : enemy2);
-```
-
-
-```javascript
-while (true) {
-  // your logic here. 
-}
-```
-
-# Connection 
-  - Show connection of different types of elements. 
-  - 
-
-
-# Car 
-  - Tucsan 
-  - 
 
 # Heroku 
   - https://www.heroku.com
@@ -123,10 +79,6 @@ while (true) {
   - Examples of apps in heroku. 
   - Do visualizations. Pick data online. 
   - git put. maven build. 
-
-## What is the diff between github and bitbucket. 
-
-
 
 
 # linked in account 
