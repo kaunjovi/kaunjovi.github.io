@@ -7,44 +7,36 @@ categories: howto
 ---
 
 
-# Upgrade node.js on your mac. 
+# What are the features of a good tech blog? 
+  - [It is a simple, beautiful Jekyll theme that's mobile first.](https://github.com/johnotander/pixyll)
 
-  Check your versios before starting. 
+# What can we make the pixyll do? 
+  - [Notes from the link.](https://github.com/johnotander/pixyll)
+  - If you don't want the header to link back to the root url
+  - Add Contact Form from https://formspree.io
+  - What is Disqus for? 
+  - Change colors etc by changing _sass/_variables.scss
+  - You can add some rudimentary animation by animated: true to your _config.yml
+  - Add deep anchor links. AnchorJS
+  - You can measure visits to your website either by using Google Analytics tracking embed or the more advanced Google Tag Manager container.
+  - In order to get more information about your website's status in search engines, you can register it in Google Search Console and/or Bing Webmaster Tools.
+  - What is this https://moz.com/blog/i-cant-drive-155-meta-descriptions-in-2015??
+  - Add tags like 
+    - [numbered and links shown.](http://zdf615328619.github.io/tags/)
+    - [minimal and with count.](http://themes.gohugo.io/theme/pixyll/tags)
+    - [or like so.](http://zpbappi.com/tags/)
+  - Add contact [like so.](http://zpbappi.com/contact/)
+    - Add archive [like so.](http://zpbappi.com/archive/). Or [like so.](http://zdf615328619.github.io/archive/)
+    - Add the ribbon [like so.](http://ramonaharrison.github.io)
+    - Add the search [like how?]
+  - Add search 
+    - [Search and archive together](http://www.repleatur.net/search/)
+    - [type and search hits show up](http://www.perfectlyrandom.org/search/)
+    - [loved the search on it](http://adrian-philipp.com)
+  - Good design 
+    + [clean and minimal and not too big](http://markibrahim.me//musings/)
 
-```bash 
-$ node --version 
-v4.2.3
-$ npm --version 
-2.14.7
-```
 
-  Run these commands. 
-
-```bash
-$ sudo npm cache clean -f 
-npm WARN using --force I sure hope you know what you are doing.
-$ sudo npm install -g n 
-/usr/local/bin/n -> /usr/local/lib/node_modules/n/bin/n
-n@2.1.4 /usr/local/lib/node_modules/n
-$ sudo n stable 
-
-     install : node-v7.4.0
-       mkdir : /usr/local/n/versions/node/7.4.0
-       fetch : https://nodejs.org/dist/v7.4.0/node-v7.4.0-darwin-x64.tar.gz
-######################################################################## 100.0%
-   installed : v7.4.0
-```
-
-  Check your node version again. 
-
-```bash
-$ node --version 
-v7.4.0
-$ npm --version 
-4.0.5
-```
-
-  Thanks to [solution provided at stackoverflow](http://stackoverflow.com/questions/11284634/upgrade-nodejs-to-the-latest-version-on-mac-os)
 
 
 # Build Apps for Free on Heroku
@@ -79,13 +71,26 @@ What are the alternatives to Heroku?
 
 ```bash
 $ node --version 
-v4.2.3
+v7.4.0
 $ npm --version 
-2.14.7
+4.0.5
+$ git --version 
+git version 2.7.4 (Apple Git-66)
 ```
 
    https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
-   Install the Heroku Command Line Interface (CLI)
+   Download and install the Heroku Command Line Interface (CLI)
+   Check installation. 
+
+```bash 
+$ heroku login 
+Enter your Heroku credentials.
+Email: kaunjovi@gmail.com
+Password (typing will be hidden): 
+Logged in as kaunjovi@gmail.com
+```
+
+
 
 
 
@@ -130,6 +135,9 @@ $ npm -v
 
 mkdir simple-website && cd simple-website
 npm init
+
+
+npm i --save express morgan nodemon hellojs 
 
 npm i --save express@4 morgan@1
 npm i --save nodemon@1.9
