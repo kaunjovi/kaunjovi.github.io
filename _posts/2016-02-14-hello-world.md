@@ -7,10 +7,55 @@ categories: howto
 ---
 
 
+# [Spring Boot and AngularJS](https://examples.javacodegeeks.com/enterprise-java/spring/boot/spring-boot-and-angularjs-integration-tutorial/)
+
+
+
+# References for Android developement 
+  - [Android Development](http://www.vogella.com/tutorials/android.html)
+  - 
+
+
+# Android 7.0 Nougat!
+  - https://developer.android.com/index.html
+  - Get Android Studio
+
+# Android Studio
+  - Download. It is about 500Mb
+  - Configure. https://developer.android.com/studio/install.html
+  - http://www.vogella.com/tutorials/Android/article.html
+
+# Is there TDD for android? TODO
+
+
+
+
+# What is using all the space on my mac? TODO. 
+
+# Should I develop for iOS or Android? TODO 
+
+# How to develop for both iOS and Android? 
+  - [10 tools](http://thinkapps.com/blog/development/develop-for-ios-v-android-cross-platform-tools/)
+
+
+# How to monetize? 
+  - [FbStart](https://developers.facebook.com/fbstart/?utm_source=Twitter&utm_campaign=fbs)
+    - Launched an app on Google Play or iOS. 
+    - ...
+  - Android / iPhone. Which app is more likely to be monetized? 
+  - 
+
 # What are the features of a good tech blog? 
   - [It is a simple, beautiful Jekyll theme that's mobile first.](https://github.com/johnotander/pixyll)
+  - Manage content in a no fuss way. On Sublime. And push from it. 
+  - Multiple ways to share code. From the blog. From github. Etc. 
+  - Free text search. Preferrably autocomplete. 
+  - Multiple ways to find content. E.g. free text search, tags, date wise archive etc.  
+  - Push content to social media. Twitter. Google etc. 
+  - Search engine optimization. 
+  - Optimized for mobile. 
 
-# What can we make the pixyll do? 
+# What can we make the pixyll do for your blog? 
   - [Notes from the link.](https://github.com/johnotander/pixyll)
   - If you don't want the header to link back to the root url
   - Add Contact Form from https://formspree.io
@@ -64,23 +109,26 @@ What are the alternatives to Heroku?
 
 # How to deploy a node.js app in Heroku? 
 
-  https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
-  You should have a Heroku account. A free one is good enough for now.
-  https://dashboard.heroku.com/apps. kaunjovi@gmail.com. 
-  You should have node.js and npm installed locally.
+## Installations and setups 
+
+  - You should have a Heroku account. A free one is good enough for now. kaunjovi@gmail.com. 
+  - You need the following on your local box. 
 
 ```bash
+
 $ node --version 
-v7.4.0
+v6.9.5
 $ npm --version 
-4.0.5
+3.10.10
 $ git --version 
 git version 2.7.4 (Apple Git-66)
+$ heroku --version 
+heroku-cli/5.6.17-bee0f80 (darwin-amd64) go1.7.5
+
 ```
 
-   https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
-   Download and install the Heroku Command Line Interface (CLI)
-   Check installation. 
+
+
 
 ```bash 
 $ heroku login 
@@ -92,10 +140,6 @@ Logged in as kaunjovi@gmail.com
 
 
 
-
-
-
-# How to write your money making app or website ? 
 
 
 

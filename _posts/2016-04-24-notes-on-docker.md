@@ -112,6 +112,46 @@ https://blogs.msdn.microsoft.com/typescript/2015/06/05/developing-in-typescript-
 
   - [Home page.](https://hbase.apache.org)
   - [Bigtable](http://research.google.com/archive/bigtable.html)
+  - [Installing on mac](https://github.com/hixiaoxi/hixiaoxi.github.io/wiki/Installing-HBase-on-Mac-OS-X-(10.8))
+    + Install Hadoop 
+    + Install HBase 
+    + Install Phoenix 
+
+
+# Install Hadoop on Mac 
+
+  - [INSTALLING HADOOP ON MAC PART 1](https://amodernstory.com/2014/09/23/installing-hadoop-on-mac-osx-yosemite/)
+  - Install HomeBrew 
+  - Install Hadoop using HomeBrew 
+  - [Configure Hadoop](https://dtflaneur.wordpress.com/2015/10/02/installing-hadoop-on-mac-osx-el-capitan/)
+
+
+```bash
+
+$ brew --version 
+Homebrew 0.9.5 (git revision 92c6c; last commit 2015-09-22)
+
+$ hadoop version 
+Hadoop 2.7.1
+Subversion https://git-wip-us.apache.org/repos/asf/hadoop.git -r 15ecc87ccf4a0228f35af08fc56de536e6ce657a
+Compiled by jenkins on 2015-06-29T06:04Z
+Compiled with protoc 2.5.0
+From source with checksum fc0a1a23fc1868e4d5ee7fa2b28a58a
+This command was run using /usr/local/Cellar/hadoop/2.7.1/libexec/share/hadoop/common/hadoop-common-2.7.1.jar
+$ 
+
+
+```
+
+## take Hadoop for a spin
+
+```
+hstart /usr/local/Cellar/hadoop/2.7.1/libexec/etc/hadoop
+hstop 
+
+```
+
+
 
 random, realtime read/write access to your Big Data
 hosting of very large tables -- billions of rows X millions of columns -- atop clusters of commodity hardware
