@@ -1,3 +1,56 @@
+Refactor agressively. As soon as any section is worth sharing, give it its own page. 
+
+# React vs AngularJS
+[React vs AngularJS – How the two Compare](https://www.codementor.io/reactjs/tutorial/react-vs-angularjs)
+[Hello world with React](http://codepen.io/chrisharrington/pen/pvEYJv/)
+
+
+
+
+# Online brand
+We need a brand. Something collaborative. Positive. 
+Should have face. People trust face. Not impersonal logos. 
+
+
+# Spring boot 
+[Spring MVC with Bootstrap and Thymeleaf](http://joaoduraes.github.io/2015/02/07/spring-bootstrap-thymeleaf-example.html)
+
+
+# Nice looking github io blogs 
+http://joaoduraes.github.io/2015/02/07/spring-bootstrap-thymeleaf-example.html
+
+
+# learn 
+# Learn Kafka 
+[Who is using Kafka](https://cwiki.apache.org/confluence/display/KAFKA/Powered+By)
+
+
+  - It is an append-only, totally-ordered sequence of records ordered by time. 
+  - Apache Kafka is messaging system built to scale for big data. 
+  - Is there a certification by the firm? 
+  - A distributed messaging framework that meets the demands of big data by scaling on commodity hardware
+  - In the simplest case, it could be a simple buffer for storing application logs.
+  - Kafka + Spark Streaming, can be used to track data changes and take action on that data before saving it to a final destination. 
+  - 
+
+# What are the competitors of Kafka? 
+  - Similar to Apache ActiveMQ or RabbitMq, Kafka enables applications built on different platforms to communicate via asynchronous message passing. 
+
+# Any gotchas? 
+  - It doesn't support JMS, Java's message-oriented middleware API.
+
+# What is the architecture of Kafka?
+
+  - A producer, a consumer
+  - A broker is a process running on single machine. A cluster is a group of brokers. 
+  - Messages are pulished to a topic category. 
+
+
+
+[Big data messaging with Kafka, Part 1](http://www.javaworld.com/article/3060078/big-data/big-data-messaging-with-kafka-part-1.html)
+[The log by linkedin engg. Come back and read. A bit too heavy to start with](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
+
+
 
 
 

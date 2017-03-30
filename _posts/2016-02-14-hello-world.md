@@ -7,8 +7,222 @@ categories: howto
 ---
 
 
+
+
+# myCircle
+  - The 5 people that you would like to SOS in case something goes wrong 
+  - Seek help for you, right where you are 
+  - Seek help for someone you know, at some other point 
+  - You are in a fix. Is there someone who knows someone who you know, and who is around and can help. 
+  - Needs to connect with GPS. 
+  - Someone asked for help from Malad. Is there someone I know who is in Malad at the moment? 
+
+
+
+
+
+[Example questions for interview](https://www.glassdoor.co.in/Interview/hyderabad-amazon-interview-questions-SRCH_IL.0,9_IM1076_KE10,16_IP2.htm)
+  - Design vending machine 
+  - Desing IVR 
+  - Design air ticket picker 
+
+
+# Design a vending machine 
+
+  - http://javarevisited.blogspot.in/2016/06/design-vending-machine-in-java.html
+
+
+1994 - Jeff Bezos - D. E. Shaw & Co. - Cadabra to Amazon 
+As of early 2017, Amazon had nearly 269,000 employees worldwide
+
+Non-clustered and clustered index
+
+
+# Amazon leadership principles
+
+Customer Obsession
+Leaders start with the customer and work backwards. They work vigorously to earn and keep customer trust. Although leaders pay attention to competitors, they obsess over customers.
+
+Ownership
+Leaders are owners. They think long term and don’t sacrifice long-term value for short-term results. They act on behalf of the entire company, beyond just their own team. They never say “that’s not my job". 
+
+Invent and Simplify
+Leaders expect and require innovation and invention from their teams and always find ways to simplify. They are externally aware, look for new ideas from everywhere, and are not limited by “not invented here". As we do new things, we accept that we may be misunderstood for long periods of time.
+
+Are Right, A Lot
+Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to disconfirm their beliefs.
+
+Learn and Be Curious
+Leaders are never done learning and always seek to improve themselves. They are curious about new possibilities and act to explore them.
+
+Hire and Develop the Best
+Leaders raise the performance bar with every hire and promotion. They recognize exceptional talent, and willingly move them throughout the organization. Leaders develop leaders and take seriously their role in coaching others. We work on behalf of our people to invent mechanisms for development like Career Choice.
+
+Insist on the Highest Standards
+Leaders have relentlessly high standards - many people may think these standards are unreasonably high. Leaders are continually raising the bar and driving their teams to deliver high quality products, services and processes. Leaders ensure that defects do not get sent down the line and that problems are fixed so they stay fixed.
+
+Think Big
+Thinking small is a self-fulfilling prophecy. Leaders create and communicate a bold direction that inspires results. They think differently and look around corners for ways to serve customers.
+
+Bias for Action
+Speed matters in business. Many decisions and actions are reversible and do not need extensive study. We value calculated risk taking. 
+
+## Frugality
+  - Accomplish more with less. Constraints breed resourcefulness, self-sufficiency and invention. There are no extra points for growing headcount, budget size or fixed expense.
+  - do more with less 
+  - -----------------
+  - save ops headcount. 
+  - kill the tail. 
+  - in case an application does not fit into the rest of the portfolio, give them away. 
+
+## Earn Trust
+  - Leaders listen attentively, speak candidly, and treat others respectfully. They are vocally self-critical, even when doing so is awkward or embarrassing. Leaders do not believe their or their team’s body odor smells of perfume. They benchmark themselves and their teams against the best.
+  - At the end of the day, the team is the source of strength. 
+  - It is important to know each member of the team accurately, know their strengths and weak spots. 
+  - It is only possible when the leader connects with the team. This can only happen when the team is treated with humility, respectfully and with honesty. 
+  - Communication plan
+  - ------------------
+  - Each product team meets once a month for all hands on where the report card is presented in details. 
+  - With all leads and designated high performers there is a monthly one to one. documented next steps. 
+  - With all teams there is a skip level meeting, at regular intervals. 
+  - There is a monthly report card that is published by each team. 
+
+## Dive Deep
+  - Leaders operate at all levels, stay connected to the details, audit frequently, and are skeptical when metrics and anecdote   differ. No task is beneath them.
+  - Urgent
+  - ------ 
+  - P1. Standing instruction to text for every case. In case of escalations, get in call as the AD lead. 
+  - P1. All cases. Friday. Weekly call with all leads. 
+  - P1. All cases. Monday morning call to provide sr. mgmt. 
+  - Non urgent, Important 
+  - ---------------------
+  - Randomly join weekly / daily scrum meetings, to be in touch with the grassroot detals. 
+  - Working towards sending critical stability, management metrics from prod over emails to AD, ProdSupport. 
+  - Insists on access to codebase. Randomly pull code and review. 
+  - Dev fridays. Critical dev, arch updates are shared. 
+      
+
+## Have Backbone; Disagree and Commit
+  - Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once a decision is determined, they commit wholly.
+  - Graphs are not required for the MVP in MyReports. 
+    + Challanged on the basis of SME knowledge and understanding. Disagreed. 
+    + Spawn off another thread to collect data about usage of graphs. In progress. 
+    + Did a demo to sr. stakeholders from client. Most of the feedback was on the ease of creating new reports and formatting them. 
+    + We agreed on a list of features for MVP. Clients chose not to put graphs on that. 
+  - ??  
+
+
+## Deliver Results
+Leaders focus on the key inputs for their business and deliver them with the right quality and in a timely fashion. Despite setbacks, they rise to the occasion and never settle.
+
+
+
+
+
+
+Decision with less data 
+  vocally self critical 
+  backbone - feature which is good for 
+  technologies - 5  / 6 
+
+Think big - vision 
+
+Team - self motivated - 100 members
+
+Leadership principles 
+
+2 project detailed description - data, users, 
+
+problem solving - 
+  - telephonic machines - 
+  - vending machine 
+  - smallest path 
+  - IPL dashboard 
+  - one liner 
+    + clear assumptions 
+    + probe 
+    + dealing with ambiguity 
+    + user base / scale / 10X user base 
+    + frugality 
+
+AWS 
+  - familiarity with cloud 
+
+
+
+
+
 # [Spring Boot and AngularJS](https://examples.javacodegeeks.com/enterprise-java/spring/boot/spring-boot-and-angularjs-integration-tutorial/)
 
+
+# When should we use bower and when npm? 
+  - It seems we can download js using bower. We could add that to a spring-boot application. 
+  
+
+## Install bower
+
+```bash 
+
+$ npm --version 
+3.10.10
+
+$ npm install -g bower 
+/usr/local/bin/bower -> /usr/local/lib/node_modules/bower/bin/bower
+/usr/local/lib
+└── bower@1.8.0 
+
+
+Configure bower to install js in our folder. 
+
+$ cat .bowerrc
+{
+  "directory": "src/main/resources/static/bower_components",
+  "json": "bower.json"
+}
+
+
+// bower will not work due to permission issues to start with. fix that. 
+sudo chown -R $(whoami) ~/.config
+bower init
+bower install --save jquery bootstrap 
+bower install --save angular angular-route angular-resource angular-cookies angular-sanitize 
+bower install --save bootstrap 
+
+bower install --save angular-ui-grid
+
+
+```
+
+## Configure bower to download files in a provided folder. 
+
+Add the .bowerrc file to the project folder. 
+And then run bower init
+
+```bash 
+
+
+{
+  "directory": "src/main/resources/static/bower_components",
+  "json": "bower.json"
+}
+
+```
+
+```
+mvn clean install
+
+mvn spring-boot:run
+
+```
+
+
+## spring-boot, angularjs tutorial 
+
+  - [Part 1](http://rajandesai.com/blog/2014/03/08/getting-started-with-spring-boot-application-using-maven/)
+  - [Part 2](http://rajandesai.com/blog/2014/03/10/web-application-development-using-spring-boot-and-maven-part-2-adding-angularjs-support/)
+  - [Part 3](http://rajandesai.com/blog/2014/03/12/web-application-development-using-angularjs-spring-boot-and-maven-part-3-beautify-using-bootstrap/)
+  - [Part 4](http://rajandesai.com/blog/2014/03/14/web-application-development-using-angularjs-spring-boot-and-maven-part-4-birdlog-application/)
+  - [Part 5](http://rajandesai.com/blog/2014/03/18/part-5-web-application-development-using-angularjs-spring-boot-and-maven-using-ebird-apis-in-birdlog-application/)
 
 
 # References for Android developement 
