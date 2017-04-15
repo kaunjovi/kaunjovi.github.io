@@ -44,7 +44,7 @@ Total time: 0.023 secs
 12:40:13 AM: External task execution finished 'helloWorld'.
 ```
     
-    + Now, run the task from command prompt. It should do the same "Hello world" thing. 
+  - Now, run the task from command prompt. It should do the same "Hello world" thing. 
 
 ```
 $ pwd 
@@ -59,4 +59,4 @@ BUILD SUCCESSFUL
 Total time: 0.648 secs
 ```
     
-    + Unexpected really. But AndroidStudio seems to be running Gradle much faster than command prompt. +1 to AndroidStudio. 
+  - Unexpected really. But AndroidStudio seems to be running Gradle much faster than command prompt. +1 to AndroidStudio. 
