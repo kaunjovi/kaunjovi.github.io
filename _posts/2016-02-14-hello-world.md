@@ -7,6 +7,95 @@ categories: howto
 ---
 
 
+# Where should I create the tech blog. 
+  
+  - ??
+  - Don't want to use the github io. 
+  - It is best for notes. 
+  - It does not show up nice in office. Most likely the same will happen in other orgs as well. 
+  - 
+
+
+  
+
+
+
+
+# dashboard 
+https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/forms.html
+
+# How to used Sublime for JS projects? 
+
+
+
+# angularjs
+
+  - When building out Angular projects, you should not add on the full jQuery library. jQlite is already included in Angular
+
+## Can I share working demo of angularjs with the world. 
+
+  - codepen? No can do. The free version supports only one project with only 10 files. 
+  - anything else out there??
+  - 
+
+
+  - [AngularJS Tutorial — Learn AngularJS in 30 minutes](https://blog.revillweb.com/angularjs-tutorial-learn-angularjs-in-30-minutes-35b5eae52dc2)
+  - [Building a Web App From Scratch in AngularJS](https://code.tutsplus.com/tutorials/building-a-web-app-from-scratch-in-angularjs--net-32944)
+
+
+
+
+
+# angularjs, bootstrap 
+[How to Correctly Use BootstrapJS and AngularJS Together](https://scotch.io/tutorials/how-to-correctly-use-bootstrapjs-and-angularjs-together)
+
+
+# Rapid prototyping with SpringBoot and AngularJS
+
+  - [Rapid prototyping with Spring Boot and AngularJS](https://g00glen00b.be/prototyping-spring-boot-angularjs/)
+
+
+# Get a bare bones SpringBoot application up and running. 
+
+  - Use maven to do the heavy lifting and bring everyone to the party. 
+  - Write the main class and bind it with SpringBoot. 
+  - Write a basic HTML in src/main/resources/static/index.html. 
+  - Boot up the SpringBoot application using Maven. 
+  - The log file should show your message. The http://localhost:8080 should show the HTML. 
+
+
+```
+mvn -e clean install spring-boot:run
+```
+
+## Add bootstrap with bower to the SpringBoot application. 
+
+  - Ensure that you have npm and bower installed. 
+
+```
+$ npm --version 
+3.10.10
+$ bower --version 
+1.8.0
+```
+
+  - Configure bower to use the static folder for downloading libraries. Create the .bowerrc file. 
+
+```
+bower init
+bower install angular --save 
+bower install bootstrap --save 
+```
+
+  - Configure .gitignore to ignore the libraries folder. 
+  - Put bootstrap elements in the index.html.  
+
+## Add AngularJS
+
+```
+bower install angular --save 
+```
+
 
 
 # myCircle
