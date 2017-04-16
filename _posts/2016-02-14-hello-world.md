@@ -52,7 +52,7 @@ Java(TM) SE Runtime Environment (build 1.8.0_31-b13)
 Java HotSpot(TM) 64-Bit Server VM (build 25.31-b07, mixed mode)
 ```
 
-# [Installing app on phone](https://classroom.udacity.com/courses/ud837/lessons/4034888704/concepts/43534185630923)
+### [Using phone to debug app rathe than emulator](https://classroom.udacity.com/courses/ud837/lessons/4034888704/concepts/43534185630923)
 
 - Configure your android phone in developer mode. 
   + Browse to Settings / About phone / Build Number and click it 7 times. What. Why. 
