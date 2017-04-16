@@ -7,18 +7,65 @@ categories: howto
 ---
 
 
+# [Android Development for Beginners](https://www.udacity.com/course/android-development-for-beginners--ud837)
+
+
+@ signifies a resource. 
+@drawable is a image, for example. 
+Kirill Grouchnikov. Google playstore guy. 
+
+
+  - [Material colors](https://material.io/guidelines/style/color.html#color-color-palette)
+  - https://developers.google.com/android/for-all/vocab-words/?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+  - developer.android.com/index.html 
+
+# [Lesson 2: Building layouts, Part 2](https://classroom.udacity.com/courses/ud834/lessons/4330701752/concepts/42372186530923)
+
+  - ViewGroup 
+    + Linear layout could be vertical or horizontal
+    + Relative layout allows positioning of children in relation to parent and / or siblings.
+  - @ signifies resource 
+  - @+id/ is a new resource that you are creating on the spot . 
+  - Padding inside. Margin outside. 
+
+
+
+
+# Create a Android Hello World app from scratch, using AndroidStudio but none of the wizards. 
+
+  - Create a github project. Choose to create a readme. 
+  - Import as a general project in AndroidStudio. Ensure that AndroidStudio uses the standalone Gradle. 
+  - Create the build.gradle.
+  - Open the build.gradle file in AndroidStudio and it will wake up to the fact that this is a Gradle project. 
+  - 
+
+
 # Where should I create the tech blog. 
   
   - ??
   - Don't want to use the github io. 
   - It is best for notes. 
   - It does not show up nice in office. Most likely the same will happen in other orgs as well. 
+  - Where are most of the android tech blogs at? 
+  - Medium is looking good / stylo. 
+    + https://medium.com/@rotxed/dex-skys-the-limit-no-65k-methods-is-28e6cb40cf71
+    + 
+
+
+# [Building Android Apps — 30 things that experience made me learn the hard way](https://medium.com/@cesarmcferreira/building-android-apps-30-things-that-experience-made-me-learn-the-hard-way-313680430bf9)
+
+  - Dont add 
+    + 3rd party libraries 
+    + database 
+    + unless you absolutely have to. 
+
+  - There will be performance issues 
+    + check for overdraw. [link](https://riggaroo.co.za/optimizing-layouts-in-android-reducing-overdraw/)
+    + check for 65K method issue. [link](https://medium.com/@rotxed/dex-skys-the-limit-no-65k-methods-is-28e6cb40cf71)
+
+  - Read the full thing. It has some pointers that seem promising but are advanced. 
+  - https://medium.com/@cesarmcferreira/building-android-apps-30-things-that-experience-made-me-learn-the-hard-way-313680430bf9
   - 
-
-
-  
-
-
 
 
 # dashboard 
