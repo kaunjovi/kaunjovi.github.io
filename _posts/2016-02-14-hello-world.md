@@ -7,6 +7,10 @@ categories: howto
 ---
 
 
+# How to for AndroidStudio
+  - Format file on save. 
+  - 
+
 # [Android Development for Beginners](https://www.udacity.com/course/android-development-for-beginners--ud837)
 
 
@@ -27,6 +31,37 @@ Kirill Grouchnikov. Google playstore guy.
   - @ signifies resource 
   - @+id/ is a new resource that you are creating on the spot . 
   - Padding inside. Margin outside. 
+
+# [Lesson 3: Practise set: Building layouts]
+
+  - Install JDK. You are looking for Mac OS x64 version. 
+  - Install AndroidStudio
+  - API 15 - 90% 
+  - NFC - 
+  - Create a new "empty activity"
+
+https://docs.google.com/document/d/1w1Xn_hnSAODAAtdRDp7haYPBtEwX_l7Htpf8Wpgbu6w/pub?embedded=true
+
+
+### Check for java on your mac 
+
+```
+$ java -version 
+java version "1.8.0_31"
+Java(TM) SE Runtime Environment (build 1.8.0_31-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.31-b07, mixed mode)
+```
+
+# [Installing app on phone](https://classroom.udacity.com/courses/ud837/lessons/4034888704/concepts/43534185630923)
+
+- Configure your android phone in developer mode. 
+-   Browse to Settings / About phone / Build Number and click it 7 times. What. Why. 
+-   Now you should see Developer{} available on the phone. 
+-   Turn on USB Debugging. 
+- Connect phone to mac. 
+- Run app from AndroidStudio. Chose to run on the attached phone and not on emulator. 
+
+
 
 
 
