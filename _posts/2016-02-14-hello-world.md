@@ -55,9 +55,9 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.31-b07, mixed mode)
 # [Installing app on phone](https://classroom.udacity.com/courses/ud837/lessons/4034888704/concepts/43534185630923)
 
 - Configure your android phone in developer mode. 
--   Browse to Settings / About phone / Build Number and click it 7 times. What. Why. 
--   Now you should see Developer{} available on the phone. 
--   Turn on USB Debugging. 
+  + Browse to Settings / About phone / Build Number and click it 7 times. What. Why. 
+  + Now you should see Developer{} available on the phone. 
+  + Turn on USB Debugging. 
 - Connect phone to mac. 
 - Run app from AndroidStudio. Chose to run on the attached phone and not on emulator. 
 
