@@ -20,5 +20,7 @@ categories: howto
 </manifest>
 ```
 
-  - Run the gradle build. The Android view should also start working. 
+  - Run the ```gradle build```. The Android view should also start working. 
+  - Run ```gradle installDebug```. At this point the app will **not** show up in the emulator. 
+  - 
 
