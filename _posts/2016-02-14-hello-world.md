@@ -6,6 +6,10 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+# How to open md file in Sublime with md format instead of JavaScript? 
+
+- Open all files with current extension with the markdown extended. 
+
 
 # How to for AndroidStudio
   - Format file on save. 
@@ -60,6 +64,24 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.31-b07, mixed mode)
   + Turn on USB Debugging. 
 - Connect phone to mac. 
 - Run app from AndroidStudio. Chose to run on the attached phone and not on emulator. 
+
+
+### The basic main activity. 
+
+
+package jovi.kaun.myapplication;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
 
 
 

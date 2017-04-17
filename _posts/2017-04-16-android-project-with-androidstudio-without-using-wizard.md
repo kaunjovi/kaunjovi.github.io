@@ -22,5 +22,10 @@ categories: howto
 
   - Run the ```gradle build```. The Android view should also start working. 
   - Run ```gradle installDebug```. At this point the app will **not** show up in the emulator. 
+
+
+### References 
+
+  - https://developer.android.com/training/basics/firstapp/creating-project.html
   - 
 

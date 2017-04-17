@@ -203,18 +203,6 @@ docker run hello-world
 ### What is this yml file all about? 
 TODO 
 
-### Gradle 
-TODO
-
-  - [Home page](http://gradle.org/getting-started-gradle-java/)
-
-### Does Gradle play nice with Eclipse? 
-TODO 
-
-
-
-### Maven vs Gradle 
-TODO 
 
 
 
