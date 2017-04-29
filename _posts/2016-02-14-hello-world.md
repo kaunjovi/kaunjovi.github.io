@@ -9,7 +9,10 @@ categories: howto
 # How to compile .proto file into java using maven? 
 
   - You will need [protoc-jar-maven-plugin](https://github.com/os72/protoc-jar-maven-plugin)
-  - Configure it as below. 
+  - Remember to add protbuf as well. Else the created java files will complain. 
+  - [code](https://github.com/kaunjovi/protobuf)
+
+###1 
 
 ```
 <!-- compile proto file into java files. -->
@@ -41,10 +44,16 @@ categories: howto
 </plugin>
 ```
 
+###2 
 
-http://vlkan.com/blog/post/2015/11/27/maven-protobuf/
-
-
+```
+<!-- protobuf -->
+<dependency>
+  <groupId>com.google.protobuf</groupId>
+  <artifactId>protobuf-java</artifactId>
+  <version>3.2.0</version>
+</dependency>
+```
 
 
 
