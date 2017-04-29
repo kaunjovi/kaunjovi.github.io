@@ -8,11 +8,14 @@ categories: howto
 
 # How to compile .proto file into java using maven? 
 
-  - You will need [protoc-jar-maven-plugin](https://github.com/os72/protoc-jar-maven-plugin)
+  - Create a vanilla maven project. 
+  - Add [protoc-jar-maven-plugin](https://github.com/os72/protoc-jar-maven-plugin)
   - Remember to add protbuf as well. Else the created java files will complain. 
-  - [code](https://github.com/kaunjovi/protobuf)
+  - Add a .proto file. 
+  - Run ```-e clean install``` and you should have a java file created for you by protobuf. 
+  - [The working maven project](https://github.com/kaunjovi/protobuf)
 
-### 1 
+### protoc-jar-maven-plugin 
 
 ```
 <!-- compile proto file into java files. -->
@@ -44,7 +47,7 @@ categories: howto
 </plugin>
 ```
 
-### 2 
+### protobuf 
 
 ```
 <!-- protobuf -->
@@ -55,7 +58,23 @@ categories: howto
 </dependency>
 ```
 
+### proto file
 
+```
+syntax = "proto2";
+
+// This is the package where the java source code will be placed. 
+option java_package = "le.arn";
+
+// This is the name of the class. 
+// If not provided, it will be created as <message name>OuterClass. 
+option java_outer_classname = "GreetingProtos";
+
+message Greeting {
+  required string greeting = 1;
+  
+} 
+```
 
 
 # Use google play in your application. 
