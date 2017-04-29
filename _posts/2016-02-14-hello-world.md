@@ -6,10 +6,156 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+# How to compile .proto file into java using maven? 
+
+  - You will need [protoc-jar-maven-plugin](https://github.com/os72/protoc-jar-maven-plugin)
+  - Configure it as below. 
+
+```
+<!-- compile proto file into java files. -->
+<plugin>
+  <groupId>com.github.os72</groupId>
+  <artifactId>protoc-jar-maven-plugin</artifactId>
+  <version>3.2.0.1</version>
+  <executions>
+    <execution>
+      <phase>generate-sources</phase>
+      <goals>
+        <goal>run</goal>
+      </goals>
+      <configuration>
+        <!-- <includeDirectories> <include>src/main/protobuf</include> </includeDirectories> -->
+        <inputDirectories>
+          <include>src/main/protobuf</include>
+        </inputDirectories>
+        <!-- Create java files. And put them in the src/main/java directory. -->
+        <outputTargets>
+          <outputTarget>
+            <type>java</type>
+            <outputDirectory>src/main/java</outputDirectory>
+          </outputTarget>
+        </outputTargets>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>
+```
+
+
+http://vlkan.com/blog/post/2015/11/27/maven-protobuf/
+
+
+
+
+
+
+# Use google play in your application. 
+
+- Install google play services. 24
+- [What is this thing for?](http://stacktips.com/how-to/installing-google-play-services-in-genymotion-emulator)
+
+# Get location from google play on android application. 
+
+- [Google link](https://classroom.udacity.com/courses/ud876-5/lessons/3987338872/concepts/43346201990923)
+
+### edit build.gradle
+
+```
+compile com....play-services:7+ 
+```
+
+### edit manifest file. 
+
+```
+meta data android name com....gms.version 
+user permission   access fine location 
+```
+
+### sequence of code 
+
+- oncreate create google api client 
+- onstart use google api client to connect to location service 
+- if failed then on connection failed then start again 
+- if suspended then on connection suspended then probably cache some information 
+- if on connected create location request 
+- on location changed get location. 
+- [link for the flow](https://classroom.udacity.com/courses/ud876-5/lessons/3987338872/concepts/43251598620923)
+
+### Create a SHA debug key. 
+
+```
+$ cd ~/.android
+
+$ pwd 
+/Users/parthabhattacharjee/.android
+
+$ keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+Alias name: androiddebugkey
+Creation date: Aug 15, 2015
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Android Debug, O=Android, C=US
+Issuer: CN=Android Debug, O=Android, C=US
+Serial number: 7afc6549
+Valid from: Sat Aug 15 20:29:25 IST 2015 until: Mon Aug 07 20:29:25 IST 2045
+Certificate fingerprints:
+   MD5:  95:AD:DC:9F:2F:5A:61:08:C2:67:8B:1A:77:58:CF:7D
+   SHA1: 3D:3F:32:4C:52:4A:10:BC:E0:AC:71:D6:7B:0C:6F:EE:3B:A5:81:1B
+   SHA256: 49:87:D5:AC:23:71:6B:18:AD:01:6D:7C:9D:B1:81:F5:02:05:79:77:80:50:0A:A4:2E:74:4F:B7:4D:A8:03:2E
+   Signature algorithm name: SHA256withRSA
+   Version: 3
+
+Extensions: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: D6 FE A9 5F 4F BF 5F 8F   23 22 3A 7F A4 9A EA FA  ..._O._.#":.....
+0010: 97 31 8F 2C                                        .1.,
+]
+]
+
+```
+
+login to https://console.developers.google.com/iam-admin/projects
+create project 
+api and auth | apis | google plus api 
+{"installed":{"client_id":"211205559617-jtfo5qbqsub063eqddb782vkhbubjad5.apps.googleusercontent.com","project_id":"hybrid-dominion-165017","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://accounts.google.com/o/oauth2/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","redirect_uris":["urn:ietf:wg:oauth:2.0:oob","http://localhost"]}}
+
+
+
+v_saroha@hotmail.com
+
+# Tips for online presence. 
+
+Highlight. 
+Online courses. 
+
+
+# Where to learn android programming? 
+
+- [Android courses by Google.](https://www.udacity.com/india)
+- [Dont create your user login. Use google.](https://www.udacity.com/course/add-google-sign-in-to-your-android-apps--ud876-5)
+Can we have linkedin provide user login as well. More likely to be verified. 
+What else?? 
+
+
+
 # How to open md file in Sublime with md format instead of JavaScript? 
 
 - Open all files with current extension with the markdown extended. 
 
+
+## [Lesson 1: Create Project Sunshine](https://classroom.udacity.com/courses/ud851/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/338e2164-2dae-4b96-9600-4082ffea10f7)
+
+  - adb shell am start -n com.package.name/com.package.name.ActivityName
+  - Register your stuff in manifest file. 
+
+
+# Android developement tutorials
+
+- [Developing Android Apps by  Google](https://www.udacity.com/course/new-android-fundamentals--ud851)
 
 # How to for AndroidStudio
   - Format file on save. 
