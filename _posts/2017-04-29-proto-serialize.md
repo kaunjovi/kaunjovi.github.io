@@ -8,8 +8,7 @@ categories: howto
 
 # Protobuf for serialization and de-serialization of Java objects.  
 
-  - You need to have the java created by protobuf from proto file. 
-  - [Find the code here.](https://github.com/kaunjovi/protobuf)
+  - You need to have the java created by protobuf from proto file. [code here.](https://github.com/kaunjovi/protobuf)
   - Use protobuf builder to create the java. 
   - Use inbuilt ```writeTo(...)``` to save the flattened object in a file. 
   - Use inbuilt ```parserFrom(...)``` to recreate the object from a file. 
