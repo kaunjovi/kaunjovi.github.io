@@ -12,7 +12,7 @@ categories: howto
   - Remember to add protbuf as well. Else the created java files will complain. 
   - [code](https://github.com/kaunjovi/protobuf)
 
-###1 
+### 1 
 
 ```
 <!-- compile proto file into java files. -->
@@ -44,7 +44,7 @@ categories: howto
 </plugin>
 ```
 
-###2 
+### 2 
 
 ```
 <!-- protobuf -->
