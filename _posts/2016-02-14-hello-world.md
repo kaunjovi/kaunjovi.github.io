@@ -8,73 +8,73 @@ categories: howto
 
 
 
-# How to install Tweepy in Python Virtual Environment? 
-
-```
-$ pwd 
-/Users/parthabhattacharjee/git/python002
-$ virtualenv devenv
-New python executable in /Users/parthabhattacharjee/git/python002/devenv/bin/python
-Installing setuptools, pip, wheel...done.
-$ which python 
-/usr/bin/python
-$ source devenv/bin/activate
-(devenv) $ which python 
-/Users/parthabhattacharjee/git/python002/devenv/bin/python
-(devenv) $ pip install tweepy 
-Collecting tweepy
-  Using cached tweepy-3.5.0-py2.py3-none-any.whl
-Requirement already satisfied: six>=1.7.3 in ./devenv/lib/python2.7/site-packages (from tweepy)
-Collecting requests>=2.4.3 (from tweepy)
-  Downloading requests-2.16.5-py2.py3-none-any.whl (87kB)
-    100% |████████████████████████████████| 92kB 202kB/s 
-Collecting requests-oauthlib>=0.4.1 (from tweepy)
-  Using cached requests_oauthlib-0.8.0-py2.py3-none-any.whl
-Collecting idna<2.6,>=2.5 (from requests>=2.4.3->tweepy)
-  Downloading idna-2.5-py2.py3-none-any.whl (55kB)
-    100% |████████████████████████████████| 61kB 7.2MB/s 
-Collecting urllib3<1.22,>=1.21.1 (from requests>=2.4.3->tweepy)
-  Downloading urllib3-1.21.1-py2.py3-none-any.whl (131kB)
-    100% |████████████████████████████████| 133kB 379kB/s 
-Collecting chardet<3.1.0,>=3.0.2 (from requests>=2.4.3->tweepy)
-  Downloading chardet-3.0.3-py2.py3-none-any.whl (133kB)
-    100% |████████████████████████████████| 143kB 1.7MB/s 
-Collecting certifi>=2017.4.17 (from requests>=2.4.3->tweepy)
-  Downloading certifi-2017.4.17-py2.py3-none-any.whl (375kB)
-    100% |████████████████████████████████| 378kB 495kB/s 
-Collecting oauthlib>=0.6.2 (from requests-oauthlib>=0.4.1->tweepy)
-Installing collected packages: idna, urllib3, chardet, certifi, requests, oauthlib, requests-oauthlib, tweepy
-Successfully installed certifi-2017.4.17 chardet-3.0.3 idna-2.5 oauthlib-2.0.2 requests-2.16.5 requests-oauthlib-0.8.0 tweepy-3.5.0 urllib3-1.21.1
-```
 
 
 # How to access Twitter data from Python? 
 
-[Python libraries to access Twitter](https://dev.twitter.com/resources/twitter-libraries#python)
-[Twitter for Python! Tweepy](https://github.com/tweepy/tweepy)
-[Tweepy does not seem to install on my machine](https://stackoverflow.com/questions/20441931/installing-tweepy-on-os-x  )
+- [Here are a bunch of python libraries to access Twitter data](https://dev.twitter.com/resources/twitter-libraries#python)
+- [Tweepy is Twitter library in Python](https://github.com/tweepy/tweepy)
 
-[They are using Tweepy. That is a problem](https://marcobonzanini.com/2015/03/02/mining-twitter-data-with-python-part-1/)
-[Another one using Tweepy. If only Tweepy will work.](http://pythoncentral.io/introduction-to-tweepy-twitter-for-python/)
+- [They are using Tweepy. That is a problem](https://marcobonzanini.com/2015/03/02/mining-twitter-data-with-python-part-1/)
+- [Another one using Tweepy. If only Tweepy will work.](http://pythoncentral.io/introduction-to-tweepy-twitter-for-python/)
 
-Created the stackoverflow question. Could not get any help yet. 
-It might be that it works with Virtual Environment, because that will not have any lurking permission issue. 
+- [Tweepy does not seem to install on my machine](https://stackoverflow.com/questions/20441931/installing-tweepy-on-os-x  )
 
-## Install Virtual Environment for Python
+### Install Tweepy. In devenv. 
+
+```
+-- where are you. 
+$ pwd 
+/Users/parthabhattacharjee/git/python002
+
+-- call the nice devenv
+$ virtualenv devenv
+New python executable in /Users/parthabhattacharjee/git/python002/devenv/bin/python
+Installing setuptools, pip, wheel...done.
+
+-- check if we loaded the correct python
+$ which python 
+/usr/bin/python
+
+-- bring up the devenv
+$ source devenv/bin/activate
+(devenv) $ which python 
+/Users/parthabhattacharjee/git/python002/devenv/bin/python
+
+-- install tweepy. 
+(devenv) $ pip install tweepy 
+Collecting tweepy
+--
+-- some lines deleted for brevity 
+-- 
+Successfully installed certifi-2017.4.17 chardet-3.0.3 idna-2.5 oauthlib-2.0.2 requests-2.16.5 requests-oauthlib-0.8.0 tweepy-3.5.0 urllib3-1.21.1
+```
+
+### Register the app in Twitter
+
+- https://marcobonzanini.com/2015/03/02/mining-twitter-data-with-python-part-1/
+- Go to https://apps.twitter.com
+- Provide, name - MiningKaunJovi, description, and website. 
+
+- Consumer Key (API Key)  km9ZVmO42qCtcjcukbk4B54qS
+- Consumer Secret (API Secret)  NeURzc08wrGhA0emAxpjdJx8MOK4RsyXBDl4VDADQ6rLKTQub6
 
 
-http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/
-https://tinwhiskers.net/setting-up-your-python-environment-with-pip-virtualenv-and-pycharm-mac/
+
+
+### Install Virtual Environment for Python
 
 
 ```bash
-sudo pip install virtualenv
+
+-- Install virtualenv
+
+$ sudo pip install virtualenv
 
 $ virtualenv --version 
 15.1.0
 
-$ pwd 
-/Users/parthabhattacharjee/git/python002
+-- go to the folder where you want to create your project. 
 
 $ pwd 
 /Users/parthabhattacharjee/git/python002
@@ -95,23 +95,55 @@ $ which python
 $ source devenv/bin/activate
 (devenv) $ which python 
 /Users/parthabhattacharjee/git/python002/devenv/bin/python
-(devenv) $ 
 
+-- Now you can run your code for this virtual env. 
 
+(devenv) $ python hello.py
+Hello world
+
+-- Once you are done you can come out of the dev Environment
+
+(devenv) $ deactivate
+
+-- back here your python has shifted back to the system Python
+
+$ which python 
+/usr/bin/python
 
 ```
 
-
-http://technologist.pro/development/developing-in-python-using-python-virtual-environments
-
-
-# How to user Virtual Environment from Sublime? 
-
-Apparently Virtual Environment works nice with Sublime. Thank god. 
+- http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/
+- https://tinwhiskers.net/setting-up-your-python-environment-with-pip-virtualenv-and-pycharm-mac/
+- http://technologist.pro/development/developing-in-python-using-python-virtual-environments
 
 
-[Using Python Virtual Environments with Sublime Text](http://technologist.pro/development/using-python-virtual-environments-with-sublime-text)
-[VirtualEnv Builds in Sublime Text 3](https://inkdroid.org/2015/05/05/virtualenv-builds-in-sublime-text-3/)
+### Virtual Environment with Sublime
+
+- [Using Python Virtual Environments with Sublime Text](http://technologist.pro/development/using-python-virtual-environments-with-sublime-text)
+- [VirtualEnv Builds in Sublime Text 3](https://inkdroid.org/2015/05/05/virtualenv-builds-in-sublime-text-3/)
+
+```
+{
+  "build_systems":
+  [
+    {
+      "name": "PYTHON_VENV",
+      "shell_cmd": "env/bin/python"
+    }
+  ],
+  "folders":
+  [
+    {
+      "path": "."
+    },
+    {
+      "path": "/Users/parthabhattacharjee/kaunjovi.github.io/_posts"
+    }
+  ],
+  "virtualenv": "/Users/parthabhattacharjee/git/python002/devenv"
+}
+
+```
 
 
 
