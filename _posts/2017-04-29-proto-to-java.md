@@ -18,7 +18,7 @@ categories: howto
 
 ### protoc-jar-maven-plugin 
 
-```
+```xml
 <!-- compile proto file into java files. -->
 <plugin>
   <groupId>com.github.os72</groupId>
@@ -50,7 +50,7 @@ categories: howto
 
 ### protobuf 
 
-```
+```xml
 <!-- protobuf -->
 <dependency>
   <groupId>com.google.protobuf</groupId>
@@ -76,4 +76,3 @@ message Greeting {
   
 } 
 ```
-

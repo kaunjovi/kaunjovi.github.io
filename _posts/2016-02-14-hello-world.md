@@ -7,7 +7,45 @@ categories: howto
 ---
 
 
+### Pick values from prop files that are not checked in the github. 
 
+- We will need to put in passwords etc. We cant have them in the file that we upload in github. 
+- We will need some properties file or likes that can be kept in the .gitignore files / folders. 
+- [Would this work?](https://stackoverflow.com/questions/3595363/properties-file-in-python-similar-to-java-properties)
+- [configparser - this might help with config values](https://docs.python.org/3/library/configparser.html)
+- 
+
+- Install configparser in developement virtualenv
+
+```
+$ pwd 
+/Users/parthabhattacharjee/git/python002
+$ source devenv/bin/activate
+(devenv) $ pip install configparser
+Collecting configparser
+  Downloading configparser-3.5.0.tar.gz
+Building wheels for collected packages: configparser
+  Running setup.py bdist_wheel for configparser ... done
+  Stored in directory: /Users/parthabhattacharjee/Library/Caches/pip/wheels/1c/bd/b4/277af3f6c40645661b4cd1c21df26aca0f2e1e9714a1d4cda8
+Successfully built configparser
+Installing collected packages: configparser
+Successfully installed configparser-3.5.0
+(devenv) $ pip freeze
+appdirs==1.4.3
+certifi==2017.4.17
+chardet==3.0.3
+configparser==3.5.0
+idna==2.5
+oauthlib==2.0.2
+packaging==16.8
+pyparsing==2.2.0
+requests==2.16.5
+requests-oauthlib==0.8.0
+six==1.10.0
+tweepy==3.5.0
+urllib3==1.21.1
+(devenv) $ 
+```
 
 
 # How to access Twitter data from Python? 
@@ -53,13 +91,14 @@ Successfully installed certifi-2017.4.17 chardet-3.0.3 idna-2.5 oauthlib-2.0.2 r
 ### Register the app in Twitter
 
 - https://marcobonzanini.com/2015/03/02/mining-twitter-data-with-python-part-1/
-- Go to https://apps.twitter.com
+- [Go to apps twitter](https://apps.twitter.com)
 - Provide, name - MiningKaunJovi, description, and website. 
-
-- Consumer Key (API Key)  km9ZVmO42qCtcjcukbk4B54qS
-- Consumer Secret (API Secret)  NeURzc08wrGhA0emAxpjdJx8MOK4RsyXBDl4VDADQ6rLKTQub6
-
-
+- You will get 
+  + Consumer Key (API Key)  
+  + Consumer Secret (API Secret)  
+  + access_token
+  + access_token_secret
+- Try to get only read access. You can never be too careful. 
 
 
 ### Install Virtual Environment for Python
