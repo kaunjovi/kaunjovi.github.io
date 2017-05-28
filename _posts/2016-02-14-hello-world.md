@@ -6,75 +6,366 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
-# How to compile .proto file into java using maven? 
 
-  - Create a vanilla maven project. 
-  - Add [protoc-jar-maven-plugin](https://github.com/os72/protoc-jar-maven-plugin)
-  - Remember to add protbuf as well. Else the created java files will complain. 
-  - Add a .proto file. 
-  - Run ```-e clean install``` and you should have a java file created for you by protobuf. 
-  - [The working maven project](https://github.com/kaunjovi/protobuf)
 
-### protoc-jar-maven-plugin 
+# How to install Tweepy in Python Virtual Environment? 
 
 ```
-<!-- compile proto file into java files. -->
-<plugin>
-  <groupId>com.github.os72</groupId>
-  <artifactId>protoc-jar-maven-plugin</artifactId>
-  <version>3.2.0.1</version>
-  <executions>
-    <execution>
-      <phase>generate-sources</phase>
-      <goals>
-        <goal>run</goal>
-      </goals>
-      <configuration>
-        <!-- <includeDirectories> <include>src/main/protobuf</include> </includeDirectories> -->
-        <inputDirectories>
-          <include>src/main/protobuf</include>
-        </inputDirectories>
-        <!-- Create java files. And put them in the src/main/java directory. -->
-        <outputTargets>
-          <outputTarget>
-            <type>java</type>
-            <outputDirectory>src/main/java</outputDirectory>
-          </outputTarget>
-        </outputTargets>
-      </configuration>
-    </execution>
-  </executions>
-</plugin>
+$ pwd 
+/Users/parthabhattacharjee/git/python002
+$ virtualenv devenv
+New python executable in /Users/parthabhattacharjee/git/python002/devenv/bin/python
+Installing setuptools, pip, wheel...done.
+$ which python 
+/usr/bin/python
+$ source devenv/bin/activate
+(devenv) $ which python 
+/Users/parthabhattacharjee/git/python002/devenv/bin/python
+(devenv) $ pip install tweepy 
+Collecting tweepy
+  Using cached tweepy-3.5.0-py2.py3-none-any.whl
+Requirement already satisfied: six>=1.7.3 in ./devenv/lib/python2.7/site-packages (from tweepy)
+Collecting requests>=2.4.3 (from tweepy)
+  Downloading requests-2.16.5-py2.py3-none-any.whl (87kB)
+    100% |████████████████████████████████| 92kB 202kB/s 
+Collecting requests-oauthlib>=0.4.1 (from tweepy)
+  Using cached requests_oauthlib-0.8.0-py2.py3-none-any.whl
+Collecting idna<2.6,>=2.5 (from requests>=2.4.3->tweepy)
+  Downloading idna-2.5-py2.py3-none-any.whl (55kB)
+    100% |████████████████████████████████| 61kB 7.2MB/s 
+Collecting urllib3<1.22,>=1.21.1 (from requests>=2.4.3->tweepy)
+  Downloading urllib3-1.21.1-py2.py3-none-any.whl (131kB)
+    100% |████████████████████████████████| 133kB 379kB/s 
+Collecting chardet<3.1.0,>=3.0.2 (from requests>=2.4.3->tweepy)
+  Downloading chardet-3.0.3-py2.py3-none-any.whl (133kB)
+    100% |████████████████████████████████| 143kB 1.7MB/s 
+Collecting certifi>=2017.4.17 (from requests>=2.4.3->tweepy)
+  Downloading certifi-2017.4.17-py2.py3-none-any.whl (375kB)
+    100% |████████████████████████████████| 378kB 495kB/s 
+Collecting oauthlib>=0.6.2 (from requests-oauthlib>=0.4.1->tweepy)
+Installing collected packages: idna, urllib3, chardet, certifi, requests, oauthlib, requests-oauthlib, tweepy
+Successfully installed certifi-2017.4.17 chardet-3.0.3 idna-2.5 oauthlib-2.0.2 requests-2.16.5 requests-oauthlib-0.8.0 tweepy-3.5.0 urllib3-1.21.1
 ```
 
-### protobuf 
+
+# How to access Twitter data from Python? 
+
+[Python libraries to access Twitter](https://dev.twitter.com/resources/twitter-libraries#python)
+[Twitter for Python! Tweepy](https://github.com/tweepy/tweepy)
+[Tweepy does not seem to install on my machine](https://stackoverflow.com/questions/20441931/installing-tweepy-on-os-x  )
+
+[They are using Tweepy. That is a problem](https://marcobonzanini.com/2015/03/02/mining-twitter-data-with-python-part-1/)
+[Another one using Tweepy. If only Tweepy will work.](http://pythoncentral.io/introduction-to-tweepy-twitter-for-python/)
+
+Created the stackoverflow question. Could not get any help yet. 
+It might be that it works with Virtual Environment, because that will not have any lurking permission issue. 
+
+## Install Virtual Environment for Python
+
+
+http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/
+https://tinwhiskers.net/setting-up-your-python-environment-with-pip-virtualenv-and-pycharm-mac/
+
+
+```bash
+sudo pip install virtualenv
+
+$ virtualenv --version 
+15.1.0
+
+$ pwd 
+/Users/parthabhattacharjee/git/python002
+
+$ pwd 
+/Users/parthabhattacharjee/git/python002
+
+-- Create a virtualenv. Pick any name. 
+
+$ virtualenv devenv
+New python executable in /Users/parthabhattacharjee/git/python002/devenv/bin/python
+Installing setuptools, pip, wheel...done.
+
+-- This is the system python
+
+$ which python 
+/usr/bin/python
+
+-- Activate the virtual ennvironment that you created. 
+
+$ source devenv/bin/activate
+(devenv) $ which python 
+/Users/parthabhattacharjee/git/python002/devenv/bin/python
+(devenv) $ 
+
+
 
 ```
-<!-- protobuf -->
-<dependency>
-  <groupId>com.google.protobuf</groupId>
-  <artifactId>protobuf-java</artifactId>
-  <version>3.2.0</version>
-</dependency>
-```
 
-### proto file
 
-```
-syntax = "proto2";
+http://technologist.pro/development/developing-in-python-using-python-virtual-environments
 
-// This is the package where the java source code will be placed. 
-option java_package = "le.arn";
 
-// This is the name of the class. 
-// If not provided, it will be created as <message name>OuterClass. 
-option java_outer_classname = "GreetingProtos";
+# How to user Virtual Environment from Sublime? 
 
-message Greeting {
-  required string greeting = 1;
+Apparently Virtual Environment works nice with Sublime. Thank god. 
+
+
+[Using Python Virtual Environments with Sublime Text](http://technologist.pro/development/using-python-virtual-environments-with-sublime-text)
+[VirtualEnv Builds in Sublime Text 3](https://inkdroid.org/2015/05/05/virtualenv-builds-in-sublime-text-3/)
+
+
+
+## How do I know if tweepy is successfully installed on my machine? 
+## How to find out what all libraries are installed in my machine using pip? 
+## Where are the libraries installed by pip in my machine? 
+
+
+pip freeze 
+
+
+
+
+# Which all packages do I have in my Sublime? 
+
+# How to install Anaconda in Sublime? 
+
+[What all does Anaconda get for me in Sublime?](http://damnwidget.github.io/anaconda/)
+
+
+$ echo "export PATH=~/bin:$PATH" >> ~/.profile
+
+S3cure123
+S3cure098
+
+
+
+# Big Data 
+[Big Data and Hadoop Essentials on Udemy](https://www.udemy.com/cart/subscribe/course/225796/)
+
+Volume 
+Variety : Not strictly structured data. 
+Velocity : Rate of growth of data. 
+
+Data acts as DSS for an organisation. Decision Sypport System. 
+
+Digital nervous system
+Sense > Interpret > Decide > Act 
+
+Doug and Mike 
+
+- Challanges of BigData 
+  - Storage : store stuff that is suitable for computation. 
+  - Computational Efficiency : 
+  - Data loss 
+  - Cost 
+
+# Kafka 
+
+[this is a 2 part series. TODO](https://www.linkedin.com/pulse/kafka-streams-part-2-vishnu-viswanath?trk=v-feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BxFPgkg0tBf0TVJ%2B%2BSGNc%2Bg%3D%3D)
+
+
+# Hadoop 
+
+[Big Data and Hadoop Essentials on Udemy](https://www.udemy.com/cart/subscribe/course/225796/)
+[Hadoop Starter Kit](https://www.udemy.com/hadoopstarterkit/)
+
+- Hadoop vs 
+  + RDBMS 
+  + Grid computing 
   
-} 
+
+
+
+MapReduce 
+HDFS 
+Name node manages the file system. 
+Data nodes 
+
+Map is distributed amongst Nodes. 
+Reduce is only in one. 
+
+Code moves to the data. 
+On read schema ? 
+
+Pig : scripting language for data scientists. 
+Hive : SQL like stuff on MapReduce. Get reduced to MapReduce jobs. 
+Sqoop / Flume : 
+HBase : 
+
+
+# Mahout 
+
+# NoSQL 
+
+
+
+# Spark
+
+
+
+
+# zookeeper
+
+http://www.tutorialspoint.com/zookeeper/
+
+
+# Song 
+
+[Kichudine mone mone](https://www.youtube.com/watch?v=Eg4RR8L74m4)
+
+
+# Quant
+
+The common choices of modelling languages these days include 
+R, the open-source statistical language; 
+Python, with its extensive data analysis libraries; 
+or MatLab. 
+
+
+[The Self Learning Quant](https://hackernoon.com/the-self-learning-quant-d3329fcc9915)
+
+# R 
+
+
+# Python
+
+- [Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science)
+- [seems to be a good hands on tutorial. TODO](https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-data-science-python-scratch-2/)
+- [Is it by the python author?](http://python-history.blogspot.in/2009/01/pythons-design-philosophy.html)
+- [Programming Foundations with Python](https://in.udacity.com/course/programming-foundations-with-python--ud036/)
+- [Introduction to Python for Data Science by edX](https://www.edx.org/course/introduction-python-data-science-microsoft-dat208x-5)
+- [Python from codecademy](https://www.codecademy.com/learn/python)
+- [Quickstart tutorial SciPy](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
+- [Nice discussion on quora](https://www.quora.com/How-should-I-start-learning-Python-for-Data-Science)
+- [The Case Against Python 3](https://learnpythonthehardway.org/book/nopython3.html)
+
+## Python | pip 
+pip (package manager for Python)
+[How to install pip on mac](https://stackoverflow.com/questions/17271319/how-do-i-install-pip-on-macos-or-os-x)
+
 ```
+$ python --version 
+Python 2.7.10
+
+$ pip -V
+pip 9.0.1 from /Library/Python/2.7/site-packages (python 2.7)
+
+```
+
+## Python, offline books 
+
+- [Book | Python for dummies](http://file.allitebooks.com/20151226/Python%20for%20Data%20Science%20For%20Dummies.pdf)
+- [Book | Python for Data Analysis](http://www.cin.ufpe.br/~embat/Python%20for%20Data%20Analysis.pdf)
+
+## Python | Installing through Anaconda bundle. 
+
+- [Anaconda, home page](https://www.continuum.io/downloads)
+- [youtube tutorial for installing Anaconda](https://www.youtube.com/watch?v=YJC6ldI3hWk)
+
+## Python | code practice 
+
+- https://codefights.com
+
+## Python | LinkedIn API 
+
+- http://thinktostart.com/download-your-linkedin-contacts-with-python/
+
+
+# LinkedIn | Get API key 
+
+http://thinktostart.com/download-your-linkedin-contacts-with-python/
+https://www.linkedin.com/developer/apps/4907001/auth
+Client ID:  75ebx4yydlmmjt
+Client Secret:  SwL9nNWccTOzaXs0
+
+
+
+
+## How to install in mac.
+It is already there. 
+However, there are articles about one shoul install  
+## Is there an IDE that we could / should use. 
+
+
+
+[there is one tutorial. check it out later](https://www.codecademy.com/courses/introduction-to-python-6WeG3/0/1?curriculum_id=4f89dab3d788890003000096)
+[there is only first part free](https://www.codeschool.com/learn/python)
+[some python stuff that I did not understand](https://hackernoon.com/the-self-learning-quant-d3329fcc9915)
+
+
+# R vs Python 
+
+[Choosing R or Python for data analysis?](https://www.datacamp.com/community/tutorials/r-or-python-for-data-analysis#gs.QIr7Jac)
+
+
+
+# MNIST. the “Hello World” of machine learning
+
+MNIST database (Modified National Institute of Standards and Technology database) 
+It is a large database of handwritten digits 
+MNIST is a database containing images of handwritten digits, with each image labeled by integer. 
+
+Deeplearning4j is a domain-specific language to configure deep neural networks, which are made of multiple layers. Everything starts with a MultiLayerConfiguration, which organizes those layers and their hyperparameters.
+
+- Hyperparameters are variables that determine how a neural network learns. 
+  - how many times to update the weights of the model, 
+  - how to initialize those weights, 
+  - which activation function to attach to the nodes, 
+  - which optimization algorithm to use, and 
+  - how fast the model should learn.
+
+you train the model with ```model.fit```
+
+[The hello world of machine learning.](https://deeplearning4j.org/mnist-for-beginners)
+[quickstart of deeplearning4j](https://deeplearning4j.org/quickstart)
+
+
+# coursera on neural networks 
+
+https://www.coursera.org/learn/machine-learning/lecture/zcAuT/welcome-to-machine-learning
+
+What is machine learning? You probably use it dozens of times a day without even knowing it. Each time you do a web search on Google or Bing, that works so well because their machine learning software has figured out how to rank what pages. When Facebook or Apple's photo application recognizes your friends in your pictures, that's also machine learning. Each time you read your email and a spam filter saves you from having to wade through tons of spam, again, that's because your computer has learned to distinguish spam from non-spam email. So, that's machine learning. There's a science of getting computers to learn without being explicitly programmed. One of the research projects that I'm working on is getting robots to tidy up the house. How do you go about doing that? Well what you can do is have the robot watch you demonstrate the task and learn from that. The robot can then watch what objects you pick up and where to put them and try to do the same thing even when you aren't there. For me, one of the reasons I'm excited about this is the AI, or artificial intelligence problem. Building truly intelligent machines, we can do just about anything that you or I can do. Many scientists think the best way to make progress on this is through learning algorithms called neural networks, which mimic how the human brain works, and I'll teach you about that, too. In this class, you learn about machine learning and get to implement them yourself. I hope you sign up on our website and join us. 
+
+
+
+
+# deep learning or deep structured learning or deep machine learning
+
+Is a class of machine learning algorithms
+
+[wikipedia, of course](https://en.wikipedia.org/wiki/Deep_learning)
+[Seems to be java friendly](https://deeplearning4j.org/quickstart.html)
+
+# machine learning 
+
+
+
+K Means Clustering ? what the heck is that ? 
+IRIS dataset ? what the heck is that ? 
+
+
+First select a tool.if you are not a programmer and lazy like me I would suggest Weka,because it provides a GUI. If you are a programmer I would suggest scikit learn in python.R too is good. 
+Then to get your hands dirty you can download dataset from Uci ML repository.try the iris classification problem.scikit learn already has the dataset.another problem you can try is to identify hand written digits using the MNIST dataset.
+
+
+Tom Mitchell's Machine Learning - understanding concepts. 
+which I think is a great read for understanding the concepts, not as much for code examples though) have used the dataset for the "Play Tennis" example as an introduction to Machine Learning. 
+
+What the fk is that? 
+https://www.quora.com/Whats-the-Hello-World-program-of-machine-learning
+https://in.udacity.com/course/machine-learning-engineer-nanodegree--nd009/
+
+
+# Fan-tastick rickshaw 
+
+Auto rickshaws or autos 
+
+[click here](https://pragprog.com/the-pragmatic-programmer/extracts/software-entropy)
+
+
+https://en.wikipedia.org/wiki/Public_transport_in_Mumbai
+
+
 
 
 # Use google play in your application. 
