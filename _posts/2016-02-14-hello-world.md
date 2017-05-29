@@ -7,6 +7,97 @@ categories: howto
 ---
 
 
+### Python for Data Science
+
+- [Python For Data Science Cheat Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PythonForDataScience.pdf)
+- [DataCamp, Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science)
+- IPython. Interactive Python. 
+- [Chapter 1](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics?ex=2)
+
+# Install Python 3 in Mac. 
+
+- [Installing Python 3 on Mac OS X](http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/osx/)
+- Package managr for OSX. Homebrew. 
+- [Some eccentricities of Homebrew. Do the brew doctor and follow those steps.](http://techqa.info/programming/question/37488439/brew-install-python-for-scrapy---symlink-&-permission-issues)
+- Install Python3 and pip3. 
+- Install virtualenv
+- Create a dev folder. Cd to that. Create a virtualenv. It will put Python3 in the folder. 
+- https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics?ex=9
+
+
+```
+-- Homebrew. The package manager for OSX. 
+$ brew --version
+Homebrew 0.9.5 (git revision 92c6c; last commit 2015-09-22)
+
+-- Install Python3. 
+$ brew install python3
+--
+-- There might be few issues. Use brew doctor for help. 
+--
+
+-- Check the version of Python3
+$ python3 --version 
+Python 3.6.1
+
+-- You should have pip3 as well. 
+$ pip3 --version 
+pip 9.0.1 from /usr/local/lib/python3.6/site-packages (python 3.6)
+
+-- Install virtualenv
+$ pip3 install virtualenv
+Successfully installed virtualenv-15.1.0
+$ virtualenv --version
+15.1.0
+
+-- Go to your dev folder and create a virtualenv
+$ pwd 
+/Users/parthabhattacharjee/git/python003
+$ virtualenv devenv
+Using base prefix '/usr/local/Cellar/python3/3.6.1/Frameworks/Python.framework/Versions/3.6'
+New python executable in /Users/parthabhattacharjee/git/python003/devenv/bin/python3.6
+Also creating executable in /Users/parthabhattacharjee/git/python003/devenv/bin/python
+Installing setuptools, pip, wheel...done.
+
+-- Activate virtualenv
+$ pwd 
+/Users/parthabhattacharjee/git/python003
+$ source devenv/bin/activate
+(devenv) $ 
+
+
+
+```
+
+
+## Download songs using python
+
+- [investigate. there is something wrong with unicode_literals](https://stackoverflow.com/questions/27473526/download-only-audio-from-youtube-video-using-youtube-dl-in-python-script)
+
+### Install unicode_literals 
+
+- why? 
+- Why is that weird from __future__ 
+- Why does it not install with pip 
+
+```
+(devenv) $ pip install unicode_literals
+Collecting unicode_literals
+  Could not find a version that satisfies the requirement unicode_literals (from versions: )
+No matching distribution found for unicode_literals
+```
+
+### Install youtube dl 
+
+```
+(devenv) $ pip install youtube_dl
+Collecting youtube_dl
+  Downloading youtube_dl-2017.5.29-py2.py3-none-any.whl (1.6MB)
+    100% |████████████████████████████████| 1.6MB 367kB/s 
+Installing collected packages: youtube-dl
+Successfully installed youtube-dl-2017.5.29
+```
+
 ### Pick values from prop files that are not checked in the github. 
 
 - We will need to put in passwords etc. We cant have them in the file that we upload in github. 
