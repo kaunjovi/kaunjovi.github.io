@@ -29,6 +29,21 @@ months.append(2)
 months.append("February")
 ```
 
+```python
+countries = []
+countries.append("China")
+countries.append("India")
+countries.append("United States") 
+
+temperatures = [] 
+temperatures.append(122.5) 
+temperatures.append(124.0) 
+temperatures.append(134.1) 
+
+print (countries) 
+print (temperatures)
+```
+
 # Install Python 3 in Mac. 
 
 - [Installing Python 3 on Mac OS X](http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/osx/)
