@@ -27,6 +27,9 @@ months.append(1) # How the heck does that work. These are things that cause bugs
 months.append("January")
 months.append(2)
 months.append("February")
+
+# or you could do this in one line. 
+temps = ["China", 122.5, "India", 124.0, "United States", 134.1]
 ```
 
 ```python
