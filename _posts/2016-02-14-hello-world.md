@@ -9,10 +9,25 @@ categories: howto
 
 ### Python for Data Science
 
+
 - [Python For Data Science Cheat Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PythonForDataScience.pdf)
-- [DataCamp, Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science)
+- [DataCamp, Intro to Python for Data Science. Just the first chatpter. Not too useful](https://www.datacamp.com/courses/intro-to-python-for-data-science)
 - IPython. Interactive Python. 
 - [Chapter 1](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics?ex=2)
+- [Dataquest | Python basics](https://www.dataquest.io/m/1/python-basics)
+
+## Python List 
+
+list, which is an object that represents a sequence of values
+
+```python
+# months is an empty list (contains no values).
+months = []
+months.append(1) # How the heck does that work. These are things that cause bugs. 
+months.append("January")
+months.append(2)
+months.append("February")
+```
 
 # Install Python 3 in Mac. 
 
