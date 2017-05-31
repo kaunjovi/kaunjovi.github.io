@@ -16,7 +16,7 @@ categories: howto
 - [Chapter 1](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics?ex=2)
 - [Dataquest | Python basics](https://www.dataquest.io/m/1/python-basics)
 
-## Python List 
+## Python List, 0 based arrays. 
 
 list, which is an object that represents a sequence of values
 
@@ -30,6 +30,15 @@ months.append("February")
 
 # or you could do this in one line. 
 temps = ["China", 122.5, "India", 124.0, "United States", 134.1]
+
+# And you can get the length 
+len(temps)
+
+# You could also get slices. 
+# Values at index 2, 3, but not 4.
+two_four = months[2:4]
+three_six = months[3:ending_index]
+
 ```
 
 ```python
