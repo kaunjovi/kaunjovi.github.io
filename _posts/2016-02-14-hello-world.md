@@ -6,6 +6,48 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+# Use nodejs with Express 4 
+
+This is required. The node starter with heroku is created with Express 4. 
+
+
+# Getting Started on Heroku with Node.js
+
+- https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
+- Install nodejs and npm. 
+- Get a free heroku account. kaunjovi
+
+```
+$ node --version 
+v6.9.5
+$ npm --version 
+3.10.10
+```
+
+```
+$ heroku login
+Enter your Heroku credentials.
+Email: kaunjovi@gmail.com
+Password (typing will be hidden): 
+Logged in as kaunjovi@gmail.com
+
+$ heroku create qse
+```
+
+Clone the starter nodejs example of heroku. 
+Remove the existing .git file. 
+
+```
+git clone https://github.com/heroku/node-js-getting-started.git
+cd node-js-getting-started/
+rm -rf .git 
+```
+
+- Create an app in Herku. Choose a name. 
+- Got to the Heroku admin panel. Choose build to be done automatically from github push. 
+- Really happy to see that I can push code from Sublime to GitHub and that will make it available to the world on Heroku. Awesome. 
+
+
 
 # mLab MongoDB 
 
