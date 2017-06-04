@@ -7,14 +7,170 @@ categories: howto
 ---
 
 
-### Python for Data Science
 
+
+# Storj - pronounced Storage. 
+
+- Needs further reading. But on the first read did not seem to be a DB in the conventional sense. 
+- This is giving 5 GB for free. [home page](https://elements.heroku.com/addons/storj)
+- Might be useful to provide caching of the json 
+- How to use this? 
+- [Using Storj Add-on with Heroku](https://devcenter.heroku.com/articles/storj#using-storj-add-on-with-heroku)
+- [Local setup](https://devcenter.heroku.com/articles/storj#local-setup)
+- [Using with Node.js](https://devcenter.heroku.com/articles/storj#using-with-node-js)
+
+
+
+# How to get stock data
+
+[jarloo](http://www.jarloo.com/real-time-google-stock-api/)
+Does jarloo have a python client 
+
+
+
+Visual Studio Code 
+
+
+
+# Add in twitter 
+john papa @john_papa
+ward bell @WardBell 
+
+
+
+
+
+
+AngularJS : Getting started. 
+
+https://app.pluralsight.com/player?course=angularjs-get-started&author=scott-allen&name=angularjs-get-started-m0&clip=0
+
+- builtwith.angularjs.com 
+- plnkr.co 
+
+
+# Angular 2 getting started
+
+Install npm. Version 3 or above. 
+
+```
+$ node --version 
+v6.9.5
+$ npm --version 
+3.10.10
+```
+
+
+# https://app.pluralsight.com/player?course=play-by-play-angular-2-quick-start-john-papa-ward-bell&author=john-papa&name=play-by-play-angular-2-quick-start-john-papa-ward-bell-m0&clip=0&mode=live
+
+
+## How to get an ng2 archetype quickly on you machine. 
+
+```
+// Create the directory where you need this code. 
+mkdir ng2001
+
+// Clone the starter code here. 
+git clone https://github.com/angular/quickstart ng2001
+
+// Get in it and de-gitify it. We will add our git things here later. 
+cd ng2001
+rm -rf .git
+
+// Create a local git for this code. We will add it to our github later. 
+git init
+git add . 
+git commit -m "just getting warmed up"
+
+```
+
+You might want to delete the changelog and readme as well. 
+
+There is of course the CLI (Command line interface). But it is too suave for me. 
+
+!!! command K - clear screen . 
+
+### How to get the dependencies for the archetype
+
+```
+// download npm dependencies. 
+npm i 
+
+```
+
+This should get you node_modules folder in the project with all the goodies. 
+
+```
+npm run preprotractor
+```
+
+This does something that I am not too clear about. This is one time stuff. Something about updating selenium driver. 
+
+selenium - testing engine
+webdriver - lets selenium talk to browser 
+protractor - glue for these to make them work with ng2 
+
+### Does it work at all 
+
+npm run start 
+
+It will open the browser as well and show the hello world. 
+
+You have already got live reload working on it. Change something and it will show up without browser update. 
+
+Love the way installing an extension is helpful in Visual code. 
+Although it feels a bit slower there. 
+Evaluate Sublime for TS programming as well. 
+
+
+!!! command shift = 
+!!! command click = open the related component file. 
+
+Get wallaby to work. It looks awesome. 
+
+
+Emmet - what is that? What does it do? 
+
+
+
+
+
+
+## Getting started with Node.js
+What is in Nodes
+  libuv - high performance. cross platform. Evented?? library. Took off various unix only libraries. Allows it to be used in Windows. 
+  v8 - js engine of chrome. 
+  js and c++ - developed for the node itself. 
+
+What is the nvm. Do I need it. 
+What is cloud9. Do I need it. 
+
+
+var foo = require('foo')
+foo.value ; 
+foo.behaviour()
+
+var Bar = require('Bar')
+var obj = new Bar()
+
+
+fs 
+http
+crypto 
+os 
+
+each .js is a module 
+var code = require('./somewhere/mycode') 
+
+
+
+### Python for Data Science
 
 - [Python For Data Science Cheat Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PythonForDataScience.pdf)
 - [DataCamp, Intro to Python for Data Science. Just the first chatpter. Not too useful](https://www.datacamp.com/courses/intro-to-python-for-data-science)
 - IPython. Interactive Python. 
-- [Chapter 1](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics?ex=2)
-- [Dataquest | Python basics](https://www.dataquest.io/m/1/python-basics)
+
+- [Dataquest | Python basics | Paid](https://www.dataquest.io/m/1/python-basics)
 
 ## Python List, 0 based arrays. 
 
@@ -23,10 +179,11 @@ list, which is an object that represents a sequence of values
 ```python
 # months is an empty list (contains no values).
 months = []
-months.append(1) # How the heck does that work. These are things that cause bugs. 
+months.append(1) # How the heck does that work. These are things that cause bugs.
 months.append("January")
 months.append(2)
 months.append("February")
+```
 
 # or you could do this in one line. 
 temps = ["China", 122.5, "India", 124.0, "United States", 134.1]
