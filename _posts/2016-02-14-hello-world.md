@@ -6,6 +6,493 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+
+# [machine learning](https://app.pluralsight.com/player?course=understanding-machine-learning&author=david-chappell&name=understanding-machine-learning-m2&clip=1&mode=live)
+
+
+
+
+
+
+# Symphony
+
+- http://www.economist.com/news/21664904-consortium-banks-have-15-competitor-bloombergs-1700-product-symphony-chat-service
+- Competitor - Slack, email 
+- Symphony’s ownership syndicate, which also includes Bank of America, BlackRock, Citi, JPMorgan, Morgan Stanley and other usual suspects.
+- Three companies have agreed to provide news and data to Symphony’s initial release: Dow Jones, Standard & Poor’s Capital IQ, and Selerity,
+- all messages on Symphony will be copied and held by an independent entity for at least seven years.
+
+# Links 
+
+[dilbert](http://dilbert.com)
+[The Wall Street Journal](https://www.wsj.com)
+
+
+
+
+
+# REST
+
+- / is important. It is not required at the end of the line. It is required to show hierarchy. 
+- Dash-should-be-used-for-readibility (spinal case). Underscore_to_be_avoided (snake case).
+- lowercase is better than UPPERCASE. 
+- There are no files and hence there are no file extensions in URIs 
+- /spies are all the spies. /spies/007 is one of them. /spies/007/victims is a long list. 
+- REST is for consumers. REST is not for underlying data structure. 
+
+- [7 Rules for REST API URI Design](https://dzone.com/articles/7-rules-for-rest-api-uri-design-1?edition=305155&utm_source=weekly%20digest&utm_medium=email&utm_campaign=wd%202017-06-28) 
+- [Lengthy. Could be exhaustive. Check when there is time. 5 Basic REST API Design Guidelines](http://blog.restcase.com/5-basic-rest-api-design-guidelines/)
+
+
+
+
+# REST in MEAN on Heroku
+
+- https://devcenter.heroku.com/articles/mean-apps-restful-api
+- [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
+- 
+
+
+
+http://finance.google.com/finance/info?client=ig&q=NSE:NIFTY,NSE:RELIANCE
+
+
+# Can you pull data from a 3rd party and put it in mlab? 
+
+Provider. http://services.groupkt.com/country/get/all
+
+Country 
+  name 
+  alpha2_code 
+  alpha3_code 
+
+Install heroku client
+
+
+mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=5-SNAPSHOT
+
+
+```
+$ heroku apps --all
+=== kaunjovi@gmail.com Apps
+fetch-qse-data
+```
+
+heroku git:remote -a fetch-qse-data
+heroku run "sh target/bin/fetchQSEData"
+
+
+mongodb://alibaba:40chor@ds131512.mlab.com:31512/pine
+
+
+
+# Scheduler 
+https://devcenter.heroku.com/articles/scheduler
+cron 
+
+
+
+
+# Jersey - 
+[RESTFul Services in Java using Jersey](https://app.pluralsight.com/library/courses/restful-services-java-using-jersey/table-of-contents)
+[Jersey, Heroku, maven-archetype](https://blog.dejavu.sk/2014/01/09/running-jersey-2-applications-on-heroku/)
+
+
+jaxrs specification - implementation - Jersey
+problem - basic authentication - how to do better on security
+who is posting to me - how to authenticate 
+REST url - noun - not verbs 
+
+tomcat 8.5 seems to be the stable one at the moment. 
+http://localhost:8080/jersey/webapi/myresource
+
+
+
+
+Can I start safari in spy mode always?? 
+
+
+# Goods and Services Tax (GST)
+
+
+Direct taxes. Income tax, which includes tax on company profits, is the exclusive domain of central government. 
+Indirect taxes are taxes levied on manufacture of goods, provision of services and consumption.
+indirect taxes levied on manufacture of goods or provision of services are the exclusive domain of central government. 
+Taxes on consumption are the exclusive domain of state governments.
+
+Center 
+  Direct taxes e.g. that on company profit. 
+  Manufacture of goods 
+  
+State 
+  Consumption 
+
+
+shirt has to first be manufactured before it is consumed. The central government, therefore, levies its indirect tax called central excise at the factory gate.
+
+ a shirt reaches a retail outlet and is bought by a consumer. The state government, at this stage, levies a tax on consumption dubbed value added tax (VAT). 
+
+
+
+## What is Goods and Services Tax (GST)? 
+## How does GST impact me? 
+
+
+# mLab
+
+LMpzBIjI9X2ljrt_gaeyVl7Q2OwYKaMQ
+mongodb://<dbuser>:<dbpassword>@ds131512.mlab.com:31512/pine
+alibaba / challis 
+mongodb://alibaba:challis@ds131512.mlab.com:31512/pine
+
+# MongoDB with NodeJs
+
+[RESTful API design with Node.js](https://hackernoon.com/restful-api-design-with-node-js-26ccf66eab09)
+mLab - free .5gb space. 
+Get the mongodb URI 
+
+
+
+# [RESTful API design with Node.js](https://hackernoon.com/restful-api-design-with-node-js-26ccf66eab09)
+
+Create a project folder. 
+
+```
+$ pwd 
+/Users/parthabhattacharjee/code/restwithnodejs
+```
+
+Ensure that  you have got the basic requirements in place. 
+
+```
+$ node --version && npm --version && git --version 
+v6.9.5
+5.0.3
+git version 2.10.1 (Apple Git-78)
+```
+
+Initiate a node project. 
+
+```
+$ npm init
+This utility will walk you through creating a package.json file.
+... 
+... 
+
+$ cat package.json 
+{
+  "name": "restwithnodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+```
+
+Install the basic npm dependencies. Why do I need a body-parser? 
+
+```
+npm install express mongoose body-parser --save
+```
+
+# Nodejs to make google map call and then show the results. 
+https://stackoverflow.com/questions/16148403/using-node-js-to-connect-to-a-rest-api
+
+
+# What is there in the mac path? 
+
+export PATH=<mongodb-install-directory>/bin:$PATH
+
+
+
+# Get data 
+
+Where to get data from 
+Can nodejs create a REST service
+Does heroku have a mongodb 
+
+
+# Build RESTful web service with nodejs 
+
+[Build Node.js RESTful APIs in 10 Minutes](https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd)
+[Build a Node.js API in Under 30 Minutes](https://medium.freecodecamp.com/building-a-simple-node-js-api-in-under-30-minutes-a07ea9e390d2)
+
+
+
+[jarloo](http://www.jarloo.com/yahoo_finance/)
+The service Yahoo finance provides for free stock quotes is REST based.
+The API lets you specify multiple symbols to download with a maximum of 200 per call.
+
+BSE, Bombay Stock Exchange, .BO 
+NSE, National Stock Exchange of India, .NS
+
+
+## Can finance yahoo get me indian stock data? 
+http://finance.yahoo.com/d/quotes.csv?s=AAPL+GOOG+MSFT&f=nab
+http://finance.yahoo.com/d/quotes.csv?s=AAPL+GOOG+MSFT&f=nab
+
+
+RIIL : Reliance Industrial Infrastructure Limited
+http://www.google.com/ig/api?stock=MY_STOCK_TICKER_GOES_HERE
+
+
+## finance google. 
+
+### Can finance google get me indian stock data? 
+Yes. 
+
+http://finance.google.com/finance/info?client=ig&q=NASDAQ%3AGOOG
+http://finance.google.com/finance/info?client=ig&q=NSE%3ARELIANCE
+http://finance.google.com/finance/info?client=ig&q=NASDAQ:GOOG,NSE:RELIANCE
+
+### Is it deprecated? 
+TODO
+
+
+
+
+# How to keep space on the mac hd. 
+
+https://www.howtogeek.com/184091/5-ways-to-free-up-disk-space-on-a-mac/
+? Which apps am I not using? 
+
+
+# Bond 
+
+- A bond / fixed-income security, is a debt instrument created for the purpose of raising capital. 
+- They are essentially loan agreements between the bond issuer and an investor.
+- The bond issuer is obligated to pay a specified amount of money at specified future dates.
+
+
+How does it work?
+- Actors: Investor. Bond Issuer.
+- When an investor purchases a bond, they are "loaning" that money (called the principal) to the bond issuer. 
+- When the bond matures, the issuer repays the principal to the investor. 
+- In most cases, the investor will receive regular interest payments from the issuer until the bond matures.
+- A coupon is the interest paid on the face value of a bond. Annual - USA, Japs. Semi Annual - European. 
+- A coupon might be floating. LIBOR (London Interbank Offered Rate)
+
+Different types of bonds
+- There are bonds that can be redeemed prior to their specified maturity date, and 
+- Bonds that can be exchanged for shares of a company. 
+
+Bond rating agencies
+
+Moody's, S&P and Fitch Ratings — controlling approximately 95% of the ratings business.
+
+- Moody's and 
+- Standard & Poor's (S&P) provide a service to investors by grading fixed income securities based on current research. 
+- https://en.wikipedia.org/wiki/Bond_credit_rating
+- 
+
+## What are other fixed income securities? 
+
+## Can I invest in a bond in India? 
+
+## Read more 
+
+- http://www.investinganswers.com/financial-dictionary/bonds/bond-1287
+
+
+
+# Credit Risk 
+https://en.wikipedia.org/wiki/Credit_risk
+http://www.investopedia.com/terms/c/creditrisk.asp
+
+
+Actors 
+  borrower or issuer of a debt obligation
+  lender's or investor's
+
+borrowers expect to use future cash flows to pay current debts
+
+Instruments 
+  mortgages, credit cards or other types of loans
+  bond (issued by companies and bought by investors)
+  insurance (issues by companies)
+
+
+
+
+Credit risks are calculated based on the borrowers' overall ability to repay. 
+  applicant's credit history, 
+  his capacity to repay, 
+  his capital, 
+  the loan's conditions and 
+  associated collateral.
+
+
+Similarly, if an investor is thinking about buying a bond, he looks at the credit rating of the bond. 
+Agencies such as Moody's and Fitch evaluate the credit risks of thousands of corporate bond issuers and municipalities on an ongoing basis.
+
+For example, if an investor wants to limit his exposure to credit risk, he may opt to buy a municipal bond with a AAA rating. In contrast, if he doesn't mind a bit of risk, he may buy a bond with a lower rating in exchange for the potential of earning more interest.
+
+
+
+If there is a higher level of perceived credit risk, investors and lenders demand a higher rate of interest for their capital. 
+Similarly, bond issuers with less than perfect ratings offer higher interest rates than bond issuers with perfect credit ratings. The issuers with lower credit scores need to use high returns to entice investors to take a risk on their bonds
+
+
+
+
+Read more: Credit Risk http://www.investopedia.com/terms/c/creditrisk.asp#ixzz4jsD2SNB8 
+Follow us: Investopedia on Facebook
+
+
+
+# [John Papa and the spec guy ](https://app.pluralsight.com/player?course=code-with-us-angular-quick-start&author=john-papa&name=code-with-us-angular-quick-start-m1&clip=1&mode=live)
+
+NodeJs, Visual Studio Code, 
+
+
+# *ngFor, *ngIf
+
+Asterisk (*) signifies structural directive. 
+Add or remove (not hide)
+
+# How to mark a javascript class as Ng2 component
+
+
+```
+import { Component } from '@angular/core' // at the top of the file.
+
+@Component() // at the top of the class. 
+
+export class MyComponent{
+  
+}
+```
+
+You need a module and register the component with it. 
+And you need a main file to bootstrap Ng2. 
+
+
+
+# tsconfig.json 
+
+What does this do 
+ "noImplicitAny": false,
+
+
+
+# [Angular 2 Fundamentals](https://app.pluralsight.com/library/courses/angular-fundamentals/table-of-contents)
+
+https://jcoop.io
+https://jcoop.io/angular-2-practice-exercises/
+
+
+## Export functionality from a js file. 
+
+export {
+  foo : someFunction() 
+}
+
+## Import functionality in a js file. 
+
+import { foo } from 'someFile.js'
+
+## When and how to use system.js. 
+
+Generally you would use <script> tag in HTML file to load your js files. 
+If there are many of them that can be a problem and also there might be too many files loaded up although a particular user will use / need only a few. 
+system.js will help. It will pull only those files that are required. 
+
+Add only system.js file and a configuration file to the HTML 
+
+```JavaScript
+<script src="system.js" /> 
+<script src="config.js" /> 
+```
+
+In the config tell the system.js where to find the js files to load from and which file is the main one. 
+
+```JavaScript
+var config = {
+  // This is the map of the folders
+  map : {
+    'app' : '/folder/app'
+  },  
+
+  // this is the main file. 
+  packages : {
+    'app' : { main : 'main.js'}
+  }
+}
+```
+
+## Static typing with TypeScript
+
+Valid js 
+  let age ; 
+
+Valid ts
+  let age : number ; 
+
+## Interfaces with TypeScript
+
+interface ICar {
+  is_awesome : boolean 
+  reasonable? : boolean 
+}
+
+let myCar : ICar 
+
+## Classes with TypeScript
+
+```javascript
+class Car {
+  
+  cost : number 
+  color : string 
+  constructor( color ){
+    this.color = color 
+  }
+
+}
+```
+
+## Private, Public and the obnoxious shorthands. 
+public by default. 
+
+```javascript
+
+class Cat {
+  
+  constructor ( private name){
+
+  }
+}
+
+```
+
+# Ng2 concept 
+
+component contains HTML as well as code 
+application has a component tree 
+module is a group of related components 
+everything within the module has to be registered with the module
+Only services are available across ng2 modules 
+
+```
+$ node --version && npm --version && git --version 
+v6.9.5
+3.10.10
+git version 2.10.1 (Apple Git-78)
+```
+
+
+
+
+
+
+
+
 # Use nodejs with Express 4 
 
 This is required. The node starter with heroku is created with Express 4. 
@@ -46,7 +533,23 @@ rm -rf .git
 - Create an app in Herku. Choose a name. 
 - Got to the Heroku admin panel. Choose build to be done automatically from github push. 
 - Really happy to see that I can push code from Sublime to GitHub and that will make it available to the world on Heroku. Awesome. 
+- [here is your app](https://qse.herokuapp.com)
 
+
+Get all the dependencies. 
+npm install 
+
+Start the app locally. 
+npm start
+
+
+# Dev env setup for nodejs app 
+
+You need lite server if you want auto view of the changes as you make them. 
+
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
 
 
 # mLab MongoDB 
@@ -109,6 +612,13 @@ v6.9.5
 $ npm --version 
 3.10.10
 ```
+
+http://wumo.com/wumo
+
+
+## Jeff Bezos 
+[1](https://www.youtube.com/watch?v=YlgkfOr_GLY)
+
 
 
 # https://app.pluralsight.com/player?course=play-by-play-angular-2-quick-start-john-papa-ward-bell&author=john-papa&name=play-by-play-angular-2-quick-start-john-papa-ward-bell-m0&clip=0&mode=live
@@ -729,6 +1239,20 @@ you train the model with ```model.fit```
 
 [The hello world of machine learning.](https://deeplearning4j.org/mnist-for-beginners)
 [quickstart of deeplearning4j](https://deeplearning4j.org/quickstart)
+
+
+# Machine learning
+
+[machine learning course in pluralsight](https://app.pluralsight.com/library/courses/understanding-machine-learning/table-of-contents)
+
+What are the softwares / tools and techniques that I need to learn to get started with machine learning?? 
+How do you get to create a training at pluralsight??
+Has machine learning been used to predict bugs in software / unstability in IT shops ?? 
+
+
+Finds patterns in data. Use the patterns to predict future. 
+
+
 
 
 # coursera on neural networks 
