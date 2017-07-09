@@ -7,7 +7,184 @@ categories: howto
 ---
 
 
-# [machine learning](https://app.pluralsight.com/player?course=understanding-machine-learning&author=david-chappell&name=understanding-machine-learning-m2&clip=1&mode=live)
+# buy - running shoes 
+
+- https://shop.adidas.co.in/#!product/BI2983_adipacerelite20m | 2,519.00 
+- https://shop.adidas.co.in/#!product/B42765_vigorbouncem | blue | 6,299.00
+- https://shop.adidas.co.in/#!product/B42764_vigorbouncem | grey | 6,299.00
+- https://shop.adidas.co.in/#!product/AQ7513_vigorbouncem | reddish | 6,299.00 
+- https://shop.adidas.co.in/#!product/B49587_energybounce2m | black | 4,499
+
+
+# buy - squash shoes 
+
+- [might not be bad. what is the correct size though?](http://www.amazon.in/Yonex-SHB-35-Badminton-Shoes/dp/B06XB41JW2/ref=pd_sbs_309_1?_encoding=UTF8&refRID=XQCSSH76KSWAF7RPMMQT&th=1&psc=1)
+
+
+# [Understanding Android Application Basics](https://app.pluralsight.com/library/courses/android-application-basics-understanding/table-of-contents)
+
+- install android studio 
+- create a new application
+- choose api 23 
+- 
+
+
+# Machine Learning - theory 
+
+
+## Where all is machine-learning getting used? 
+machine learning can potentially predict 
+  fraudulent transaction 
+  predicting customer churn i.e. whether a customer is going to switch services 
+  when will a manufacturing robot e.g. those in automobile industry, is likely to need maintenance etc. 
+  doctors diagnosing 
+  stores are stocked with goods to buy when we need them
+
+
+## How is machine-learning different from traditional programming, say in Java? 
+Instead of using a static flow of instructions (as in java or such)
+You create a model that has the intelligence
+Can I see this model and read the intelligence?? I dont want to necessary deploy this unless I am convinced that it has not come up with some brilliant but incorrect logic. 
+
+
+
+data - feeds into -> machine algorithms - which generates -> models 
+application - uses the -> models - on new set of data -> to find probabilities of a match 
+You need - lots of data - lots of compute power - deep knowledge of algorithms - all of these we have, to make machine learning work
+
+You need to know / be willing to know 
+  statistics 
+  machine learning software
+  the domain where you are going to apply this 
+
+machine-learning are of two types 
+- Supervised
+- unsupervised
+
+## What is supervised machine-learning?
+
+A few examples 
+  - might be your input data is a details of houses with the cost of each of them, and you use machine-learning to predict the cost. 
+  - ?? 
+
+## What is unsupervised machine-learning? 
+?? 
+
+## What are the differences between supervised and unsupervised machine-learning? 
+?? 
+
+
+Machine learning live more and more in the cloud 
+
+Machine learning with open source language - R, Python 
+
+How popular is R?? 
+
+You might fail
+Your likelihood of succeeding will increase if you can 
+  Ask the right questions
+  Ensure that you have the right data. 
+  Clearly articulate how will you measure success. 
+
+
+Start 
+  Choose the raw data 
+  scrub the data - deduplication, and the likes. 
+  get the prpped data 
+  apply machine-learning algorithms
+  get a model. this is a candidate one and not the final. 
+  choose the model you like and deploy for use by applications. 
+
+
+Training data - you dont create a model. You train a model. 
+Supervised / unsupervised learning
+Classifying machine-learning problems and algorithms
+Training, testing and using a model 
+
+
+Training data
+  Has columns. They are called *features*
+  Has the column that we want to predict (in supervised learning). This is called *target value* 
+
+
+## Categories of machine-learning
+
+### Regression 
+We have the data. Visualize a spattering of data in x-y graph. 
+There is a line through that spattering, hugging the most density (I believe)
+The problem is to predict which way the line would go. 
+e.g. 
+
+## Classification 
+Is this transaction fraudulent? 
+You tend to get back a percentage of probability of a classification
+
+## Clustering - unsupervised
+What are our customer segments? 
+
+
+## Styles of machine-learning algorithms
+Decision tree 
+Neural networks 
+Bayesian 
+K means 
+
+
+## Tutorials on machine-learning
+[A tolerably well done, very high level intro to machine-learning](https://app.pluralsight.com/library/courses/understanding-machine-learning/recommended-courses)
+
+
+# machine-learning with Python 
+
+
+https://app.pluralsight.com/player?course=python-understanding-machine-learning&author=jerry-kurata&name=python-understanding-machine-learning-m0&clip=0&mode=live
+
+
+## What are the different versions of Python that can / should be used for machine-learning? 
+Python2 - static since 2012. 
+Python3 - been around since 2010. This is the future one. We are going to use this for machine-learning. 
+  Jupyter notebook, previously called IPython notebook. 
+  installed via anaconda distribution
+  trying graphical installer on mac
+  Create a kaunjovi at anaconda cloud. 
+
+
+  shift tab - show documentation. 
+  shift tab X 2 - show documentation complete. 
+
+
+
+## What are the Python libraries used for machine-learning? 
+
+## How to pick the correct algorithm? 
+
+There are more than 50 algorithms. Where??
+Check if they are supervised or not. Supervised have around 28. 
+Check if they are Regression (continuous value e.g. house price type) or Classification i.e. diagnosing diabetes type. About 20 algorithms. 
+Keep this simple. Dont go for ensemble. About 14 are left. 
+Basic or Basic++ i.e. Enhanced. Keep it simple for now. 
+Lets go with these 3
+  Naive Bayes - puts same weightage to all features
+  Logistic Regression
+  Decision tree 
+
+
+## Tidy data 
+
+variable = column 
+observation = row 
+observational unit = table
+50 to 80% time will be spent on getting the data to this level 
+
+[free online machine-learning data set](https://archive.ics.uci.edu/ml/datasets.html)
+[sample code of machine-learning with python](https://github.com/JerryKurata/MachineLearningWithPython)
+
+
+
+
+
+
+
 
 
 
