@@ -9,11 +9,11 @@ categories: howto
 
 # buy - running shoes 
 
-- https://shop.adidas.co.in/#!product/BI2983_adipacerelite20m | 2,519.00 
-- https://shop.adidas.co.in/#!product/B42765_vigorbouncem | blue | 6,299.00
-- https://shop.adidas.co.in/#!product/B42764_vigorbouncem | grey | 6,299.00
-- https://shop.adidas.co.in/#!product/AQ7513_vigorbouncem | reddish | 6,299.00 
-- https://shop.adidas.co.in/#!product/B49587_energybounce2m | black | 4,499
+- https://shop.adidas.co.in/#!product/BI2983_adipacerelite20m - 2,519.00 
+- https://shop.adidas.co.in/#!product/B42765_vigorbouncem - blue - 6,299.00
+- https://shop.adidas.co.in/#!product/B42764_vigorbouncem - grey - 6,299.00
+- https://shop.adidas.co.in/#!product/AQ7513_vigorbouncem - reddish - 6,299.00 
+- https://shop.adidas.co.in/#!product/B49587_energybounce2m - black - 4,499
 
 
 # buy - squash shoes 
