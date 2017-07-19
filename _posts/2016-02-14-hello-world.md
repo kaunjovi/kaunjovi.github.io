@@ -7,6 +7,153 @@ categories: howto
 ---
 
 
+# [From Collections to Streams in Java 8 Using Lambda Expressions](https://app.pluralsight.com/library/courses/java-8-lambda-expressions-collections-streams/table-of-contents)
+
+We create code and pass it as a parameter. 
+It is executed by something else, later in point of time and in a different context. 
+You can only use *anonymous class* to do this sort of thing, because you can only send classes, not functions. 
+
+Now this can be done by using *lambda expression*
+
+function() { return a;}
+()-> a
+
+
+And then there is function reference 
+
+
+# Default methods / Defender methods in Interfaces @Java8 
+
+
+Default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces.
+
+
+# Static methods in Interfaces @Java8
+
+# Iterating over collections @Java8
+
+[Iterating over collections in Java 8](http://www.javaworld.com/article/2461744/java-language/java-language-iterating-over-collections-in-java-8.html)
+
+How to step through a set of objects. 
+- index (for iterating over an array), 
+- cursor (for iterating over the results of a database query), 
+- enumeration (in early versions of Java), and 
+- iterator (in more recent versions of Java).
+
+Iterator
+- An iterator provides a means of "looping" over an encapsulated collection of objects.
+- An iterator should allow for the concept of nested looping. 
+- An iterator should also be nondestructive in the sense that the act of iteration should not, by itself, change the collection. 
+- Of course the operation being performed on the elements in a collection could possibly change some of the elements. 
+- It might also be possible for an iterator to support removing an element from a collection or inserting a new element at a particular point in the collection, but such changes should be explicit within the program and not a byproduct of the iteration. In some cases, you will also need to have iterators with different traversal methods; for instance, preorder and postorder traversal of a tree, or depth-first and breadth-first traversal of a graph.
+
+take the responsibility for access and traversal out of the list [ed. think collection] object and put it into an iterator object."
+
+
+## active iterator / explicit iterator / external iterator
+The client controls the iteration in the sense that the client creates the iterator, tells it when to advance to the next element, tests to see if every element has been visited, and so on. 
+
+
+## passive iterator / implicit iterator / internal iterator / callback iterator
+Iterator decides how to iterate 
+Client provides the code to be run on the elements
+
+# Iteration in Vector, Hashtables and Enumeration days 
+
+
+# Streams @Java8
+
+- Why streams? 
+-   Streams ought to be threadsafe (check and document??) and more easily parallelizable (check and document??)
+-   Was there any performance benefit of parallelization?? 
+- How to create streams? 
+-   Collections and arrays can be used to generate streams. 
+- How to use streams? 
+-   Stream source (collection / array etc) -> Stream -> Stream -> ... -> result 
+-   Stream source (collection / array etc) -> Stream -> Stream -> ... -> forEach - 
+
+- What operations are provided off the shelf for streams? 
+- Terminal operation 
+-   count()
+-   max()
+-   average()
+-   sum()
+-   etc 
+- Transformation operation 
+-   filter()
+-   distinct()
+-   sorted()- 
+
+- [good intro starting from arrays and collections](http://www.javaworld.com/article/2461744/java-language/java-language-iterating-over-collections-in-java-8.html?page=2)
+
+
+
+
+
+
+
+What is the latest eclipse?? 
+
+
+finish the course?? 
+
+
+# [Blockchain for non-techies: 1. Agreement](https://hackernoon.com/blockchain-for-non-techies-1-agreement-4a54857b82ba)
+
+It is nice to agree. Or agree to disagree. 
+An obvious place to start is agreeing about the rules of the society, also known as the laws.
+
+
+People *can not* enter into any binding agreement they wish. 
+  Minimum wage is an example of one of these restrictions
+
+The agreement about agreements is known as contract law.
+You can ask the court to intervene should there be a differences in understanding. 
+
+important to reach societal agreement about is whether people in the society can own things at all.
+  for example in certain hippy communes owning things is not allowed. 
+If individual ownership is allowed, 
+  then the next step is to make sure there is agreement about who owns what.
+For the big things, it is important that society agrees about who owns what.
+Small tribe. Everyone knows everyone else. Everyone knows which hut belongs to what. The ownership is available in distributed memory of the community. 
+
+Big tribe e.g. NY. Too many people. This distributed human memory to lop ownership of houses is not feasible. 
+There is a single registry, maintained and updated by the govt. 
+
+Apart from houses, cars (registry with registration plate), ledger in banks (balance of account holders) etc. 
+
+Since the inter-subjective does not objectively exist, modern societies formalize these agreements by documenting them and claim them to be the truth. Trusted authorities are used for maintaining these single sources of “truth”. The agreements have been maintained in this centralized fashion, because there has been no other way to maintaining them.
+
+Blockchain technology enables agreements to be collectively maintained by anyone, taking away the monopoly of “truth” maintenance from central authorities.
+
+
+
+
+# acronyms 
+
+# ISIN | International Securities Identification Number
+
+It is used to uniquely identifies a security. It is originated from ISO 6166. ISIN is used to identify bonds, commercial paper, equities, warrants and most of the listed derivatives. The ISIN code is a 12 character alphanumerical code.
+One distinction is that ISIN code doesn’t change by exchange or currency it trades. It is unique unlike symbol that may change based on exhcnage and currency.
+To distinguish the exchange it has the same ISIN on each, though not the same ticker symbol. ISIN cannot specify a particular trading location in this case, and another identifier, typically MIC or the three-letter exchange code, will have to be specified in addition to the ISIN. The SEDOL board of the London Stock Exchange has revised their own standards to address this issue.
+
+Example: LT0000610040 (12 character)
+
+
+OPOL | Official Place of Listing  
+
+## SEDOL (Stock Exchange Daily Official List)
+a list of security identifiers used in the United Kingdom and Ireland for clearing purposes. The numbers are assigned by the London Stock Exchange, on request by the security issuer.
+Example: B0WNLY7
+
+
+# coding without framework 
+
+https://dzone.com/articles/programming-without-a-framework?edition=306244&utm_source=weekly%20digest&utm_medium=email&utm_campaign=wd%202017-07-12
+
+
+
+
 # buy - running shoes 
 
 - https://shop.adidas.co.in/#!product/BI2983_adipacerelite20m - 2,519.00 
@@ -26,7 +173,54 @@ categories: howto
 - install android studio 
 - create a new application
 - choose api 23 
-- 
+- choose "basic activity". activity is a screen with lifecycle etc attached to it. 
+- Create a MyWorker class. With a public static method. Return double what you got. 
+- Is there some significance of the green color of the test folders?? 
+- emulator = AVD = android virtual device
+
+```java
+FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+fab.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        TextView textView = (TextView) findViewById(R.id.text_value);
+        int oldValue = Integer.parseInt( textView.getText().toString()) ;
+        int newValue = MyWorker.doubleThat(oldValue) ;
+        textView.setText( Integer.toString(newValue));
+
+        Snackbar.make(view, "Changed " + oldValue + " to " + newValue, Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show();
+    }
+});
+
+```
+
+UI built with classes derived from a View class. 
+View draws an user interface. It takes care of event handling. 
+It is screen and life cycle 
+onCreate method is the birth method. 
+
+
+There are ?? dp per inch. 160. 
+
+Activity must load the layout resource. 
+  load layout by setContentView(...)
+  reference views by findViewById(...)
+
+Generated class R 
+  all layouts in R.layout 
+  all ids in R.id 
+
+
+## Constraint Layout @ Android 
+
+
+
+
+# Connect  
+
+DB - https://www.linkedin.com/in/stephen-hender-b8069738/
+
 
 
 # Machine Learning - theory 
