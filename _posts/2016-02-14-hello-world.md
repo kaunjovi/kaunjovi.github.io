@@ -61,6 +61,18 @@ Client provides the code to be run on the elements
 # Iteration in Vector, Hashtables and Enumeration days 
 
 
+# Iterable @Java8
+
+- Interface Iterable<T>. java.lang.Iterable. 
+- T - the type of elements returned by the iterator
+- Collection<E> implements Iterable
+- Implementing Iterable allows an object to be the target of the "for-each loop" statement.
+
+
+[official document](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html)
+
+
+
 # Streams @Java8
 
 - Why streams? 
