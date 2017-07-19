@@ -157,6 +157,59 @@ p.test("Hello world. I am from lambda world.")
 - Interfaces are objects as well and inherit a bunch of *methods from Object class*. They dont count. 
 - Be a good citizen. Put *@FunctionalInterface annotation* where required. If you dont, it does not break but this has been made optional for the legacy classes and should be used for the new classes. 
 
+# java.util.function 
+
+- There are 4 categories containing 43 total. 
+  - Consumers : Consumers accept stuff. 
+    + BiConsumer : Consumes two parameters instead of one. 
+  - Supplier : Suppliers get stuff for clients. 
+  - Functions : Functions apply logic on one object and return back another, changed object. 
+    + BiFunction : You know it is a bi. 
+    + UnaryOperator extends Function. BinaryOperator extends BiFunction. 
+  - Predicates : Perdicates test and return boolean. 
+    + BiPredicate 
+
+
+
+```java
+public interface Consumer <T> {
+  public void accept (T t) ; 
+}
+```
+
+```java 
+public inteface BiConsumer <T,U>  {
+  public void accept (T t, U u)
+}
+```
+
+```java 
+public interface Supplier <T> {
+  public T get() ; 
+}
+
+Supplier <Person> personSupplier = () -> new Person() ; 
+Supplier <Person> personSupplier = Person::new ; 
+
+```
+
+```
+public interface Function < T, R >  {
+  public R apply(T t)
+}
+
+Function <Person, Integer> ageMapper = (p) -> p.getAge() ; 
+Function <Person, Integer> ageMapper = Person::getAge ; 
+```
+
+```java 
+public interface Predicate <T> {
+  public boolean test ( T t) ; 
+}
+
+Predicate<Person> ageGT20 = p -> p.getAge() > 20 ; 
+
+```
 
 
 
@@ -1217,7 +1270,6 @@ print (temperatures)
 
 - [Installing Python 3 on Mac OS X](http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/osx/)
 - Package managr for OSX. Homebrew. 
-- [Some eccentricities of Homebrew. Do the brew doctor and follow those steps.](http://techqa.info/programming/question/37488439/brew-install-python-for-scrapy---symlink-&-permission-issues)
 - Install Python3 and pip3. 
 - Install virtualenv
 - Create a dev folder. Cd to that. Create a virtualenv. It will put Python3 in the folder. 
