@@ -68,9 +68,13 @@ Client provides the code to be run on the elements
 - Collection<E> implements Iterable
 - Implementing Iterable allows an object to be the target of the "for-each loop" statement.
 
-
 [official document](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html)
 
+# Use static and default interface methods to add functionality to an API 
+
+- [video](https://app.pluralsight.com/player?course=java-8-lambda-expressions-collections-streams&author=jose-paumard&name=java-8-lambda-expressions-collections-streams-m1&clip=13&mode=live)
+- add new functionality to API of legacy code. 
+- 
 
 
 # Streams @Java8
@@ -98,7 +102,60 @@ Client provides the code to be run on the elements
 
 - [good intro starting from arrays and collections](http://www.javaworld.com/article/2461744/java-language/java-language-iterating-over-collections-in-java-8.html?page=2)
 
+# lambda 
 
+- lambda expression in an instance of functional interface
+- once again, lamdba expression is an instance of an interface, under the hood. 
+
+```java
+public interface Predicate <T> {
+  boolean test (T t) ; 
+} 
+```
+
+Java 7 way of using Predicate with anonymous class
+
+Predicate<String> p = new Predicate <String>() {
+  boolean test (String s ){
+    return s.length()>0 ; 
+  }
+}
+
+Java 8 way of doing the same thing 
+
+```java
+Predicate<String> p = (String s) -> return s.length()>0 ; 
+```
+
+Or your could make it more confusing. Take away the parameter and the return type. 
+
+```java
+Predicate<String> p = s -> s.length()>0 ; 
+```
+
+And how do you use this
+
+```java 
+p.test("Hello world. I am from lambda world.")
+```
+
+## How does Java compiler know that this s is a String? 
+
+- Since this is a functional interface, the implementation is bound to be of the one and only one method that it has. 
+- Since p is Predicate type, the lambda on the other side of the = has to be the implementation of the only method of the Predicate interface. 
+- Hence the parameters and return types are also deducible. 
+- 
+
+
+
+# Functional Interface 
+
+- It is an interface. A regular old world interface. 
+- However, it can have only one abstract method. 
+- *Default methods dont count*. You can have multiple of those. 
+- *Static methods also dont count*. You can have multiple of those as well. 
+- Interfaces are objects as well and inherit a bunch of *methods from Object class*. They dont count. 
+- Be a good citizen. Put *@FunctionalInterface annotation* where required. If you dont, it does not break but this has been made optional for the legacy classes and should be used for the new classes. 
 
 
 
