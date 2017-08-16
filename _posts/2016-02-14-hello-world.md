@@ -6,6 +6,351 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+mpp.jpmorganchase.com
+
+
+
+
+
+
+# people 
+
+Jonathan Birnbaum 
+Darren Dixon
+
+
+
+# pancake 
+
+1 egg 
+1 cup of maida 
+1.25 milk 
+molten .5 cup butter 
+baking powder - 3 spoons 
+
+crushed sugar - .75 cup 
+
+vanilla essence
+
+== 
+
+egg - fluffy 
+milk + molten butter + vanilla
+
+
+sugar + maida + baking powder - sieve - 
+
+# Fix the wifi connection 
+WEP - Wired Equivalent Privacy. 
+WPA - Wifi protected access
+WPA2 
+
+
+
+# starting 
+
+Savior syndrome - what is that ?? 
+
+promote yourself 
+
+Case study - Douglas Ivester 
+
+Get advise and councel 
+  Find power centers and align with them 
+    Boss - What will make her look good? 
+  Find knowledge centers and learn from them 
+  Find colleagues interested in growth and collaborate with them
+  Find the raw nerve on everyone and save it like a FD 
+
+Analyze the type of the game 
+  Startup 
+    Start from scratch. Get things to work. 
+  Troubled unit 
+    Something is broken. Fix it now. 
+  Realignments 
+    Things are ambling along. Find the largest problem. Sell the solution. Execute. 
+
+What are you doing ? 
+  Is it important for power centers? 
+  Is it something on which I can build future wins? 
+  Is it something that I can get maximum collaboration on? 
+
+  If it makes you enemies - it is not a contender for an early win. 
+
+  Build your team. 
+   
+
+
+Questions 
+  What is working well 
+  What is not working well 
+    Why is it not working well? 
+    Why is it not getting fixed? 
+    What will it take to fix it? 
+  What is an opportunity that you think the team / I / organization should be jumping on 
+  If you were me, what would you focus on? 
+  Do you have any dependencies on the output of my current role? If yes, how was it being done till now. 
+
+Ask your boss, “Who is it critical that I get to know?”
+invite those people to coffee or lunch and pick their brains.
+
+Dont 
+  dont be late. 
+  dont dress shabbily. 
+  dont take exjob memorabilia with you. 
+
+always listen before you speak. 
+
+Do 
+  Ask mgr 
+    “Who is it critical that I get to know?”
+    Understand how your manager's success is measured. Make sure you add to it. 
+    How do we connect. Should I check in every once in a while or should we have a set up meeting.
+    What is her work style? Does she like email over meetings. Does she like it if you just pop into her cabin once in a while. 
+    What is the best way to connect. 
+    How is her success measured? How is she doint with that? Any pain points? Can you help? 
+
+  Get an early win 
+    Ask boss + mentor       
+  
+  Find a office ally 
+    We need someone who like to talk. Who is not threatened / impacted by you and dont have a vested interest in derailing you. 
+
+
+  Also seek a mentor.
+    Is there someone at the company who has done what you’re doing before?
+
+  Colleagues - connect. grab a bit. get a coffee. 
+    what do they do. 
+    who do they report to. 
+    what are their pain points 
+    what is their view of the org. 
+
+  Follow the company in social media. 
+    They seem to be going for cloud. Hmmm :)
+    Has there been any news with TIAA? 
+
+
+Find centers of *power* and *knowledge*
+  They are your colleagues. Srs. And juniors who are knowledge centers. 
+  Take them out to coffee / lunch and forge a win win collaboration. 
+
+Create a *timeline* of the product 
+  Where did it start from 
+  What does it do. 
+  What does it get data from. What does it give data to. 
+  Who are the strongest supporters. 
+  Who are the loudest critics. 
+  Who were the people in the history of the product. Where are they. 
+  What did they try that worked. What did the try that bombed. 
+
+Understand the role
+  Who tried it before and succeeded. How?  
+  Who tried it before and failed. Why? 
+
+Create status reports. 
+  Weekly status reports - should provide a talking point with boss. 
+  Monthly status report - should give you a target to aim for. 
+  Quarterly status report - what is the quick win that has been applauded by power centers. 
+
+Right hand 
+  Technology
+
+Left hand 
+  domain knowledge 
+  connect with power centers 
+  have names drilled in your mind
+
+What do you expect from this role? 
+  How was this role's output achieved till now? 
+  Why has this not been possible till now? Has anyone tried and failed? Why? 
+
+Under Promise and Over Deliver
+  Use surprise as you ally. Dont let it be your foe. 
+
+Take care of self - health. 
+Start working before day one. 
+Listen. Listen. Make note. Listen. Document. Speak. 
+Make your boss look good. 
+dont be uppity. be social. blend in. know the names. know their work. 
+Say Yes / let me give it a try - to everything. 
+Have lunch with your knowpow centers.
+
+
+
+
+https://guykawasaki.com/how-to-rock-the-first-90-days-of-a-job/
+https://www.forbes.com/sites/learnvest/2014/06/11/how-to-ace-your-new-job-in-the-first-90-days/3/#61d691654bdf
+https://www.forbes.com/sites/quora/2015/05/01/18-useful-tips-for-your-first-90-days-of-any-new-job/
+https://www.themuse.com/advice/how-to-own-the-first-90-days-of-a-new-job
+https://www.slideshare.net/ramadd1951/the-first-90-days-21759552?next_slideshow=1
+
+
+
+# tech-radar 
+
+docker 3 
+google compute engine 1 
+
+
+# Angular
+https://dzone.com/articles/real-world-angular-series-part-7a-relational-data?edition=311405&utm_source=Weekly%20Digest&utm_medium=email&utm_campaign=java%202017-08-02
+
+
+# Startup, AWS 
+
+AWS System Blueprint for a Startup
+https://dzone.com/articles/aws-system-blueprint-for-a-startup?edition=311405&utm_source=Weekly%20Digest&utm_medium=email&utm_campaign=java%202017-08-02
+
+
+
+# Apache Beam 
+
+
+[Apache Beam WordCount Example](https://beam.apache.org/get-started/wordcount-example/)
+
+# Docker 
+
+- Docker Community Edition (CE) - looking to get started with Docker and experimenting with container-based apps. 
+
+- [home page](https://www.docker.com)
+- [What is Docker?](https://opensource.com/resources/what-docker)
+
+## Read when you know more about docker
+- [A Comparison of Docker GUIs](https://dzone.com/articles/a-comparison-of-docker-guis?edition=311395&edition=0&utm_source=Zone%20Newsletter&utm_medium=email&utm_campaign=devops%202017-07-28)
+- [Java Memory Consumption in Docker and How We Employed Spring Boot](https://dzone.com/articles/how-to-decrease-jvm-memory-consumption-in-docker-u?utm_source=Top%205&utm_medium=email&utm_campaign=Top%205%202017-07-283)
+
+# Python 
+
+[4 Reasons You Should Learn Python](https://dzone.com/articles/4-reasons-you-should-learn-python?utm_source=Top%205&utm_medium=email&utm_campaign=Top%205%202017-07-283)
+
+StackState
+
+
+Bank amount 
+  HDFC 
+  CITI 
+
+LIC 
+  
+
+
+Car : 303,556
+
+Plot address 
+  C wing 246
+
+  a 346 
+
+  Surajkund industrial address 
+  USIDC  
+
+A 352 
+
+A 346 
+Surajpur Site C
+Uttar Pradesh 
+
+
+  Site C 
+
+
+puchu phone # : 95609 45666
+
+
+# How to pay the tax challan 
+
+go to https://www.tin-nsdl.com
+click "pay taxes online"
+click on "CHALLAN NO./ITNS 280  (Payment of Income tax & Corporation Tax)"
+choose "(0021) Income Tax (Other than Companies)"
+
+
+
+
+# New job 
+
+Understand the politics first. Blend in. Listen before you speak. 
+
+try to change their boss, and that doesn’t work
+Ask how your boss prefers to be contacted—in person, via phone, by email—and how often.
+Ask your boss, “Who is it critical that I get to know?”
+  invite those people to coffee or lunch and pick their brains
+Create “horizontal” alliances with colleagues  
+
+Build credibility for yourself by being seen as someone who is learning and connecting with the organization.
+
+
+===
+
+Mgr 
+  Understand how your manager's success is measured. 
+  Your job is to make your manager successful and look good in front of her boss. 
+  Make sure your interests are aligned with your manager's interests always.
+
+Colleagues 
+  Take each of your colleagues (at least the ones you will be directly working with) to lunch or coffee, and understand how their success is measured. 
+  This will help frame the context of any requests/responses from them and you will know how to frame your requests in a way that matters to them.
+
+Center of power 
+  Identify centers of power and knowledge. Often, it is not obvious and they are not the same people. 
+
+Center of knowledge 
+
+
+To avoid / to be aware of 
+  Identify the politicians and time wasters while you are at it. Every company has at least a few.
+  When tasked with work no one else wants to do, understand why before you commit to it. It is one thing if it is boring (like documentation!) but it is a totally different ball game if no one wanted to take on that task because they know it is doomed to fail! Don't set yourself up to fail.
+
+
+Documentation 
+  You are looking at the situation through fresh eyes. Jot your thoughts and impressions down when they are still fresh. When you are jaded and out of ideas, look here for suggestions.
+  Offer to document anything that needs to be documented. You will learn an astonishing amount in the process, strike up conversations with people you would not normally interact with, and uncover collective knowledge that "everyone" knows - it will serve you well in the future.
+
+Understand the big picture even if your particular job is entry level. 
+
+Understand how your company makes money, and how your specific job contributes to it. 
+
+If at all possible, try to be in a role that is a profit center vs. a cost center. 
+
+For example, a team that is building a product that customers pay for is a profit center. Working on the infrastructure team whose clients are internal to the company is often considered a cost center.
+
+Set up a pattern of being trustworthy and following through on your commitments.
+Make it a habit to keep track of your time and write status reports for yourself even if your boss doesn't want to see them. This will come in handy when you have to write a self-appraisal or update your resume or you need to justify your ask for a raise.
+Set up regular one on one meetings with your manager and take the initiative to set the agenda ahead of every meeting. Share the agenda with your manager at least 24 hours before the meeting. Periodically, ask for feedback and find out how you are doing versus your manager's expectations. Use it to course correct as necessary.
+If your performance doesn't match manager's expectations, create a pie chart of how you spent time the past week and share that with your manager. A quick glance is enough to identify if your priorities are misaligned or whether you are not investing as much time on a task as your manager was expecting, or, if you are simply overloaded with too many things on your plate to deliver at the level your manager expects.
+Use your first 90 days to think over and document what you learned, so you can make the on boarding process easier for the next person your team hires! I guarantee you that your manager will be very appreciative.
+
+
+/==
+
+
+
+[How to Ace Your New Job in the First 90 Days](https://www.forbes.com/sites/learnvest/2014/06/11/how-to-ace-your-new-job-in-the-first-90-days/#6c20c71e360f)
+
+# workout 
+http://mensdressclub.com/2017/07/how-to-be-in-the-best-shape-after-40/
+
+
+# investing in pune 
+https://www.proptiger.com/guide/post/top-5-localities-for-investment-in-pune?
+
+
+
+
+
+
+
+# tatasky 
+
+paid on 30/1
+
+pay by 30/7
+1-75897728904
+4,165.00
+
+
+
 
 # [From Collections to Streams in Java 8 Using Lambda Expressions](https://app.pluralsight.com/library/courses/java-8-lambda-expressions-collections-streams/table-of-contents)
 
@@ -212,13 +557,10 @@ Predicate<Person> ageGT20 = p -> p.getAge() > 20 ;
 ```
 
 
+# Blockchain
 
-
-What is the latest eclipse?? 
-
-
-finish the course?? 
-
+- [From barter to blockchain: A history of money](https://techcrunch.com/2017/08/03/from-barter-to-blockchain-a-history-of-money/)
+- [Blockchain for non-techies: 1. Agreement](https://hackernoon.com/blockchain-for-non-techies-1-agreement-4a54857b82ba)
 
 # [Blockchain for non-techies: 1. Agreement](https://hackernoon.com/blockchain-for-non-techies-1-agreement-4a54857b82ba)
 
@@ -715,6 +1057,61 @@ Does heroku have a mongodb
 
 [Build Node.js RESTful APIs in 10 Minutes](https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd)
 [Build a Node.js API in Under 30 Minutes](https://medium.freecodecamp.com/building-a-simple-node-js-api-in-under-30-minutes-a07ea9e390d2)
+
+
+
+# How to invest in stocks? 
+
+A depository is a bank for securities like shares, debentures, bonds, government securities etc. 
+depository participants, or DPs - branch of depository with which you can interact. 
+
+## Short selling 
+
+- Sell something at Y today although you dont have the item yet. 
+- Hope to buy the samething at X. 
+- Hope to make profit of (Y - X). 
+- You stand to loose a huge amount, in case the X grows to some exceptional amount due to some event. 
+- [Why bear market are called so i.e. the market in which the amount comes down and short sellers make money](http://www.investopedia.com/articles/basics/03/100303.asp)
+
+## If the shares are all eletronic who is in charge of the safekeeping of those? 
+
+- There are two depositories in India, 
+-   CDSL (Central Depository Services (India) Ltd and 
+-   NSDL (National Securities Depository Ltd).
+- [download list of DPs from CDSL](https://www.cdslindia.com/dp/dplist.aspx)
+
+## Where to open a demat account with? 
+
+
+[Where to open the DMAT account](https://zerodha.com)
+[Nitin Kamath, founder of zerodha](https://www.linkedin.com/in/nithin-kamath-81136242/)
+[Zerodha Review](https://www.compareonlinebroker.com/zerodha-review/)
+Zerodha uses IL&FS to provide DMAT services. 
+IL&FS securities and services ltd. (ISSL) is a Depository Participant (DP) registered with both NSDL and CDSL. 
+
+## What are some of the technical methods for investing in stocks? 
+
+- Elliot Waves, 
+- Head and Shoulders Patterns, 
+- RSI, 
+- MACD
+- Dow Theory [link1](http://www.investopedia.com/terms/d/dowtheory.asp)
+- Double Bottom
+
+[The Pioneers Of Technical Analysis](http://www.investopedia.com/articles/financial-theory/10/pioneers-technical-analysis.asp)
+
+
+### Elliot waves - developed by R.N. Elliott and popularized by Robert Prechter
+
+- 1 up, 2 correction, 3 up, 4 correction, 5 topmost 
+- A down, B correction, C bottom 
+- The basic geometry keeps repeating both inside and outside any waves
+- ----
+- [Introduction to Elliott Wave Theory](http://www.investopedia.com/articles/technical/111401.asp)
+- [Introduction to the Wave Principle](http://www.elliottwave.com/Free-Reports/Introduction-to-the-Wave-Principle)
+- [Elliott Wave Basics](http://stockcharts.com/school/doku.php?id=chart_school:market_analysis:elliott_wave_theory)
+
+
 
 
 
