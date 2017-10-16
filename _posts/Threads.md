@@ -129,9 +129,6 @@ However, their seem to be a
 
 
 
-[Chess opening](https://www.chess.com/article/view/the-principles-of-the-opening)
-[Nimzo-Indian Defense](https://www.youtube.com/watch?v=htNc9zFPdQs)
-
 
 Some horses do better with noise and some without. Same as human? 
 http://www.si.com/horse-racing/2015/05/04/american-pharoah-earplugs-dortmund-bob-baffert

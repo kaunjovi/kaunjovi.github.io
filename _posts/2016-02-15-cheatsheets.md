@@ -6,6 +6,23 @@ summary:    Cheatsheets.
 categories: howto 
 ---
 
+# Sublime shortcut
+
+  - command 
+    + T - search file by name 
+    + P - search file by name 
+    + 
+  - mac + alt + enter : open the link in a browser 
+  - mac + ctl + up / down : move line up and down. 
+
+## Sublime | Shift Mac 
+
+  - shift + mac + F - find in files. 
+
+## reference
+
+  - [Keyboard Shortcuts - OSX](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html)
+
 
 ### Mac helpful links 
 
@@ -22,15 +39,6 @@ categories: howto
 
 
 
-# Sublime shortcut
-
-  - [Keyboard Shortcuts - OSX](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html)
-  - command 
-    + T - search file by name 
-    + P - search file by name 
-    + 
-  - mac + alt + enter : open the link in a browser 
-  - mac + ctl + up / down : move line up and down. 
 
 
 

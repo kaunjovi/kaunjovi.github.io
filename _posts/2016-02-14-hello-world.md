@@ -6,9 +6,80 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
-mpp.jpmorganchase.com
 
 
+# What is new in OAuth2?? 
+
+- [An Introduction to OAuth 2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
+- [Understanding OAuth2](http://www.bubblecode.net/en/2016/01/22/understanding-oauth2/)
+
+limited access to user accounts on an HTTP service, such as Facebook, GitHub, and DigitalOcean
+
+There are four roles
+- Resource Owner : The user who authorizes an application to access their account. 
+- Client : The application which access the data. 
+- Authorization Server (API) : Verify identity of user. Issues access token to client. 
+- Resource Server (API) : The vault that keeps the user accounts. 
+
+Flow of information
+- Register Application with the Service.
+- Service will issue "client credentials"
+  + Client ID is a publicly exposed string that is used by the service API to identify the application
+  + The Client Secret is used to authenticate the identity of the application to the service API when the application requests to access a user's account
+- Application requests "authorization" from User and gets it. 
+  + 
+- Application sends "authorization" to authorization server. Gets "access token". 
+  + 
+- Application sends "access token" to resource server and gets data. 
+
+
+
+
+
+# How does OAuth integrate with Spring?? 
+
+[Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
+
+
+
+
+
+
+
+# ========== 
+
+Clover Acropolis
+  https://www.commonfloor.com/clover-acropolis-pune-rent/prns-yty4ox?f=sem_CF_DSA_Locality-Pune-Viman_Nagar-POVP&gclid=CjwKCAjw0qLOBRBUEiwAMG5xMI-DMaitQndEHbydFP1rzlz9ZDu0sZAUOgdN73DehTX7pfQ6cQhd9hoC6iYQAvD_BwE
+  https://www.99acres.com/clover-acropolis-viman-nagar-pune-npxid-r10794
+
+  3bhk - 1500sqft - 35,000
+
+
+# ==========
+
+
+iPhone 6 
+
+Bounceback Premium P.U Leather Wallet Style Flip Flap Cover For Apple Iphone 6 / 6s - Brown
+https://www.amazon.in/Bounceback-Premium-Leather-Wallet-Iphone/dp/B01LLDZRHK/ref=pd_sbs_107_4?_encoding=UTF8&psc=1&refRID=5EPFNVG4KMS7A8D2MANH
+Sold by LD Retails (4.6 out of 5 | 257 ratings) and Fulfilled by Amazon. Gift-wrap available.
+
+
+
+
+
+
+
+
+# ========
+
+Build a Cryptocurrency Comparison Site with Vue.js
+
+
+
+# javascript
+
+A script is something that is used to stitch together an existing app. 
 
 
 
