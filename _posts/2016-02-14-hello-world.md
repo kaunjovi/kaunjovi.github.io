@@ -6,6 +6,17 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+# send changes to github from sublime 
+
+- Make the changes 
+- Shift + command + p / Quick commit
+- Commit the changes with a suitable message. The changes are checked in locally 
+
+- Once you have a few changes, push them up. 
+- Shift + command + p / Push
+- Changes should show up online. 
+- Tip : keep mail client open. Everytime the push is successful, a msg will pop up. 
+
 
 
 
