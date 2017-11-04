@@ -17,7 +17,9 @@ categories: howto
 - Changes should show up online. 
 - Tip : keep mail client open. Everytime the push is successful, a msg will pop up. 
 
-
+- Open URL 
+- Ctrl + u 
+- After installing https://packagecontrol.io/packages/Open%20URL
 
 
 # buy a property in pune. 
