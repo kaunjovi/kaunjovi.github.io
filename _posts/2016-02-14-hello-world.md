@@ -8,32 +8,30 @@ categories: howto
 
 
 
-# What is new in OAuth2?? 
 
-- [An Introduction to OAuth 2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
-- [Understanding OAuth2](http://www.bubblecode.net/en/2016/01/22/understanding-oauth2/)
+# buy a property in pune. 
 
-limited access to user accounts on an HTTP service, such as Facebook, GitHub, and DigitalOcean
+https://housing.com/in/buy/real-estate-pune
+[Home buying guide](https://housing.com/buying-guide)
 
-There are four roles
-- Resource Owner : The user who authorizes an application to access their account. 
-- Client : The application which access the data. 
-- Authorization Server (API) : Verify identity of user. Issues access token to client. 
-- Resource Server (API) : The vault that keeps the user accounts. 
-
-Flow of information
-- Register Application with the Service.
-- Service will issue "client credentials"
-  + Client ID is a publicly exposed string that is used by the service API to identify the application
-  + The Client Secret is used to authenticate the identity of the application to the service API when the application requests to access a user's account
-- Application requests "authorization" from User and gets it. 
-  + 
-- Application sends "authorization" to authorization server. Gets "access token". 
-  + 
-- Application sends "access token" to resource server and gets data. 
+# what is the minimum rental yield for the maths to work out. 
 
 
 
+# is this the right time to buy a real estate. 
+
+
+
+Gera Trinity 
+1.5 km - 20 min walk 
+rooms are square at least 
+https://www.99acres.com/gera-trinity-towers-kharadi-pune-npxid-r5786
+http://www.propreview.in/pune/gera-trinity-towers/
+https://www.proptiger.com/pune/kharadi/gera-developments-trinity-towers-513519#discussionPopup513519
+https://www.magicbricks.com/property-for-rent/residential-real-estate?proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Service-Apartment,Residential-House,Villa&cityName=Pune&projectSocity=forest%20county
+
+yes - water. electricity. security
+No - squash
 
 
 # How does OAuth integrate with Spring?? 
