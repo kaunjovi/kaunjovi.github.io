@@ -65,6 +65,23 @@ https://www.toptal.com/javascript/electron-cross-platform-desktop-apps-easy
 
 [Can we have a fitness tracker based community?]
 
+# Indian diet plan after 40 
+
+http://www.thefitindian.com/8-best-healthy-foods-to-eat-before-and-after-a-workout/
+http://www.stylecraze.com/articles/8-healthy-indian-foods-to-keep-you-fit/#gref
+
+Grilled chicken
+Grilled veggies 
+Vegetable soup 
+idly 
+
+
+19 20 21 
+
+
+Oatmeal - How to cook that? 
+
+
 
 
 APN2989413 / 00496849
