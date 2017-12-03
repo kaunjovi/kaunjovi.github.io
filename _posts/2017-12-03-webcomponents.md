@@ -11,7 +11,12 @@ categories: howto
 
 - Custom Elements, HTML Imports, Templates and Shadow DOM.
 - https://www.webcomponents.org/
-- 
+- CUSTOM ELEMENTS: This specification describes the method for enabling the author to define and use new types of DOM elements in a document.
+- HTML IMPORTS: HTML Imports are a way to include and reuse HTML documents in other HTML documents.
+- TEMPLATES: This specification describes a method for declaring inert DOM subtrees in HTML and manipulating them to instantiate document fragments with identical contents.
+- SHADOW DOM: This specification describes a method of establishing and maintaining functional boundaries between DOM trees and how these trees interact with each other within a document, thus enabling better functional encapsulation within the DOM.
+
+
 
 ## What are the libraries for building web components
 
@@ -36,10 +41,6 @@ categories: howto
   + Bosonic is another one out there
 - Polymer team - part of google - works really closely with Chrome’s team.
 - If you know Angular, a directive is a complex API to create custom components. With web components and polymer things get much more simple when creating custom elements.
-- CUSTOM ELEMENTS: This specification describes the method for enabling the author to define and use new types of DOM elements in a document.
-- HTML IMPORTS: HTML Imports are a way to include and reuse HTML documents in other HTML documents.
-- TEMPLATES: This specification describes a method for declaring inert DOM subtrees in HTML and manipulating them to instantiate document fragments with identical contents.
-- SHADOW DOM: This specification describes a method of establishing and maintaining functional boundaries between DOM trees and how these trees interact with each other within a document, thus enabling better functional encapsulation within the DOM.
 - Rob Dodson - part of the Polymer team - has been recording some polycasts. 
 
 
