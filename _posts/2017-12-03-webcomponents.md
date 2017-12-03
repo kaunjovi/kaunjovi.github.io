@@ -13,6 +13,18 @@ categories: howto
 - https://www.webcomponents.org/
 - 
 
+## What are the libraries for building web components
+
+- Bosonic is a collection of components designed to meet the everyday needs of web developers.
+- Polymer provides a set of features for creating custom elements.
+- SkateJS is a JavaScript library for writing web components with a small footprint.
+- Slim.js is an opensource lightweight web component library that provides data-binding and extended capabilities for components, using es6 native class inheritance.
+- Stencil is an opensource compiler that generates standards-compliant web components.
+- X-Tag is an open source JavaScript library that provides an interface for component development.
+- https://www.webcomponents.org/introduction
+- 
+
+
 ## Polymer 
 
 - https://jcrowther.io/2015/07/13/linking-polymer-model-updates-to-angularjs-digest-cycle/
