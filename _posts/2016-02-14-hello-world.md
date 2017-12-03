@@ -6,6 +6,26 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+
+
+I need a window of shortcuts 
+Get rid of the outline of the file. That is just eating up space. 
+
+
+
+## Web Components
+
+- Custom Elements, HTML Imports, Templates and Shadow DOM.
+- 
+
+## Polymer 
+
+- https://jcrowther.io/2015/07/13/linking-polymer-model-updates-to-angularjs-digest-cycle/
+- https://jcrowther.io/2015/05/26/using-polymer-webcomponents-with-angular-js/
+- [Will Polymer kill AngularJS?](http://ng-learn.org/2014/12/Polymer/)
+- 
+
+
 # send changes to github from sublime 
 
 - Make the changes 
@@ -20,6 +40,18 @@ categories: howto
 - Open URL 
 - Ctrl + u 
 - After installing https://packagecontrol.io/packages/Open%20URL
+
+
+## pune, kharadi 
+
+- Kharadi | 6,486per sq.ft. | 6.22 %in last 1 year
+- Marvel Cerise | 2bhk | 25k 
+- Marvel Citrine | 3bhk | 28k 
+- Marvel Citrine | 2bhk | 22k 
+
+
+
+# what is the minimum appreciation required for a real estate be good buy? 
 
 
 # buy a property in pune. 
