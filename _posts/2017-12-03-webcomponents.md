@@ -9,22 +9,26 @@ categories: howto
 
 # Polymer
 
-https://www.youtube.com/watch?v=MaWcS-10NIw
-Why would I need my own web components? 
-[Polymer Tutorials #1 - An Introduction to Polymer](https://www.youtube.com/watch?v=MaWcS-10NIw)
-https://www.youtube.com/watch?v=wId1gMzriRE
+- Why would I need my own web components? 
 
+- https://www.youtube.com/watch?v=MaWcS-10NIw
+- [Polymer Tutorials #1 - An Introduction to Polymer](https://www.youtube.com/watch?v=MaWcS-10NIw)
+- https://www.youtube.com/watch?v=wId1gMzriRE
+- https://www.youtube.com/watch?v=gb1kAeCBq0U
+- https://www.youtube.com/watch?v=Ar6OYy541RU
+- https://www.youtube.com/watch?v=9rXJ5lJ5_TA
+- [Polymer Tutorials #7 - Basic Two-way Data-Binding & Click Events](https://www.youtube.com/watch?v=nDMK0mf0rv4)
 
-Bower to initialize the project. 
-Remind me again. When do we use Bower and when nodejs. 
+- Bower to initialize the project. 
+- Remind me again. When do we use Bower and when nodejs. 
 
-Install nodejs first 
-Install bower 
-bower init 
-index.html 
-bower install --save Polymer/polymer
-<script src="webcomponents.js"></script>
-hello-world.html 
+- Install nodejs first 
+- Install bower 
+- bower init 
+- index.html 
+- bower install --save Polymer/polymer
+- <script src="webcomponents.js"></script>
+- hello-world.html 
 
 
 <link rel='import' href='.../polymer.html'> 
@@ -35,6 +39,14 @@ hello-world.html
   </template>  
 
 </polymer-element> 
+
+
+<link rel='import' href='elements/hello-world.html'
+
+
+## Polymer - Two-way Data-Binding
+
+- https://www.youtube.com/watch?v=nDMK0mf0rv4
 
 
 
