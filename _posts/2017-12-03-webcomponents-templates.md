@@ -18,8 +18,8 @@ categories: howto
   - In that script tag, you would plant your DOM code. 
   - In this option the web page won’t load unnecessary resources but in order to use the template, you need to fetch the script tag element and extract its HTML. That might lead to cross-site scripting vulnerability. We can do better than that.
 
-```javascript
-<script id=""myTemplate"" type=""text/template"">
+```html
+<script id="myTemplate" type="text/template">
   <div>
     …
   </div>
@@ -38,7 +38,7 @@ categories: howto
 
 
 ```html 
-<template id=""myTemplate"">
+<template id='myTemplate'>
   <div>
     …
   </div>
