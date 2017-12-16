@@ -58,6 +58,7 @@ https://www.toptal.com/javascript/electron-cross-platform-desktop-apps-easy
 
 
 
+19748.90
 
 
 
@@ -77,7 +78,7 @@ idly
 
 
 19 20 21 
-
+p 
 
 Oatmeal - How to cook that? 
 

@@ -11,5 +11,11 @@ categories: howto
 
 - View / layout / column 2 
 - View / hide minimap 
+- 
 - Shift + com + P + quick commit 
+- Shift + com + F - find 
+- 
+- ctrl + w - close window
+- ctrl + s - save current file
+- 
 - 

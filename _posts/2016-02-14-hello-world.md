@@ -13,21 +13,6 @@ Get rid of the outline of the file. That is just eating up space.
 
 
 
-## Web Components
-
-- Custom Elements, HTML Imports, Templates and Shadow DOM.
-- 
-
-## Polymer 
-
-- https://jcrowther.io/2015/07/13/linking-polymer-model-updates-to-angularjs-digest-cycle/
-- https://jcrowther.io/2015/05/26/using-polymer-webcomponents-with-angular-js/
-- [Will Polymer kill AngularJS?](http://ng-learn.org/2014/12/Polymer/)
-- The Polymer core provides a thin layer of API on top of web components.
-- There are other players in market 
-  + X-Tag, a small JavaScript library, created and supported by Mozilla. 
-  + Bosonic is another one out there
-- Polymer team - part of google - works really closely with Chrome’s team.
 
 # send changes to github from sublime 
 
@@ -3251,9 +3236,6 @@ export class AppModule {}
 ### Which all packages are installed in my Sublime installation? 
   - TBD 
 
-## Sublime | shortcuts 
-  - S+tab - collapse / uncollapse.  
-  - A+cmd+enter - open the url in the chrome. 
 
 # TypeScript
   - It seems to be js the way it should have been. Best to spend time only on the bits that gets something done. E.g. the bits that make Angular2 tick. 

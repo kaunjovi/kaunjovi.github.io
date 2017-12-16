@@ -7,22 +7,50 @@ categories: howto
 ---
 
 
+# Polymer
+
+https://www.youtube.com/watch?v=MaWcS-10NIw
+Why would I need my own web components? 
+[Polymer Tutorials #1 - An Introduction to Polymer](https://www.youtube.com/watch?v=MaWcS-10NIw)
+https://www.youtube.com/watch?v=wId1gMzriRE
+
+
+Bower to initialize the project. 
+Remind me again. When do we use Bower and when nodejs. 
+
+Install nodejs first 
+Install bower 
+bower init 
+index.html 
+bower install --save Polymer/polymer
+<script src="webcomponents.js"></script>
+hello-world.html 
+
+
+<link rel='import' href='.../polymer.html'> 
+
+<polymer-element name='hello-world' noscript> 
+  <template>
+    <h1>Hello world</h1> 
+  </template>  
+
+</polymer-element> 
+
+
+
 ## Web Components
 
 - Custom Elements, HTML Imports, Templates and Shadow DOM.
 - https://www.webcomponents.org/
 - CUSTOM ELEMENTS: This specification describes the method for enabling the author to define and use new types of DOM elements in a document.
 - HTML IMPORTS: HTML Imports are a way to include and reuse HTML documents in other HTML documents.
-- TEMPLATES: This specification describes a method for declaring inert DOM subtrees in HTML and manipulating them to instantiate document fragments with identical contents.
+- Templates  
+  - This specification describes a method for declaring inert DOM subtrees in HTML and manipulating them to instantiate document fragments with identical contents.
+  + https://kaunjovi.github.io/howto/2017/12/03/webcomponents-templates/
+
 - SHADOW DOM: This specification describes a method of establishing and maintaining functional boundaries between DOM trees and how these trees interact with each other within a document, thus enabling better functional encapsulation within the DOM.
 - http://www.dotnetcurry.com/html5/1079/html5-web-components-tutorial
 - Create HTML reusable components. 
-
-
-## Templates 
-
-- https://kaunjovi.github.io/howto/2017/12/03/webcomponents-templates/
-
 
 
 
