@@ -10,21 +10,19 @@ categories: howto
 # get some music 
 - do we have some good website to download music from anymore? 
 - Is bittorent site working yet? 
-
-
-# forturner 
+- There is a slower manual process of doing it one by one from youtube. 
+- [online video converter](https://www.onlinevideoconverter.com/mp3-converter) 
 
 ## fortuner 4X4 AT 
-385
 
-  What are the problems with AT? 
-    full transmission replacement.
-    ECU reprogramming
-    https://www.topgear.com.ph/news/industry-news/what-s-the-real-score-about-the-new-toyota-fortuner-s-auto-transmission-issue-a00058-a36-20160624
-    Clutch plate defect 
-    https://www.complaintboard.in/complaints-reviews/toyota-fortuner-l55372.html
-    Clutch plate wearing out too soon. 
-    https://autoportal.com/newcars/toyota/fortuner/reviews/clutch-worn-out-at-9800-km-24348.html
+# What are the problems with Fortuner AT? 
+- full transmission replacement.
+- ECU reprogramming
+- [click here](https://www.topgear.com.ph/news/industry-news/what-s-the-real-score-about-the-new-toyota-fortuner-s-auto-transmission-issue-a00058-a36-20160624)
+- Clutch plate defect 
+- https://www.complaintboard.in/complaints-reviews/toyota-fortuner-l55372.html
+- Clutch plate wearing out too soon. 
+- https://autoportal.com/newcars/toyota/fortuner/reviews/clutch-worn-out-at-9800-km-24348.html
 
   4x2 MT 
     I m getting mileage less than 09 kmpl in the city and 11 over the highway
