@@ -7,27 +7,60 @@ categories: howto
 ---
 
 
-
-I need a window of shortcuts 
-Get rid of the outline of the file. That is just eating up space. 
-
-
+# get some music 
+- do we have some good website to download music from anymore? 
+- Is bittorent site working yet? 
 
 
-# send changes to github from sublime 
+# forturner 
 
-- Make the changes 
-- Shift + command + p / Quick commit
-- Commit the changes with a suitable message. The changes are checked in locally 
+## fortuner 4X4 AT 
+385
 
-- Once you have a few changes, push them up. 
-- Shift + command + p / Push
-- Changes should show up online. 
-- Tip : keep mail client open. Everytime the push is successful, a msg will pop up. 
+  What are the problems with AT? 
+    full transmission replacement.
+    ECU reprogramming
+    https://www.topgear.com.ph/news/industry-news/what-s-the-real-score-about-the-new-toyota-fortuner-s-auto-transmission-issue-a00058-a36-20160624
+    Clutch plate defect 
+    https://www.complaintboard.in/complaints-reviews/toyota-fortuner-l55372.html
+    Clutch plate wearing out too soon. 
+    https://autoportal.com/newcars/toyota/fortuner/reviews/clutch-worn-out-at-9800-km-24348.html
 
-- Open URL 
-- Ctrl + u 
-- After installing https://packagecontrol.io/packages/Open%20URL
+  4x2 MT 
+    I m getting mileage less than 09 kmpl in the city and 11 over the highway
+    https://autoportal.com/newcars/toyota/fortuner/reviews/less-on-mileage-14316.html
+
+  4X2 AT 
+    7.8kmpl and 12.5kmpl 
+    7.8kmpl and 12.5kmpl 
+    https://autoportal.com/newcars/toyota/fortuner/reviews/an-suv-with-pocket-drilling-13785.html
+
+
+## endeavour, 4x4 AT 
+350 
+
+## what does my car need to have 
+
+Better reach that the current honda city. 
+Easier to drive than honda city. Automatic. Or consider a driver. 
+At par or less consumption of fuel. Diesel. If petrol it needs to be frugal. 
+Something that I can keep in pristine condition. 
+  Either the cost for upkeep is too less. 
+  Or you factor in the cost. 
+
+
+# where to go 
+
+Shimla 
+  March to June
+  
+  Jakhu Temple
+    Jakhu Temple Park, Jakhu, Shimla, Himachal Pradesh 171001
+
+
+Jaipur 
+  October to March
+
 
 
 ## pune, kharadi 

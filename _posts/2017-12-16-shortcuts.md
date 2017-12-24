@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      shortcuts
-date:       2017-12-03 
+date:       2017-12-16 
 summary:    shortcuts
 categories: howto 
 ---
@@ -12,10 +12,12 @@ categories: howto
 - View / layout / column 2 
 - View / hide minimap 
 - 
-- Shift + com + P + quick commit 
+- Shift + com + P + quick commit
+- Shift + com + P + push
 - Shift + com + F - find 
 - 
+- ctrl + u - open url 
 - ctrl + w - close window
 - ctrl + s - save current file
 - 
-- 
+- ctrl + cmd + up - line up 
