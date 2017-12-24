@@ -7,6 +7,21 @@ categories: howto
 ---
 
 
+# Invest in shares 
+
+- https://www.linkedin.com/company/2160857/
+- [Open an account with Zerodha](https://zerodha.com)
+
+# Samsung Gear Fit 2 Pro
+
+- if
+  - check physically. does it check heart beat. 
+  - walk for 5000 steps for 30 days 
+  -  
+- [13590 on flipkart dec 24](https://www.flipkart.com/samsung-gear-fit-2-pro/p/itmfybewedu2qejg?pid=SBNEYDNFH2ZNMREH&sattr=color&st=color&otracker=hp_pmu_v2_Recently%2520Viewed_1_deskt-homep-2499f_Samsung%2520Gear%2520Fit%25202%2520Black%2520Smartwatch_SMWEHFT8DHJXS9YS_gamificationAndPersonalisation%252FrecentlyViewed_0)
+- 
+
+
 # get some music 
 - do we have some good website to download music from anymore? 
 - Is bittorent site working yet? 
@@ -29,7 +44,6 @@ categories: howto
     https://autoportal.com/newcars/toyota/fortuner/reviews/less-on-mileage-14316.html
 
   4X2 AT 
-    7.8kmpl and 12.5kmpl 
     7.8kmpl and 12.5kmpl 
     https://autoportal.com/newcars/toyota/fortuner/reviews/an-suv-with-pocket-drilling-13785.html
 
