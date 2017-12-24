@@ -6,8 +6,34 @@ summary:    Getting started with webcomponents
 categories: howto 
 ---
 
+# Polymer with Angular2 
+
+https://www.youtube.com/watch?v=XcEMov0BWvA
+
+
+
+# lit-html 
+
+https://www.youtube.com/watch?v=Io6JjgckHbg
+
+
+### How to test for performance? 
+WebPageTest 
+
+
+# Polymer 3.0 
+Will move from bower to npm. yaaaay. 
+JS modules instead of import 
+
+
+# Polymer 2.0 
+
+# Polymer 1.0 
+
 
 # Polymer
+
+
 
 - Why would I need my own web components? 
 

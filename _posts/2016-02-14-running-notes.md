@@ -83,21 +83,3 @@ categories: howto
 
 # linked in account 
   
-  - https://www.linkedin.com/in/julianharris
-  - 
-
-Hi. 
-
-
-I create great internet software that people love, and have worked exclusively with internet software (mostly Java) since my career started in 1993. I have cofounded 2 companies: one internet technology consulting, the second adding social media to museums and galleries. Until recently I held a long tenure at Google.
-
-Since around 2003 I held technical leadership roles while keeping close to the technology, which is endlessly fascinating for me. I have led teams, programmes and products regularly with teams of several dozen across dozens of countries.
-
-In my 7+ years at Google, I worked on internet software at a global level with an enormous range of people, technologies and products, and led the design and delivery of several dozen internal sales support products products to help Google's advertising sales force become more productive using agile/lean methods. Led engineering teams of up to 12 people, with stakeholder networks of up to 40 people across the globe.
-
-Prior to Google I worked in the UK, Barcelona, the Bay Area, and New Zealand delivering agile projects written in Java on leading edge / innovative projects. I led the technical programme for Friends Provident eSelect which won 11 industry awards for innovation and usability. I led the technical programme for Telefonica's "PDSL" project, a cutting edge online consumer services product. I worked on one of the earliest commercial java projects in New Zealand (Clear Communications number management system). 
-
-
-Specialties: Internet software design, ebusiness, open standards, Agile coach, Agile software delivery, Agile project management, Certified Scrum Master, Java / App Engine / Chrome / HTML5, user experience design, Web 2.0, Social Computing and how it impacts your business. Ruby on Rails.
-
-

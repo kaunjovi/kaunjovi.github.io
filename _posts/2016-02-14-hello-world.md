@@ -7,12 +7,50 @@ categories: howto
 ---
 
 
+# How to install Java 9 
+
+- If you had a java installed already, 
+- This is where you have it. 
+
+```
+$ echo $(/usr/libexec/java_home)
+/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
+```
+
+- Now go ahead, download and install Java 9 version. 
+- You might still get Java 8 at the terminal 
+- If so you might have to edit your .bash_profile
+- You might have set java home to be your older installation
+
+```
+open -e .bash_profile
+```
+
+- If everything is fine 
+- You should see java version 9 in your terminal 
+
+```
+$ java -version 
+java version "9.0.1"
+Java(TM) SE Runtime Environment (build 9.0.1+11)
+Java HotSpot(TM) 64-Bit Server VM (build 9.0.1+11, mixed mode)
+```
+
+
+
+
 # Invest in shares 
 
 - https://www.linkedin.com/company/2160857/
 - [Open an account with Zerodha](https://zerodha.com)
 
-# Samsung Gear Fit 2 Pro
+# Get fit 
+
+- Get a bike and a reason to bike a couple of times a week.
+- Get a good quality calorie counter 
+
+
+## Samsung Gear Fit 2 Pro
 
 - if
   - check physically. does it check heart beat. 
