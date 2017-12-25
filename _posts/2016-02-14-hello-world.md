@@ -7,6 +7,18 @@ categories: howto
 ---
 
 
+
+
+# Network 
+- CTO @ Thoughtworks, Rebecca Parsons
+- Tejasvita Saran
+
+
+# Cartoons 
+- http://www.alexcartoon.com/index.cfm?showall=1
+
+
+
 # How to install Java 9 
 
 - If you had a java installed already, 
