@@ -7,8 +7,6 @@ categories: howto
 ---
 
 
-
-
 # Network 
 - CTO @ Thoughtworks, Rebecca Parsons
 - Tejasvita Saran
@@ -17,6 +15,30 @@ categories: howto
 # Cartoons 
 - http://www.alexcartoon.com/index.cfm?showall=1
 
+# Benchmarking Java code using Junit 
+
+- http://labs.carrotsearch.com/junit-benchmarks-tutorial.html
+
+# Integrate Gradle with EclipseOxygen 
+
+# Install Gradle on mac, manually 
+
+- https://kodejava.org/how-do-i-install-gradle-in-os-x/
+
+
+sudo rm -fr /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk
+
+
+System.out.println(${word_selection}${});${cursor}
+
+
+
+${:import(org.slf4j.Logger,org.slf4j.LoggerFactory)}
+private static final Logger log = LoggerFactory.getLogger(${enclosing_type}.class);
+
+
+
+log.debug(${word_selection}${});${cursor}
 
 
 # How to install Java 9 
