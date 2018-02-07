@@ -7,6 +7,43 @@ categories: howto
 ---
 
 
+# How to uninstall Java 9 from Mac? 
+[How to uninstall Java 9 from Mac](https://gist.github.com/schnell18/bcb9833f725be22f6acd01f94b486392)
+
+
+# What is the latest version of Java? 
+- Version 8 Update 161 for mac. 
+- Release date January 16, 2018 
+
+# What is the version of Java on my mac? 
+```
+$ java -version 
+java version "1.8.0_162"
+Java(TM) SE Runtime Environment (build 1.8.0_162-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.162-b12, mixed mode)
+```
+
+# Where is Java stored in my mac? 
+
+```
+$ pwd 
+/Library/Java/JavaVirtualMachines
+$ ls -lart 
+total 0
+drwxr-xr-x  3 root  wheel  102 Feb  8 00:37 jdk1.8.0_162.jdk
+drwxrwxr-x  4 root  wheel  136 Feb  8 00:37 ..
+drwxr-xr-x  3 root  wheel  102 Feb  8 00:37 .
+```
+
+
+
+
+# What is the latest Eclipse? 
+Eclipse Oxygen 
+
+
+
+
 
 ## links 
 
