@@ -7,6 +7,18 @@ categories: howto
 ---
 
 
+
+## links 
+
+[Ted talk on grit](https://www.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance)
+
+
+
+
+6th Jan 2015
+27th Nov 2017
+
+
 # Network 
 - CTO @ Thoughtworks, Rebecca Parsons
 - Tejasvita Saran
@@ -18,6 +30,34 @@ categories: howto
 # Benchmarking Java code using Junit 
 
 - http://labs.carrotsearch.com/junit-benchmarks-tutorial.html
+
+# How to annotate your test cases? 
+
+- https://www.mkyong.com/java/java-custom-annotations-example/
+
+# How to run your own behaviour on a Junit call? 
+
+- https://dzone.com/articles/writing-your-own-junit
+- http://cwd.dhemery.com/2010/12/junit-rules/
+- https://garygregory.wordpress.com/2011/09/25/understaning-junit-method-order-execution/
+
+
+Declare your own TestRule. 
+Create an instance of that in the test class. 
+
+
+
+TestRule.apply() allows you to intercept the flow. 
+The regular statement is there. You can use that or create a new one and pass that. 
+
+Satement.evaluate() is called. 
+Do whatever you want in that one. 
+Or you could call base.evaluate() to let the regular flow go on. 
+
+
+BenchmarkOptions options = description.getAnnotation(BenchmarkOptions.class);
+        if (options != null) return options;
+
 
 # Integrate Gradle with EclipseOxygen 
 
@@ -180,8 +220,14 @@ http://www.propreview.in/pune/gera-trinity-towers/
 https://www.proptiger.com/pune/kharadi/gera-developments-trinity-towers-513519#discussionPopup513519
 https://www.magicbricks.com/property-for-rent/residential-real-estate?proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Service-Apartment,Residential-House,Villa&cityName=Pune&projectSocity=forest%20county
 
-yes - water. electricity. security
-No - squash
+## Price movement in Kharadi 
+
+- [8% up since Oct 15](https://www.magicbricks.com/Real-estate-projects-Search/residential-new-project?proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment&cityName=Pune&projectSocity=forest%20county&price=Y&bar_propertyType_new=10002_10003_10021_10022&mbTrackSrc=tabChange)
+- [3% up since Oct 15](https://www.magicbricks.com/Real-estate-projects-Search/residential-new-project?proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment&cityName=Pune&projectSocity=forest%20county&price=Y&bar_propertyType_new=10002_10003_10021_10022&mbTrackSrc=tabChange)
+- [3% up since Oct 15](https://www.magicbricks.com/Real-estate-projects-Search/residential-new-project?&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment&cityName=Pune&bedrooms=11702&projectSocity=geras%20trinity%20towers&mbTrackSrc=tabChange&page=1&category=S)
+- [2% up since Oct 15](https://www.magicbricks.com/Real-estate-projects-Search/residential-new-project?proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment&cityName=Pune&projectSocity=forest%20county&price=Y&bar_propertyType_new=10002_10003_10021_10022&mbTrackSrc=tabChange)
+- [3% down since Oct 15. Song of Joy](https://www.magicbricks.com/Real-estate-projects-Search/residential-new-project?proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment&cityName=Pune&projectSocity=forest%20county&price=Y&bar_propertyType_new=10002_10003_10021_10022&mbTrackSrc=tabChange)
+
 
 
 # How does OAuth integrate with Spring?? 
