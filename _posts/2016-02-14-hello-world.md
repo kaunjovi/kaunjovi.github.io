@@ -35,11 +35,32 @@ drwxrwxr-x  4 root  wheel  136 Feb  8 00:37 ..
 drwxr-xr-x  3 root  wheel  102 Feb  8 00:37 .
 ```
 
+# What is the version of Gradle on my mac? 
 
+```
+$ gradle -version 
+
+------------------------------------------------------------
+Gradle 4.4.1
+------------------------------------------------------------
+
+Build time:   2017-12-20 15:45:23 UTC
+Revision:     10ed9dc355dc39f6307cc98fbd8cea314bdd381c
+
+Groovy:       2.4.12
+Ant:          Apache Ant(TM) version 1.9.9 compiled on February 2 2017
+JVM:          1.8.0_162 (Oracle Corporation 25.162-b12)
+OS:           Mac OS X 10.12.6 x86_64
+```
 
 
 # What is the latest Eclipse? 
 Eclipse Oxygen 
+
+## Does Oxygen work well with Gradle? 
+
+
+
 
 
 
