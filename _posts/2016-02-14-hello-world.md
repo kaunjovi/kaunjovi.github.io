@@ -53,9 +53,28 @@ JVM:          1.8.0_162 (Oracle Corporation 25.162-b12)
 OS:           Mac OS X 10.12.6 x86_64
 ```
 
+# Integrate Gradle with Eclipse? 
+There is this buildship thing that seems to be the preferred thing 
+http://download.eclipse.org/buildship/updates/e47/releases/2.x
+
+
+## Building Java Projects with Gradle
+
+https://spring.io/guides/gs/gradle/
+Create an empty projet in github. 
+https://github.com/kaunjovi/gradleJava101.git
+Import into Oxygen as a general project
+Add Gradle nature
+Create a build.gradle and add java nature. 
+Create a src/main/java and add a HelloWorld class
+Run 'gradle build' and everything should compile
+Apply application plugin and declare main class 
+Run 'gradle run' and you should see the SOP 
+
+
 
 # What is the latest Eclipse? 
-Eclipse Oxygen 
+Eclipse Oxygen 2 
 
 ## Does Oxygen work well with Gradle? 
 
@@ -219,7 +238,29 @@ Java HotSpot(TM) 64-Bit Server VM (build 9.0.1+11, mixed mode)
 
 
 ## endeavour, 4x4 AT 
-350 
+- Endy does not come with ISOFIX.
+- ACM and TCM updated. (PCM was updated last month)
+- Ford puts a sticker on the shaft which starts to come off after some time. 
+- I have one of those AQI monitors,
+- Sync 2 **SUCKS**.
+- The Sync3 system is fantastic and very responsive to use so is the touch screen.
+- Is there a MyKey. What does that do? 
+- Is the 5th tyre the same size? 
+- Accelerator Pedal Vibration over 2000 rpm ( read somewhere it's the throttle wire ? )
+- The car is a breeze below 80kmh. Above 80kmh the whistle noise from windshield is annoying.
+- The light for high beam is a bit low. Would love to know if there is a fix and what should I do for it
+- [click here](https://www.youtube.com/watch?v=RXYv7eymvHo)
+
+
+
+# How to buy a property ? 
+- go by location 
+- know the area 
+- know the builder - jeweller 
+- builder - godrej 
+
+
+
 
 ## what does my car need to have 
 
