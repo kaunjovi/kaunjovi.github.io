@@ -7,6 +7,104 @@ categories: howto
 ---
 
 
+
+# Blockchain
+
+- https://www.youtube.com/watch?v=SSo_EIwHSd4 
+- What is the hash ? 
+- What is the proof of work ? 
+- Everyone in the network gets a full copy of the blockchain 
+  + How does that work? 
+  + Would I not need a lot of space on my computer
+  + What is a smart contract? 
+  + 
+- https://www.youtube.com/watch?v=5BGCKkgW8CU 
+- How many intermediaries come into play when I pay for something that I paid on Amazon? 
+- How do I join the blockchain network? 
+- How do I create a network of blockchain nodes? 
+- Can I have my own private little blockchain network? 
+- You have to take over more than 50% of the network and change the truth. 
+
+- https://www.youtube.com/watch?v=bBC-nXj3Ng4
+- public ledger 
+- Partha says Partha pays XX too ABC and then sign it. Digital signature. 
+- Digital signature. The proof that she has seen it and approves of it. 
+- Nobody else should be able to forge that digital signature. 
+- What if Tom just copies Alice's signature? Whatever the number might be. 
+- You have a secret key that you dont share. 
+- Take the message that you want to sign on. 
+- The signature is a function of your secret key and the message. 
+- Changing the message will change the signature and hence. 
+- The signature is generally 256 bits. 
+- You also have a public key 
+- Verify (message, digital sign on the message, your public key ) = Either True / False 
+- Ok, I get it. I cant copy just the signature. What if I copy the message and the signature? 
+- So, for the message to be secured by signing, there needs to be a unique number there. Datetime? 
+- Ok. So what if the maths is alright but Alice is a crook and she pulls a modi. 
+- Keep a running check. Nobody can spend what she does not own. 
+- LD (Ledger Dollars)
+- History of transactions *is the currency*
+- Alice adds a transaction in her ledger and broadcasts. Tom is listening. But how could he trust. 
+- The hash function. SHA256( "Humpty dumpty sat on a wall."), creates a *hash* or a *digest* of a fixed length, say 256 bits. 
+- SHA256 
+  + Is a cryptographic hash function 
+  + The hash is one way i.e. you can't create or guess the message from the digest. 
+  + 
+- Proof of work 
+  + Add a number at the end of the ledger. 
+  + This number will cause the combined SHA256 to start with 30 zeroes. 
+  + You will have to spend the time guessing and running checks to come to the number. 
+  + I can quickly check if the number indeed generates a SHA with 30 zeroes. 
+  + Proof of work - hard to put in the work - easy to check that the work was put in. 
+- How the block is created 
+  + All listen to transactions being broadcasted. 
+  + Collect them into a block. 
+  + Each block is limited to about 2400 transactions. 
+  + Prepend with the previous hash. 
+  + Append with a proof of work. 
+  + Add a small fee to the block and hope to be accepted. 
+  + This money does not come from anyone and is called mining. 
+  + Now there are nodes that are not listening for transactions. 
+  + They are looking for blocks. 
+  + They get the block and add them to their personal ledger. 
+  + In case of conflict pick the one with the longest block chain. 
+  + So, dont believe the new kid in the block chain. 
+  + Wait till the chain has grown a bit 
+  + And you have not heard a conflicting chain of blocks.
+- How much work is required to put in the proof of work 
+  + The intent is to require about 10 minutes to do the work. 
+  + The work is to find the number that when hashed with the rest of the message 
+  + creates a hash that is zeros for the first N numbers 
+  + The N is generally changed periodically to keep the time taken to approx 10 minutes
+
+
+- [Home page of blockchain](http://blockchain.info)
+- [Check out the first transaction](https://blockexplorer.com/block/000000006a625f06636b8bb6ac7b960a8d03705d1ace08b1a19da3fdcc99ddbd)
+- [protocol labs]()
+- [Mining Bitcoin with pencil and paper](https://www.youtube.com/watch?v=y3dqhixzGVo)
+
+- Secure Hashing Algorithm (SHA1)
+  + NSA created SHA1 in 1990s 
+
+## Ethereum
+
+- https://www.youtube.com/watch?v=-SMliFtoPn8
+- HashBash
+- How does the hashing work? 
+- A hash gives a string of a XX length for any input. 
+- With a small change in the input the hash changes by a lot. 
+- Who get to add the next block. 
+  + A whole group of people racing to get to be the next one to add a block 
+  + 
+
+## Merkel Trees 
+
+- Git uses Merkel Tree 
+- 
+
+
+
+
 # How to uninstall Java 9 from Mac? 
 [How to uninstall Java 9 from Mac](https://gist.github.com/schnell18/bcb9833f725be22f6acd01f94b486392)
 
