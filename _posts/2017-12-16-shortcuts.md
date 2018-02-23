@@ -20,4 +20,6 @@ categories: howto
 - ctrl + w - close window
 - ctrl + s - save current file
 - 
-- ctrl + cmd + up - line up 
+- ctrl + cmd + up - line up
+- 
+- ?? - opne URL  
