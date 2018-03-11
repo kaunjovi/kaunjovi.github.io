@@ -476,6 +476,31 @@ https://www.magicbricks.com/property-for-rent/residential-real-estate?proptype=M
 - [Angularjs for mobile and desktop](https://angular.io/)
 
 
+# [A re-introduction to JavaScript (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+
+- History
+- JS created in 1995 by Brendan Eich while he was an engineer at Netscape.
+- JS was first released with Netscape 2 early in 1996.
+- Several months after that, Netscape submitted JavaScript to Ecma International, a European standards organization, which resulted in the first edition of the ECMAScript standard that year. 
+- Many parts of the fourth edition formed the basis for ECMAScript edition 5, published in December of 2009, and for the 6th major edition of the standard, published in June of 2015.
+- Basics 
+  - No concept of input or output. 
+  - Supposed to be scripting language in a host environment, 
+  - It is up to the host environment to provide mechanisms of i/p and o/p 
+  - The possible host environments are 
+    - Browser
+    - Adobe Acrobat, Adobe Photoshop, 
+    - SVG images, 
+    - Yahoo's Widget engine, 
+    - server-side environments such as Node.js, 
+    - NoSQL databases like the open source Apache CouchDB, 
+    - embedded computers, 
+    - complete desktop environments like GNOME (one of the most popular GUIs for GNU/Linux operating systems)
+    - and other 
+
+
+
+
 # [Quickstart for AngularJS](https://angular.io/guide/quickstart)
 
 - Angular CLI is the maven archetype of AngularJS
@@ -500,6 +525,8 @@ Angular:
 ...
 ```
 
+- [What is Closure? Is that used by Google more than AngularJS](https://developers.google.com/closure/library/)
+- [stackoverflow : how popular is AngularJS](https://insights.stackoverflow.com/trends?tags=angular%2Creactjs&utm_campaign=trends&utm_content=blog-link&utm_medium=blog&utm_source=so-owned)
 
 
 
