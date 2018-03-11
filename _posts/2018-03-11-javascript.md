@@ -40,3 +40,10 @@ categories: howto
 - functions are objects, 
 - Functions have the capacity to hold executable code 
 - Functiona can be passed around like any other object.
+
+## JavaScript types 
+
+- Number, String, Boolean 
+- Symbol 
+- Object : Function, Array, Date, RegExp 
+- null, undefined  
