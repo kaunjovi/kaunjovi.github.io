@@ -83,6 +83,32 @@ categories: howto
 - [protocol labs]()
 - [Mining Bitcoin with pencil and paper](https://www.youtube.com/watch?v=y3dqhixzGVo)
 
+
+- [5 tips for setting up mining hardware](https://www.youtube.com/watch?v=cIZ-huV7ccw)
+- [How Much can you make from building and mining 6 GPU rig with Ethereum and NiceHash Part 1](https://www.youtube.com/watch?v=RU3ldvvlYPE)
+- [How Much can you make from building and mining 6 GPU rig with Ethereum and NiceHash Part 2](https://www.youtube.com/watch?v=OEUAktaVhQs)
+- [How I lost $100,000 in Bitcoin, Litecoin, & Ethereum - Lessons Learned](https://www.youtube.com/watch?v=ednsMWsbbKA)
+  + app called coinbase 
+  + Three currencies on there - bitcoin, ehereum and litecoin 
+  + Some stupid guy. Investing only on gut feelings. 
+- [BITCOIN CRASH EXPLAINED BY BITCOIN MILLIONAIRE](https://www.youtube.com/watch?v=uZlDpQpC2pM)
+  + 
+   
+ 
+
+
+## What is the cost of a 3 bedroom in Tuscan ? 
+## What is the cost of a 3 bedroom in Trinity ? 
+
+
+- What is Nicehash miner ?
+- dash.org. What is ? 
+- 
+
+
+- [Genesis Mining](https://www.youtube.com/watch?v=2Jqf_wZKFCc)
+
+
 - Secure Hashing Algorithm (SHA1)
   + NSA created SHA1 in 1990s 
 
@@ -348,6 +374,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 9.0.1+11, mixed mode)
 - The car is a breeze below 80kmh. Above 80kmh the whistle noise from windshield is annoying.
 - The light for high beam is a bit low. Would love to know if there is a fix and what should I do for it
 - [click here](https://www.youtube.com/watch?v=RXYv7eymvHo)
+- Pune - 39.24 
+- Delhi - 35.19 
 
 
 
@@ -425,15 +453,63 @@ https://www.magicbricks.com/property-for-rent/residential-real-estate?proptype=M
 - [2% up since Oct 15](https://www.magicbricks.com/Real-estate-projects-Search/residential-new-project?proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment&cityName=Pune&projectSocity=forest%20county&price=Y&bar_propertyType_new=10002_10003_10021_10022&mbTrackSrc=tabChange)
 - [3% down since Oct 15. Song of Joy](https://www.magicbricks.com/Real-estate-projects-Search/residential-new-project?proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment&cityName=Pune&projectSocity=forest%20county&price=Y&bar_propertyType_new=10002_10003_10021_10022&mbTrackSrc=tabChange)
 
-
+- Gera developer 
+  + Song of Joy 
+    * 2 bhk - 1227 sq ft - 85 
+    * 3 bhk - 1675 sq ft - 1.23 
+    * 
 
 # How does OAuth integrate with Spring?? 
 
 [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
 
 
+# neo4j 
 
 
+# angularjs 
+
+- [Home page](https://angularjs.org/)
+
+# New angularjs
+
+- [Angularjs for mobile and desktop](https://angular.io/)
+
+
+# [Quickstart for AngularJS](https://angular.io/guide/quickstart)
+
+- Angular CLI is the maven archetype of AngularJS
+- You need node, npm, angularCLI etc. 
+
+```
+$ node -v && npm -v && ng -v
+v6.9.5
+5.7.1
+
+    _                      _                 ____ _     ___
+   / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+  / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+ / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+/_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+               |___/
+    
+Angular CLI: 1.7.3
+Node: 6.9.5
+OS: darwin x64
+Angular: 
+...
+```
+
+
+
+
+# Schools at Pune 
+
+- http://www.sahyadrischool.org/index.php
+- http://www.indusschool.com/international-school-pune/
+- http://www.smspune.com/
+- http://www.thebishopsschool.org/tbsweb/Public/Home.aspx
+- https://www.mbis.org/
 
 
 
