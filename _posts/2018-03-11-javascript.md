@@ -47,3 +47,14 @@ categories: howto
 - Symbol 
 - Object : Function, Array, Date, RegExp 
 - null, undefined  
+
+## Number 
+
+- Not an integer. If you are *java* or *C* person, please take care. 
+- double-precision 64-bit format IEEE 754 values - if that makes any sense. 
+
+- Huh ???? 
+
+```javascript
+0.1 + 0.2 == 0.30000000000000004;
+```
