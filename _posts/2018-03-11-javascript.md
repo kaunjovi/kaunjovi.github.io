@@ -87,6 +87,9 @@ isFinite(NaN); // false
 'hello'.charAt(0); // "h"
 'hello, world'.replace('hello', 'goodbye'); // "goodbye, world"
 'hello'.toUpperCase(); // "HELLO"
+'hello' + ' world'; // "hello world"
+'3' + 4 + 5;  // "345", starts from left, moves to right. 
+ 3 + 4 + '5'; // "75"
 ```
 
 
@@ -105,6 +108,14 @@ isFinite(NaN); // false
 ```javascript
 Boolean('');  // false
 Boolean(234); // true
+
+// Equality *might* do implicit type changes. 
+123 == '123'; // true
+1 == true; // true
+
+// If you did not want JS to be over smart 
+123 === '123'; // false
+1 === true;    // false
 ```
 
 ## Variables in JS 
@@ -149,3 +160,76 @@ for (var myVarVariable = 0; myVarVariable < 5; myVarVariable++) {
 // myVarVariable *is* visible out here
 
 ```
+
+## Control structures 
+
+### if else if else 
+
+```javascript
+var name = 'kittens';
+if (name == 'puppies') {
+  name += ' woof';
+} else if (name == 'kittens') {
+  name += ' meow';
+} else {
+  name += '!';
+}
+```
+
+### while 
+
+```javascript
+while (true) {
+  // an infinite loop!
+}
+```
+
+### do while 
+
+```javascript
+var input;
+do {
+  input = get_input();
+} while (inputIsNotValid(input));
+```
+
+### for 
+
+```javascript
+for (var i = 0; i < 5; i++) {
+  // Will execute 5 times
+}
+```
+
+### for of 
+
+```javascript
+for (let value of array) {
+  // do something with value
+}
+```
+
+### for in 
+
+```javascript
+for (let property in object) {
+  // do something with object property
+}
+```
+
+### switch case default 
+
+```javascript
+switch (action) {
+  case 'draw':
+    drawIt();
+    break;
+  case 'eat':
+    eatIt();
+    break;
+  default:
+    doNothing();
+}
+```
+
+
