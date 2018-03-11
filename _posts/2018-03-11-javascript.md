@@ -39,7 +39,7 @@ categories: howto
 - JavaScript also supports functional programming 
 - functions are objects, 
 - Functions have the capacity to hold executable code 
-- Functiona can be passed around like any other object.
+- Functions can be passed around like any other object.
 
 ## JavaScript types 
 
@@ -57,4 +57,34 @@ categories: howto
 
 ```javascript
 0.1 + 0.2 == 0.30000000000000004;
+```
+
+- addition, subtraction, modulus (or remainder) arithmetic, 
+
+```javascript
+Math.sin(3.5);
+var circumference = 2 * Math.PI * r;
+parseInt('123', 10); // 123, 10 is the base. 
+parseInt('010', 10); // 10
+parseInt('010');  //  8
+parseInt('0x10'); // 16
+parseInt('11', 2); // 3, 2 is the base. 
+// parseFloat() always uses base 10.
+parseInt('hello', 10); // NaN
+NaN + 5; // NaN
+isNaN(NaN); // true
+1 / 0; //  Infinity
+-1 / 0; // -Infinity
+isFinite(1 / 0); // false
+isFinite(-Infinity); // false
+isFinite(NaN); // false
+```
+
+## Strings 
+
+```javascript
+'hello'.length; // 5
+'hello'.charAt(0); // "h"
+'hello, world'.replace('hello', 'goodbye'); // "goodbye, world"
+'hello'.toUpperCase(); // "HELLO"
 ```
