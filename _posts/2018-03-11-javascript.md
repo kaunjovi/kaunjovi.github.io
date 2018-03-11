@@ -88,3 +88,22 @@ isFinite(NaN); // false
 'hello, world'.replace('hello', 'goodbye'); // "goodbye, world"
 'hello'.toUpperCase(); // "HELLO"
 ```
+
+
+## Two types of things that are not there. 
+- null, a value that indicates a deliberate non-value 
+- In JS you can declare a variable without assigning a value to it.
+- It then becomes undefined. 
+- undefined is actually a constant.
+- undefined, which is a value of type undefined that indicates an uninitialized value
+
+## And there there are the true and false. 
+- false, 0, empty strings (""), NaN, null, and undefined all become false.
+- All other values become true.
+- && (logical and), || (logical or), and ! (logical not)
+
+```javascript
+Boolean('');  // false
+Boolean(234); // true
+```
+
