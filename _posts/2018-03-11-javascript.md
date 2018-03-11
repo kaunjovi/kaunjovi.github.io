@@ -100,10 +100,52 @@ isFinite(NaN); // false
 ## And there there are the true and false. 
 - false, 0, empty strings (""), NaN, null, and undefined all become false.
 - All other values become true.
-- && (logical and), || (logical or), and ! (logical not)
+- The logical operators - && (logical and), || (logical or), and ! (logical not)
 
 ```javascript
 Boolean('');  // false
 Boolean(234); // true
 ```
 
+## Variables in JS 
+
+- blocks do not have scope; only functions have a scope.
+- starting with ECMAScript 2015, let and const declarations allow you to create block-scoped variables.
+
+### let varaibles 
+
+```javascript
+let a;
+let name = 'Simon';
+
+// myLetVariable is *not* visible out here
+
+for (let myLetVariable = 0; myLetVariable < 5; myLetVariable++) {
+  // myLetVariable is only visible in here
+}
+
+// myLetVariable is *not* visible out here
+```
+
+### const variables 
+
+```javascript
+const Pi = 3.14; // variable Pi is set 
+Pi = 1; // will throw an error because you cannot change a constant variable.
+```
+
+### var variables 
+
+```javascript
+var a; 
+var name = 'Simon';
+
+// myVarVariable *is* visible out here 
+
+for (var myVarVariable = 0; myVarVariable < 5; myVarVariable++) { 
+  // myVarVariable is visible to the whole function 
+} 
+
+// myVarVariable *is* visible out here
+
+```
