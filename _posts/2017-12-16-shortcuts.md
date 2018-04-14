@@ -23,3 +23,4 @@ categories: howto
 - ctrl + cmd + up - line up
 - 
 - ?? - opne URL  
+- multiple edits - ?? 
