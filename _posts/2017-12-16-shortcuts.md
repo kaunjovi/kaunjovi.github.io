@@ -23,4 +23,10 @@ categories: howto
 - ctrl + cmd + up - line up
 - 
 - ?? - opne URL  
-- multiple edits - ?? 
+- multiple edits - Command+Ctrl+G
+-
+- command+1/2/3 - jump to the page. 
+- 
+
+# Eclipse 
+alt+cmd+down - copy the same below. 
