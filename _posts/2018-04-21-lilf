@@ -7,6 +7,38 @@ categories: howto
 ---
 
 
+# Idea 
+
+- We need the 5 easy steps to prod. 
+
+# Microservices
+
+## What are microservices anyway? 
+
+- Microservices are APIs. - 
+
+- Microframeworks like Spring Boot, Grails (which builds on Spring Boot), JHipster (which builds on Spring Boot), DropWizard, Lagom, and WildFly Swarm are, at a minimum, optimized for quickly standing up REST services with a minimum of fuss.
+- address all production requirements including security, observability and monitoring
+- Cloud computing technologies like Cloud Foundry, OpenShift, Heroku, and Google App Engine provide higher- level abstractions for managing the lifecycle of software. - 
+
+- Services should expose their own health endpoints, metadata about the service itself, logs, threadumps, configuration and environment information, and whatever else could be operationally useful. 
+- Services should also track the progression of both business and operational metrics. 
+- Metrics can be overwhelming, and so it makes sense to publish collected metrics to time-series databases that support analytics
+- time-series databases like Graphite, Atlas, InfluxDB, and OpenTSDB
+- like Dropwizard Metrics and Micrometer.io to publish them.
+
+
+# sublime shortcuts 
+
+- ctrl+cmd+up/down - move the line up or down. 
+
+
+
+References 
+[Microservices in Java](https://dzone.com/storage/assets/7260948-dzone-rc234-microservicesinjava.pdf)
+
+
+
 
 # Read, keep copy and share. 
 
