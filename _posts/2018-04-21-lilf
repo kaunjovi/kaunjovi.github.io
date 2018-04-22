@@ -16,10 +16,21 @@ categories: howto
 ## What are microservices anyway? 
 
 - Microservices are APIs. - 
+- A framework that, 
+  + helps put up a REST service. Optimized for that. 
+  + then it handles production requirements
+    * security, observability and monitoring
 
-- Microframeworks like Spring Boot, Grails (which builds on Spring Boot), JHipster (which builds on Spring Boot), DropWizard, Lagom, and WildFly Swarm are, at a minimum, optimized for quickly standing up REST services with a minimum of fuss.
-- address all production requirements including security, observability and monitoring
-- Cloud computing technologies like Cloud Foundry, OpenShift, Heroku, and Google App Engine provide higher- level abstractions for managing the lifecycle of software. - 
+- Examples of microservices frameworks 
+  + Spring Boot, 
+  + Grails (which builds on Spring Boot), 
+  + JHipster (which builds on Spring Boot), 
+  + DropWizard, 
+  + Lagom, and 
+  + WildFly Swarm 
+
+- Cloud computing technologies like 
+- Cloud Foundry, OpenShift, Heroku, and Google App Engine provide higher- level abstractions for managing the lifecycle of software. - 
 
 - Services should expose their own health endpoints, metadata about the service itself, logs, threadumps, configuration and environment information, and whatever else could be operationally useful. 
 - Services should also track the progression of both business and operational metrics. 
@@ -27,20 +38,28 @@ categories: howto
 - time-series databases like Graphite, Atlas, InfluxDB, and OpenTSDB
 - like Dropwizard Metrics and Micrometer.io to publish them.
 
+# Good practices for cloud apps 
 
-# sublime shortcuts 
-
-- ctrl+cmd+up/down - move the line up or down. 
+- environment-specific configuration should live external to the application itself.
 
 
 
 References 
 [Microservices in Java](https://dzone.com/storage/assets/7260948-dzone-rc234-microservicesinjava.pdf)
+[Twelve factor app methodology]
 
+# sublime shortcuts 
 
+- ctrl+cmd+up/down - move the line up or down. 
+
+- cmd+x - delete the line 
 
 
 # Read, keep copy and share. 
+
+## 2018 APR 22
+
+- [People learning software](https://medium.freecodecamp.org)
 
 ## 2018 APR 21 
 
