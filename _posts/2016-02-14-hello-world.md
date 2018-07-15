@@ -7,6 +7,17 @@ categories: howto
 ---
 
 
+# What is Progressive Web App (PWA)?
+PWA has made the far fetched dream of installing web apps on phone for real.
+progressive web apps are a hybrid of regular web pages (or websites) and a mobile application
+It starts as a normal web page in a browser, and as a user explores the webpage, they get the prompt if they would like to “Add to Home Screen”. Once the user gives the thumbs up to this prompt, VOILA! PWA gets added to their home screen. Once open from the home screen, it can even hide the browser UI controls and appear as an app.
+
+Service Worker( A script that the browser runs in the background separate from web page), which is the backbone of every PWA.
+
+ 
+
+
+
 
 # Blockchain
 
