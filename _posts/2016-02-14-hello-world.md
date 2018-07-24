@@ -6,28 +6,109 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+# Junit in java main method.  
+
+- Why would you want to do that? 
+- At times you might not want to really create a junit. 
+- You want to create a main method and see if something works the way you think. 
+- In the same code, you *do* want to check if some things are true, or false. 
+- So, can you use the asserts within regular java code? 
+- Yeah. You could do that. 
+
+```java
+import static org.junit.Assert.assertTrue;
+
+public class HelloWorld {
+  public static void main(String[] args) {
+
+    System.out.println("Hello world.");
+
+    // This will throw a nice assertion error, if you like that sort of thing.
+    assertTrue("This will break the flow.", false);
+
+    System.out.println("Yo. You should not see me.");
+  }
+} 
+```
+
+# Lambda function in Java 
+
+- We create code and pass it as a parameter. 
+- It is executed by something else, later in point of time and in a different context. 
+- You can only use *anonymous class* to do this sort of thing, because you can only send classes, not functions. 
+- Now this can be done by using *lambda expression*
+
+## How do you do all that? 
+
+- You create a funcational interface. 
+- That is an interface with only one abstract method. 
+- Then you go ahead and create an instance of that interface. 
+- Yeah. Instance of that interface. It should break but it wont. 
+- Because you will provide a lambda for that missing *abstract method*
+
+```java 
+interface FunctionalInterface {
+  void abstractMethod();
+  // you can't have more than one abstract method in an interface.
+  // if you do it will not compile.
+  // void abstractMaths();
+}
+
+interface AnotherFunctionalInterface {
+  int doSomeMaths(int x, int y);
+}
+
+public class TestLambda001 {
+
+  @Test
+  public void test() {
+
+    FunctionalInterface f001 = () -> System.out.println("Hello world from lambda.");
+    f001.abstractMethod();
+
+    FunctionalInterface f002 = () -> System.out.println("And we can change the implementation");
+    f002.abstractMethod();
+
+    AnotherFunctionalInterface f003 = (int x, int y) -> {
+      System.out.println("Adding " + x + " and " + y + ".");
+      return x + y;
+    };
+
+    assertTrue(f003.doSomeMaths(10, 20) == 30);
+
+    AnotherFunctionalInterface f004 = (int x, int y) -> {
+      System.out.println("Subtracting " + y + " from " + x + ".");
+      return x - y;
+    };
+    assertTrue(f004.doSomeMaths(20, 10) == 10);
+  }
+
+}
+
+```
 
 
-## What is the best way to integrate Sublime with Git? 
-- Gitsavvy: this is the newer one. Works only on Sublime3. 
-- Did not see the quick commit. Hence not pursuing at the moment.  
-
-## What are the packages installed in my Sublime at the moment? 
+## Why do we need lambda function in java?
+## What is it that lambda function can do that we cant do otherwise in java? 
+## How do  you unit test lambda functions? 
 
 
-## What are the stuff that you would like to work with a git repo? 
-- Check which branch you are at. 
-- Create a new feature branch. 
-- Check the status. Is there any staged file. Is there any untracked file. 
-- You can stage / unstage the files. 
-- You can commit the staged (and unstaged) files.
-- You can do git:log which should show you a list of commit messages. 
 
-- https://www.youtube.com/watch?v=HLU_D8ZiqRs
+## reference
+
+- https://medium.freecodecamp.org/learn-these-4-things-and-working-with-lambda-expressions-b0ab36e0fffc
 
 
 
 
+
+
+# Do I have more than one eclipse on my mac? 
+
+
+
+
+# Angular 6 
 
 - [Angular 6](https://angular.io)
 - [Angular 6 - Beginner crash course](https://www.youtube.com/watch?v=z4JUm0Bq9AM)
