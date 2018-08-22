@@ -6,6 +6,34 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+# Machine Learning in Java 
+
+- parthabh.tech@gmail.com 
+- https://dzone.com/users/3374313/parthabhtech.html?firstTime=true
+- [The simplest explanation of machine learning you’ll ever read](https://hackernoon.com/the-simplest-explanation-of-machine-learning-youll-ever-read-bebc0700047c)
+- AI is a type of ML. 
+
+# WEKA, ML and Java
+
+- [What is the Weka Machine Learning Workbench](https://machinelearningmastery.com/what-is-the-weka-machine-learning-workbench/)
+- What is J48 classifier tree? 
+- [WEKA Prediction of Student Results](https://www.youtube.com/watch?v=q9AU-zqs71M)
+- 
+
+
+# Machine Learning with BigQuery 
+
+- [Trending Kernels](https://www.kaggle.com/explore-projects?utm_medium=email&utm_source=intercom&utm_campaign=data+projects+onboarding)
+- [Getting Started with SQL and BigQuery](https://www.kaggle.com/dansbecker/getting-started-with-sql-and-bigquery)
+- [List of BigQuery Dataset](https://www.kaggle.com/datasets)
+- [Investigating London crime](https://www.kaggle.com/willcanniford/starting-point-big-query-and-london-crime)
+
+
+# Tensorflow 
+
+- Google Cloud Platform’s Vision API, and React Native.
+
+
 # Junit in java main method.  
 
 - Why would you want to do that? 
