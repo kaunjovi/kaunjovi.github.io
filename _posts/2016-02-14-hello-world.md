@@ -6,6 +6,110 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+
+Why is ETMoney any better? 
+1. What is zero commission investment? 
+2. What is the commission in other platforms? 
+3. What are the other platforms? 
+
+What is the different between investing in "direct plans" vs otherwise? 
+1. If you invest in non direct plans, you lose money on a regular basis. 
+2. These are commissions on a daily basis. 
+3. Goes upto 40% of the total wealth. 
+
+Mutual Funds AMC website and buy Direct Funds
+
+CAMS, KARVY
+
+1. https://www.camsonline.com/
+    1. CAMS (Computer Age Management Services)
+    2. Mutual Fund Transfer Agency 
+2. https://www.karvy.com/
+    1. SIGNUP FOR FREE KARVY MUTUAL FUND ACCOUNT
+    2. KARVY stock broking 
+    3. Open DMAT and Trading account. 5,500 Rs. 
+
+
+valueresearchonline.com
+morningstar.in 
+crisil.com
+
+HDFC top 100 
+
+satish jain - 98101 55808
+varunsangal@yahoo.com
+
+
+## QuietControl® 30 wireless headphones
+
+QuietComfort 20 or QuietComfort 35 has better noise cancellation. 
+Not going to pay near about 30K and not get the best noise cancellation. 
+
+## SoundSport Free wireless headphones
+
+- https://www.theverge.com/circuitbreaker/2017/10/27/16508068/bose-soundsport-free-review-truly-wireless-earbuds
+- https://www.theverge.com/circuitbreaker/2017/10/27/16508068/bose-soundsport-free-review-truly-wireless-earbuds
+- [problem with sync](https://community.bose.com/t5/Headphones-Archive/SoundSport-Free-Lag/td-p/81042)
+- Listening to the Punch Brothers
+- Afrobeat sounds of MonoMono - chorus of call-and-response voices in the Nigerian band’s music sound distinct
+- Margo Price, a rising country star
+- Bragi Dash earbuds as a facsimile
+
+
+
+
+
+
+
+# Registrar and Transfer Agents (RTAs)
+- Larger Indian Mutual Fund Industry has benefited from outsourcing the activity of servicing their investors 
+- 65% CAMS (Computer Age Management Services) 
+- 35% is with Karvy. 
+- Franklin Templeton Mutual Fund services its investors through its own in-house RTA set up.
+- Customer Service Centers (CSCs)
+
+
+One who sells Funds with low expense ratio but charges from the customers on their own,
+MF plans labeled as 'Direct Plans' 
+
+sells funds with high expense ratio and get paid back as commission; they don't charge any fees from customers
+MF Plans labelled as ' Regular Plan'
+
+
+# Asset management company (AMC)
+
+The sponsor is defined under Sebi regulations 
+as a person who, acting alone or in combination with another body corporate, 
+establishes a mutual fund. 
+The sponsor forms a trust, 
+appoints the board of trustees, and 
+has the right to appoint the asset management company (AMC) or fund manager.
+
+
+https://www.valueresearchonline.com/?
+
+
+# Can you forward gmail to work email? 
+- Why 
+  + We might want to fw a few emails from dzone etc. 
+  + We dont want to create a new account and identity. 
+  + We want to use the existing one. 
+  + The firm will not allow bringing in own mac or logging in external sites. 
+
+# Containers 
+
+- https://www.openstack.org/containers/leveraging-containers-and-openstack/
+- Docker and Kubernetes
+- Containers, container infrastructure, and container deployment technologies
+- bare-metal machines for managing infrastructure, virtual machines for legacy applications, and containers for newer applications
+- OpenStack is currently the best available option for building private clouds, with the ability to manage networking, storage and compute infrastructure, with support for virtual machines, bare-metal, and containers from one control plane.
+- Kubernetes
+  + Production-Grade Container Orchestration
+  + Automated container deployment, scaling, and management
+  + builds upon 15 years of experience of running production workloads at Google
+  + on-premises, hybrid, or public cloud infrastructure
+
+
 # Machine Learning in Java 
 
 - parthabh.tech@gmail.com 
