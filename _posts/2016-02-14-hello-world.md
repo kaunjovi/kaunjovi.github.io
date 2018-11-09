@@ -6,6 +6,43 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+# Angular 7 
+
+# Angular 6, PWA
+
+- https://coursetro.com/posts/code/167/Building-Your-First-Angular-PWA-from-Scratch-(Angular-6)- 
+- If PWA, and if offline, it *will still work*, at least partially. 
+  + potential use for static website. 
+    * if offline, the data will still show, because it is cached. 
+  + Do we have an api for santa banta or rajnikant jokes ? 
+    * if not, shall we create one? 
+    * 
+
+
+# Angular 5 
+
+- https://coursetro.com/courses/19/Learn-Angular-5-from-Scratch---Angular-5-Tutorial
+
+
+# Angular 4 
+
+- https://coursetro.com/es/angular-dev/free-course
+- Do you have node installed ?
+
+```
+$ node -v
+v10.13.0
+```
+
+
+
+
+
+Baddy - D--617
+
+
+https://propertytax.punecorporation.org/onlinepay/prop_dues_details.aspx
+
 
 Why is ETMoney any better? 
 1. What is zero commission investment? 
@@ -39,6 +76,20 @@ HDFC top 100
 satish jain - 98101 55808
 varunsangal@yahoo.com
 
+hariom - ew04076 - paisabazaar 
+
+117226374 - Ht...18 
+4059XXXXXXXX3832
+
+
+
+## xuv 500 
+
+- 15% family income. 
+- https://www.youtube.com/watch?v=AY3kdHElha0
+  + very muted review. 
+- https://www.youtube.com/watch?v=lc4maAi5dMI
+  + cheaper then the previous one?? What does that mean. 
 
 ## QuietControl® 30 wireless headphones
 
@@ -49,6 +100,8 @@ Not going to pay near about 30K and not get the best noise cancellation.
 
 - https://www.theverge.com/circuitbreaker/2017/10/27/16508068/bose-soundsport-free-review-truly-wireless-earbuds
 - https://www.theverge.com/circuitbreaker/2017/10/27/16508068/bose-soundsport-free-review-truly-wireless-earbuds
+- https://www.youtube.com/watch?v=1dyzjJrVNts
+  + Airpods dont have sync problem with youtube. 
 - [problem with sync](https://community.bose.com/t5/Headphones-Archive/SoundSport-Free-Lag/td-p/81042)
 - Listening to the Punch Brothers
 - Afrobeat sounds of MonoMono - chorus of call-and-response voices in the Nigerian band’s music sound distinct
