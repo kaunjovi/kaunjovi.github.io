@@ -32,7 +32,40 @@ categories: howto
 ```
 $ node -v
 v10.13.0
+$ npm -v
+6.4.1
+$ npm install -g @angular/cli
+...
+...
+$ ng version 
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+    
+
+Angular CLI: 7.0.5
+Node: 10.13.0
+OS: darwin x64
+Angular: 
+... 
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.10.5
+@angular-devkit/core         7.0.5
+@angular-devkit/schematics   7.0.5
+@schematics/angular          7.0.5
+@schematics/update           0.10.5
+rxjs                         6.3.3
+typescript                   3.1.6
+
 ```
+
+
 
 
 
