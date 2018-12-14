@@ -6,72 +6,40 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
-# Angular 7 
 
-# Angular 6, PWA
+# What is Progressive Web App (PWA)?
+- PWA has made the far fetched dream of installing web apps on phone for real.
+- progressive web apps are a hybrid of regular web pages (or websites) and a mobile application
+- It starts as a normal web page in a browser, and as a user explores the webpage, they get the prompt if they would like to “Add to Home Screen”. Once the user gives the thumbs up to this prompt, VOILA! PWA gets added to their home screen. Once open from the home screen, it can even hide the browser UI controls and appear as an app.
 
-- https://coursetro.com/posts/code/167/Building-Your-First-Angular-PWA-from-Scratch-(Angular-6)- 
-- If PWA, and if offline, it *will still work*, at least partially. 
-  + potential use for static website. 
-    * if offline, the data will still show, because it is cached. 
-  + Do we have an api for santa banta or rajnikant jokes ? 
-    * if not, shall we create one? 
-    * 
+- Service Worker( A script that the browser runs in the background separate from web page), which is the backbone of every PWA.
 
 
-# Angular 5 
+- [No nonsense](https://medium.com/dev-channel/learn-how-to-build-a-pwa-in-under-5-minutes-c860ad406ed)
+  - What is Firebase? 
+    + https://firebase.google.com
+    + Firebase helps mobile app teams succeed
+    + Start for free, then pay as you go.
+    + Does not look like I need a credit card. Yet. Yaaaay. :) 
+  - What is LightHouse? 
+    + https://developers.google.com/web/tools/lighthouse/
+    + Lighthouse is an open-source, automated tool for improving the quality of web pages.
+    + You can run Lighthouse in Chrome DevTools, from the command line, or as a Node module. 
 
-- https://coursetro.com/courses/19/Learn-Angular-5-from-Scratch---Angular-5-Tutorial
+- [Investigate a bit more on this. Looks genuine coder](https://medium.com/@mkearney)
 
+- [Step by step. PWA with React](https://dzone.com/articles/a-step-by-step-tutorial-for-developing-a-progressi)
+  + Why are everyone pushing to firebase? Why not heroku? 
+  + Seems apart from React, Kickstart could also be very well used. 
 
-# Angular 4 
-
-- https://coursetro.com/es/angular-dev/free-course
-- Do you have node installed ?
-
-```
-$ node -v
-v10.13.0
-$ npm -v
-6.4.1
-$ npm install -g @angular/cli
-...
-...
-$ ng version 
-
-     _                      _                 ____ _     ___
-    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
-   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
-  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
- /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
-                |___/
-    
-
-Angular CLI: 7.0.5
-Node: 10.13.0
-OS: darwin x64
-Angular: 
-... 
-
-Package                      Version
-------------------------------------------------------
-@angular-devkit/architect    0.10.5
-@angular-devkit/core         7.0.5
-@angular-devkit/schematics   7.0.5
-@schematics/angular          7.0.5
-@schematics/update           0.10.5
-rxjs                         6.3.3
-typescript                   3.1.6
-
-```
+- [Attempts a template. Might be good](https://medium.freecodecamp.org/how-you-can-make-a-progressive-web-app-in-an-hour-7e36d560610e)
+- [Somehow it got into iphone. Did not understand that.](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/)
 
 
+# How to work with the router.
 
-
-
-
-
-Baddy - D--617
+- http://192.168.0.1/index.htm
+- Baddy - D--615
 
 
 https://propertytax.punecorporation.org/onlinepay/prop_dues_details.aspx
@@ -317,35 +285,11 @@ public class TestLambda001 {
 - https://medium.freecodecamp.org/learn-these-4-things-and-working-with-lambda-expressions-b0ab36e0fffc
 
 
-
-
-
-
-# Do I have more than one eclipse on my mac? 
-
-
-
-
 # Angular 6 
 
 - [Angular 6](https://angular.io)
 - [Angular 6 - Beginner crash course](https://www.youtube.com/watch?v=z4JUm0Bq9AM)
 - [VSCode - you can do that with VSCode](https://www.youtube.com/watch?v=0NaICXxYtwA)
-
-
-
-
-
-# What is Progressive Web App (PWA)?
-- PWA has made the far fetched dream of installing web apps on phone for real.
-- progressive web apps are a hybrid of regular web pages (or websites) and a mobile application
-- It starts as a normal web page in a browser, and as a user explores the webpage, they get the prompt if they would like to “Add to Home Screen”. Once the user gives the thumbs up to this prompt, VOILA! PWA gets added to their home screen. Once open from the home screen, it can even hide the browser UI controls and appear as an app.
-
-- Service Worker( A script that the browser runs in the background separate from web page), which is the backbone of every PWA.
-
- 
-
-
 
 
 # Blockchain
@@ -3879,10 +3823,6 @@ app.listen(process.env.PORT || 3000, function () {
   - [Go Bootcamp](http://www.golangbootcamp.com/book/)
   - [Learn X in Y minutes](https://learnxinyminutes.com/docs/go/)
   - 
-
-
-# What is Progressive web apps (PWAs)? 
-  - ??
 
 
 
