@@ -7,8 +7,6 @@ categories: howto
 ---
 
 
-# Does this show up as well? 
-
 # Tasks 
 
 - Provide documents to ukil 
