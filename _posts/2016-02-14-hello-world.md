@@ -7,9 +7,26 @@ categories: howto
 ---
 
 
+# Fasttag
+
+- Can the same fasttag be used in different cars?
+
+
+180000210450
+wallet - 18000002104501
+Fastag123
+
 # Tasks 
 
 - Provide documents to ukil 
+  - HDFC
+    - Change address from B2 to B1.  
+  - BOB 
+  - Yes 
+  - Citi 
+    - You might want to close down the citi account. 
+      - They are talking of minimum charges and all. 
+
 - 
 
 
