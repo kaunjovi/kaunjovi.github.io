@@ -1,3 +1,27 @@
+# Notes
+
+- Use this as a scratchpad for rough notes. 
+- Things should move to their respective pages as soon as they can. 
+- This is the refactoring of notes. 
+- Till they are on the scratchpad they will not be available for public view. 
+
+## Markdown and Visual Studio Code
+
+- [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
+
+## How do we switch off a few of the md file lint checks?
+
+- Who is doing the check anyway? 
+
+
+
+## What is the benefit of checking in without pushing the changes
+
+- You can keep working while you are offline. 
+- And then as you get online you push your changes in. 
+- Makes sense. But could we make check in and pull happen in the same go in MSCode. (??)
+
+
 ### Kafka
 
   * Download the latest. Unzip it and put it in your fav location. 
