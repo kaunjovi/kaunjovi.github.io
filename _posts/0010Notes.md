@@ -5,24 +5,24 @@
 - This is the refactoring of notes. 
 - Till they are on the scratchpad they will not be available for public view. 
 
+
 ## Markdown and Visual Studio Code
 
 - [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
-
-## How do we switch off a few of the md file lint checks?
-
-- Who is doing the check anyway? 
-
-
+- Switch off some of the pesky lint warnings
+- [Markdown linting and style checking for Visual Studio Code](https://github.com/DavidAnson/vscode-markdownlint#configure)
+- How do I get the new line dashes automatically? 
+- XXX
+- Can we somehow have the different headers show differently in editor
+- XXX
 
 ## What is the benefit of checking in without pushing the changes
 
 - You can keep working while you are offline. 
 - And then as you get online you push your changes in. 
-- Makes sense. But could we make check in and pull happen in the same go in MSCode. (??)
+- Makes sense. But could we make check in and pull happen in the same go in MSCode.(??)
 
-
-### Kafka
+## Kafka
 
   * Download the latest. Unzip it and put it in your fav location. 
   * 0.9.0.1 is the latest version at the moment. 
