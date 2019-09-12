@@ -1018,11 +1018,6 @@ google compute engine 1
 https://dzone.com/articles/real-world-angular-series-part-7a-relational-data?edition=311405&utm_source=Weekly%20Digest&utm_medium=email&utm_campaign=java%202017-08-02
 
 
-# Startup, AWS 
-
-AWS System Blueprint for a Startup
-https://dzone.com/articles/aws-system-blueprint-for-a-startup?edition=311405&utm_source=Weekly%20Digest&utm_medium=email&utm_campaign=java%202017-08-02
-
 
 
 # Apache Beam 
