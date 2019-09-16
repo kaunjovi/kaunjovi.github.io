@@ -21,6 +21,7 @@
 - The scraper ought to fill the datatabase
 - Then we can do some analysis
 
+
 ## Visual Studio Code 
 
 ## Markdown and Visual Studio Code
