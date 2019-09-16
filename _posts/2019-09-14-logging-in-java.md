@@ -50,3 +50,7 @@ private static final Logger LOG = LoggerFactory.getLogger(${enclosing_type}.clas
 logger.debug("Hello world.");
 logger.info("Example log from {}", Example.class.getSimpleName());
 ```
+
+### Making it work with gradle 
+
+- In Eclipse, when we run the gradle test run, these output are not hitting console. 
