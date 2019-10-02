@@ -13,6 +13,7 @@ categories: howto
 - if you just needed to connect to a static website
 - get some static html 
 - and fetch some information from that HTML
+- https://mvnrepository.com/artifact/org.jsoup/jsoup
 
 ```java
 Document doc = Jsoup.connect("https://beta.nseindia.com/get-quotes/equity?symbol=YESBANK").get();
