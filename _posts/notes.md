@@ -1,3 +1,42 @@
+
+Python Development: pipenv
+
+https://www.stuartellis.name/articles/mac-setup/#python-development-pipenv
+
+## What is the current version of Python in my Mac ? 
+
+
+
+
+
+
+Current versions of macOS include a copy of Python 3, but this will not be the latest version of Python. Use Homebrew to install the latest release of Python.
+
+To maintain current and clean Python environments, you should also use pipenv. 
+This builds on two features of Python: the virtual environments and the pip utility.
+
+Enter this command to install Python 3 and pipenv using Homebrew:
+
+```
+brew install python3 pipenv
+```
+
+Use pipenv to manage your Python projects. The pipenv tool itself will automatically work with the copy of Python 3 from Homebrew.
+
+To use the Python 3 interpreter outside of projects that are managed by pipenv, specify python3 on the command-line and in your scripts, rather than python:
+
+python3 --version
+
+If you need to run the pip utility, rather than setting up a development environment with pipenv, always use the command pip3:
+
+pip3 --version
+
+The Python Guide tutorial shows you how to work with pipenv.
+
+
+
+
+
 Refactor agressively. As soon as any section is worth sharing, give it its own page. 
 
 # React vs AngularJS
