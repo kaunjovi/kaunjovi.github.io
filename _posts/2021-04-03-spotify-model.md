@@ -107,3 +107,33 @@ https://www.linkedin.com/pulse/agile-transformation-henrik-kniberg-octo-technolo
 Anders Ivarsson
 
 Alistair Cockburn (one of the founding fathers of agile software development) visited Spotify and said “Nice - I've been looking for someone to implement this matrix format since 1992 :)
+
+
+# Food chart 
+
+- https://blog.decathlon.in/articles/weight-loss-indian-diet-chart
+- Breakfasts are to be hearty and wholesome. Options like paratha, idlis, dosa, uttapam, bread and eggs are good choices.
+- Breakfast should be taken within thirty minutes of waking up.
+- Lunch should be a medium affair with dal, sabzi, roti and curd or rice, rajma, chole etc.
+- Dinner should be light such as khichdi or dal chawal or curd rice.
+- Dinner should be taken at least two hours before bedtime.
+- Apart from the main meals, there should be 2-3 mini meals as well.
+- These mini meals can consist of fruits, nuts, salads, peanuts etc.
+
+# Hello world on apple store 
+
+- Should I invest time learning iOS app? 
+- Learn from the existing team. Check what they are doing? 
+- https://medium.com/swlh/your-first-ios-application-using-xcode-9983cf6efb71
+
+# Learn from those who failed at startups in India 
+
+- Meena - connect with him - he is some sort of startup guide 
+- Dont get into the hit radius of biggies - Flipkart, Amazon and Paytm Mall
+- Lack of funds
+- the consumers have no need for its products
+- Self-funded Russsh did not have the cash-flow or the capital to take on greater rivals in the space
+- It is likewise essential to raise funds whenever the situation demands even if you are a bootstrapped organization.
+
+- https://www.investindia.gov.in/team-india-blogs/how-artificial-intelligence-based-startups-are-transforming-industries?utm_source=twitter&utm_medium=social&utm_campaign=sector&utm_content=blogs_generic&utm_term=
+
