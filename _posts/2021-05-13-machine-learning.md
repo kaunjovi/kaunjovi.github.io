@@ -74,6 +74,29 @@ categories:
 - In fact have SL under R as well to capture any gap down start. 
 - Safeguarding capital is the biggest concern. More than making money. 
 
+# What are the different sectors in NSE 
+
+- [Sectoral Indices](https://www1.nseindia.com/products/content/equities/indices/sectoral_indices.htm)
+
+
+## MAGMA
+
+Magma Fincorp Ltd
+NBFC
+NIFTY FINANCIAL SERVICES
+https://www.nseindia.com/get-quotes/equity?symbol=MAGMA
+https://economictimes.indiatimes.com/magma-fincorp-ltd/stocks/companyid-8917.cms
+
+
+HDFCMFGETF
+CPSEETF
+MIRAEAMC - MAFANG
+
+## VADILALIND
+Vadilal Industries Ltd
+Vadilal was started as a soda company in 1907, 
+the founder Vadilal Gandhi used to make ice cream by the traditional Kothi method.
+son, Ranchod Lal Gandhi, ran a one-man operation with a hand-cranked machine, started a small retail outlet in 1926.
 
 
 

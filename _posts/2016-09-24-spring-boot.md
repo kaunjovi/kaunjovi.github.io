@@ -6,6 +6,8 @@ summary:    Notes on Spring Boot
 categories: notes Spring Boot
 ---
 
+
+
 [Link to self](http://kaunjovi.github.io/notes/spring/boot/2016/09/24/spring-boot/)
 
 ### Reference 

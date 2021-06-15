@@ -137,3 +137,58 @@ Alistair Cockburn (one of the founding fathers of agile software development) vi
 
 - https://www.investindia.gov.in/team-india-blogs/how-artificial-intelligence-based-startups-are-transforming-industries?utm_source=twitter&utm_medium=social&utm_campaign=sector&utm_content=blogs_generic&utm_term=
 
+# How to find in the entire folder in VSCodium ? 
+
+# What is Spotify model ? 
+
+
+# UBS CEO 
+
+- Ralph Hamers - born 25 May 1966
+- CEO of Dutch bank ING Group. 29 years. CEO at ING from October 2013 until June 2020. 
+- He steered the bank to profitability while repaying the Dutch government money it received during the financial crisis. 
+- ING invested heavily in its digital transformation,  
+- leading to the bank having one of the lowest cost-to-revenue ratios in Europe at the time.
+- He has a MS in business econometrics/operations research from Tilburg University.[4][1]
+- Hire less. Hire better. 
+- Bring Spotify model. 
+
+- Deyfus - McKenzie model
+- ING 
+- largest wealth manager - 
+- Deepak Sharma 
+- Deepak Gupta - 
+- Blackrock Sugandha operations 
+- Priyanshu - Gurgaon 
+
+
+
+
+## What are the questions to ask for long term investments in stocks? 
+[MOVETO] buying stocks 
+
+- Is this safe domain ? Would people need it no matter what ? 
+- Is this stock the top 3 of its domain ? 
+- Has this stock given consistent returns? 10, 5, 3, 1. 
+- Has this stock given multibagger returns? 
+- Any competitor ? 
+- How resilient to disruption (tech or otherwise) ? 
+- What are promoters doing ? Are they buying more ? 
+- What are the MF doing ? Are they buying more ? 
+
+- What books to read ? 
+
+- Earnings per share (EPS):
+- Price – to – earning (P/E Ratio)
+- Price – to – book ratio (P/B Ratio)
+- Why Calculate P/B ratio?
+- Dividend yield ratio.
+- Dividend Payout Ratio.
+- Price to sales ratio (P/S Ratio):
+- Return on equity (ROE)
+
+# How to find duplicate code for refactoring in Python ? 
+
+# How to set tab for 4 spaces in VSCode
+
+# What is the "The Zen of Python" 
