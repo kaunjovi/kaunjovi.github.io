@@ -13,6 +13,17 @@ categories: notes Spring Boot
 - /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk
 - What is the story with AdoptOpenJDK? https://adoptopenjdk.net
 
+```
+/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk
+```
+
+```
+kaunjovi@devbook ~ % java --version 
+openjdk 11.0.11 2021-04-20
+OpenJDK Runtime Environment AdoptOpenJDK-11.0.11+9 (build 11.0.11+9)
+OpenJDK 64-Bit Server VM AdoptOpenJDK-11.0.11+9 (build 11.0.11+9, mixed mode)
+```
+
 ## Integrate Open JDK with Visual Studio 
 
 - Install "Language Support for Java(TM) by Red Hat"
@@ -28,14 +39,3 @@ categories: notes Spring Boot
 
 
 
-```
-/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk
-```
-
-
-```
-kaunjovi@devbook ~ % java --version 
-openjdk 11.0.11 2021-04-20
-OpenJDK Runtime Environment AdoptOpenJDK-11.0.11+9 (build 11.0.11+9)
-OpenJDK 64-Bit Server VM AdoptOpenJDK-11.0.11+9 (build 11.0.11+9, mixed mode)
-```
