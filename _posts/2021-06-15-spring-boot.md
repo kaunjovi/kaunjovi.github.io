@@ -100,7 +100,7 @@ hello_world()
 print (hello_world.__doc__) 
 ```
 
-### default values in Python
+### default arguments in Python
 
 ```python
 def hello ( name = 'Partha') :
@@ -113,6 +113,22 @@ def hello ( name = 'Partha') :
 if __name__ == "__main__":
     hello() 
     hello('buddy')
+```
+
+### variable number of arguments in Python
+
+```python
+def variable_number_of_args ( *args ) :
+    """
+    Function to handle variable number of arguments. 
+    """ 
+    for arg in args : 
+        print(f'{arg}')
+
+if __name__ == "__main__":
+    variable_number_of_args('Hello', 'world')
+    variable_number_of_args('Multiple', 'args', 'of', 'different', 1, 2.0, 'types are', 'handled')
+
 ```
 
 ## Functions in Python pass by ref only 
