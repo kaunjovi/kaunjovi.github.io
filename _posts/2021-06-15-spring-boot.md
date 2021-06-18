@@ -100,6 +100,76 @@ hello_world()
 print (hello_world.__doc__) 
 ```
 
+### default values in Python
+
+```python
+def hello ( name = 'Partha') :
+    """
+    Function with default arguments
+    """
+    print(f'Hello {name}')
+
+
+if __name__ == "__main__":
+    hello() 
+    hello('buddy')
+```
+
+## Functions in Python pass by ref only 
+
+- in Python every variable name is a reference. 
+- When we pass a variable to a function, a new reference to the object is created. 
+- Parameter passing in Python is the same as reference passing in Java.
+
+- Within function 
+    - modify the parameter passed, 
+        - the change shall go back to the caller as well 
+        - var was ref. You used the var to modify the actual data 
+        - hence the actual data got changed and it will show the change 
+        - even if you ref with another var e.g in the calling function
+        - e.g. a = a + 1 
+        - e.g. some_list[0] = 10 
+
+    - change the parameter
+        - you are the changing the ref. Now it is pointing to something else. 
+        - now whatever changes you are doing, that is not going out. 
+        - i.e. a = 10 
+        - i.e. some_list = [1,2,3]
+
+Python caches integers in the range [-5, 256]
+Why ? 
+
+## Variables in Python
+
+- [Facts and myths about Python names and values](https://nedbatchelder.com/text/names.html)
+Names refer to values
+Many names can refer to one value.
+Names are reassigned independently of other names
+Values live until nothing references them.
+Python keeps track of how many references each value has, and automatically cleans up values that have none. This is called “garbage collection,” and means that you don’t have to get rid of values, they go away by themselves when they are no longer needed.
+Assignment never copies data.
+
+Changes in a value are visible through all of its names. (Mutable Presto-Chango)
+
+Values fall into two categories : mutable or immutable. 
+Immutable values include numbers, strings, and tuples. 
+Almost everything else is mutable, including lists, dicts, and user-defined objects. 
+
+Mutable means that the value has methods that can change the value in-place. 
+
+Immutable means that the value can never change, instead when you think you are changing the value, you are really making new values from old ones.
+
+- [Visualize execution of code](http://pythontutor.com/visualize.html#mode=edit)
+
+- Java passes by value 
+    - [Does Java pass by reference or pass by value?](https://www.infoworld.com/article/3512039/does-java-pass-by-reference-or-pass-by-value.html)
+    - [Java is Strictly Pass by Value!](https://www.geeksforgeeks.org/g-fact-31-java-is-strictly-pass-by-value/)
+    - Like C/C++, Java creates a copy of the variable being passed in the method
+    - 
+
+- https://nedbatchelder.com/. Ned Batchelder. Coverage.py author. 
+
+
 
 
 
