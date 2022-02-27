@@ -6,12 +6,18 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+## Interact with github account from VSCodium without bothering about password.
 
-
-## Use SSH key. Else you shall have to put password over and over again. 
-https://awsm.page/git/use-github-with-ssh-complete-guide-including-vscode-setup/
-
-
+- Forget VSCode, VSCodium, Sublime for a minute. 
+- First of all set up SSH for your machine
+- Dont use passphrase. Some editors dont like that too much 
+- Second, set up github account with the public key 
+- Third git clone with SSH (and not with HTTTPS) please 
+- Finally, open VSCodium in a way that the git settings kick in. 
+- 
+- Read the steps at [AWSM page](https://awsm.page/git/use-github-with-ssh-complete-guide-including-vscode-setup/)
+- 
+- Lastly, please dont use any password, passphrase, developer keys etc. Delete any that you might have.
 
 
 # Fasttag
