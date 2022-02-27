@@ -6,7 +6,11 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
-coder master - 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
+
+
+## Use SSH key. Else you shall have to put password over and over again. 
+https://awsm.page/git/use-github-with-ssh-complete-guide-including-vscode-setup/
+
 
 
 
