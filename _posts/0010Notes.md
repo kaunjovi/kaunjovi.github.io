@@ -1,9 +1,15 @@
+## Scratchpad moved to Hello world. 
+
 # Notes (How to use this)
 
 - Use this as a scratchpad for rough notes. 
 - Things should move to their respective pages as soon as they can. 
 - This is the refactoring of notes. 
 - Till they are on the scratchpad they will not be available for public view. 
+
+
+
+
 
 ## How to run JavaHelloWorld on cloud 
 
