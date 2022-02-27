@@ -6,6 +6,9 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+coder master - 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
+
+
 
 # Fasttag
 
