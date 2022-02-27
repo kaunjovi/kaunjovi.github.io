@@ -6,6 +6,22 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+## Django
+- Django. [Home page of Django](https://www.djangoproject.com)
+- The web framework for perfectionists with deadlines.
+- Sounds good. What does it mean ?? 
+- Ridiculously fast. Fast to develop (claim). Not (claimed) to be fast as in performant. 
+- [Quick install guide] for django. 
+
+## Install Python3
+- Install Python. Python3 for mac please. [Install Python3](https://docs.python-guide.org/starting/install3/osx/)
+- xcode-select --install
+
+## Install Django
+- ?? 
+
+
+
 ## Interact with github account from VSCodium without bothering about password.
 
 - Forget VSCode, VSCodium, Sublime for a minute. 
