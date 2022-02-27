@@ -14,11 +14,46 @@ categories: howto
 - [Quick install guide] for django. 
 
 ## Install Python3
-- Install Python. Python3 for mac please. [Install Python3](https://docs.python-guide.org/starting/install3/osx/)
+- [Install Python3](https://docs.python-guide.org/starting/install3/osx/)
 - xcode-select --install
+- /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-## Install Django
+https://www.rootstrap.com/blog/how-to-manage-your-python-projects-with-pipenv-pyenv/
+
+
+## Install Django using Pipenv 
+Pipenv is the new officially recommended packaging tool for Python which is similar to modern package managers like NPM (Node.js) or Composer (PHP)
+Where are the dependencies downloaded and kept by pipenv
+
 - ?? 
+https://www.techiediaries.com/pipenv-tutorial/
+
+
+## Use pipenv 
+- 
+- [click here](https://thoughtbot.com/blog/how-to-manage-your-python-projects-with-pipenv)
+- [click here](https://mattgosden.medium.com/pipenv-for-easier-virtual-environments-69e1e520cde8)
+- 
+- cd your-project 
+- touch Pipfile
+- mdkir .venv 
+- Install nose 2 and mark it for dev only. When built for prod, dont create this. 
+- pipenv install --dev nose2
+- When another developer is recreating the project for dev 
+- pipenv install --dev
+- When someone is building the production version for deployment 
+- pipenv install
+- Activate the virtual environment. Why ? 
+- pipenv shell
+- Run the project 
+- pipenv run python my_project.py
+- In case you want some shortcut 
+- alias prp="pipenv run python"
+- When you want to delete 
+- pipenv --rm 
+- If you want to refresh 
+- pipenv install --dev --pre
+- 
 
 
 
