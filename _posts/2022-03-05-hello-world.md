@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Hello world
-date:       2016-02-14 
+date:       2022-03-05 
 summary:    Getting started with the blogging like a hacker stuff. 
 categories: howto 
 ---
@@ -22,11 +22,39 @@ https://www.rootstrap.com/blog/how-to-manage-your-python-projects-with-pipenv-py
 
 
 ## Install Django using Pipenv 
-Pipenv is the new officially recommended packaging tool for Python which is similar to modern package managers like NPM (Node.js) or Composer (PHP)
-Where are the dependencies downloaded and kept by pipenv
+- Pipenv is the new officially recommended packaging tool for Python which is similar to modern package managers like NPM (Node.js) or Composer (PHP)
+- Where are the dependencies downloaded and kept by pipenv
+- pipenv install django djangorestframework django-cors-headers
+- https://www.techiediaries.com/pipenv-tutorial/
+- Check on django version 
+- pipenv run python -m django --version
+- Make a new site with django
+- pipenv run django-admin startproject mysite
+- Run whatever you autocreated right now 
+- cd mysite 
+- pipenv run python manage.py runserver
 
-- ?? 
-https://www.techiediaries.com/pipenv-tutorial/
+## python3 
+- [10 Best Python Courses to Take in 2022](https://www.freecodecamp.org/news/best-python-courses/#3-an-introduction-to-interactive-programming-in-python-part-1-rice-university-)
+- https://www.classcentral.com/ 
+- [Scientific Computing with Python](https://www.freecodecamp.org/learn/scientific-computing-with-python/)
+- Pythonista - poweful and fun - approachable 
+- [What was it like to program?](https://www.freecodecamp.org/learn/scientific-computing-with-python/python-for-everybody/introduction-python-as-a-language)
+- [Welcome to DataCamp](https://www.datacamp.com/onboarding)
+- [Python for Data Science](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics?ex=1)
+
+
+```python
+if xxx : 
+  adjkfladsf
+elif xxx : 
+  aldkjfakdsjf
+elif xxx : 
+  akdjfkaf
+```
+
+
+
 
 
 ## Use pipenv 
@@ -53,8 +81,8 @@ https://www.techiediaries.com/pipenv-tutorial/
 - pipenv --rm 
 - If you want to refresh 
 - pipenv install --dev --pre
-- 
-
+- Check on python version 
+- pipenv run python --version
 
 
 ## Interact with github account from VSCodium without bothering about password.
