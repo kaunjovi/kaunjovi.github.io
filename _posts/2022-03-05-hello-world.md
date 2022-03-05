@@ -6,6 +6,13 @@ summary:    Getting started with the blogging like a hacker stuff.
 categories: howto 
 ---
 
+## Python for Data Science
+- [Python for Data Science](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics?ex=1)
+
+## Machine Learning 
+- [10 Best Machine Learning Courses to Take in 2022](https://www.freecodecamp.org/news/best-machine-learning-courses/)
+
+
 ## Django
 - Django. [Home page of Django](https://www.djangoproject.com)
 - The web framework for perfectionists with deadlines.
@@ -41,7 +48,6 @@ https://www.rootstrap.com/blog/how-to-manage-your-python-projects-with-pipenv-py
 - Pythonista - poweful and fun - approachable 
 - [What was it like to program?](https://www.freecodecamp.org/learn/scientific-computing-with-python/python-for-everybody/introduction-python-as-a-language)
 - [Welcome to DataCamp](https://www.datacamp.com/onboarding)
-- [Python for Data Science](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics?ex=1)
 
 
 ```python
