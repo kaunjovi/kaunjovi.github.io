@@ -14,16 +14,6 @@ summary:    Mac Dev Box
 - Homebrew, or simply Brew, is the “The Missing Package Manager for macOS.”
 - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-## Install Git 
-
-```code
-kaunjovi@devbook ~ % brew install git 
-...........................
-... git will be updated ...
-...........................
-kaunjovi@devbook ~ % git --version    
-git version 2.36.1
-```
 
 ## Pulling in an existing github project in Eclipse
 
