@@ -5,15 +5,6 @@ date:       2022-06-22
 summary:    Mac Dev Box 
 ---
 
-## Reference 
-- [Zero to Hero: Set Up Your Mac for Software Development](https://faun.pub/zero-to-hero-set-up-your-mac-for-software-development-919ede3df83b)
-- [Development Environment on macOS 2022](https://dev.to/andrewbaisden/how-i-setup-my-development-environment-on-macos-2022-edition-5elf)
-- [Beginner's Setup Guide for Ruby, Node.js, Git, Github, and other things on Mac OS X 10.9](http://burnedpixel.com/blog/beginners-setup-guide-for-ruby-node-git-github-on-your-mac/)
-
-## Homebrew
-- Homebrew, or simply Brew, is the “The Missing Package Manager for macOS.”
-- /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
 
 ## Pulling in an existing github project in Eclipse
 
