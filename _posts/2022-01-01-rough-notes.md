@@ -10,6 +10,8 @@ summary:    Rough notes
 # Rough notes 
 - Please move the notes to their correct page as soon as you can. 
 
+- https://peaceful-yalow-a1523c.netlify.app/index.html
+
 
 # Install Python 3 in Mac. 
 
