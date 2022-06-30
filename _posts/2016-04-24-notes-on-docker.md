@@ -6,53 +6,11 @@ summary:    Notes on Docker
 categories: notes docker
 ---
 
-Python
-  
-  Can Python be coded on Mac, using Xcode?
-    https://hackercodex.com/guide/python-development-environment-on-mac-osx/
-    http://www.pyladies.com/blog/Get-Your-Mac-Ready-for-Python-Programming/
-    (too old)[https://jakevdp.github.io/blog/2013/02/02/setting-up-a-mac-for-python-development/]
-    [too old](https://jakevdp.github.io/blog/2013/02/02/setting-up-a-mac-for-python-development/)
 
-  Can Python be coded on Mac? 
-    https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/
-
-  Python with Sublime 3? 
-    - https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/
-
-  Can Python read Excel files? 
-    http://stackoverflow.com/questions/22169325/read-excel-file-in-python
-    https://automatetheboringstuff.com/chapter12/
-
-The openpyxl module allows your Python programs to read and modify Excel spreadsheet files. 
-  workbook 
-  worksheet 
-  active sheet 
-
-```
-import openpyxl
-```
-
-
-
-
-Read these 
-http://martinfowler.com
-
-
-
-
-http://www.completeitprofessional.com/7-things-that-should-be-on-your-linkedin-profile/?utm_content=buffer061bf&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
-
-
-
-
-
-
-https://www.thoughtworks.com/radar
-
-
-
+## Read these 
+- http://martinfowler.com
+- https://www.thoughtworks.com/radar
+- http://www.completeitprofessional.com/7-things-that-should-be-on-your-linkedin-profile/?utm_content=buffer061bf&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 
 ### How much EMI do you have to pay? 
 http://emicalculator.net
@@ -73,7 +31,8 @@ http://iconnect-ap.jpmchase.com
 https://appsphere.jpmchase.com/vpn/appsphere.html
 
 
-### Getting started with TS. 
+# TypeScript (TS)
+## Getting started with TS. 
 https://cmatskas.com/getting-started-with-typescript-and-sublime-text/
 
 ```
