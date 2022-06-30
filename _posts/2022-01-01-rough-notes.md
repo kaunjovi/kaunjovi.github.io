@@ -5,72 +5,120 @@ date:       2022-01-01
 summary:    Rough notes 
 ---
 
-
-
 # Rough notes 
 - Please move the notes to their correct page as soon as you can. 
 
 - https://peaceful-yalow-a1523c.netlify.app/index.html
 
 
-# Install Python 3 in Mac. 
-
-- [Installing Python 3 on Mac OS X](http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/osx/)
-- Package managr for OSX. Homebrew. 
-- Install Python3 and pip3. 
-- Install virtualenv
-- Create a dev folder. Cd to that. Create a virtualenv. It will put Python3 in the folder. 
-- https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics?ex=9
-
-
-```
--- Homebrew. The package manager for OSX. 
-$ brew --version
-Homebrew 0.9.5 (git revision 92c6c; last commit 2015-09-22)
-
--- Install Python3. 
-$ brew install python3
---
--- There might be few issues. Use brew doctor for help. 
---
-
--- Check the version of Python3
-$ python3 --version 
-Python 3.6.1
-
--- You should have pip3 as well. 
-$ pip3 --version 
-pip 9.0.1 from /usr/local/lib/python3.6/site-packages (python 3.6)
-
--- Install virtualenv
-$ pip3 install virtualenv
-Successfully installed virtualenv-15.1.0
-$ virtualenv --version
-15.1.0
-
--- Go to your dev folder and create a virtualenv
-$ pwd 
-/Users/parthabhattacharjee/git/python003
-$ virtualenv devenv
-Using base prefix '/usr/local/Cellar/python3/3.6.1/Frameworks/Python.framework/Versions/3.6'
-New python executable in /Users/parthabhattacharjee/git/python003/devenv/bin/python3.6
-Also creating executable in /Users/parthabhattacharjee/git/python003/devenv/bin/python
-Installing setuptools, pip, wheel...done.
-
--- Activate virtualenv
-$ pwd 
-/Users/parthabhattacharjee/git/python003
-$ source devenv/bin/activate
-(devenv) $ 
+## Docker 
+- Create and Publish Docker Images in Just 5 Minutes
+https://devdojo.com/abidmuin/create-and-publish-docker-images-in-just-5-minutes
 
 
 
-```
+
+## Rust 
+- Nice getting started documentation for Rust. Full marks. https://doc.rust-lang.org/stable/book/title-page.html
+- Why should I use Rust and not something else? Not sure. A lot of buzzwords on the home page. But could not find anything concrete. 
 
 
-## Download songs using python
+## What is this website.dev thing? Why is it special.
+- dev domain is on the HSTS preload list, which makes HTTPS required on all connections. 
+- That means built-in security for you and your customers.
+- What is the .dev business? Do I need one? https://vivekr.dev/
+- kaunjovi.dev is 860/yr at https://domains.google.com/registrar/
+- kaunjovi.dev is 1561.72/yr at godaddy. Why more than at google domains ? 
+- kaunjovi.com is 499/ first year @ godaddy 
 
-- [investigate. there is something wrong with unicode_literals](https://stackoverflow.com/questions/27473526/download-only-audio-from-youtube-video-using-youtube-dl-in-python-script)
+
+## Investing in Bonds 
+- https://zerodha.com/varsity/chapter/investing-in-bonds/
+- similarity between debt funds and bonds
+- Debt mutual fund? mutual fund whose fund manager invests your funds in various bonds and bills. 
+- The bonds platform on Zerodha is a part of Coin, our mutual fund platform.
+
+
+
+## Strategic Marketing
+Day1: Sessions1-4
+By Nada Sayarh
+
+Individual MPAW---------------------------------- 40%
+
+
+Mission statement: A statement of the organization’s purpose, what it wants to
+accomplish in the larger environment.
+
+Strategy ? 
+Strategy vs Tactic : 
+
+
+Marketing plan: a roadmap that businesses use to organize, execute, and track their
+marketing strategy typically over a period of one year. 
+
+The G-STIC Framework 
+
+
+https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2022/1st-quarter/765de7b0-70a3-4b8b-9e77-999f45c50f3a.pdf
+Expect FY2022 net interest income excluding Markets to be $53B+, market dependent
+Expect FY2022 adjusted expense of ~$77B, market dependent
+
+https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/financial-highlights-2021.pdf
+48B 
+
+## 5/17, Tuesday 
+
+- What are the options? 
+- Why is it the flavour of the market? 
+- No naked trades ever. No one sided trade please. 
+- What are the different strategies? Bull spread. Bear spread. Butterfly spread. 
+- Death cross. 50EMA crossing 200EMA on way down. 
+- INFY. Death cross. 
+
+
+
+NASSCOM - Sastry is speaking ? End of June. 
+  Jen plans to join Sastry 
+  NASSCOM - $ to join 
+  29th 
+
+Awards ? for NASSCOM 
+  Reetu - Lot of effort. 0 results. 
+  there ougt to be some visi for nomination worthy 
+  sponsorship ? 
+
+COE ? No regulatory observations. # ? 
+  X% of population will be part of COE ?
+
+Congratulations to Roopa for RTO 
+ cab booking ? are ppl utilising full ? Yes. 
+ some ppl have double booked seats. 
+ Food consumption is low 
+
+Salary - Shaun - 2 years 
+  Parity looks like - 3 pt 
+  Hiring parity 
+  YE budgeting exercise - 
+  mkt grid + internal parity grid 
+  Aon - may 
+  Gender pay parity closely 
+  Reetu - all inerviews done :( but cant make the $$
+
+What happens if COVID infected person was in the office ? WIP 
+
+What threshold to go back to WFH. 
+
+Travel to US - 2May - Roopa, Leon, - June - ... - July - Reetu 
+  Can we get folks Travel Ready ? Start the visa process. 
+  5/8 lakhs air ticket 
+  Reetu - intercity start ? Phase 2, in two weeks. 
+
+
+[>9999999]##\,##\,##\,##0.00;[>99999]##\,##\,##0.00;##,##0.00
+
+
+
 
 ### Install unicode_literals 
 
