@@ -5,10 +5,296 @@ date:       2022-01-01
 summary:    Rough notes 
 ---
 
+Pursuant to a notification dated October 22, 2019 issued
+by the Ministry of Corporate Affairs, all directors have
+completed the registration with the Independent Directors
+Databank. 
+
+Independent Directors Databank ?? what is that ?? 
+
+Schedule IV of the Companies Act, 2013 and the Rules
+thereunder mandate that the independent directors of the
+Company shall hold at least one meeting in a year, without
+the attendance of non-independent directors and members of
+the Management. 
+
+
+Super Dream 25+
+CTC 12+. Dream ??  
+
+
+Kiran Mazumdar-Shaw	(Lead)
+Chitra Nayak
+
+2013
+
+K. V. Kamath
+S. Gopalakrishnan
+S. D. Shibulal
+Ann M. Fudge
+Ashok Vemuri
+V. Balakrishnan
+David L. Boyles
+Deepak M. Satwalekar
+Prof. Jeffrey S. Lehman
+Leo Puri (1)
+Dr. Omkar Goswami
+Ravi Venkatesan
+R. Seshasayee
+Srinath Batni
+B. G. Srinivas
+
+
+
+## Board 
+The board of directors directs the affairs of the corporation on behalf of the shareholders and hires the executive managers.
+
+## Chairman of Board 
+A corporation is simply a legal envelope that contains a business. 
+The corporate legal entity is created to give the business an individual identity within the law. 
+This legally separates the business identity from the individuals who manage it and invest in it. 
+The chairman of the board leads the board and makes final decisions.
+
+
+## How is the board formed. 
+the founders are generally the first shareholders because their money and effort created the business. 
+They own it. 
+They function as the board of directors and appoint themselves executive managers. 
+The leader of the founders becomes chairman of the board and chief executive officer. 
+Other members of the founding group take executive management positions such as chief operating officer and chief financial officer in addition to their directorships.
+
+When the corporation receives investment from outside investors, those investors usually receive seats on the board of directors. Investors, or shareholders, own the corporation and they appoint or vote for the board of directors to oversee the activities of the corporation and to act in the best interests of all shareholders in that corporation.
+The board is expected to act independently, questioning and investigating the activities of executive management to assure the executives are performing in the best interests of the shareholders.
+When the chief executive (CEO) is also the chairman of the board, this ability to independently oversee corporate activities is compromised.
+
+The members of the board are representatives of the shareholders, though they may not be shareholders themselves, and receive compensation paid by the corporation.
+
+the chairman supervises the CEO, which adds a greater dimension of shareholder protection because it provides a check on the CEO's power. 
+
+Since the Enron corporate scandal and others of the early 2000s, the U.S. Congress and the Securities and Exchange Commission have increased the legal liability of the boards and executive officers of public corporations and have encouraged separate chairmen and CEOs
+
+
+The CEO is the chief managing officer of a company
+The CEO and other executive officers are not necessarily members of the board of directors.
+
+A non-executive chairman of the board does not occupy a management position in the company.
+
+
+## Rumi 
+
+On the seeker's path, the wise and crazed are one.
+In the way of love, kin and strangers are one.
+
+30 September 1207 – 17 December 1273
+
+What could my mother be
+to yours? What kin is my father
+to yours anyway? And how
+Did you and I meet ever?
+But in love
+our hearts have mingled
+as red earth and pouring rain.
+
+-- Cempulappeyanirar
+
+"Red Earth and Pouring Rain" by Vikram Chandra
+
+2000 years ago, to the Sangam age of Tamil poetry as compiled in the "Kuruntokai"
+"Cempulappeyanirar" literally means "red earth and pouring rain".
+
+
+## BSE ? 
+## BSE corporate announcement 
+
+https://www.bseindia.com/corporates/ann.html
+
+Infosys is an India IT services company and comes second in terms of market valuation amongst all Indian IT services companies. Infosys became the fourth Indian company to cross $100 billion in market capitalization (as of 24 August 2021). 
+
+The company started as "Infosys Consultants Private Limited" in 1981, when 7 engineers started it from Pune, India. They eventually shifted to Bangalore, and went public in June 1992, with the name "Infosys Technologies Limited". It finally got its present name "Infosys Limited" in 2011. 
+
+  N. R. Narayana Murthy (born 20 August 1946) with his six software professionals founded Infosys in 1981. 
+  For 21 years, from 1981 to 2002, Murthy was the CEO. 
+  Co-founder Nandan Nilekani, took over after him and served as a CEO from 2002 to 2007. 
+  Kris Gopalakrishnan, another co-founder, took charge and served from 2007 to 2011. 
+  Keeping with the tradition, S. D. Shibulal, another co-founder stepped in as CEO, in 2011 and continued till 2014. 
+
+  The next CEO, Vishal Sikka, was a break from the tradition and the first non co-founder CEO for Infosys. 
+
+
+ R Seshasayee, Jeffrey Lehman, John Etchemendy and Ravi Venkatesan
+
+## Nancy Pelosi 
+Why she is in Taiwan ? 
+
+## Taiwan 
+China and Taiwan - what is the problem ? 
+Taipei of Taiwan 
+
+
+The word file (answer sheet) used for exam request you to rename with your Roll number_SubjectName_Batch 08
+
+ES21ONL027_Corporate Governance and Ethics_Batch 08.docx
+
+==========
+
+Utilitarianism is a tradition of ethical philosophy that is associated with Jeremy Bentham and John Stuart Mill, two late 18th- and 19th-century British philosophers, economists, and political thinkers. Utilitarianism holds that an action is right if it tends to promote happiness and wrong if it tends to produce sadness, or the reverse of happiness—not just the happiness of the actor but that of everyone affected by it.
+
+At work, you display utilitarianism when you take actions to ensure that the office is a positive environment for your co-workers to be in, and then make it so for yourself.
+
+"The greatest good for the greatest number"
+
+Pleasure, or happiness, is the only thing that has intrinsic value.
+Actions are right if they promote happiness, and wrong if they promote unhappiness.
+Everyone's happiness counts equally.
+
+Jeremy Bentham describes his "greatest happiness principle" in Introduction to the Principles of Morals and Legislation, a 1789 publication in which he writes: "Nature has placed mankind under the governance of two sovereign masters, pain and pleasure. It is for them alone to point out what we ought to do, as well as to determine what we shall do."
+
+Utilitarianism, in 1863. The key passage from this book
+
+How is happiness defined?
+
+t is the only moral framework that can justify military force or war
+========
+
+
+https://www.scu.edu/ethics/ethics-resources/ethical-decision-making/calculating-consequences-the-utilitarian-approach/
+
+Imagine that the U.S. Central Intelligence Agency gets wind of a plot to set off a dirty bomb in a major American city. Agents capture a suspect who, they believe, has information about where the bomb is planted. Is it permissible for them to torture the suspect into revealing the bomb's whereabouts? Can the dignity of one individual be violated in order to save many others?
+
+If you answered yes, you were probably using a form of moral reasoning called "utilitarianism." 
+Utilitarianism is a moral principle that holds that the morally right course of action in any situation is the one that produces the greatest balance of benefits over harms for everyone affected. 
+So long as a course of action produces maximum benefits for everyone, utilitarianism does not care whether the benefits are produced by lies, manipulation, or coercion.
+
+Many of us use this type of moral reasoning frequently in our daily decisions. 
+When asked to explain why we feel we have a moral duty to perform some action, we often point to the good that will come from the action or the harm it will prevent. 
+Business analysts, legislators, and scientists weigh daily the resulting benefits and harms of policies when deciding, for example, whether to invest resources in a certain public project, whether to approve a new drug, or whether to ban a certain pesticide.
+
+Utilitarianism offers a relatively straightforward method for deciding the morally right course of action for any particular situation we may find ourselves in. 
+To discover what we ought to do in any situation, we first identify the various courses of action that we could perform. 
+Second, we determine all of the foreseeable benefits and harms that would result from each course of action for everyone affected by the action. 
+And third, we choose the course of action that provides the greatest benefits after the costs have been taken into account.
+
+Jeremy Bentham, who lived in England during the eighteenth and nineteenth centuries. 
+Bentham, a legal reformer, sought an objective basis that would provide a publicly acceptable norm for determining what kinds of laws England should enact. 
+He believed that the most promising way of reaching such an agreement was to choose that policy that would bring about the greatest net benefits to society once the harms had been taken into account. 
+His motto, a familiar one now, was "the greatest good for the greatest number."
+
+For example, Bentham defined benefits and harms in terms of pleasure and pain. 
+John Stuart Mill, a great 19th century utilitarian figure, spoke of benefits and harms not in terms of pleasure and pain alone but in terms of the quality or intensity of such pleasure and pain. 
+Today utilitarians often describe benefits and harms in terms of the satisfaction of personal preferences or in purely economic terms of monetary benefits over monetary costs.
+
+## What questions to ask ? 
+
+Question 1 : "What effect will my doing this act in this situation have on the general balance of good over evil?" 
+If lying would produce the best consequences in a particular situation, we ought to lie. 
+Others, known as rule utilitarians, claim that we must choose that act that conforms to the general rule that would have the best consequences. 
+
+Question 2 : "What effect would everyone's doing this kind of action have on the general balance of good over evil?" 
+The question ought to be specific to the situation or general to this kind of situattion. 
+
+
+## Problems With Utilitarianism
+First, the utilitarian calculation requires that we assign values to the benefits and harms resulting from our actions and compare them with the benefits and harms that might result from other actions. 
+But it's often difficult, if not impossible, to measure and compare the values of certain benefits and costs. How do we go about assigning a value to life or to art? And how do we go about comparing the value of money with, for example, the value of life, the value of time, or the value of human dignity? Moreover, can we ever be really certain about all of the consequences of our actions? Our ability to measure and to predict the benefits and harms resulting from a course of action or a moral rule is dubious, to say the least.
+
+Perhaps the greatest difficulty with utilitarianism is that it fails to take into account considerations of justice. We can imagine instances where a certain course of action would produce great benefits for society, but they would be clearly unjust. During the apartheid regime in South Africa in the last century, South African whites, for example, sometimes claimed that all South Africans—including blacks—were better off under white rule. These whites claimed that in those African nations that have traded a whites-only government for a black or mixed one, social conditions have rapidly deteriorated. Civil wars, economic decline, famine, and unrest, they predicted, will be the result of allowing the black majority of South Africa to run the government. If such a prediction were true—and the end of apartheid has shown that the prediction was false—then the white government of South Africa would have been morally justified by utilitarianism, in spite of its injustice.
+
+If our moral decisions are to take into account considerations of justice, then apparently utilitarianism cannot be the sole principle guiding our decisions. It can, however, play a role in these decisions. The principle of utilitarianism invites us to consider the immediate and the less immediate consequences of our actions. Given its insistence on summing the benefits and harms of all people, utilitarianism asks us to look beyond self-interest to consider impartially the interests of all persons affected by our actions. As John Stuart Mill once wrote:
+
+The happiness which forms the utilitarian standard of what is right in conduct, is not...(one's) own happiness, but that of all concerned. As between his own happiness and that of others, utilitarianism requires him to be as strictly impartial as a disinterested and benevolent spectator.
+
+In an era today that some have characterized as "the age of self-interest," utilitarianism is a powerful reminder that morality calls us to look beyond the self to the good of all.
+
+## Utilitarianism
+https://www.scu.edu/ethics/ethics-resources/ethical-decision-making/calculating-consequences-the-utilitarian-approach/
+
+## What is Ethics?
+What humans ought to do? 
+Ethics, Branch of philosophy
+Ethics seeks to determine the correct application of moral notions such as good and bad and right and wrong. 
+Ethics refers to well-founded standards of right and wrong that prescribe what humans ought to do, usually in terms of rights, obligations, benefits to society, fairness, or specific virtues. 
+
+
+Ethics refers to the concepts of right and wrong conduct. 
+Ethics is a branch of philosophy dealing with the issue of morality. 
+Ethics consist of the rules of behavior. 
+
+## What is NOT ethics ? 
+Not feelings 
+Not law 
+Not religion 
+Not "whatever society accepts."
+
+Ethics is traditionally subdivided into normative ethics, metaethics, and applied ethics.
+- metaethics, - concerned with the nature of ethical judgments and theories
+- normative ethics - seeks to establish norms or standards of conduct 
+- applied ethics - application of normative ethical theories to practical moral problems (e.g., abortion)
+
+## deontological ethics / deontology / “rule-based ethic”
+In moral philosophy, deontological ethics or deontology is the normative ethical theory that the morality of an action should be based on whether that action itself is right or wrong under a series of rules, rather than based on the consequences of the action.
+Any system involving a clear set of rules is a form of deontology, which is why some people call it a “rule-based ethic”. 
+The Ten Commandments is an example, as is the Universal Declaration of Human Rights. Most deontologists say there are two different kinds of ethical duties, perfect duties and imperfect duties.
+Deontology is an ethical theory that says actions are good or bad according to a clear set of rules.
+This ethical theory is most closely associated with German philosopher, Immanuel Kant.
+
+Do what is right, simply because it is right
+
+Thats what must be done 
+
+
+
+## What is Ethics based on ? 
+Ethics is based on well-founded standards of right and wrong that prescribe what humans ought to do, usually in terms of rights, obligations, benefits to society, fairness, or specific virtues.
+
+
 # Rough notes 
 - Please move the notes to their correct page as soon as you can. 
 
 - https://peaceful-yalow-a1523c.netlify.app/index.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Hofstede’s Cultural dimensions
+- Power distance
+- Individualism Vs Collectivism
+- Masculine Vs. feminine
+- Uncertainty avoidance
+- Long term Vs. short term orientation
+- Indulgence Vs. restraint
+- Adaptation is the Key!!! - Huh ?? What is that ?? 
+
+Universal appeal 
+The Psychological Safety Model is a framework focusing on encouraging and rewarding vulnerability in the workspace, created by Timothy R. Clark. The model is based on the hypothesis that employees should feel safe to express themselves fully at work, in order to perform their best. There are 4 stages of psychological safety. 
+
+
+
+
+## Ram Charan - What the CEO Wants You to Know _ How Your Company Really Works-Crown Business (2001) (003).pdf
+
+Some companies use slightly different measures of return. 
+return on assets (ROA), 
+Return on investment (ROI) 
+Return on equity (ROE). 
+
+How much money is coming into your business from 
+the use of your assets, from the 
+investments the business has made, or from the 
+investment shareholders have made in the company (equity).
+
+R = M × V, where R means return, M means margin, and V, velocity
 
 
 ## Docker 
@@ -250,3 +536,142 @@ https://techwelkin.com/add-source-link-copyright-copied-text-clipboard
 
 - Do we have time to play a devil's advocate. 
 - RAM CHARAN
+
+
+
+https://kite.trade/docs/connect/v3/
+
+## python, web scraping 
+
+https://www.geeksforgeeks.org/python-web-scraping-tutorial/
+
+## A Smaller Slice of the Pie
+AllWorld foods - sells food - I guess ? Australia's premiere grocery chain
+Australian - 100 years 
+Smith's Pty. Ltd. and United Grocery Group Pty. Ltd. (UGG)
+
+
+Twenty years ago, - expansion program - successful American model. 
+budget clothing stores in major malls and ( food ?? )
+the purchase of a chain of travel agents. ( food ?? )
+
+
+own upmarket department store under the banner 'Montague' 
+in honour of the founder of Allworld Foods, Montague Wilmot. 
+
+Montague proved to be more successful than imagined and it was not long before it, too, seemed destined to become an institution. 
+
+?? 
+Nonetheless, and despite the success of the other operations, the grocery business accounts for 70% of all income. This percentage, however, seems certain to increase because Montague, like many retail businesses, is facing increased competition from online sales.
+
+
+About ten years ago, - Smith's, was bought out by the private equity firm, Mercury Consolidated. 
+Within a year, Mercury had installed its own management team. 
+
+Mercury's aim was clear- to dethrone Allworld Foods as Australia's premiere grocery chain. 
+Mercury was not without experience in this regard having embarked on similar and successful strategies in New Zealand, South Africa and France. 
+
+
+
+
+'weather the storm' strategy of increased advertising and aggressive pricing. 
+They knew they might lose customers for a while but experience showed that they always came back. 
+
+The board was also confident that Allworld Foods other interests (clothing, travel and Montague) would act as a buffer if things took a bit longer than usual.
+
+The new team at Smith's streamlined operations, 
+changed the product mix and 
+aimed to develop loyalty from a traditionally fickle demographic, namely, Generations X and Y. 
+
+"Baby boomer" is a term used to describe a person who was born between 1946 and 1964. 
+Generation X - (roughly from the early 1960s to late 1970s), typically perceived to be disaffected and directionless.
+he generation born in the 1980s and 1990s, and typically perceived as increasingly familiar with digital and electronic technology.
+
+
+In particular, they embarked on an aggressive online purchasing strategy. 
+
+Within two years, it was apparent that Allworld Foods was losing market share; 
+dividends were down and customers were not returning. 
+To make matters worse, feedback from middle level and low level staff showed a significant decline in job satisfaction and a lack of identification with the company. 
+Staff were particularly critical of the poor lines of communication. 
+Anecdotally, the message from staff was that it was 'all about the shareholders'. 
+the union was also agitating for Allworld Foods to significantly increase the proportion of permanent staff. 
+resisted by Head Office who liked the flexibility afforded by casual staff. 
+Customers were also unhappy, with surveys revealing increasing dissatisfaction with service and product knowledge. 
+The group most dissatisfied were the older shoppers who unanimously rejected the idea of self-service checkouts which was the only option for the first and last hour of each day. 
+shareholders meeting, difficult questions were asked in relation to the remuneration of board members and executive pay and there were calls for a shakeup of senior management. 
+Senior management was taken to task by the board. 
+Senior management retaliated by condemning the board as little more than a comfortable clique with little vision and having too much control.
+The CEO, Lily Chambers, knew that her position was precarious. 
+Appointed only three years ago after the long-serving incumbent died suddenly, she was only too aware that if Allworld Foods was to regain its market share, a 'weather the storm' approach was not good enough.
+
+
+## The presentation should cover the following:
+- Overview of the case and summary of the problems that need to be resolved
+- Use ONE diagnostic tool to analyse the problems
+- Provide at least 2 intervention strategies to solve the problems
+- Provide an action plan to implement the intervention strategies
+
+
+
+
+
+
+
+# Change management 
+
+## Diagnosis tools 
+Cultural web
+Open system
+Force Field analysis
+Organizational culture analysis
+
+## Intervention Strategies 
+Appreciative inquiry application
+Lewins change model
+Type of change analysis
+
+
+## Action Plan 
+
+## Diagnosis tools / Cultural web
+Developed in 1992 by Gerry Johnson and Kevan Scholes
+The Cultural Web is a tool 
+It is used to map the culture of an organisation 
+It is a way of seeing and understating the different influences that affect organisational
+culture. 
+It can be used to map existing culture and 
+it can also used to map future culture based on the question: 
+‘What does the culture need to look like to make this change happen’? 
+The two maps can then be compared in order to promote discussion and highlight what, where and how change can be implemented.
+
+1. Stories - collective ‘memory’ of an organization 
+This could include how the company was founded, how it got this far, the key players and their actions, and how employees describe working at that organization.
+These stories often illuminate a company’s core values, and 
+what behaviours they determine worthy of exemplifying. 
+Stories encourage employees to follow certain paths to become part of company history.
+
+2. Ritual and Routines
+various behaviours and actions that are acceptable in a company
+employees learn how they are expected to behave and what constitutes ‘normal’ behaviour
+
+3. Symbols
+part of employer branding, or organizational branding, more generally
+anything visual: logos, branding, the way the office looks, dress codes at work, advertisements, and more
+
+4. Organization Structures
+Written influence - organisational chart 
+Unwritten influence - 
+
+5. Control Systems
+performance management,
+financial systems, quality control, fringe benefits, and bonuses.
+
+6. Power Structures
+‘real power’ within an organization. It is essentially the centre of power, and it can take many different forms
+
+
+https://www.leadershipcentre.org.uk/artofchangemaking/theory/cultural-web/
+
+
+
