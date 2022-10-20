@@ -675,3 +675,240 @@ https://www.leadershipcentre.org.uk/artofchangemaking/theory/cultural-web/
 
 
 
+EPLUS is one of the most successful civil engineering firms in Singapore. 
+The company has been around for many years and has collected many industrial accolades for its consistent quality assurance and “Zero Accident” record. 
+The company has been involved in many public project works, many of which have become prominent icons in Singapore, such as the Benjamin Sheares Bridge and the Henderson Waves Bridge, just to name a few. 
+
+Despite its many impressive achievements, EPLUS is run on very fine margins. 
+
+The focus of the company has always been on project management, with very little attention placed on human resource management. 
+
+Despite having more than 500 staff, many of whom are qualified engineers, it has a very small HR department and the resources allocated to HR management are almost embarrassing and absurd. 
+
+The hardest working staff are those involved in the tendering process because EPLUS success depends entirely on the ability of the company to secure new contracts. 
+As the market is becoming more competitive and with project costs increasing, the returns for each project have become low. The onus is now on the people in the tendering team to ensure that the company successfully bid for the high-yielding projects.
+
+In the past, everyone in the company would support each other in coping with pressure but of late, everyone seems to be doing things that are self-serving. 
+This has resulted in a very toxic working culture. 
+This can be seen in the more regular heated arguments amongst the senior managers over what would have been trivial matters in the past. 
+The ones who always bear the brunt of all these are the junior staff who are caught in the “crossfire” between different project managers. 
+
+Of late, the company’s failure in its bid for certain projects exacerbated the problem. The company has also come close to missing a few important tender deadlines. 
+
+There has been a lot of feedback and unhappiness from the companies that awarded the tenders highlighting many significant errors and inconsistencies. 
+
+In a recent bid, the company provided two different bidding prices – this has never happened before. 
+
+Now, the company has only three big contracts which are nearing completion and with no new contracts in the pipeline, the company’s future seems bleak and uncertain. 
+
+At the moment, the company is only depending on some long-term maintenance contracts to provide the bulk of its cash flow. 
+
+Under pressure, managers often traded bitter recriminations and the one department that will naturally get the most blame for its inefficiency is the Tendering Team.
+
+Alan Yee, a well-respected senior staff member at EPLUS, currently heads the tendering team. It has become obvious of late that he is very unhappy with what is going on. 
+
+After spending 20 years in the company, he feels it is time for him to move on to join another
+company where his experience and skills are appreciated. 
+
+He changed the status on his Linkedin account from “Employed” to “Open to Hiring”. 
+
+Unless things start to change in EPULS, he seems to be unwavering in his decision, and word of his intention to leave the company has reached the senior management. 
+
+The COO of the company Samuel Teo invited Alan for a discussion, with the hope to convince Alan to stay with the company. 
+
+At the meeting, Alan was honest and did not hold back his frustrations. He contended that the motivation of the staff in the company was at an all-time low and some of the project managers should be disciplined or fired. During the conversation, the following points were brought up for immediate action by the senior management :
+
+There is no proper performance management system in the company. Many of the project managers decide on the performance standards on their own, which results in differences across different projects
+
+There were too many casual staff employed and no proper training was provided. To cut costs, the company hired many interns on a project basis, many of whom required close supervision. This is time-consuming and takes away people from their core responsibilities
+
+The training budget was significantly cut, and staff were only provided with enough trainingtofulfilltheminimumrequirementsasstipulatedbylaw. Staffdevelopment programs were virtually nonexistent.
+
+The appointment of Project Managers was casual and mainly dependent on who was free at that moment. As there are no proper selection criteria, Project Managers ‘cherry-picked’ who they feel they can work with, without paying much attention to the suitability of the staff to work on a particular project. This has resulted in many staff who were not chosen feeling they were sidelined and never given a chance to excel in bigger and more prominent projects. This has also created a ‘them and us’ culture
+
+Not enough resources are allocated, especially for big projects.
+
+There is an urgent need to revise the reward system. Traditionally, the company has largely focused on performance-based pay which was mainly transactional, depending on the successful completion of the project. While this was a good way to motivate the staff to perform well, it also means those who are ‘cherry-picked’ to be involved in bigger projects will get more
+
+
+Communication and information flow in the organisation is slow and sloppy. There was no proper consultation
+
+
+Communication and information flow in the organisation is slow and sloppy. There was no proper consultation
+
+Alan was unreserved in voicing his displeasure about the management and the way the company is run. The lower-level staff either feel that they are not given a chance to provide feedback to the management or fear backlash for being a maverick. The days when staff could have open communication are gone.
+
+Samuel thanked Alan for his frank opinion and assured him that he would look into his concerns as a matter of urgency.
+
+Two months after the meeting, Covid-19 hit the shores of Singapore and following the announcement by the government, work-from-home became the default for an extended period of time. Around this time, the government called for a tender to build a new highway connecting the city and the future Changi Airport Terminal 5 and the project would start right after the pandemic situation improved. The government had made it clear that companies must commit to meeting very tight deadlines to make up for time lost and delays due to the pandemic.
+
+Samuel announced that the company will be bidding for the project. Since this is a major project and is a ‘final’ chance for the company to get things right again, he expected everyone in the company to work hard to ensure success in the tender.
+
+At this time, Alan wrote to Samuel to follow up on their discussion. Samuel gave a standard reply that he was busy but promised he would look into the matter. The industry at this point was among the worst hit by the pandemic and Alan’s complaints were the least of all concerns in Samuel’s mind.
+
+Three weeks later, Alan sent another email to Samuel, and to his astonishment, he received an automatic out-of-office reply. Samuel was on urgent leave and would not be back in the office until 2 weeks later. Alan decided that this was the final straw and submitted his resignation. A few of the staff in his team followed suit.
+
+The CEO was unaware of the meeting between Samuel and Alan and thus Alan’s resignation came as a shock to him, especially during a time when the company was close to submitting the tender to the government for the mega project. When Samuel was contacted, he too was surprised as he thought he had given his assurance to Alan that he would look into the matters. To this, Alan just simply said, “Enough is enough!”
+
+It has become obvious that strategic changes are needed at EPLUS and this has to be done urgently. Acting as an OD consultant, you are to diagnose the problems in the company and provide a plan detailing the management strategy to execute the proposed strategic changes.
+
+
+## Concept Fan 
+
+Concept fan is a strategy for getting alternate method of a challenge for those who have removed many apparent solutions which often evolves the particular theory of 'taking a step back' to have a bigger perspective (De Bono 1970). 
+
+## XUV door rattling 
+
+https://www.youtube.com/watch?v=ZRGfa-YQaqI
+https://www.team-bhp.com/forum/diy-do-yourself/183905-xuv500-diy-removing-rattles-door-panel.html
+https://www.youtube.com/watch?v=Sl-4sJ_1wTI
+
+## Chipotle 
+
+Started as a single restaurant in Denver, Colorado, in 1993. 
+It was estimated that the store would need at least 107 burritos sold per day to be profitable. 
+After its first month, the restaurant was selling around 1000 burritos a day.
+As of Sep, 2022, there are 3001 stores in USA, 28 in Canada and 12 in UK. 
+
+Chipotle draft 
+https://spjainorg-my.sharepoint.com/:p:/g/personal/vijay_es21onl041_spjain_org/EfYyg3zH0PFDkSpZTAuKXr0BIfJ-4bhU7XSOx8oVq6r_YA?e=mGA4Bx&PreviousSessionID=19b8c744-fa40-e5bb-f917-ed7fad9086bd
+
+
+
+
+The island was a barren, al­most uninhabited rock when it was acquired by the British in 1841 as a trading settlement. 
+Lacking in resources, tillable land, or even adequate water supply, its princi­pal asset is a sheltered deepwater harbor. 
+
+ALABAMA
+ARIZONA
+ARKANSAS
+CALIFORNIA
+COLORADO
+CONNECTICUT
+DELAWARE
+FLORIDA
+GEORGIA
+IDAHO
+ILLINOIS
+INDIANA
+IOWA
+KANSAS
+KENTUCKY
+LOUISIANA
+MAINE
+MARYLAND
+MASSACHUSETTS
+MICHIGAN
+MINNESOTA
+MISSISSIPPI
+MISSOURI
+MONTANA
+NEBRASKA
+NEVADA
+NEW HAMPSHIRE
+NEW JERSEY
+NEW MEXICO
+NEW YORK
+NORTH CAROLINA
+NORTH DAKOTA
+OHIO
+OKLAHOMA
+OREGON
+PENNSYLVANIA
+RHODE ISLAND
+SOUTH CAROLINA
+SOUTH DAKOTA
+TENNESSEE
+TEXAS
+UTAH
+VERMONT
+VIRGINIA
+WASHINGTON
+WASHINGTON DC
+WEST VIRGINIA
+WISCONSIN
+WYOMING
+
+ALABAMA
+ARIZONA
+ARKANSAS
+CALIFORNIA
+COLORADO
+CONNECTICUT
+DELAWARE
+FLORIDA
+GEORGIA
+IDAHO
+ILLINOIS
+INDIANA
+IOWA
+KANSAS
+KENTUCKY
+LOUISIANA
+MAINE
+MARYLAND
+MASSACHUSETTS
+MICHIGAN
+MINNESOTA
+MISSISSIPPI
+MISSOURI
+MONTANA
+NEBRASKA
+NEVADA
+NEW HAMPSHIRE
+NEW JERSEY
+NEW MEXICO
+NEW YORK
+NORTH CAROLINA
+NORTH DAKOTA
+OHIO
+OKLAHOMA
+OREGON
+PENNSYLVANIA
+RHODE ISLAND
+SOUTH CAROLINA
+SOUTH DAKOTA
+TENNESSEE
+TEXAS
+UTAH
+VERMONT
+VIRGINIA
+WASHINGTON
+WASHINGTON DC
+WEST VIRGINIA
+WISCONSIN
+
+
+
+## Naini 
+
+Abhinav  Goel,  the  Chief  Electrical  Engineer,  at  the  Central  Organization  for  Railway  Electrification  of  Indian Railways  (IR),  
+feasibility  analysis  report
+
+was  concerned  about  the  delay  in  the  preparation  of  the  feasibility  analysis  report on  the electrification of the Naini–Itarsi railway line.1 
+
+This railway track covered a distance of 
+605 route-kilometers (RKM) connecting 
+Naini in the state of Uttar Pradesh to 
+Itarsi in the state of Madhya Pradesh. 
+
+Conventional wisdom suggested that electrification would result in significant cost savings despite significant initial capital  expenditure.  However,  Abhinav  Goel  felt  that  volatility  in  prices  of  crude  oil  as  well  as  electric  power necessitated  the re-examination  of  trade-offs  between  diesel  and  electric  tractions  using  the  most  recent  data. Abhinav Goel hired a  well-known consulting firm to  obtain an independent perspective. He also needed assistance in interpreting the  standard  methodology of financial  analysis for large  investment by  the  railways as laid down in the  Ministry of Railways’ Indian Railway Financial Code.2  The  consulting  company  designated  
+
+Harish  Taneja,  an MBA graduate, whom they had hired five years ago, to address these concerns. 
+
+The Indian Railways (IR) started operations in April 1853, 
+and in 2010 covered more than 63,000 RKM in India. 
+In 2009–2010, the railways network transported 7,246 million passengers and 892 million metric tonnes3 of goods. 
+A public sector enterprise,  governed  by  the  Ministry  of  Railways,  the  IR  employed  1.4  million  people  and  its  expansive  network across the length and breadth of the country, served as a lifeline to the economy of India. 
+The size of IR is evident in the revenues that amounted to about 1.28% of the GDP in 2009–2010, and capital investment that amounted to 5.3% of  the  public  sector  gross  capital  formation  or  1.5%  of  overall  gross  capital  formation4  in  the  Indian  economy. 
+Investments  by  IR  were  under  the  purview  of  the  Planning  Commission,  which  essentially  served as the “central headquarters” responsible for directing investment flows to various sectors of the Indian economy.5
+
+The Ministry of Railways in India issued a Vision 2020 document in December 2009 
+which aimed at making IR the second  largest  railway  network  under  a  single  management  in  the  world  by  2020.  
+This document laid down an electrification target  of 14,000 km  in this decade  at  a cost of      126 billion  (1$ =      55, in October 2012).6 
+
+A blueprint for achieving the electrification target7 was being prepared by the Central Organization for  Railway  Electrification  (CORE)  and  the  senior  management  of IR  looked  forward  to  the  feasibility  analysis report of the Naini–Itarsi line as it could serve as a model template for evaluating other electrification projects in the blueprint. 
+
+Relevant issues that group want to include : 
+1. 
+
