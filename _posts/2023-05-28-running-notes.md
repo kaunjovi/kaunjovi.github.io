@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Running Notes
-date:       2016-02-14 
+date:       2023-05-28 
 summary:    First home of the notes before they find a proper home.  
 categories: howto 
 ---
