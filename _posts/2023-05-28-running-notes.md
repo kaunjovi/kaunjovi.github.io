@@ -6,6 +6,15 @@ summary:    First home of the notes before they find a proper home.
 categories: howto 
 ---
 
+# Linux 
+
+- [Best Linux distro for developers of 2023](https://www.techradar.com/best/best-linux-distro-for-developers)
+
+
+
+# Java 20 
+
+
 
 
 
