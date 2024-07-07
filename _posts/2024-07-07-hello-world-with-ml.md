@@ -34,6 +34,10 @@ ys = np.array([-2.0, 1.0, 4.0, 7.0, 10.0, 13.0], dtype=float)
 
 - The process of training the neural network, where it 'learns' the relationship between the Xs and Ys is in the model.fit call.
 
+
+
+
+
 ## pip 
 
 - Ensure pip is uptodate 
@@ -80,17 +84,16 @@ which python
 ```
 
 
+For my hobby projects on Neural Networks, using TensorFlow2, I have generally found Google Colab quite sufficient. It allows me to get to writing code immediately, and not have to bother about installations and configurations at all. Sharing code is a breeze as well. 
 
-## TensorFlow 
+All that convenience comes at a cost though. I needed to port one of my hobby projects to my dev machine and all was not well. First hurdle, TensorFlow2 needs a 3.11 version of Python, while 3.12 version of Python has been around since 2023. Python virtual environments saved the day. Second hurdle, the code that executed alright in Colab notebook, refused to behave in dev machine. Small issues, data type incompatibilities here and there, but it costs time. Reminds me of the phrase "write once, debug everywhere". By the time dev setup is happy, weekend has rolled away. 
 
-- TensorFlow makes it easy to create ML models that can run in any environment. 
+To all the fellow ai machine learning enthusiasts out there, sharing my lesson learnt here, web based IDEs are really great, but move to proper dev setup as soon as convenient. 
 
-- Install TensorFlow 2 
-- Python 3.8–3.11 - we have Python 3.12.3
-- macOS 10.12.6 (Sierra) or later (no GPU support) - we have Sonoma 14.4
 
-```
-pip install --upgrade pip
-pip install tensorflow
-```
+
+
+
+
+
 
