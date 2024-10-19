@@ -1,6 +1,81 @@
-## Data Mesh / Why. Who. When. 
 
-1. Zhamak Dehghani in 2019
+## [Modern Business Intelligence](https://a16z.com/emerging-architectures-for-modern-data-infrastructure-2020/)
+
+1. **Sources**
+1. OLTP database through Change data capture (CDC) 
+    1. tracking and capturing changes to data in a database, and then 
+    1. delivering those changes to a downstream system in real-time. 
+    1. CDC is a type of ETL (Extract, Transform, Load). 
+    1. There is Transform also ??
+1. Amazon Web Services (AWS) offers a variety of data management services, including master data management (MDM) 
+1. Applications / ERP 
+    1. Oracle. Salesforce. 
+    1. Netsuite ??
+1. Event collectors 
+    1. Segment ??
+    1. Snowplow ??
+1. Logs 
+1. 3rd party APIs - Stripe ?? 
+1. File and Object storage - S3 
+
+1. **Ingestion and Transformation**
+1. Data Moelling 
+    1. dbt 
+    1. LookML 
+1. Workflow Manager 
+    1. Airflow 
+1. Spark Platform
+    1. Databricks
+    1. Amazon EMR - Run and scale Apache Spark, Hive, Presto, and other big data workloads 
+1. Data Lake / Data Lakehouse 
+    1. Databricks / Delta Lake 
+    1. Iceberg 
+
+## [Effective schemas](https://www.confluent.io/blog/distributed-domain-driven-architecture-data-mesh-best-practices/#convergence)
+
+1. ???
+
+## [Schema evolution in Avro, Protocol Buffers and Thrift by Martin Kleppmann](https://martin.kleppmann.com/2012/12/05/schema-evolution-in-avro-protocol-buffers-thrift.html)
+
+1. Problem statement : you have some data that you want to store in a file or send over the network. 
+
+1. Solution 1 
+    1. Using your programming language’s built-in serialization, such as 
+    1. Java serialization, 
+    1. Ruby’s marshal, or 
+    1. Python’s pickle. 
+    1. Or maybe you even invent your own format.
+
+1. Solution 2 
+    1. Then you realise that being locked into one programming language sucks, 
+    1. so you move to using a widely supported, language-agnostic format like JSON (or XML if you like to party like it’s 1999).
+
+1. Solution 3 
+    1. JSON is too verbose and too slow to parse, 
+    1. it doesn’t differentiate integers from floating point, and 
+    1. think that you’d quite like binary strings as well as Unicode strings. 
+
+1. Solution 4 
+1. So you invent some sort of binary format that’s kinda like JSON, but binary (1, 2, 3, 4, 5, 6).
+1. Then you find that people are stuffing all sorts of random fields into their objects, 
+1. using inconsistent types, and 
+1. you’d quite like a schema and some documentation, thank you very much. 
+
+1. Solution 5
+1. Perhaps you’re also using a statically typed programming language and want to generate model classes from a schema. 
+1. Also you realize that your binary JSON-lookalike actually isn’t all that compact, because 
+1. you’re still storing field names over and over again; 
+1. hey, if you had a schema, you could avoid storing objects’ field names, and you could save some more bytes!
+
+1. [Apache Avro with Python](https://avro.apache.org/docs/++version++/getting-started-python/)
+1. [Google Protobuf with Python](https://protobuf.dev/getting-started/pythontutorial/)
+1. [Apache Thrift with Python](https://thrift.apache.org/)
+
+1. [BJSON - This is Binary-JSON (BJSON) format specification draft ver 0.5.](http://bjson.org/)
+1. [Universal Binary JSON Specification](https://ubjson.org/)
+1. [BSON, short for Bin­ary JSON](https://bsonspec.org/)
+1. [MessagePack - It's like JSON. But fast and small.](https://msgpack.org/)
+
 
 
 ## Resources 
@@ -578,3 +653,70 @@ brew install astro
 
 
 
+## Domain data as a product
+
+1. https://martinfowler.com/articles/data-monolith-to-mesh.html#DomainDataAsAProduct
+
+Over the last decade 
+operational domains have built product thinking into the capabilities they provide to the rest of the organization. 
+Why should I - as a data creator - think about the rest of the org. Traditionally it has been the headache of the data user. 
+
+Domain teams provide these capabilities as APIs to the rest of the developers in the organization, 
+as building blocks of creating higher order value and functionality. 
+The teams strive for creating the best developer experience for their domain APIs; 
+including discoverable and understandable API documentation, 
+API test sandboxes, and 
+closely tracked quality and adoption KPIs.
+
+1. domain data teams must apply product thinking with similar rigor to the datasets that they provide; 
+1. considering their data assets as their products and 
+1. the rest of the organization's data scientists, ML and data engineers as their customers.
+
+
+Consider our example, internet media streaming business. 
+One of its critical domains is the 'play events', what songs have been played by whom, when and where. This key domain has different consumers in the organization; for example near real-time consumers that are interested in the experience of the user and possibly errors so that in case of a degraded customer experience or an incoming customer support call can respond quickly to recover the error. There are also a few consumers that would prefer the historical snapshots of the daily, or monthly song play event aggregates.
+
+In this case our 'played songs' domain provides two different datasets as its products to the rest of the organization; real-time play events exposed on event streams, and aggregated play events exposed as serialized files on an object store.
+
+An important quality of any technical product, in this case domain data products, is to delight their consumers; in this case data engineers, ML engineers or data scientists. To provide the best user experience for consumers, the domain data products need to have the following basic qualities:
+
+
+
+## Domain Data Product / Discoverable
+1. A common implementation is to have a registry, 
+1. a data catalogue, 
+1. of all available data products 
+1. with their meta information such as 
+1. their owners, source of origin, lineage, sample datasets, etc. 
+
+1. This centralized discoverability service allows data consumers, engineers and scientists in an organization, 
+1. to find a dataset of their interest easily. 
+1. Each domain data product must register itself with this centralized data catalogue for easy discoverability.
+
+Note the perspective shift here is from a single platform extracting and owning the data for its use, to each domain providing its data as a product in a discoverable fashion.
+
+
+## Domain Data Product (DDP) / Addressable
+1. https://martinfowler.com/articles/data-monolith-to-mesh.html#DomainDataAsAProduct
+
+1. DDP should have a unique address (an example please? RESTful web service?? )
+1. following a global convention that helps its users 
+1. to programmatically access it. 
+
+Organizations may adopt different naming conventions for their data, 
+depending on the underlying storage and format of the data. 
+Considering the ease of use as an objective, 
+in a decentralized architecture, 
+it is necessary for common conventions to be developed. 
+
+1. Different domains might store and serve their datasets in different formats, 
+1. events might be stored and accessed through streams such as Kafka topics, 
+1. columnar datasets might use CSV files, or 
+1. AWS S3 buckets of serialized Parquet files. 
+
+A standard for addressability of datasets in a polyglot environment removes friction when finding and accessing information.
+
+
+## [Access data products in Databricks Marketplace (Unity Catalog-enabled workspaces)](https://docs.databricks.com/en/marketplace/get-started-consumer.html#language-SQL)
+
+https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/?couponCode=NVDIN35
