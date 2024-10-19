@@ -7,27 +7,24 @@
     1. AI Practitioner 
 1. Associate
     1. ML Engineer 
-    1. Data Engineer 
-    1. **Solution Architect / Associate / AWS Certified Solutions Architect - Associate (SAA-C03) **
+    1. *Data Engineer - 150usd/9000inr - glue,data ingestion,athena,lambda,dynamobd,ml with sagemaker*
+    1. *Solution Architect / Associate / AWS Certified Solutions Architect - Associate (SAA-C03)*
+        1. [Solutions Architect - Knowledge Badge Readiness Path](https://explore.skillbuilder.aws/learn/public/learning_plan/view/1044/solutions-architect-knowledge-badge-readiness-path)
+        1. 50 hrs. Damn. Free. wow. 
+        1. [Ultimate AWS Certified Solutions Architect Associate SAA-C03](         https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/?couponCode=LEARNNOWPLANS)
+        1. 499. 10hrs ish. 
     1. Developer, SysOps Administrator 
 1. Professional - 2 years of prior AWS Cloud experience recommended.
     1. Solution Architect / Professional
     1. DevOps Engineer 
 1. Speciality 
-    1. machine Learning 
+    1. Machine Learning 
     1. Security, Advanced Network 
 
+### resources
 1. [AWS certification](https://aws.amazon.com/certification/)
-
-
-
-## AWS certification 
-
-1. AWS certifications 
-1. https://aws.amazon.com/certification/
 1. AWS Certified Solutions Architect - Associate
 1. https://skillbuilder.aws/exam-prep/solutions-architect-associate
-
 1. [499 / Ultimate AWS Certified Solutions Architect Associate SAA-C03 by Udemy](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/?couponCode=NVDIN35)
 
 
