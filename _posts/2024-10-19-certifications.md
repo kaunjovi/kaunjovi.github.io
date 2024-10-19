@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Certifications
-categories: [certifications] [aws-certifications]
+categories: [certifications] 
 ---
 
 ## Certifications 
