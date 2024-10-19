@@ -1,12 +1,23 @@
 
 
 ## AWS certifications. Menu Card. Which one to attack first. 
+1. https://github.com/kaunjovi/kaunjovi.github.io/blob/main/_posts/aws-certifications.md
+
 
 1. Foundational - No prior experience needed.
     1. Cloud Practitioner 
     1. AI Practitioner 
 1. Associate
-    1. ML Engineer 
+    1. [AWS Certified Machine Learning Engineer - Associate (MLA-C01)](https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf)
+        1. ML Engineer, 75 USD, 85 questions, 170 minutes, Amazon SageMaker and other ML engineering AWS services
+        1. Your results for the exam are reported as a scaled score of 100–1,000. The minimum passing score is 720.
+        1. Domain 1: Data Preparation for Machine Learning (ML) (28% of scored content)
+        1. Domain 2: ML Model Development (26% of scored content)
+        1. Domain 3: Deployment and Orchestration of ML Workflows (22% of scored content)
+        1. Domain 4: ML Solution Monitoring, Maintenance, and Security (24% of scored 
+        1. [25 hrs, 450 INR, Udemy](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/?couponCode=NVDIN35)
+        1. SageMaker, Bedrock, and AI Skills
+
     1. *Data Engineer - 150usd/9000inr - glue,data ingestion,athena,lambda,dynamobd,ml with sagemaker*
     1. *Solution Architect / Associate / AWS Certified Solutions Architect - Associate (SAA-C03)*
         1. [Solutions Architect - Knowledge Badge Readiness Path](https://explore.skillbuilder.aws/learn/public/learning_plan/view/1044/solutions-architect-knowledge-badge-readiness-path)
