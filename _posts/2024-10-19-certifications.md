@@ -12,8 +12,6 @@ categories: [certifications]
 1. AI/ML 
     1. edX  
 
-## AWS certifications
-
 ## AWS certifications / What is available @ Q4 2024
 
 1. Foundational - No prior experience needed.
@@ -22,7 +20,7 @@ categories: [certifications]
 1. Associate
     1. ML Engineer 
     1. Data Engineer 
-    1. **Solution Architect / Associate / AWS Certified Solutions Architect - Associate (SAA-C03) **
+    1. *AWS Certified Solutions Architect - Associate (SAA-C03)*
     1. Developer, SysOps Administrator 
 1. Professional - 2 years of prior AWS Cloud experience recommended.
     1. Solution Architect / Professional
