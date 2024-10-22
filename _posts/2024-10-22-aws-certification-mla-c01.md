@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS certifiction MLA C01
+title: AWS Certifiction MLA C01
 categories: [aws][certification][mla-c01] 
 ---
 
@@ -8,7 +8,6 @@ categories: [aws][certification][mla-c01]
 
 1. This one is for SageMaker. Is there any for Domnio??? What are the other alternatives??? 
 1. What is the latest thinking about MLOps ???
-
 1. [Udemy / Master MLA-C01](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45284683#overview)
 
 ## Data Ingestion and Storage 
