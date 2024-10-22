@@ -248,6 +248,8 @@ categories: [certifications]
 
 ## Data Formats 
 
+1. CSV - Text based. Human readable. 
+
 
 
 
