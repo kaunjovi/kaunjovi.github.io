@@ -4,6 +4,7 @@ title: AWS certifiction MLA C01
 categories: [aws][certification][mla-c01] 
 ---
 
+## AWS Certification MLA-C01
 
 1. This one is for SageMaker. Is there any for Domnio??? What are the other alternatives??? 
 1. What is the latest thinking about MLOps ???
