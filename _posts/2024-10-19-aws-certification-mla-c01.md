@@ -264,11 +264,11 @@ categories: [certifications]
 1. Parquet - Columnar storage. Optimized for analytics. You might be looking for only some columns, not all, for analytics. 
     1. Storage optimization. You can put entire set of columns in a different server. How does that help ??? 
     1. Usage : Redshift Spectrum, Hadoop, Apache Spark / Hive / Impala
-    
-
-1. https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45284709#notes
 
 
+## Investigate Further ??? 
+
+1. Redishift Spectrum ??? 
 
 
 
