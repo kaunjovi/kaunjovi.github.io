@@ -248,7 +248,26 @@ categories: [certifications]
 
 ## Data Formats 
 
-1. CSV - Text based. Human readable. 
+1. CSV - Text based. Human readable. Small to medium sized datasets only please. Not very efficient about storage. 
+1. Javascript Object Notation (JSON) - Structured or semi-structured data, between backend services and front end. 
+    1. Light weight. Text based. Human Readable. 
+    1. Based on key value pairs. 
+    1. Main diffrence - it can be semi-structured. Flexible schema. Nested structures. 
+    1. Good for Configurations and settings 
+    1. Used in : NoSQL databases e.g. MongoDB. RESTful APIs. 
+1. Avro - Binary format. Both data and schema. Machines can read, without knowing the origination. 
+    1. Not human readable / writable. 
+    1. Schema is there in the file. So if the schema was changing in the source, distribution system, that is no problem. 
+    1. Adding schema to data everytime means some extra space. But gives the flexibility of handling changing schema. 
+    1. efficient serialization for data transport. 
+    1. Usage : Apache Kafka, Sparc, Flink and Hadoop ecosystem
+1. Parquet - Columnar storage. Optimized for analytics. You might be looking for only some columns, not all, for analytics. 
+    1. Storage optimization. You can put entire set of columns in a different server. How does that help ??? 
+    1. Usage : Redshift Spectrum, Hadoop, Apache Spark / Hive / Impala
+    
+
+1. https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45284709#notes
+
 
 
 
