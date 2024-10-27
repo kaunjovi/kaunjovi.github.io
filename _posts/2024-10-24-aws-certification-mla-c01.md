@@ -323,4 +323,16 @@ categories: [certifications]
 
 ## [ML lifecycle](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45287091#notes)
 
-1. 
+1. Business Goal - what are you trying to do. Find some customer facing result to work backwards from. 
+1. Is this a ML problem? Or something else is better suited? 
+1. Collect data. Transform it in the form that the Model requires. 
+1. Model Development 
+1. Collecting, transforming data and creating Model could be an iterative process. 
+1. Now deploy. Make it available to the rest of the world. Bedrock and SageMaker can help you create endpoints. 
+1. Monitor - is it continuously up and running - what is the quality of the result - 
+    1. Any model drift? Hey Model response quality is going worse over time. Lets tweak the model. 
+1. Keep calm and keep kaam se kaam. Keep paying EMI. 
+
+## 
+
+
