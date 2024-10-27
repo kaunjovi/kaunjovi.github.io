@@ -106,5 +106,5 @@ categories: [AWS, ML, Best Practices]
     1. Schedule to run the Monitor 
     1. Is there any data being generated in the process that the Model can learn from? Put that back into the system. 
 
-![Book logo](/kaunjovi.github.io/assets/404.jpg)
+![Book logo](/kaunjovi.github.io/assets/image/404.jpg)
 
