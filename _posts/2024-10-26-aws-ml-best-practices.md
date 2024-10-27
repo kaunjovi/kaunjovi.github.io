@@ -4,7 +4,6 @@ title: AWS Machine Learning Best Practices
 categories: [AWS, ML, Best Practices] 
 ---
 
-qwerty
 
 1. https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45287081#notes
 1. AWS well architected Machine Learning Lens (?)
@@ -82,4 +81,12 @@ qwerty
     1. What to monitor? How to measure drift? 
 1. Data requirement 
     1. What do we need. Do we have access.     
+    1. Do we need license. 
+    1. May we use it ethically. 
+1. What is your KPI?
+1. What is the ROI? 
+1. What is the cost of opportunity? 
+1. Reduce Total Cost of Ownership (TCO)? 
+1. Overall environmental impact / benefit? 
 
+## 
