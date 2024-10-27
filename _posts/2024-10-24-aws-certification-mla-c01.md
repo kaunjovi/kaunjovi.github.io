@@ -272,8 +272,6 @@ categories: [certifications]
 
 ## AWS Machine Learning Best Practices 
 
-
-
 1. https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45287081#notes
 1. AWS well architected Machine Learning Lens (?)
 1. ML System Architecture 
@@ -308,4 +306,21 @@ categories: [certifications]
     1. **Model Dashboard** to show **Model Cards** - You write high level infomration about your model and publish that. 
 
 
-    
+## ML Design Principles 
+
+1. Assign Ownership - 
+1. Have security controls in place - who is touching the Model. What kind of data is going in and coming out of it. 
+1. Resilient - Fault Tolerance and Recoverability - 
+    1. Training is time consuming and expensive. 
+    1. If things fail 2/3rd of the way, and set up is not recoverable, you will have to do it all over again. 
+1. Reusable - these things are expensive, particuarly training. Plan to reuse. 
+1. Reproducible - version control - what did this model say 15 days ago to this set of data. 
+1. Optimize resources - most efficient hardware. Best model for the purpose. Can SML work instead of LLM. 
+1. Reduce cost 
+1. Enable automation - CI/CD, CT (training) -  monitor that the training data is not introducing bias 
+1. Enable continuous improvement - automatically monitoring and analysing - keeping eye on Model drift 
+1. Minimize Environmental Impact - 
+
+## [ML lifecycle](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45287091#notes)
+
+1. 
