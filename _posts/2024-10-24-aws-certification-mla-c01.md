@@ -270,8 +270,42 @@ categories: [certifications]
 
 1. Redishift Spectrum ??? 
 
+## AWS Machine Learning Best Practices 
 
 
+
+1. https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45287081#notes
+1. AWS well architected Machine Learning Lens (?)
+1. ML System Architecture 
+1. Best Practices for designing Machine Learning Systems 
+
+1. **Responsible AI**
+1. Fairness - not biased 
+1. Explainability - be able to explain why it said what it said. 
+1. Controllability 
+1. Privacy and Security - Dont train on PII or sensitive data 
+1. Safety 
+1. Veracity and Robustness - veractiy is accuracy. It is not hallucinating. 
+1. Governance - prove that I am in compliance with any regulaations that policy makers mmight think of 
+1. Transparency - publish about capabilities, short comings etc. of the model. 
+
+1. Tools to help with Explainability 
+1. **Amazon Bedrock** is the GenAI part. Has model Evaluation tools. 
+    1. accuracy. 
+    1. send test "prompts" and see that the output is as expected. 
+1. **SageMaker Clarify** 
+    1. Fairness - bias detection - for this sample there is some impbalance in the data. Tools to rebalance the data. 
+    1. Explainability - remove a feature and see what is the impact on the output. 
+        1. Output is primarly being driven by these features in the training data. 
+        1. These features are friendzoned. 
+    1. Mode Evaluation (??) - continuously as it is being run. 
+1. **SageMaker Model Monitors** 
+    1. Get alert if the Model output is naughty, in production as it is being run. 
+1. **Amazon Augmented AI**
+    1. Inset human in the loop.      
+1. SageMaker ML Governance
+    1. **SageMaker Role Manager** Allow people to do things and others not. Is that not IAM? 
+    1. **Model Dashboard** to show **Model Cards** - You write high level infomration about your model and publish that. 
 
 
     
