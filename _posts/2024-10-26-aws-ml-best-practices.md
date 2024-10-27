@@ -4,6 +4,8 @@ title: AWS Machine Learning Best Practices
 categories: [AWS, ML, Best Practices] 
 ---
 
+qwerty
+
 1. https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45287081#notes
 1. AWS well architected Machine Learning Lens (?)
 1. ML System Architecture 
@@ -56,6 +58,7 @@ categories: [AWS, ML, Best Practices]
 ## [ML lifecycle](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45287091#notes)
 
 1. Business Goal - what are you trying to do. Find some customer facing result to work backwards from. 
+
 1. Is this a ML problem? Or something else is better suited? 
 1. Collect data. Transform it in the form that the Model requires. 
 1. Model Development 
@@ -65,7 +68,18 @@ categories: [AWS, ML, Best Practices]
     1. Any model drift? Hey Model response quality is going worse over time. Lets tweak the model. 
 1. Keep calm and keep kaam se kaam. Keep paying EMI. 
 
-## 
+## [ML lifecycle / Business Goal Identification](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45287103#notes)
 
-
+1. https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45287103#notes
+1. Get right skills. Accountability and Empowerment. 
+1. What is the level of explainability expected. 
+1. There is tradoff between Explainability and power of the Model. 
+1. If it was explainable as a long nested if statement, might be ML was not required in the first place. (??)
+1. Less complicated, more Explainable, less magic. 
+1. Use **SageMaker Clarify** - what features are driving the output of your Model the most. 
+1. Run experiments. Drop one feature at a time and see how much the output changes. 
+1. Model Monitor 
+    1. What to monitor? How to measure drift? 
+1. Data requirement 
+    1. What do we need. Do we have access.     
 
