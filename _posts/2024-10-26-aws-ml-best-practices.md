@@ -89,4 +89,22 @@ categories: [AWS, ML, Best Practices]
 1. Reduce Total Cost of Ownership (TCO)? 
 1. Overall environmental impact / benefit? 
 
-## 
+## [ML lifecycle / ML Lifecycle](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45287107#notes)
+
+1. Collect the data that the ML needs to be trained with 
+1. Prepare that data for ML - Process data and Feature engineering 
+    1. Store information about the features in **feature store** e.g. SageMaker Feature store. 
+1. Train, Tune and Evaluate the Model 
+    1. Pull data from Features and Feature Store (both online and offline)
+1. Once we do have a Model, store it in a **Model Registry**. Keep the mode with versions. 
+1. Do we have a Model? Deploy it to the outside world. 
+    1. Pull the appropriate version of the Model from the Model Registry 
+    1. Pull infromation from Feature Store. 
+1. Applications will hit the model realtime to infer what the output should be for a given prompt / input 
+    1. Monitor the results 
+    1. Hook up to alarm system. 
+    1. Schedule to run the Monitor 
+    1. Is there any data being generated in the process that the Model can learn from? Put that back into the system. 
+
+
+
