@@ -6,6 +6,11 @@ categories: [certifications]
 
 ## AWS Certification MLA-C01
 
+170 minutes
+85 questions
+Results available within 5 business days after taking the exam.
+
+
 1. This one is for SageMaker. Is there any for Domnio??? What are the other alternatives??? 
 1. What is the latest thinking about MLOps ???
 1. [Udemy / Master MLA-C01](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45284683#overview)

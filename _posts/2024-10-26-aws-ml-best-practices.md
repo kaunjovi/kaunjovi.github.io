@@ -108,3 +108,8 @@ categories: [AWS, ML, Best Practices]
 
 
 
+## Move to own page 
+
+1. How to connect to your home laptop from anywhere with SSH
+1. python projects like it was 15 years ago - https://medium.com/gitconnected/stop-making-your-python-projects-like-it-was-15-years-ago-125436b470a5
+1. https://medium.com/career-programming/the-real-reason-american-developers-are-desperate-for-remote-work-5e8fb5eeb6c7
