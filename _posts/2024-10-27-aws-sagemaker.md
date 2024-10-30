@@ -46,6 +46,9 @@ categories: [AWS, SageMaker]
     1. For training algorithm, you have a wide variety of options 
         1. SageMaker built-in training algo 
         1. Algorithm purchased from AWS marketplace. 
-        
+
+
+
+
 
 
