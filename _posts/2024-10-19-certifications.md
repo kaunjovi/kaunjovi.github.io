@@ -81,4 +81,63 @@ And in this short article I want to share my journey and study plan and resource
 1. US Presidential Election Date 2024	November 5, 2024
 1. Office Allotment to the Winner 	January 20, 2025
 
+## SDXL 
 
+1. https://stablediffusionxl.com/
+1. Stable Diffusion XL – SDXL 1.0 Modeln - GenAI image generation 
+
+## [Random Forests @ Kaggle](https://www.kaggle.com/code/dansbecker/random-forests)
+
+1. A deep tree with lots of leaves will overfit 
+1. because each prediction is coming from historical data from only the few houses at its leaf. 
+1. But a shallow tree with few leaves will perform poorly because it fails to capture as many distinctions in the raw data.
+1. Even today's most sophisticated modeling techniques face this tension between underfitting and overfitting. 
+1. But, many models have clever ideas that can lead to better performance. 
+1. We'll look at the random forest as an example.
+1. The random forest uses many trees, and it makes a prediction by averaging the predictions of each component tree. 
+1. It generally has much better predictive accuracy 
+1. than a single decision tree and it works well with default parameters. 
+1. If you keep modeling, you can learn more models with even better performance, but many of those are sensitive to getting the right parameters.
+
+```
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error
+
+forest_model = RandomForestRegressor(random_state=1)
+forest_model.fit(train_X, train_y)
+melb_preds = forest_model.predict(val_X)
+print(mean_absolute_error(val_y, melb_preds))
+```
+
+1. Import Random Forest 
+
+```
+from sklearn.ensemble import RandomForestRegressor
+```
+
+1. Instantiate the model and fit 
+```
+forest_model = RandomForestRegressor(random_state=1)
+forest_model.fit(train_X, train_y)
+```
+
+1. Make some predictions 
+
+```
+melb_preds = forest_model.predict(val_X)
+```
+
+1. Check how much are we off on average 
+
+```
+print(mean_absolute_error(val_y, melb_preds))
+```
+
+
+
+## AWS Glue DataBrew 
+1. visual data preparation tool 
+1. users : data analysts and data scientists 
+1. to clean and normalize data to prepare it for analytics and machine learning (ML).
+1. [youtube / AWS Glue DataBrew Demo Video For Beginners](https://www.youtube.com/watch?v=G8o5ekfbBO4)
+1. [youtube / Detailed Demo on AWS DataBrew](https://www.youtube.com/watch?v=tQYBHelHrgE)
