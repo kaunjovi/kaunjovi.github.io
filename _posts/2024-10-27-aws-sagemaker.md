@@ -31,3 +31,21 @@ categories: [AWS, SageMaker]
 
 1. You could work on data with popular framework / tools like Pandas, numpy, scikit_learn etc. 
 
+1. Steps 
+    1. Copy data from source (S3?)
+    1. Spin up a processing container (SageMaker could do it for you or you could have your own)
+    1. Output processed data (S3?)
+
+1. Training on SageMaker
+    1. You should already have data - S3 path 
+    1. You should already have code to train the data on - ECR path - 
+        1. Elastic Container Registry (ECR)
+        1. ECR - store, share, and deploy your container software anywhere
+    1. S3 bucket for output 
+    1. ML compute - could be costly 
+    1. For training algorithm, you have a wide variety of options 
+        1. SageMaker built-in training algo 
+        1. Algorithm purchased from AWS marketplace. 
+        
+
+
