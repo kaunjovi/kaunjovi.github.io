@@ -60,3 +60,8 @@ melbourne_data.describe()
 1. **undefitting** - too less levels. the model does not capture enough trends. not reliable for new data. 
 1. Use **max_leaf_nodes** in DecisionTreeRegressor to control the depth. 
 
+## Random Forst
+
+1. Lost in Trees - DecisionTreeClassifier, DecisionTreeRegressor ? 
+1. Embrace Forest of trees - RandomForestRegressor
+
