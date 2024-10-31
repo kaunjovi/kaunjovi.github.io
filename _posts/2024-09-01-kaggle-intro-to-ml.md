@@ -34,3 +34,29 @@ melbourne_data.describe()
 1. std = standard deviation. How spread out the values are. 
 1. 25th percentile = Sort from min to max. Go 25% down the list. The number is bigger than 25% of the values. 
 
+## Supervised Learning / Decision Trees 
+
+1. A decision tree is a non-parametric supervised learning algorithm, 
+1. which is utilized for both classification and regression tasks. 
+1. It has a hierarchical, tree structure, which consists of a root node, branches, internal nodes and leaf nodes.
+1. There are two types of decision trees; 
+1. classification trees and regression trees. 
+1. From there, they are split into different algorithms and use various nodes and branches to make them whole.
+1. Scikit-learn provides two main decision tree algorithms: 
+    1. CART (Classification and Regression Trees) and 
+        1. CART is the default algorithm used in scikit-learn's DecisionTreeClassifier and DecisionTreeRegressor classes
+    1. ID3 (Iterative Dichotomiser 3). 
+
+## Supervised Learning / Decision Trees / DecisionTreeRegressor
+
+1. https://www.geeksforgeeks.org/python-decision-tree-regression-using-sklearn/
+
+## Underfitting and Overfitting 
+
+1. https://www.kaggle.com/code/dansbecker/underfitting-and-overfitting
+1. For a tree, if there is only one level of depth, there are two nodes. 
+1. For 10 levels there are 1024 nodes. 
+1. **overfitting** - too many levels. too less sample in each group. less reliable for new set of data. 
+1. **undefitting** - too less levels. the model does not capture enough trends. not reliable for new data. 
+1. Use **max_leaf_nodes** in DecisionTreeRegressor to control the depth. 
+
