@@ -65,3 +65,21 @@ melbourne_data.describe()
 1. Lost in Trees - DecisionTreeClassifier, DecisionTreeRegressor ? 
 1. Embrace Forest of trees - RandomForestRegressor
 
+## [Intermediate Machine Learning @ Kaggle](https://www.kaggle.com/code/alexisbcook/introduction)
+
+1. Learn the following 
+    1. tackle data types often found in real-world datasets (missing values, categorical variables),
+    1. design pipelines to improve the quality of your machine learning code,
+    1. use advanced techniques for model validation (cross-validation),
+    1. build state-of-the-art models that are widely used to win Kaggle competitions (XGBoost), and
+    1. avoid common and important data science mistakes (leakage).
+
+## [Missing Values](https://www.kaggle.com/code/alexisbcook/missing-values)
+
+1. Start by dropping the column 
+    1. Come back later and check. Is it only one missing value that is dropping the entire column. 
+    1. Are multiple columns missing values at different rows and ending up dropping everything. **dropna**
+    1. Can you put some approximation? Average? **imputation**
+    1. Or, you can do **imputation plus** where in you do imputation but also add a column showing where imputation was done. 
+
+    
