@@ -82,4 +82,15 @@ melbourne_data.describe()
     1. Can you put some approximation? Average? **imputation**
     1. Or, you can do **imputation plus** where in you do imputation but also add a column showing where imputation was done. 
 
-    
+# [Non Number values / Categorical](https://www.kaggle.com/code/alexisbcook/categorical-variables)
+
+1. categorical variable takes only a limited number of values.
+1. Possible set of options: "Never", "Rarely", "Most days", or "Every day". 
+1. Or  "Honda", "Toyota", and "Ford". In this case, the data is also categorical.
+
+1. Approaches to handle categorical values 
+1. Drop them. Naaah 
+1. Ordinal encoding. Assign them 1, 2, 3, .. N. There should be some natural order in those categories. 
+1. One hot encoding - create columns for the different sets of values. There is no assumed ordering here. 
+
+
