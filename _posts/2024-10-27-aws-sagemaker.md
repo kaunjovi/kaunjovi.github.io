@@ -78,6 +78,11 @@ categories: [AWS, SageMaker]
     1. Trigger. Schedule. Demand. 
 1. ETL uses Apache Spark for distributed data processing    
 
+1. **Question** You are managing a big data project that requires periodic processing of large datasets stored in Amazon S3. Which service would you use to schedule and manage the execution of these data processing jobs?
+1. AWS Glue is a managed ETL service that allows you to schedule and manage data processing jobs, making it ideal for periodic processing of large datasets.
+
+
+
 ## How does Glue crawler work. 
 
 1. Depending on how the S3 buckets are organized, 
@@ -122,12 +127,66 @@ categories: [AWS, SageMaker]
 1. Cost - $1 per interactive session. As a job it is charged in node hour. 
 
 
+## [PII in DataBrew](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45285349#notes)
+
+1. Delete it. 
+1. Mask it. 
+1. Encrypt. 
+    1. Detereministic. 
+    1. Probabilistic. 
+1. Hashing 
+1. Replace with random 
+1. Shuffle 
 
 
 
 
+## SageMaker Training Jobs 
+
+1. Question 
+    1. Your team is building a recommendation system for an e-commerce platform. Which SageMaker feature would help you efficiently handle and scale the training of your machine learning model?
+    1. SageMaker Training Jobs are designed to scale the training of machine learning models, making it the right choice for building a recommendation system.
+
+## SageMaker Model Monitor 
+
+1. A financial institution wants to detect anomalies in transaction data to identify potential fraud. Which AWS service could you use to deploy an outlier detection model, and monitor its performance over time?
+1. SageMaker Model Monitor is designed to track model performance, detect anomalies, and ensure that the deployed models continue to perform as expected.
+
+## SageMaker Clarify
+
+1. Your company is developing a machine learning model to predict customer churn, but you’re concerned about potential bias in the model’s predictions. Which SageMaker feature helps detect and mitigate bias during model training?
+1. SageMaker Clarify is specifically designed to detect, explain, and mitigate bias in machine learning models, making it the right choice for this scenario.
+
+## SageMaker Neo 
+
+1. You are tasked with deploying a machine learning model to edge devices in a factory. Which SageMaker feature would you use to optimize and deploy the model efficiently?
+1. SageMaker Neo is designed for optimizing and deploying models on edge devices, making it the perfect choice for this task.
+
+## SageMaker GroundTruth 
+
+1. **Question** A healthcare company needs to label large amounts of medical images for training a diagnostic AI model. Which SageMaker service would streamline this process by managing the labeling tasks?
+1. SageMaker Ground Truth is designed to manage and streamline the labeling of datasets, making it ideal for large-scale labeling tasks like this.
+
+## SageMaker Studio 
+
+1. **Question** A data scientist wants to experiment with different machine learning algorithms and compare their performance on a dataset. Which SageMaker feature provides an environment for such experimentation?
+1. SageMaker Studio is an integrated environment where data scientists can experiment with different algorithms, track experiments, and compare their performance, making it the best choice for this task.
+
+## imputation Techniques 
+
+1. **Question** You are working with a dataset that contains several missing values in a column representing customer ages. The data is relatively small, and the distribution of ages is skewed by a few extreme outliers. Which imputation technique should you choose to fill in the missing values?
+1. **Median replacement** is a better choice in this scenario as it is less affected by extreme outliers, providing a more accurate central tendency for imputation.
+1. No. **Mean** will not work since there are some extreme numbers and the mean would be distorted. 
+1. No. **drop** will not work since there are too less data anyway. 
+1. No. **Dropping** rows might be considered if the missing data is minimal and the sample size is large enough, but it is not ideal for preserving data integrity.
+1. No. **Mode** Mode replacement is generally used for categorical data, not continuous data like ages, so it wouldn’t be suitable here.
 
 
+
+## Synthetic data / Synithetic Minority Over-sampling Technique (SMOTE) 
+
+1. **Question** Your machine learning model is struggling to accurately predict a rare event, such as equipment failure, which occurs in less than 1% of your dataset. You want to generate synthetic samples to balance the dataset without simply duplicating existing data. Which technique should you use?
+1. SMOTE generates synthetic samples by interpolating between existing minority class examples, helping to balance the dataset without duplication.
 
 
 ## Find own space [Exam Guide](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45320497#notes)
