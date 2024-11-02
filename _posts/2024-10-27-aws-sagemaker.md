@@ -223,16 +223,32 @@ categories: [AWS, SageMaker]
 
 ## [86 Amazon Comprehend, fully managed serverless NLP](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356799#notes)
 
-1. sentiment analysis of emails. 
+1. Natural Language Processing (NLP) tool and 
+1. Text Analytics
+1. Usage : sentiment analysis of emails. 
 1. group customer emails based on categories - support request, billing request, etc. 
 1. Training data > S3 > Comprehend > custom classifier 
     1. new document > cusomtom classifier > looks like a "complaint", "support request", "billing request" etc. 
     1. Can be both synchronous real time (single document) or async. 
 
-## [86 Named Entity Recognition (NER)](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356799#notes) 
+1. **Named Entity Recognition (NER)**
+1. **Custom Entity Recognition(CER)**
 
+## [88 Amazon Translate](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356807#notes)
 
+1. Language translation service
+1. Handles languages and moods as well - can do formal or informal tone translate. 
 
+## [90 Amazon Transcribe, speech to text](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356813#notes)
+
+1. Deep learning process 
+1. Automatic Speech Recognition (ASR) is used to do the transcribe. 
+1. Remove PII by Redaction 
+1. Speaking in multiple lanaguages? No problem. Automatic detection and handling. 
+1. Usage 
+    1. Transcribe customer calls 
+    1. Automate close captioning / subtitling 
+    
 
 
 
