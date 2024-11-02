@@ -189,5 +189,51 @@ categories: [AWS, SageMaker]
 1. SMOTE generates synthetic samples by interpolating between existing minority class examples, helping to balance the dataset without duplication.
 
 
+## AWS Managed AI services 
+
+1. [85 Why AWS Managed AI services?](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356791#notes)
+
+## What are the AWS managed AI services available? 
+1. **Pre trained ML services. Ready to go**
+    1. SageMaker Jumpstart - ?? 
+    1. Amazon Bedrock - hugging face ?
+    1. Amazon Q Business ? 
+    1. Amazon Q Developer ? 
+1. **text and documents** 
+    1. Comprehend - ?? 
+    1. Translate - ?? 
+    1. Textract - 
+1. **images** 
+    1. Rekognition 
+1. **search** 
+    1. Kendra 
+1. **speech** 
+    1. Polly 
+    1. Transcribe 
+1. **chatbots** 
+    1. Lex 
+1. **recommendation** 
+    1. Personalize 
+
+## What is the benefit of using AWS Managed AI services? 
+
+1. Redundancy and regional coverage - across multiple Availability Zones (AZ) and regions. 
+1. Specialized hardware (CPU and GPUs) for specific use case 
+1. Token based pricing. Pay as you go. 
+
+## [86 Amazon Comprehend, fully managed serverless NLP](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356799#notes)
+
+1. sentiment analysis of emails. 
+1. group customer emails based on categories - support request, billing request, etc. 
+1. Training data > S3 > Comprehend > custom classifier 
+    1. new document > cusomtom classifier > looks like a "complaint", "support request", "billing request" etc. 
+    1. Can be both synchronous real time (single document) or async. 
+
+## [86 Named Entity Recognition (NER)](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356799#notes) 
+
+
+
+
+
 
 
