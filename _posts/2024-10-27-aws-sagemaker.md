@@ -189,31 +189,5 @@ categories: [AWS, SageMaker]
 1. SMOTE generates synthetic samples by interpolating between existing minority class examples, helping to balance the dataset without duplication.
 
 
-## Find own space [Exam Guide](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45320497#notes)
-
-1. Exam about details of the components. Not about designing and architecting. We will need to get to that as well. Soon. 
-1. Question types 
-    1. Multi choice - one out of 4. 
-    1. Multi response - many out of 5 or more.  
-    1. Ordering - 3 to 5 correct. and correct ordering. 
-    1. Matching - 3 to 7. 
-    1. Case study - one case study. multiple questions based on that. 
-    1. No negative marking - guess please. Prep so you dont have to. 
-1. 1000 - 720 passing marks 
-1. Domains 
-    1. Data preperation - 28% 
-    1. ML model dev - 26% 
-    1. Deployment and orch - 22% 
-    1. monitoring, maintenance, security - 24% 
-1. Take p/o of the course, and those that we need twitter update for. 
-
-1. **more material** if you have time
-1. [SageMaker Developer guide](https://docs.aws.amazon.com/sagemaker/) 
-    1. [pdf](https://gmoein.github.io/files/Amazon%20SageMaker.pdf)
-
-1. 3 hours. 65 questions (85 during beta)
-1. flag the ones that you want to come back and recheck 
-
-
 
 
