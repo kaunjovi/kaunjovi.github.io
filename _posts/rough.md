@@ -1,5 +1,125 @@
 
 
+1. LEAD - L – Listen and be authentic, E – Energise and inspire, A – Align across the enterprise, D – Develop others
+
+
+1. Enterprise Data Architect certification. TOGAF? 
+
+## Data Models 
+
+1. [Conceptual Data Model](https://sparxsystems.com/enterprise_architect_user_guide/17.0/modeling_domains/conceptual_data_model__.html)
+1. [Kimball’s Dimensional Data Modeling](https://www.holistics.io/books/setup-analytics/kimball-s-dimensional-data-modeling/)
+1. [Difference between Kimball and Inmon](https://www.geeksforgeeks.org/difference-between-kimball-and-inmon/)
+1. [The 3 brothers of Data Modelling: Kimball, Inmon & Data Vault](https://www.linkedin.com/pulse/3-brothers-data-modelling-kimball-inmon-vault-dnyanesh-bandbe/)
+1. [Data Vault 2.0 is a modern approach to data warehousing](https://data-vault.com/what-is-data-vault-core-concept/)
+1. [Data Warehouse Fundamentals — Normalization, Data Modelling, Kimball Approach and Inmon Approach](https://medium.com/@khedekarpratik123/data-warehouse-fundamentals-normalization-data-modelling-kimball-approach-and-inmon-approach-3a325cea5ea1)
+
+## Data Warehouse 
+1. AWS Redshift, 
+1. Google BigQuery, 
+1. Snowflake
+
+
+## Accordion / Executive Director - Data Management @ Hyd 
+1. 4.3 / 4.1 - 
+1. 1K employees 
+1. financial consulting firm uniquely focused on private equity
+1. Data & Analytics (Accordion | Data & Analytics)
+
+1. Undergraduate degree (B.E/B.Tech.) from tier-1/tier-2 colleges are preferred. 
+1. 12+ years of experience in related field
+Experience in designing logical & physical data design architectures in various RDBMS (SQL Server, Oracle, MySQL etc.), Non-RDBMS (MongoDB, Cassandra etc.) and Data Warehouse (Azure Synapse, AWS Redshift, Google BigQuery, Snowflake etc.) environments.
+Experience in designing logical and physical data design architectures in Oracle, MongoDB, and Snowflake. 
+Currently focussing on wavewise migration to AWS and with an intention to migrate to Redshift in a year. 
+
+Deep knowledge and implementation experience on Modern Data Warehouse principles using Kimball & Inmon Models or Data Vault including their application based on data quality requirements.
+
+Implementation experiance of Modern Data Warehouse, Data Lakehouse, Data Product principles using AWS and Snowflake. 
+Data Governance and Data Quality technical implementation experiance using Collibra. 
+Also, expertise in working with Data owners, Data Stewards, Legal Risk and Compliance team. 
+
+
+In-depth knowledge of AWS for solution design, development, and delivery.
+Proven abilities to take on initiative, be innovative and drive it through completion.
+Should have worked on Data Governance and led a team size of atleast 50+ resources 
+Knowledge on integration of Salesforce and Siebel Data Source is a plus
+
+Any Enterprise Data Architect certification will be an added advantage.
+
+Partner with Business Heads (Marketing, Operations, Legal Risk and Compliance) to understand their domain, data and analytics requirements. 
+Create comprehensive requirements, product roadmap to enable development of optimal Enterprise Data Platform. 
+Align business requirements with technical architecture and provide technical leadership to development team for implementation. 
+Translate business requirements into Data Products, Data Lakehouse architecture, including Data Governance, Data Quality, Security and other associated Non Functional Requirements (NFR).
+Create elaborate Data Governance, Data Quality and Data management processes and procedures and work with Executive Commitee memmbers and Business Heads to roll out adoption. 
+Collaborate with BU heads and internal project teams to implement data products and further Enterprise Data Platform adoption. 
+Research and track the latest technical developments in the field of Data and AI. Also contribute to it by creating Patents, whitepapers etc. 
+
+
+
+
+## JPMC / Applied AI ML Director @ Bglr 
+
+tech leader ready to take their career to new heights. 
+
+As an Applied AI ML Director at JPMorgan Chase within the 
+Global Private Banking function's Technology Artificial Intelligence and Machine Learning (AIML) Team. 
+
+You will provide deep engineering expertise and 
+
+work across agile teams 
+to enhance, build, and deliver trusted market-leading technology products in a secure, stable, and scalable way. Leverage your deep expertise to consistently challenge the status quo, innovate for business impact, lead the strategic development behind new and existing products and technology portfolios, and remain at the forefront of industry trends, best practices, and technological advances
+
+This role will focus on establishing and nurturing 
+common capabilities, best practices, and reusable frameworks, 
+creating a foundation for AI excellence that accelerates innovation and consistency across business functions
+
+Establish and promote a library of common ML assets, 
+reusable ML models, features stores, data pipelines, and standardized templates.
+Lead efforts to create shared tools and platforms that streamline the end-to-end ML lifecycle across the organization.
+Advise on the strategy and development of multiple products, applications, and technologies.
+Lead advisor on the technical feasibility and business need for AIML use cases.
+Drive adoption and integration of ML solutions across functions.
+Promote experimentation and pilot programs to test new technologies and methodologies.
+Liaison with firm wide AIML stakeholders.
+Create novel code solutions and drives the development of new production code capabilities across teams and functions
+Translate highly complex technical issues, trends, and approaches to leadership to drive the firm’s innovation and enable leaders to make strategic, well-informed decisions about technology advancements.
+Influence across business, product, and technology teams and 
+successfully manages senior stakeholder relationships.
+
+
+Formal training or certification on AI/ML concepts 
+10+ years applied experience. 
+In addition, 5+ years of experience leading technologists to manage, anticipate and solve complex technical items within your domain of expertise.
+Experience in Natural Language Processing including Large Language Models.
+Experience in building, evaluating and deploying Machine Learning Models into Production.
+Advanced proficiency in Python developmental toolsets. 
+Design, coding, testing and debugging skills in Python.
+
+## Merck Healthcare / Head of Data Engineering @ Bglr 
+1. 4.1 / 4.2 - 10k+ employee - 
+
+
+## Senior Director of Engineering, Arkose Labs
+
+1. Arkose Labs overview 4.1 51 to 200 Employees 
+
+
+
+## Group Head of AI/ML, Barclays 
+
+1. development of the AI/ML risk management framework and its embedment within the organisation.
+1. appropriately defined risk-assessed approach to AI/ML oversight.
+1. Falls under broader firms Control Framework.
+1. Consumers of AI/ML risk management framework
+1. AI/ML Owners, Quantitative Analytics Teams, Technology, Legal, Compliance, Validation Teams, etc.
+1. enterprise-wide AI/ML model definition to identify AI/ML risks.
+1. risk-based operating model for responsible AI/ML adoption.
+1. capabilities that support AI/ML adoption and risk management.
+1. Laws impacting AI/ML risk mgmt f/work - SR11-7, SS1/23, EU AI Act, NIST 
+
+
+
+
 ## AWS certifications. Menu Card. Which one to attack first. 
 1. https://github.com/kaunjovi/kaunjovi.github.io/blob/main/_posts/aws-certifications.md
 

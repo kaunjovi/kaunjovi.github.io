@@ -248,8 +248,22 @@ categories: [AWS, SageMaker]
 1. Usage 
     1. Transcribe customer calls 
     1. Automate close captioning / subtitling 
-    
 
+
+
+
+## Move to own page [Understanding LLMs from Scratch Using Middle School Math](https://medium.com/towards-data-science/understanding-llms-from-scratch-using-middle-school-math-e602d27ec876)
+
+1. Check out. 
+
+
+## Move to own [Python is No More The King of Data Science](https://medium.com/stackademic/is-python-still-the-king-of-data-science-476f1e3191b3)
+
+1. such as Numpy, Pandas and scikit-learn.
+1. **Julia**, designed with performance in mind for numerical computing
+1. Domain-Specific Languages (DSLs)
+1. TensorFlow, PyTorch, Keras— you name it, they’ve all called Python home.
+1. Swift, for example, is being heavily pushed by Apple for machine learning with their Swift for TensorFlow project
 
 
 
