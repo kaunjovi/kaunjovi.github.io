@@ -269,6 +269,27 @@ categories: [AWS, SageMaker]
 1. Speech Mark ??? 
     1. mark where a word / sentence starts / stops - useful for lip synching 
 
+## [Amazon Rekognition](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356819#notes)
+
+1. Recognise People, things etc. in a image / video. 
+1. Use case : find a celebrity 
+    1. pathing in games - what path did this player take 
+    1. find the same person in a bunch of images.  
+    1. find gender / age / emotion - need this for people with low EQ. 
+    1. content moderation - blur out parts of images / videos - hmm 
+    1. text detection in vide - get the car's number from traffic video 
+1. **custom lebels** - use case - you want to find if your product is one the shelves. 
+    1. provide a few hundred pictures of your logo 
+    1. Rekognition will create a **custom model** based on those images. 
+    1. Now Rekognition can help you find the number of your products on the shelves etc. 
+    1. Labelled images > upload to S3 > train Rekognition on those 
+    1. Now Rekognition can be used to find the logos in real life pics. 
+1. Content moderation 
+    1. Can bring down human review to 1 to 5% of the total content volume. 
+    1. For human review you can use **Amazon Augmented AI (Amazon A2I)**
+1. **Personal Protective Equipment (PPE)** detection 
+    1. Are the workers wearing correct protective gears? 
+
 
 
 
