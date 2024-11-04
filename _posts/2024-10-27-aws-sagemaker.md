@@ -241,13 +241,36 @@ categories: [AWS, SageMaker]
 
 ## [90 Amazon Transcribe, speech to text](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356813#notes)
 
-1. Deep learning process 
-1. Automatic Speech Recognition (ASR) is used to do the transcribe. 
-1. Remove PII by Redaction 
+1. Use **Deep learning process** called **Automatic Speech Recognition (ASR)**. 
+1. Can **remove PII** by Redaction 
 1. Speaking in multiple lanaguages? No problem. Automatic detection and handling. 
 1. Usage 
     1. Transcribe customer calls 
     1. Automate close captioning / subtitling 
+
+1. Adding **Custom vocabulary** [link](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356813#notes)
+1. Add custom vocabulary - domain specific - microservices /  my crow services. 
+1. Can provide hints of how to pronounce as well. 
+
+1. Training Transcribe with **Custom Language Models**
+1. Train Transcribe with domain-specific text data 
+1. If we are studying birds, probably "my crow service" is a thing. 
+1. Not new words. But the context of the words. 
+
+## [Amazon Polly](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356817#notes)
+
+1. Take words. Give speech. 
+1. Lexicons 
+    1. write AWS - voice Amazon Web service 
+    1. write Mgr - voice Manager 
+1. Speech Synthesis Markup Language (SSML)
+    1. da da da <break> da da - the voice will take a break 
+1. Voice engine ???? 
+1. Speech Mark ??? 
+    1. mark where a word / sentence starts / stops - useful for lip synching 
+
+
+
 
 
 
