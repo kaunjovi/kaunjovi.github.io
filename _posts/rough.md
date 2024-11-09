@@ -1,5 +1,133 @@
 
 
+## Business / Why is RecordKeeping a loss making business for T? 
+## Business / Why is RecordKeeping a loss making business for T? 
+
+1. [To cover losses elsewhere, TIAA pushes costly in-house products on retirement savers, whistleblower says](https://www.nbcnews.com/investigations/tiaa-pushes-costly-retirement-products-cover-losses-whistleblower-rcna161198)
+
+
+## Business / How does the firm T make money? 
+
+1. [read]()
+
+1. TIAA’s business has two main parts: 
+    1. First, it acts as recordkeeper for the retirement plans of institutions like 
+        1. Cornell University, 
+        1. the University of North Carolina System and 
+        1. most of the nation’s 107 historically Black colleges and universities. 
+    1. Second, TIAA earns money as an asset manager on 
+        1. in-house mutual funds and 
+        1. insurance products sold to investors 
+        1. both inside and outside those (retirement) plans.        
+        1. Annuities are contracts that promise to provide income for holders during their lives.
+
+1. Clients 
+    1. While most of TIAA’s clients are current or retired workers at nonprofit organizations, 
+    1. TIAA also offers individual retirement accounts to investors online.
+
+1. Most of the institutional accounts handled by TIAA 
+1. allow participants to invest both in its own products and 
+1. also in funds from outside firms like Vanguard or Fidelity. 
+
+1. selling in-house products generates significantly greater profits to TIAA than sales of external offerings.
+
+1. TIAA Traditional, its popular annuity, the company's engine, does not have an “identifiable ‘expense ratio’ or ‘fee,’” the company says. 
+1. Chris Tobe, an expert in pension investments and a former trustee of the $14 billion Kentucky Retirement Systems, 
+1. said the industry consensus is TIAA makes around 1.2% on TIAA Traditional, 
+1. far more than other types of investments. 
+1. Craig Parkin, the firm’s head of retirement advice and consulting, 
+1. described TIAA Traditional as the company’s “engine” in the recording of a sales meeting last fall.
+
+1. The problem for clients arises when TIAA products promoted by its sales representatives or its advice tool 
+1. cost more than its competitors’ or perform poorly by comparison. 
+1. An example is a TIAA real estate product the advice tool funnels clients to — 
+1. it has significantly underperformed an index of real estate investment trusts 
+1. in six of the past 10 years and is down 4.6% in 2024 while the index is up 4.2%.
+
+When Rajotte made his presentation to TIAA employees, 
+he cited Yale University’s retirement plans as an example of how TIAA compensates for its losses elsewhere by selling in-house products. 
+At Yale, he said, “we’re more than making up for the loss in recordkeeping revenue by what we’re making in the product side.”
+
+1. At a sales meeting  
+1. [Thomas Rajotte](https://www.linkedin.com/in/tomrajotte/) TIAA's director of finance, told employees in a recorded presentation 
+1. that the company could secure its future and offset its losses by selling in-house products to clients. 
+1. "If they [clients] have Vanguard, we're not earning any money on the product and we're losing money on the recordkeeping," 
+1. he said. "Where we make that up is on the product side."
+
+
+1. Asked if Yale was concerned about TIAA’s in-house products being pushed on its participants to offset losses, the university said in a statement: 
+1. “Neither Yale nor any of its plan fiduciaries has access to TIAA’s internal business discussions, nor is it Yale’s role to monitor TIAA.”
+1. overseeing its retirement plans are fiduciaries who 
+1. “retain independent investment advisers, 
+1. who are also fiduciaries to the plans, 
+1. to provide expert assistance in identifying suitable investment funds and monitoring their performance. 
+1. The plan fiduciaries periodically evaluate whether the investment fund fees that the plans pay TIAA are reasonable.”
+
+1. If a financial firm advises customers to buy in-house investments that make it more money than other vehicles, 
+1. it must disclose that fact. 
+1. Ditto if a firm rewards sales representatives with higher compensation for directing clients into certain investments.
+1. **is that a legal requirement**
+
+1. In the 2021 SEC case, 
+1. some TIAA training materials encouraged the firm’s wealth management advisers to **avoid discussing with clients**
+1. the fees and expenses associated with shifting their low-cost employee retirement accounts into higher-cost managed accounts. 
+1. TIAA misled clients by characterizing the recommendations to move into managed accounts as objective advice, according to the SEC. 
+1. The activities occurred from January 2013 through March 2018; 
+1. in accepting the settlement from TIAA, the SEC said it considered remedial actions the company took before and after the investigation, 
+1. including changes to its disclosures, training, policies and compensation structure.
+
+1. TIAA also tried to propel clients into making investment choices 
+1. that would benefit the firm by citing the possibility that they would not have enough money to retire, the SEC said. 
+1. “Making the Client Feel the Pain,” was how TIAA’s scripted sales materials characterized the approach. 
+1. TIAA said in 2017 that the language in those materials did not reflect the company’s values.
+
+1. The recent push at TIAA, 
+1. according to the whistleblower complaint, 
+1. differs from the 2021 case by focusing on **its financial consultants**, 
+1. the employees who work directly with institutions like Brown University and Harvard.
+
+1. At a meeting last fall, 
+1. TIAA’s Parkin told financial consultants that 655,000 of the firm’s clients were “off track” for retirement.
+1. They didn’t own enough in-house TIAA products, according to the complaint and a recording of Parkin’s presentation. 
+1. Propelling these folks into TIAA Traditional, the annuity, would get them on track, he said. 
+1. Even better, it would generate $10 billion for the firm, Parkin said.
+
+1. Getting clients to use TIAA’s online advice tool was the means to this end, Parkin said on the recording. 
+1. He also said TIAA’s CEO, Thasunda Brown Duckett, and others in the executive suite 
+1. supported his strategy as a top priority to be pursued immediately. 
+1. “Thasunda loves her money,” Parkin said on the recording.
+
+1. Like many online advice mechanisms, 
+1. TIAA’s Retirement Advisor Field View Tool recommends clients balance their portfolio among various asset classes — 
+1. stocks, bonds, money markets and the like — based on risk tolerance, age, income and other inputs. 
+1. The tool divides investors into seven types — very conservative to very aggressive — 
+1. then steers them to investment options in each asset class, internal documents show. 
+1. Clients using the tool to change their portfolio must accept all its suggestions; 
+1. a participant cannot accept one recommendation on stocks and reject another on real estate, for example.
+
+1. Most of the asset classes available for users of the tool include an array of investment options that include 
+1. both TIAA products and those offered by competitors. 
+1. The company’s spokesman said more than 2,500 non-TIAA funds are available to retirement plan sponsors for selection through its recordkeeping platform.
+1. But in two asset classes, 
+1. the tool’s recommendations are limited to TIAA products, 
+1. One is the annuity that Parkin said generates significant profits to the firm; 
+1. the other is the lackluster TIAA real estate product.
+
+1. While previously consultants had been encouraged to discuss the tool’s recommendations with clients, 
+1. now the employees are tasked with getting a certain number of clients to implement the tool’s advice. 
+1. If a consultant persuades at least 170 customers to make changes using the tool, 
+1. he or she earns credits toward bonuses accounting for one-quarter of their compensation.
+
+1. Together, its top five executives received $46.2 million last year,  
+1. Duckett, TIAA’s CEO, receiving $18.2 million, 
+1. up from $17.5 million the prior year. 
+1. Of the 18 companies TIAA considered to be peers for pay purposes last year, Duckett received more than CEOs at 10 of them, 
+1. including Bank of New York Mellon, Equitable Holdings and T. Rowe Price.
+1. TIAA, which operates without profit, 
+1. paid its CEO more than the CEOs at most of the for-profit companies it says are peers.
+
+
+
 1. LEAD - L – Listen and be authentic, E – Energise and inspire, A – Align across the enterprise, D – Develop others
 
 
