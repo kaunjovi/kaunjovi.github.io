@@ -1,4 +1,64 @@
 
+## Data Engineering / Data Pipeline vs ETL pipeline 
+
+1. [Data Pipeline vs ETL Pipeline: What’s the Difference?](https://www.astera.com/type/blog/etl-pipeline-vs-data-pipeline/)
+
+## Data Engineering / What is an Extract, Transform and Load (ETL) Pipeline? 
+
+1. [What is an ETL Pipeline?](https://www.astera.com/type/blog/etl-pipeline-vs-data-pipeline/)
+
+1. **Extracting data** from a variety of sources 
+    1. the system ingests data from various heterogeneous sources, 
+    1. such as business systems, applications, sensors, and databanks. 
+    1. 
+1. **Transform** 
+    1. transforming the raw data into a format required by the end application. 
+1. **Load** 
+    1. The data is subsequently loaded into the target systems, 
+    1. such as a cloud data warehouse, data mart, or a database 
+    1. the transformed data is loaded into a target data warehouse or database. 
+    1. it can be published as an API to be shared with stakeholders. 
+
+## Data Engineering / What is Data Pipeline? 
+
+A data pipeline refers to the steps involved in moving data from the source system to the target system. 
+These steps include copying data, transferring it from an onsite location into the cloud, and combining it with other data sources. 
+The main purpose of a data pipeline is to ensure that all these steps occur consistently to all data.
+If managed astutely with data pipeline tools, 
+a data pipeline can offer companies access to consistent and well-structured datasets for analysis. 
+Data engineers can consolidate information from numerous sources and use it purposefully by systematizing data transfer and transformation. 
+For example, an AWS data pipeline allows users to freely move data between AWS on-premises data and other storage resources.
+
+Data pipelines are helpful for accurately fetching and analyzing data insights. 
+The technology is helpful for individuals who store and rely on multiple siloed data sources, require real-time data analysis, or have their data stored on the cloud. 
+
+For example, data pipeline tools can perform predictive analysis to understand potential future trends. A production department can use predictive analytics to know when the raw material is likely to run out. Predictive analysis can also help forecast which supplier could cause delays. Using efficient data pipeline tools results in insights that can help the production department streamline its operations.
+
+
+
+## Data Engineering / fixing slow ETL pipelines. 
+
+1. https://www.linkedin.com/advice/1/your-etl-pipelines-slowing-down-data-processing-f5vcf?trk=cah2
+
+
+Dynamic Scaling: Enable autoscaling on Databricks for resource efficiency.
+Automate dynamic resource scaling with cloud options like AWS Lambda to adjust compute power based on load. 
+Caching & Partitioning: Automate caching and partitioning to balance load.
+Monitoring & Alerts: Use Azure Monitor/AWS CloudWatch for quick issue detection.
+catch bottlenecks in real time (think Apache Spark or Airflow alerts 🔔).
+Predictive Optimization: Use ML to anticipate and prevent bottlenecks.
+Incremental Loading: Load only new/modified data for efficiency.
+Orchestration: Use Airflow to manage dependencies dynamically.
+Testing: Automate regression tests to maintain performance.
+
+
+For complex jobs, parallelize tasks 🛤️, allowing data to flow faster and smoother. 
+Use automated scheduling 🕰️ to optimize run times during low-traffic hours, and enable caching 🗄️ for frequently accessed data. 
+Finally, keep pipelines tidy by automating cleanup tasks—like a digital Marie Kondo 🧹! 
+
+Watch data processing speed up as those bottlenecks melt away! 
+
+
 
 ## Business / Why is RecordKeeping a loss making business for T? 
 ## Business / Why is RecordKeeping a loss making business for T? 
@@ -44,9 +104,9 @@
 1. it has significantly underperformed an index of real estate investment trusts 
 1. in six of the past 10 years and is down 4.6% in 2024 while the index is up 4.2%.
 
-When Rajotte made his presentation to TIAA employees, 
-he cited Yale University’s retirement plans as an example of how TIAA compensates for its losses elsewhere by selling in-house products. 
-At Yale, he said, “we’re more than making up for the loss in recordkeeping revenue by what we’re making in the product side.”
+1. When Rajotte made his presentation to TIAA employees, 
+1. he cited Yale University’s retirement plans as an example of how TIAA compensates for its losses elsewhere by selling in-house products. 
+1. At Yale, he said, “we’re more than making up for the loss in recordkeeping revenue by what we’re making in the product side.”
 
 1. At a sales meeting  
 1. [Thomas Rajotte](https://www.linkedin.com/in/tomrajotte/) TIAA's director of finance, told employees in a recorded presentation 
