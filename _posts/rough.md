@@ -53,7 +53,52 @@
 1. We randomly perform row sampling and feature sampling from the dataset forming sample datasets for every model. 
 1. This part is called Bootstrap.
 
+## Boosted Trees 
+
+1. [Introduction to Boosted Trees](https://xgboost.readthedocs.io/en/stable/tutorials/model.html#introduction-to-boosted-trees)
+1. [Paper : Greedy Function Approximation: A Gradient Boosting Machine, by Friedman](https://jerryfriedman.su.domains/ftp/trebst.pdf) - sorry. OHT. 
+
+## ensemble learning algorithms / XGBoost, RandomForest etc. 
+
+1. Ensemble techniques in machine learning function much like seeking advice from multiple sources before making a significant decision, such as purchasing a car. 
+1. Just as you wouldn’t rely solely on one opinion, ensemble models combine predictions from multiple base models to enhance overall performance. 
+1. One popular method, majority voting, aggregates predictions to select the class label by majority. 
+
+1. Ensemble learning is a machine learning technique that enhances accuracy and resilience in forecasting 
+1. by merging predictions from multiple models. 
+1. It aims to mitigate errors or biases that may exist in individual models by leveraging the collective intelligence of the ensemble.
+1. The underlying concept behind ensemble learning is to combine the outputs of diverse models to create a more precise prediction. 
+1. By considering multiple perspectives and utilizing the strengths of different models, 
+1. ensemble learning improves the overall performance of the learning system. 
+1. This approach not only enhances accuracy 
+1. but also provides resilience against uncertainties in the data. 
+1. By effectively merging predictions from multiple models, ensemble learning has proven to be a powerful tool in various domains, offering more robust and reliable forecasts.
+
+1. How to make sense of forecasts from a large number of models. These are the basic Ensemble Techniques.  
+    1. Max Voting (mode of all predictions) - classification problem - example? - 8 out of 10 are saying BUY. Might be BUY. 
+    1. Averaging - regression problem - example(?)
+        1. also, while calculating probablities of Clarssification Problem. 
+    1. Weighted Averaging - average, but with unequal weights - 
+
+1. There are some *advanced techniques* 
+    1. Stacking 
+    1. Blending 
+    1. Bagging ( )
+    1. Boosting 
+
+
+1. **References** 
+    1. [A Comprehensive Guide to Ensemble Learning](https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/)
+
+
 ## XGBoost (Extreme Gradient Boosting), a machine learning algorithm
+
+
+1. [XGBoost: A Scalable Tree Boosting System](https://arxiv.org/pdf/1603.02754)
+    1. the original paper 
+    1. needs some background to comprehend 
+
+
 
 1. optimized distributed gradient boosting library designed for efficient and scalable training of machine learning models. (??)
 1. combines the predictions of multiple weak models to produce a stronger prediction. 
@@ -67,6 +112,23 @@
     1. **What is gradient boosing**?? 
 
 1. [XGBoost at geeksforgeeks](https://www.geeksforgeeks.org/xgboost/)
+1. [Getting started with XGBoost with Python](https://xgboost.readthedocs.io/en/stable/get_started.html)
+
+```
+from xgboost import XGBClassifier
+# read data
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+data = load_iris()
+X_train, X_test, y_train, y_test = train_test_split(data['data'], data['target'], test_size=.2)
+# create model instance
+bst = XGBClassifier(n_estimators=2, max_depth=2, learning_rate=1, objective='binary:logistic')
+# fit model
+bst.fit(X_train, y_train)
+# make predictions
+preds = bst.predict(X_test)
+```
+
 
 ## Data Engineering / Data Pipeline vs ETL pipeline 
 
