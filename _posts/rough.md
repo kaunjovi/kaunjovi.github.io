@@ -1,6 +1,47 @@
 
 
-## Decision Tree 
+
+
+
+## Interview guides 
+1. [Top 30 AWS Interview Questions with Answers](https://www.analyticsvidhya.com/blog/2024/08/aws-interview-questions-with-answers/)
+
+
+
+## Free courses 
+1. [Ensemble Learning and Ensemble Learning Techniques](https://courses.analyticsvidhya.com/courses/ensemble-learning-and-ensemble-learning-techniques?utm_source=blog&utm_medium=tree-based-algorithms-complete-tutorial-scratch-in-python)
+
+
+
+## Classification problem
+1. ??? 
+1. use classification tree based classifiers when the dependent variable is categorical
+
+## Regression Problem 
+1. ??? 
+1. regression trees when the dependent variable is continuous 
+
+
+## Supervised Learning 
+1. ???
+1. Linear Models ???
+1. Tree Based Algorithm ???
+
+## Tree Based Algorithms 
+
+Tree based algorithms are considered to be one of the best and mostly used supervised learning methods. 
+Tree based algorithms empower predictive models with high accuracy, stability and ease of interpretation. 
+Unlike linear models, they map non-linear relationships quite well. They are adaptable at solving any kind of problem at hand (classification or regression).
+
+Methods like tree model machine learning, random forest, gradient boosting are being popularly used in all kinds of data science problems. Hence, for every analyst (fresher also), it’s important to learn these algorithms and use them for modeling.
+
+This tutorial aims to help beginners learn tree based algorithms from scratch. Upon successfully completing this tutorial, individuals are expected to become proficient at using tree based algorithms and building predictive models.
+
+1. **References**
+1. [Tree Based Algorithms](https://www.analyticsvidhya.com/blog/2016/04/tree-based-algorithms-complete-tutorial-scratch-in-python/)
+
+
+## Supervised learning algorithm / Decision Tree 
 
 1. A Decision tree is a flowchart-like tree structure, 
 1. each internal node denotes a test on an attribute, 
@@ -11,6 +52,52 @@
 1. when splitting no longer adds value to the predictions.
 
 1. A decision tree is a black-box estimator (??)
+
+1. Decision tree is a type of supervised learning algorithm 
+1. (having a predefined target variable) 
+1. that is mostly used in classification problems. 
+1. It works for both categorical and continuous input and output variables. 
+1. In this technique, we split the population or sample into two or more homogeneous sets (or sub-populations) 
+1. based on most significant splitter / differentiator in input variables.
+
+1. Two types of Decision Trees 
+
+1. Categorical Variable Decision Tree: 
+    1. Decision Tree which has categorical target variable. Example:- “Student will play cricket or not” i.e. YES or NO.
+1. Continuous Variable Decision Tree: 
+    1. Decision Tree has continuous target variable then it is called as Continuous Variable Decision Tree.
+
+
+1. **Example 1 : Categorical Variable : predict who will play cricket** 
+1. sample of 30 students with three variables Gender (Boy/ Girl), Class( IX/ X) and Height (5 to 6 ft). 
+1. 15 out of these 30 play cricket in leisure time. 
+1. Now, I want to 
+1. create a model to predict who will play cricket during leisure period? 
+1. In this problem, we need to segregate students who play cricket in their leisure time based on highly significant input variable among all three.
+    1. This is where tree model machine learning helps, 
+    1. it will segregate the students based on all values of three variable and identify the variable, 
+    1. which creates the best homogeneous sets of students (which are heterogeneous to each other). 
+    1. decision tree identifies the most significant variable and it’s value that gives best homogeneous sets of population
+
+1. **Example 2 : Continuous Variable** 
+1. Let’s say we have a problem to 
+1. predict whether a customer will pay his renewal premium with an insurance company (yes/ no). 
+1. Here we know that income of customer is a significant variable but insurance company does not have income details for all customers. 
+1. then we can build a decision tree to predict customer income 
+1. based on occupation, product and various other variables. 
+1. In this case, we are predicting values for continuous variable.
+
+1. **Terminologies**
+1. Root node 
+1. Root node **splits into** child nodes. 
+1. The child node may be a **decision node** or a **leaf node** 
+1. **Pruning** - Remove sub nodes of a decision tree. Why??? 
+
+
+
+
+1. **References**
+1. [What is a Decision Tree ? How does it work ?](https://www.analyticsvidhya.com/blog/2016/04/tree-based-algorithms-complete-tutorial-scratch-in-python/)
 
 ## Classifier / Bagging classifier  
 
@@ -83,8 +170,26 @@
 1. There are some *advanced techniques* 
     1. Stacking 
     1. Blending 
-    1. Bagging ( )
+    1. Bagging (or Bootstrap Aggregating)
     1. Boosting 
+
+## Ensemble Learning Algorithm / Bagging (or Bootstrap Aggregating)
+
+1. The idea behind bagging is combining the results of multiple models (for instance, all decision trees) to get a generalized result. 
+1. If you create all the models on the same set of data and combine it, will it be useful? 
+1. There is a high chance that these models will give the same result since they are getting the same input. 
+1. So how can we solve this problem? 
+
+1. One of the techniques is bootstrapping.
+1. Bootstrapping is a sampling technique in which we create subsets of observations from the original dataset, 
+1. with replacement (??). So how do we ensure that this data is the same distribution / nature as the original data (???)
+1. The size of the subsets is the same as the size of the original set.
+1. The Bagging technique uses these subsets (bags) to provide a fair idea of the distribution (complete set). 
+1. The size of subsets created for bagging may be less than the original set.
+
+1. Multiple subsets are created from the original dataset, selecting observations with replacement.
+1. A base model (weak model) is created on each of these subsets.
+1. The models run in parallel and are independent of each other.
 
 
 1. **References** 
@@ -93,12 +198,9 @@
 
 ## XGBoost (Extreme Gradient Boosting), a machine learning algorithm
 
-
 1. [XGBoost: A Scalable Tree Boosting System](https://arxiv.org/pdf/1603.02754)
     1. the original paper 
     1. needs some background to comprehend 
-
-
 
 1. optimized distributed gradient boosting library designed for efficient and scalable training of machine learning models. (??)
 1. combines the predictions of multiple weak models to produce a stronger prediction. 
