@@ -39,13 +39,29 @@ categories: [AWS, Kinesis]
 1. Synchronous API - same as SDK 
 1. Asynchronous API - better peroformance 
     1. submits metrics to CloudWatch 
+1. NO compression out of the box though. 
+1. The Record is stored - not in plain text. It needs to be decoded by KCL (??)
 1. Batching 
     1. Collect Recoreds and write to different shards in the same PutRecords call 
     1. Wait and Aggregate - increased latency but decreased cost - bling bling 
         1. Put multiple records in one record - and hence you can bypass the 1000 records per second limit ) 
         1. Increased payload. Hit the 1MB/S more 
-1. NO compression out of the box though. 
-1. The Record is stored - not in plain text. It needs to be decoded by KCL (??)
+1. **How does batching work?**
+1. KPL waits for **RecordMaxBufferedTime** to collect enough records so that the aggregation is almost 1 MB (which is the max size it can send)
+1. Then it collects a few of these aggregated records and uses PutRecords to send all of them together. 
+1. **When not to use KPL and use SDK instead**? 
+1. We cant wait for the delay. Some real time use case. 
+1. We dont mind the intermediate updates. Just want the lates and most relevant. E.g. if the IoT was offline and we want the latest data only when it comes online. 
+
+## Kinesis Producers / Kinesis Agent 
+1. Java based. Built on top of KPL. 
+1. Installed in **Linux based servers** only to send log files (etc.) to Kinesis Data Streams. 
+1. Benefits - it is built for the logs 
+    1. Can write from multiple directories to multiple Streams
+    1. handles log file roation (?), checkpointing (?), retry upon failures 
+    1. pre-process log files - csv to json, log to json etc. 
+    1. Emits metrics to CloudWatch for monitoring 
+    1. You want aggregation of logs, in mass ? Use this.  
 
 
 
