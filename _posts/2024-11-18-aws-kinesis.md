@@ -63,6 +63,40 @@ categories: [AWS, Kinesis]
     1. Emits metrics to CloudWatch for monitoring 
     1. You want aggregation of logs, in mass ? Use this.  
 
+## How to scale up Kinesis? Increase throuhput.  
+
+1. https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356743#notes
+1. **Shard splitting** 
+1. Just split the existing one. In the same space as the old one, you will get two (or can I get more??)
+1. One shard - 1MB/s/shard. N shards = N MB/s. 
+1. Is there a "hot shard" - all Records are going to that one ? 
+    1. Just split the "hot shard". 
+1. Once you "split" a shard - the old shard is closed and deleted once the data in it expires - and what is the new ?? 
+
+
+## How to scale down Kinesis? Decrease throughput, probably to save some $$. 
+
+1. Mrege two. same thing as above. The old one will be closed and deleted after data expiry. 
+
+## In which scenario could you receive data out of sequence. Out-of-order records. 
+
+1. After resharding - if the consumer starts reading from the new shard before all the records are read from the parent shard - consumer may get out-of-order records. 
+1. KCL has the logic built in - it finishes reading all the messages from parent shard before reading from the new ones. 
+1. If you are building your own consumer using SDK, please handle it yourself. 
+1. [click here](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356743#notes)
+
+## Can you scale up or down the number of Kinesis shards automatically? 
+
+1. There is no inherent feature. You will have to make and API call to **UpdateShardCount**. 
+1. Might be - use AWS labda to do something like that. 
+1. [depreccated : Auto scaling Amazon Kinesis Data Streams using Amazon CloudWatch and AWS Lambda](https://aws.amazon.com/blogs/big-data/auto-scaling-amazon-kinesis-data-streams-using-amazon-cloudwatch-and-aws-lambda/)
+1. [Amazon Kinesis Data Streams On-Demand](https://aws.amazon.com/blogs/aws/amazon-kinesis-data-streams-on-demand-stream-data-at-scale-without-managing-capacity/)
+1. [Amazon Kinesis Data Streams | Easily stream data at any scale](https://aws.amazon.com/kinesis/data-streams/)
+1. **Limitations of resharding / scaling of Kinesis data streams**
+1. Resharding has to be done one at a time and it takes a few seconds to do it. 
+1. So, to double 1000 shards, it might take 30X1000 seconds = 8.3 hours. So, plan in advance. 
+
+
 
 
 
