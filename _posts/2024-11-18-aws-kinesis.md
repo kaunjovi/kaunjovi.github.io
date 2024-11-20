@@ -22,7 +22,7 @@ categories: [AWS, Kinesis]
         1. Is your partition key deviceid for example - and most of uers iphone users - 90% of your messages will go into the same shard. 
     1. Solution
         1. Fix your partition 
-        1. Try - retries with backoff - retry after 2 seconds, then 4 seconds, then 8 seconds and so on. 
+        1. Try - retries with backoff - retry after 2 seconds, then 4 seconds, then 8 seconds and so on. **exponential backoff**
         1. Increase the number of shards 
 
 1. Use case 
@@ -152,7 +152,27 @@ categories: [AWS, Kinesis]
     1. Need code transformation ? Use lambda. 
 1. [Udemy | click here](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356757#notes)
 
+## Kinesis Data Streams (KDS) | issuues and solutions
+## Kinesis Data Streams (KDS) | issuues and solutions
 
+1. Writing too slow. 
+    1. Hot shard? Select partition key to distribute load evenly. 
+    1. Are you pobably hitting the capacity? Check for **ProvisionedThroughputExceeded** 
+    1. What is slow? There are stream level limits as well. CreateStream, Describ
+1. 500 or 503 error 
+    1. implement retry mechanism
+1. Connection errors between Flink and Kinesis 
+    1. Not enough resource on Flink 
+    1. network issue. 
+    1. VPC misconfiguration 
+
+
+## Kinesis Data Streams (KDS) | issuues and solutions | Consumer 
+
+1. [Udemy | click here](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45284803#notes) 
+
+
+https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45284803#notes
 
 1. [click here](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356757#notes)
 
