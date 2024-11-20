@@ -153,7 +153,6 @@ categories: [AWS, Kinesis]
 1. [Udemy | click here](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356757#notes)
 
 ## Kinesis Data Streams (KDS) | issuues and solutions
-## Kinesis Data Streams (KDS) | issuues and solutions
 
 1. Writing too slow. 
     1. Hot shard? Select partition key to distribute load evenly. 
@@ -168,6 +167,12 @@ categories: [AWS, Kinesis]
 
 
 ## Kinesis Data Streams (KDS) | issuues and solutions | Consumer 
+
+1. Lambda function not getting invoked. 
+    1. Might be it is not getting to it. Check for permissions. 
+    1. Might be getting to it, but the function not returning in time. Check for timeout. 
+    1. What is the concurrency limit ?? 
+    1. **IteratorAge** will increase if there is a problem. 
 
 1. [Udemy | click here](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45284803#notes) 
 
