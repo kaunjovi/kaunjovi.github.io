@@ -97,6 +97,64 @@ categories: [AWS, Kinesis]
 1. So, to double 1000 shards, it might take 30X1000 seconds = 8.3 hours. So, plan in advance. 
 
 
+1. **Is it possible to have duplicate data in Kinesis Data Streams?**
+1. **How might a Kinesis Data Stream end up having duplicate data?**
+1. **What is the definition of duplicate data in Kinesis Data Streams?** 
+
+
+1. **What are the scenarios that consumer side can read same data multiple times from Kinesis?** 
+1. There are 4 cases 
+    1. Application deploye - so worker added  
+    1. worker added or deleted.
+    1. a worker terminates unexpectedly - so worker deleted 
+    1. sharding has happened 
+1. **How to solve for duplicate reads from Kinesis?** 
+1. De-duplicate in the consumer please. Kinesis cant handle. 
+1. Make it idempotent - or do whatever it takes, Kinesis cant handle. 
+1. [AWS | Handle duplicate records](https://docs.aws.amazon.com/streams/latest/dev/kinesis-record-processor-duplicates.html)
+1. [Udemy | click here](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356747#notes)
+
+1. **What sort of security mechanisms are available to ensure that usage of Kinesis does not add any security hole in the architecture**? 
+1. IAM - access and authorization 
+1. HTTPS - Encryption in transit 
+1. KMS (??) - Encryption at rest 
+1. Client side - buddy, now you are pushing it. Do it yourself. 
+1. VPC endpoints - for usage from your own private network i.e., VPC 
+1. [click here](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356749#notes)
+
+## Kinesis Data Firehose (KDF)
+1. Write data into something. Load data into **Redshift, S3, Splunk, OpenSearch**
+1. Fully managed. Lot of $$ ? 
+1. Near real time. 
+1. Automatic scaling. 
+1. Many data formats. Data conversion from JSON to Parquet / ORC (only for S3)
+1. More data conversion? Use Lambda. CSV to JSON. 
+1. **watch out** Spark, KCL, cant read from KDF. 
+
+## Kinesis Data Firehose (KDF) / buffer sizing 
+1. Get data. Put in a buffer. Flush the buffer only if - time rule - size rule. 
+    1. Buffer size - 32 MB - reached? flush 
+    1. Buffer time - 2 mins - done waiting? flush - min time that can be set is 1 min 
+    1. Can automatically increase buffer size to increase throughput. 
+1. [Udemy | click here](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356757#notes)
+
+## Kinesis Data Streams (KDS) vs. Kinesis Data Firehose (KDF)
+
+1. Streams 
+    1. Producer (need to be written) - streams - Consumer (need to be written)
+    1. Data transmission is real time (200ms for classic. 70ms for enhanced fan-out)
+    1. Data available for 1 to 365 days. Replay. Multi consumer. 
+    1. No autoscaling. Shard splitting. Shard merging. 
+1. KDF 
+    1. Fully managed. Auto scaling. Send data to S3, Redshift, Splunk, OpenSearch 
+    1. **Near** real time - NOT real time. 
+    1. No data storage. 
+    1. Need code transformation ? Use lambda. 
+1. [Udemy | click here](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356757#notes)
+
+
+
+1. [click here](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356757#notes)
 
 
 
