@@ -4,6 +4,45 @@ title: AWS Certifications MLA C01
 categories: [certifications] 
 ---
 
+## AWS certifications / What is available @ Q4 2024
+
+1. [AWS certification](https://aws.amazon.com/certification/)
+
+1. Foundational - No prior experience needed.
+    1. Cloud Practitioner 
+    1. [AWS Certified AI Practitioner (AIF-C01) Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf?p=cert&c=ai&z=3)
+1. Associate
+    1. ML Engineer 
+    1. Data Engineer 
+    1. *AWS Certified Solutions Architect - Associate (SAA-C03)*
+    1. Developer, SysOps Administrator 
+1. Professional - 2 years of prior AWS Cloud experience recommended.
+    1. Solution Architect / Professional
+    1. DevOps Engineer 
+1. Speciality 
+    1. machine Learning 
+    1. Security, Advanced Network 
+
+
+## Practice Exams 
+1. [Exam Prep Official Practice Question Set: AWS Certified Machine Learning Engineer - Associate (MLA-C01 - English)](https://explore.skillbuilder.aws/learn/course/external/view/elearning/19688/exam-prep-official-practice-question-set-aws-certified-machine-learning-engineer-associate-mla-c01-english)
+
+## Types of questions to expect in exam 
+
+1. Gen AI and Bedrock feature a lot but not too deep on different models and choosing them
+1. a LOT of focus on SageMaker and its features (Model REgistry, debugger, model monitor, data wrangler, clarify, feature store)
+1. MLOps in general
+1. Cost optimization questions
+1. dont need deep AI knowledge (deep learning, fitting, algorithms etc) - so its more a focus on AWS servies
+1. it is an associate cert so not at specialty level
+1. you have to manage time well - its 85 questions - if you have ESL+30 that may help
+1. Stephane Maarek's course is okay but its early days and a bit rough and doesnt match the exam domains yet (
+1. since the course came out before the Exam guide was published)
+1. Skillbuilder was okay
+1. Expect normal AWS questions as well on VPC etc - since you are setting up AWS services
+1. knowledge of otehr AI services (rekognition / transcribe / comprehend / S3 etc) at basic level
+
+
 
 1. [MLA C01 Exam Guide](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45320497#notes)
 

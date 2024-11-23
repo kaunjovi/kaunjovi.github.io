@@ -13,24 +13,6 @@ categories: [certifications]
 1. AI/ML 
     1. edX  
 
-## AWS certifications / What is available @ Q4 2024
-
-1. Foundational - No prior experience needed.
-    1. Cloud Practitioner 
-    1. AI Practitioner 
-1. Associate
-    1. ML Engineer 
-    1. Data Engineer 
-    1. *AWS Certified Solutions Architect - Associate (SAA-C03)*
-    1. Developer, SysOps Administrator 
-1. Professional - 2 years of prior AWS Cloud experience recommended.
-    1. Solution Architect / Professional
-    1. DevOps Engineer 
-1. Speciality 
-    1. machine Learning 
-    1. Security, Advanced Network 
-
-1. [AWS certification](https://aws.amazon.com/certification/)
 
 ## How much study is requried for AWS certifications ? 
 
@@ -40,15 +22,6 @@ categories: [certifications]
 
 1. https://pamit.medium.com/how-i-prepared-for-aws-certification-exams-solutions-architect-and-developer-21892f935768
 
-I am a fan of Cloud services and in particular AWS Cloud. 
-I have been working with AWS services since 2018 when 
-I realized how powerful the AWS infrastructure is and how convenient its services are for developers, 
-compared with equivalent services offered by traditional hosting services in data centers.
-
-Recently I was able to receive 2 AWS certifications, 
-Solutions Architect Associate (SAA-C03) and 
-Developer Associate (DVA-C02). 
-And in this short article I want to share my journey and study plan and resources which helped me prepare for the exams. You can check out my certifications on LinkedIn.
 
 # AWS Exam structure
 
