@@ -1,6 +1,156 @@
 
 
 
+1. [Learn Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+
+1. Deploy a containerized(??) application on a cluster.
+1. What is containerized application? 
+1. Scale the deployment.
+1. Update the containerized application with a new software version.
+1. Debug the containerized application.
+
+1. With modern web services, users expect applications to be available 24/7, 
+1. and developers expect to deploy new versions of those applications several times a day. 
+1. Containerization helps package software to serve these goals, 
+1. enabling applications to be released and updated without downtime. 
+1. Kubernetes helps you make sure those containerized applications run where and when you want, 
+1. and helps them find the resources and tools they need to work. 
+1. Kubernetes is a production-ready, open source platform designed with 
+1. Google's accumulated experience in container orchestration, combined with best-of-breed ideas from the community
+
+1. Oh, this is a google thing. Ok. 
+
+## Steps to get involved with Kubernetes
+1. Create a Kubernetes cluster
+1. Deploy an app
+1. Explore your app
+1. Expose your app publicly
+1. Scale up your app
+1. Update your app
+
+## Using Minikube to Create a Cluster
+
+1. [Click here](https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/)
+
+1. A Kubernetes cluster consists of two types of resources:
+1. The Control Plane coordinates the cluster
+1. Nodes are the workers that run applications
+
+https://kubernetes.io/docs/tasks/tools/#minikube
+Like kind, minikube is a tool that lets you run Kubernetes locally. 
+minikube runs an all-in-one or a multi-node local Kubernetes cluster on your personal computer (including Windows, macOS and Linux PCs) so that you can try out Kubernetes, or for daily development work.
+
+You can follow the official Get Started! guide if your focus is on getting the tool installed.
+
+## minikube start
+
+1. https://minikube.sigs.k8s.io/docs/start/?arch=%2Fmacos%2Farm64%2Fstable%2Fbinary+download
+
+## K8 
+
+Kubernetes (sometimes shortened to K8s with the 8 standing for the number of letters between the “K” and the “s”) 
+is an open source system to deploy, scale, and manage containerized applications anywhere.
+
+
+## Kubernetes vs. Docker
+Kubernetes and Docker are different yet complementary technologies for running containerized applications. 
+Docker lets you put everything you need to run your application into a box 
+that can be stored and opened when and where it is required. 
+Once you start boxing up your applications, you need a way to manage them; and that's what Kubernetes does.
+
+Kubernetes is a Greek word meaning  ‘captain’ in English. 
+Like the captain is responsible for the safe journey of the ship in the seas, 
+Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
+
+Kubernetes can be used with or without Docker
+Docker is not an alternative to Kubernetes, so it’s less of a “Kubernetes vs. Docker” question. 
+It’s about using Kubernetes with Docker to containerize your applications and run them at scale
+The difference between Docker and Kubernetes relates to the role each play in containerizing and running your applications
+Docker is an open industry standard for packaging and distributing applications in containers
+Kubernetes uses Docker to deploy, manage, and scale containerized applications
+
+Google Kubernetes Engine (GKE) 
+
+1. [Kubernetes Python Client](https://www.velotio.com/engineering-blog/kubernetes-python-client)
+
+## Docker 
+
+1. [Get Docker Desktop](https://docs.docker.com/get-started/introduction/get-docker-desktop/)
+
+
+## Docker / GenAI 
+
+1. Everything you need to build, scale, and deploy AI with ease.
+1. [docker hub](https://hub.docker.com/)
+
+## Podman 
+
+1. Manage containers, pods, and images with Podman. 
+1. Seamlessly work with containers and Kubernetes from your local environment.
+1. [Podman](https://podman.io/) is kubernetes ready. 
+1. Visual Studio integration is also there. 
+
+
+## Python / Fastapi 
+
+1. [python fastapi](https://fastapi.tiangolo.com/)
+
+## Docker / build cache
+
+1. [Docker build cache](https://docs.docker.com/build/cache/)
+
+
+## Python, Poetry, Docker, Kubernetes, AWS 
+
+1. [Python Docker builds with Poetry](https://medium.com/@albertazzir/blazing-fast-python-docker-builds-with-poetry-a78a66f5aed0)
+1. [Python API with Kubernetes and Docker](https://medium.com/@MetricFire/develop-and-deploy-a-python-api-with-kubernetes-and-docker-80e53b28cca6)
+1. [Hello Python through Docker and Kubernetes](https://dev.to/itminds/hello-python-through-docker-and-kubernetes-379d)
+
+
+
+1. [How to deploy python application in docker & kubernetes](https://medium.com/@chroottech/how-to-deploy-python-application-in-docker-kubernetes-1d198f2af2c)
+1. [Blazing fast Python Docker builds with Poetry ](https://medium.com/@albertazzir/blazing-fast-python-docker-builds-with-poetry-a78a66f5aed0)
+
+
+
+## find-own-home / python libraries for data science productivity 
+
+1. YellowBrick 
+1. PyCaret
+1. imbalanced-learn 
+1. Modin 
+1. SHAP 
+1. Missingno 
+1. Prophet 
+1. Parallel-Pandas 
+1. Featuretools 
+1. Lazy Predict 
+1. mlxtend 
+1. Vaex 
+1. SweetViz 
+1. Skorch 
+1. Faiss 
+1. Pandas-Profiling 
+1. Streamlit 
+1. Pytest 
+1. CSV-kit 
+1. Icecream 
+
+## find-own-home / icecream 
+
+1. [icecream](https://github.com/gruns/icecream)
+1. [Debugging with ice cream in Python](https://www.geeksforgeeks.org/debugging-with-ice-cream-in-python/?ref=ml_lbp)
+1. [Python's IceCream Package: Effortless Debugging with Minimal Code](https://dev.to/0xog_pg/pythons-icecream-package-effortless-debugging-with-minimal-code-45fb)
+1. [A few examples were incorrect, possibly](https://medium.com/@danielwume/debug-your-python-code-efficiently-with-icecream-package-10-advanced-examples-to-replace-print-820fef801cb0)
+
+
+## Senior Director - AI & ML, GEN AI Data Scientist 
+
+1. Must have - AI@Scale delivery skills - Phd or equivalent exposure to large scale AI, Advanced AI and Generative AI capabilities 
+1. Must have - Large Scale Software Development expertise for Cloud Native and Hybrid Cloud ecosystems either in Azure / GCP / AWS. 
+1. Good to have - Metaverse, Quantum Computing, Web3.0 CoE / Practice leader experience
+
+
 
 
 ## Interview guides 
