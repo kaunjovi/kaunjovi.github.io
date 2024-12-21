@@ -6,6 +6,7 @@ categories: [AWS, SageMaker]
 
 1. https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45285053#notes
 1. Service for ML, workflow in AWS. From before GenAI 
+
 1. SageMaker helps with the entire **Machine Learning (ML) workflow**
     1. Fetch, clean and prepare data. Feature engineering. 
     1. Train model. Evaluate. Pick the best. 
@@ -13,7 +14,40 @@ categories: [AWS, SageMaker]
     1. Monitor performance. Learn, if anything is to be picked from the production. 
     1. Feedback to the begining of the process. 
 
+## [68 SageMaker Training and Deployment] 
+
+1. https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45285053#notes
+1. Diagram. Check with BE if there is a parallel Domino based setup in firmT as well ?? 
+1. You could work with SageMaker in various ways 
+    1. You could have Python based SageMaker Notebooks (which are really just Jupyter notebooks)
+    1. Or, you could do pretty much the same thing over console as well. 
+
+
+
+
 ## [69 Data Prep on SageMaker](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45285065#notes)
+
+1. https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45285065#notes
+1. Data is in 
+    1. S3. Many format. RecordIO. ProtoBuf. Hmm .. not CSV ?? 
+    1. Athena - the database 
+    1. Redshift - the data warehouse 
+    1. Elastic MapReduce - distributed processing framework 
+    1. Amazon Keyspaces - A scalable, highly available, and managed Apache Cassandra–compatible database service
+        1. Cassandra. open source NoSQL distributed database
+        1. Masterless architecture and low latency means Cassandra will withstand an entire data center outage with no data loss
+        1. Cassandra is suitable for applications that can’t afford to lose data, even when an entire data center goes down.
+
+
+1. **What Is AWS Keyspaces? How To Setup AWS Keyspaces** 
+1. https://www.geeksforgeeks.org/what-is-aws-keyspaces-how-to-setup-aws-keyspaces/
+1. fully managed, scalable, and highly available NoSQL database service configured by Amazon Web Services (AWS)
+1. It is based on Apache Cassandra Tech. 
+1. users can store, query, and manage semi-structured data efficiently 
+1. It offers features such as automatic proper scaling, 
+1. replication across multiple data centers for high availability, and 
+1. built-in high-security controls. 
+1. a reliable and durable solution for storing and accessing large data sets in a cloud environment in a very effective way.
 
 1. Data could come from S3. 
     1. But could also be from Athena (database)
@@ -311,3 +345,14 @@ categories: [AWS, SageMaker]
 
 
 
+1. https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45287131#overview
+
+
+## [202 SageMaker / Deploying models for prediction]
+
+1. Inference - using a ML model to make predictions. For new data. 
+1. What are the different ways 
+    1. JumpStart - deploy pre-trained models to pre-configured endpoints. 
+    1. ModelBuilder- 
+    1. Python SDK  
+    1. AWS CloudFormation 

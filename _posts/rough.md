@@ -1,4 +1,17 @@
 
+## Head of Engineering (AI) at VC-funde 
+
+1. Strategic AI Planning:
+1. Develop and execute a comprehensive AI strategy aligned with business objectives.
+1. Identify and prioritize opportunities for AI-driven innovation in the industry.
+1. Team Leadership:
+1. Lead and mentor a team of data scientists.
+1. Foster a collaborative and innovative team culture.
+1. Algorithm Development:
+1. Design and implement machine learning algorithms to improve user engagement and retention.
+1. Utilize predictive modeling to enhance the hyper-personalized experience for users via recommendations
+1. Enable optimization, automation, and machine intelligence in business decision-making across marketing, business planning, etc.
+1. "hyper-personalized experience" - ??
 
 
 1. [Learn Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)

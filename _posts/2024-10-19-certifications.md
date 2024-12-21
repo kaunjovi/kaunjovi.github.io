@@ -27,7 +27,7 @@ categories: [certifications]
 
 1. multiple choice and multiple response (??)
 
-1. Choosing the best service for a particular scenario (e.g. KMS vs Secrets Manager vs Parameter Store to store application credentials)
+1. Choosing the best service for a particular scenario (e.g. KMS vs S  vets Manager vs Parameter Store to store application credentials)
 1. Choosing a chain of services to solve a problem (e.g. using an Application Load Balancer with EC2 Auto Scaling vs Lambda functions with API Gateway)
 1. Optimizing existing services for a specific use case (e.g. adding RDS read replicas for huge read traffic or converting to Multi-AZ for disaster recovery)
 1. Service options (e.g. S3 encryption options: SSE-S3 vs SSE-KMS vs SSE-C)
