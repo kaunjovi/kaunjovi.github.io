@@ -1,6 +1,6 @@
 ---
 layout: post
-title: To study
+title: Rough Notes
 categories: [notes] 
 ---
 
@@ -18,3 +18,18 @@ categories: [notes]
 1. AI agents to help with UX. [link](https://uxdesign.cc/treating-ai-agents-as-personas-6ef0135bdcad)
 1. Amazon Bedrock Agents. Tutorial by Amazon. [link](https://aws.amazon.com/blogs/machine-learning/deliver-personalized-marketing-with-amazon-bedrock-agents/)
 
+## What are the most common LLMs. 
+
+1. OpenAI’s GPT, Google Gemini, or Anthropic’s Claude.
+
+## Agent vs. LLM 
+
+1. The difference between an agent and a language model is that agents complete task autonomously.≈
+
+
+## [Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+
+## AI agents 
+
+1. [Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+1. [OpenAI has released a new open-source framework called "Swarm" on GitHub.](https://the-decoder.com/openai-introduces-experimental-multi-agent-framework-swarm/)
