@@ -4,6 +4,36 @@ title: Rough Notes
 categories: [notes] 
 ---
 
+## GenAI / Links 
+
+1. [Emerging Patterns in Building GenAI Products](https://martinfowler.com/articles/gen-ai-patterns/)
+
+## GenAI / Courses 
+
+1. [The Hugging Face AI Agents Course](https://huggingface.us17.list-manage.com/subscribe?u=7f57e683fa28b51bfc493d048&id=9ed45a3ef6)
+
+## GenAI / basics 
+
+1. What is Temperature? 
+1. What is Max Tokens? 
+1. What is Top P? 
+1. Explain "!pip install ..". 
+
+
+
+## GenAI / OpenAI / Getting started with OpenAI client library. 
+
+
+## GenAI / Groq 
+
+1. [Getting strated](https://console.groq.com/docs/overview)
+1. [Welcome to the Groq Console - Getting Started](https://www.youtube.com/watch?v=Ig7esRBhFPY&t=7s)
+1. What am I building ? 
+
+
+
+
+
 1. Unity Catalog. Unified and open governance for data and AI. #databricks [link](https://www.databricks.com/product/unity-catalog)
 1. Photon. The next generation engine for the Lakehouse. #databricks [link](https://www.databricks.com/product/photon)
 1. mlflow. Build better models and generative AI apps on a unified, end-to-end, open source MLOps platform. #databricks [link](https://mlflow.org/#core-concepts)
@@ -33,3 +63,29 @@ categories: [notes]
 
 1. [Building effective agents](https://www.anthropic.com/research/building-effective-agents)
 1. [OpenAI has released a new open-source framework called "Swarm" on GitHub.](https://the-decoder.com/openai-introduces-experimental-multi-agent-framework-swarm/)
+
+
+## MLflow 
+
+1. AWS SageMaker introduced fully Managed MLflow 
+
+## dbt 
+
+1. https://www.getdbt.com/product/what-is-dbt
+1. dbt is the industry standard for data transformation. 
+1. Transform raw data into analysis-ready insights, and make data-driven decisions with confidence.
+1. DataOps - ?? 
+1. Trace lineage across domains 
+1. [ebook - Guide to data mesh](https://8698602.fs1.hubspotusercontent-na1.net/hubfs/8698602/Guide%20to%20data%20mesh%20eBook%20V2.pdf)
+1. [certification - dbt](https://www.getdbt.com/dbt-certification)
+
+
+## courses 
+
+1. Machine Learning in Production
+1. https://www.deeplearning.ai/courses/machine-learning-in-production/
+1. https://www.coursera.org/learn/introduction-to-machine-learning-in-production?specialization=machine-learning-engineering-for-production-mlops?utm_source=deeplearning-ai&utm_medium=institutions
+1. https://www.coursera.org/learn/introduction-to-machine-learning-in-production/lecture/uoVS1/welcome 
+1. 3K for certificate 
+
+
