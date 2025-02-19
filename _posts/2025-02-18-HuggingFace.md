@@ -61,8 +61,23 @@ print( prompt_template.invoke({"question" : "What is abc?"}) )
 llm_chain = prompt_template | llm 
 print( llm_chain.invoke({"question" : "What is abc?"}) )
 
-
 ```
+
+1. An example of PromptTemplate 
+
+```Python 
+# Create a prompt template from the template string
+template = "You are an artificial intelligence assistant, answer the question. {question}"
+prompt = PromptTemplate( template = template, input_variables = ["question"])
+
+# Create a chain to integrate the prompt template and LLM
+llm = HuggingFaceEndpoint(repo_id='tiiuae/falcon-7b-instruct', huggingfacehub_api_token=huggingfacehub_api_token)
+llm_chain = prompt | llm 
+
+question = "How does LangChain make LLM application development easier?"
+print(llm_chain.invoke({"question": question}))
+```
+
 
 ## from langchain_core.prompts import PromptTemplate
 
