@@ -43,6 +43,8 @@ output = llm.invoke(question)
 print(output)
 ```
 
+
+
 ```Python
 from langchain_huggingface import HuggingFaceEndpoint
 from langchain_core.prompts import PromptTemplate 
@@ -62,10 +64,59 @@ print( llm_chain.invoke({"question" : "What is abc?"}) )
 
 ```
 
+## from langchain_core.prompts import PromptTemplate
 
-## LangChain / ChatPromptTemplate 
+1. Template for generating prompts. 
+1. Context. Question. Response. 
 
 ```Python
+from langchain_core.prompts import PromptTemplate
+template = "You are bewakoof. Answer the question. {question}" 
+prompt_template = PromptTemplate ( template = template, input_variables = ["question"])
+print ( prompt_template.invoke({"question" : "What is the meaning of it all?"}))
+```
+
+```Python
+from langchain_huggingface import HuggingFaceEndpoint 
+
+llm = HuggingFaceEndpoint( repo_id = "tiiuae/falcon-7b-instruct", huggingfacehub_api_token = "")
+llm_chain = prompt_template | llm 
+
+llm_chain.invoke( {"question" : "aapko itni fakiri kaise aayi?"} )
+
+
+```
+
+## LangChain Expression Language (LCEL)
+
+
+
+
+## from langchain_core.prompts import ChatPromptTemplate 
+
+```Python
+from langchain_core.prompts import ChatPromptTemplate 
+
+prompt_template = ChatPromptTemplate.from_messages (
+    [
+        ## Define the model behaviour 
+        ("system", "You are Amrish Puri"), 
+        ## Human to provide inputs, instructions
+        ("human", "Don't be afraid" ), 
+        ## ai role to define outputs. These are additional examples for the model. 
+        ("ai", "When you are afraid, shout."), 
+        ("human", "Respond to the question : {question}")
+    ]
+)
+
+from langchain_openai import ChatOpenAI
+
+llm = ChatOpenAI( model = "gpt-4o-mini", api_key = xxxx)
+llm_chain = prompt_template | llm 
+
+question = "Kab aaoge haveli main?" 
+
+response = llm_chain.invoke ( { "question" : question } ) 
 
 ```
 
