@@ -160,7 +160,8 @@ print(response.content)
 1. Can't scale. 
 1. Arrey scale karna kyon hai? 
 
-## Few Shot Prompting 
+## Few Shot Prompting | from langchain_core.prompts import FewShotPromptTemplate 
+
 
 1. We have a few examples of question and answers. 
 
@@ -173,6 +174,7 @@ examples = [
     ...
 
 ]
+```
 
 1. Change the DataFrame to list of dicts 
 
@@ -180,6 +182,50 @@ examples = [
 examples = df.to_dict( orient = "records")
 ```
 
+```Python
+from langchain_core.prompts import FewShotPromptTemplate, PromptTemplate 
+
+example_prompt = PromptTemplate.from_template ( "Question: {question}\n{answer}") 
+
+prompt = example_prompt.invoke( {"question" : "ye kya hua?"
+                                "answer" : "jo hua so hua" })
+
+print( prompt.text )
+
+```
+
+1. Integration with OpenAI 
+
+```Python 
+llm = ChatOpenAI( ... )
+
+
+## testing ?? 
+example_prompt = PromptTemplate.from_template ( "Question: {question}\n{answer}") 
+prompt = example_prompt.invoke( {"question" : "ye kya hua?"
+                                "answer" : "jo hua so hua" })
+
+print( prompt.text )
+
+
+
+prompt_template = FewShotPromptTemplate (
+    ## list of dicts 
+    examples = examples, 
+    ## template for formatting examples ?? 
+    example_prompt = example_prompt, 
+    suffix = "Question: {input}", 
+    input_variables = ["input"]
+)
+
+## Lets check the prompt is correct ?? 
+prompt = prompt_template.invoke ( {"input" : "Ye kya ho raha hai"} ) 
+print (prompt)
+
+llm_chain = prompt_template | llm 
+response = llm_chain.invoke ( { "input": "Ye kya ho raha hai?" })
+print ( response )
+```
 
 
 
