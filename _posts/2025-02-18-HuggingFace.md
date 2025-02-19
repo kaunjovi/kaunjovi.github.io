@@ -155,6 +155,32 @@ response = llm_chain.invoke({"question": "How can I retain learning?"})
 print(response.content)
 ```
 
+## Limitations of prompt templates 
+1. PromptTemplate + ChatPromptTemplate 
+1. Can't scale. 
+1. Arrey scale karna kyon hai? 
+
+## Few Shot Prompting 
+
+1. We have a few examples of question and answers. 
+
+```
+examples = [
+    {
+        "question" : "kyon?", 
+        "answer" : "pata nahin"
+    }, 
+    ...
+
+]
+
+1. Change the DataFrame to list of dicts 
+
+```
+examples = df.to_dict( orient = "records")
+```
+
+
 
 
 ## [Designing Agentic Systems with LangChain](https://app.datacamp.com/learn/courses/designing-agentic-systems-with-langchain)
