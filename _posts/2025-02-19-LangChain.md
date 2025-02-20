@@ -268,6 +268,105 @@ llm_chain = prompt_template | llm
 print(llm_chain.invoke({"input": "What is Jack's favorite technology on DataCamp?"}))
 ```
 
+## Sequential Chains 
+
+1. You ask something. AI responds back. You pick some options. AI responds back. Go back and forth a few times. And then you get to the itinerary. 
+
+
+## Integrating document loaders
+
+1. https://campus.datacamp.com/courses/developing-llm-applications-with-langchain/retrieval-augmented-generation-rag?ex=1
+1. Pre trained LLM are closed. They have learned. Cant learn any more. 
+    1. Dont have access to any more data. No external data access. 
+    1. Understanding coming only from training data. 
+1. What if? you need it to know about your company data. Or world events after the llm was released. 
+1. Retrieval Augmented Generation (RAG)
+    1. User query is embedded. 
+    1. Used to query the most relevant dcoument from database 
+    1. The document is then added to the model's prompt. 
+    1. Now the model has extra context - new data - to derive answer over. 
+1. RAG development steps 
+    1. Loading the document (in vector database?)
+    1. Split them in chunks. Vector db does not know documents. It knows chunks only. They are indexed. 
+    1. Storage of the chunks for retrieval. 
+
+1. https://python.langchain.com/docs/integrations/document_loaders
+
+## LangChain / Document loaders 
+
+1. https://campus.datacamp.com/courses/developing-llm-applications-with-langchain/retrieval-augmented-generation-rag?ex=1
+1. Load document and cofigure. .csv. .pdf. .html. 
+1. also - S3 files (which format?), notebooks (.ipynb), audio transcripts (.wav)
+
+```Python 
+## Needs the dependency pypdf 
+from langchain_community.document_loaders import PyPDFLoader 
+from langchain_community.document_loaders import UnstructuredHTMLLoader 
+from langchain_community.csv_loader import CSVLoader 
+
+loader = PyPDFLoader("path to the pdf you want to load")
+
+## load the document into memory 
+data = loader.load() 
+print ( data[0])
+
+```
+
+1. an example of PyPDFLoader
+
+```Python
+# Import library
+from langchain_community.document_loaders import PyPDFLoader 
+
+# Create a document loader for rag_vs_fine_tuning.pdf
+loader = PyPDFLoader( "rag_vs_fine_tuning.pdf" )
+
+# Load the document
+data = loader.load()
+print(data[0])
+```
+
+1. an example of CSVLoader
+
+```Python 
+# Import library
+from langchain_community.document_loaders.csv_loader import CSVLoader
+
+# Create a document loader for fifa_countries_audience.csv
+loader = CSVLoader("fifa_countries_audience.csv")
+
+# Load the document
+data = loader.load() 
+print(data[0])
+```
+
+1. An examply of HTML loader 
+
+```Python
+from langchain_community.document_loaders import UnstructuredHTMLLoader
+
+# Create a document loader for unstructured HTML
+loader = UnstructuredHTMLLoader("white_house_executive_order_nov_2023.html") 
+
+# Load the document
+data = loader.load() 
+
+# Print the first document
+print(data[0])
+
+# Print the first document's metadata
+print(data[0].metadata)
+```
+
+
+## LinkedIn Certifications 
+
+1. [Docker Foundations Professional Certificate](https://www.linkedin.com/learning/paths/docker-foundations-professional-certificate)
+1. [Data Engineering Foundations Professional Certificate by Astronomer](https://www.linkedin.com/learning/paths/data-engineering-foundations-professional-certificate-by-astronomer)
+1. [OpenEDG Python Institute: Programming with Python Professional Certificate](https://www.linkedin.com/learning/paths/openedg-python-institute-programming-with-python-professional-certificate)
+1. [Anaconda Python for Data Science Professional Certificate](https://www.linkedin.com/learning/paths/anaconda-python-for-data-science-professional-certificate)
+1. [Microservices Foundations Professional Certificate by Kong](https://www.linkedin.com/learning/paths/microservices-foundations-professional-certificate-by-kong)
+1. [AWS Certified Machine Learning Engineer Associate: Hands On!](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01/learn/lecture/45356927#overview)
 
 
 
