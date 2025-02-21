@@ -171,3 +171,49 @@ docs = splitter.split_text(quote)
 print(docs)
 print([len(doc) for doc in docs])
 ```
+
+## Load a HTML and then chunk it
+
+```Python
+# Load the HTML document into memory
+loader = UnstructuredHTMLLoader("white_house_executive_order_nov_2023.html") 
+data = loader.load()
+# print (data[0])
+
+# Define variables
+chunk_size = 300
+chunk_overlap = 100
+
+# Split the HTML
+splitter = RecursiveCharacterTextSplitter(
+    chunk_size=chunk_size,
+    chunk_overlap=chunk_overlap,
+    separators=['.']
+)
+
+docs = splitter.split_text(data[0].page_content)
+print(docs)
+```
+
+## and now do it with splitdocuments
+
+```Python
+# Load the HTML document into memory
+loader = UnstructuredHTMLLoader("white_house_executive_order_nov_2023.html") 
+data = loader.load()
+# print (data[0])
+
+# Define variables
+chunk_size = 300
+chunk_overlap = 100
+
+# Split the HTML
+splitter = RecursiveCharacterTextSplitter(
+    chunk_size=chunk_size,
+    chunk_overlap=chunk_overlap,
+    separators=['.']
+)
+
+docs = splitter.split_documents(data)
+print(docs)
+```
