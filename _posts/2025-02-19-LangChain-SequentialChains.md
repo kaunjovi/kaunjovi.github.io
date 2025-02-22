@@ -16,6 +16,45 @@ categories: [LangChain, SequentialChains, ai]
     1. ai : here you go, o free thinker. 
 1. IMHO, this is a **conversational problem**.
 
+1. The output from one will be input to the next step. 
+
+```Python 
+
+prompt_1 = PromptTemplate( input_variables = ["destination"], template = "Suggest activies for {destination}") 
+
+prompt_2 = PromptTemplate ( input_variables = ["activities"]), template = "For one day travel, pick top 3 activities from {activities}" )
+
+llm = ChatOpenAI( model = xxx, api_key = xxx )
+
+seq_chain = ( { "activities": prompt_1 | llm | StrOutputParser() }
+    | prompt_2 
+    | llm 
+    | StrOutputParser() ) 
+
+print( seq_chain.invoke("destination" : "Rome") ) # All roads lead to Rome. 
+
+``` 
+
+1. A working example 
+
+```Python
+# Create a prompt template that takes an input activity
+learning_prompt = PromptTemplate(
+    input_variables=["activity"],
+    template="I want to learn how to {activity}. Can you suggest how I can learn this step-by-step?"
+)
+
+# Create a prompt template that places a time constraint on the output
+time_prompt = PromptTemplate(
+    input_variables = ["learning_plan"],
+    template="I only have one week. Can you create a plan to help me hit this goal: {learning_plan}."
+)
+
+# Invoke the learning_prompt with an activity
+print(learning_prompt.invoke({"activity": "play golf"}))
+
+```
+
 
 
 
