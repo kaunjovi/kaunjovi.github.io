@@ -32,6 +32,19 @@ categories: [HuggingFace, ai]
 
 ## [Course : Databricks](https://app.datacamp.com/learn/courses?technologies=22)
 
+## Introduction to Databricks
+
+1. https://app.datacamp.com/learn/courses/introduction-to-databricks
+
+1. [Evolution to the Data Lakehouse](https://www.databricks.com/blog/2021/05/19/evolution-to-the-data-lakehouse.html)
+
+1. **Options for enterprise data** 
+1. Data Warehouse 
+    1. structured data. Does not change too much. 
+1. Data Lake 
+
+
+
 1. [Databricks blog](https://www.databricks.com/blog)
 
 1. [What is a Delta table in Databricks?](https://medium.com/event-driven-utopia/what-is-delta-table-in-databricks-b660b80ecc5a)
@@ -47,3 +60,5 @@ categories: [HuggingFace, ai]
 
 1. **Benefits of Delta Tables** 
 1. 
+
+

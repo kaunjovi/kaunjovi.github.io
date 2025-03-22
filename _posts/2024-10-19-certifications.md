@@ -23,6 +23,60 @@ categories: [certifications]
 1. https://pamit.medium.com/how-i-prepared-for-aws-certification-exams-solutions-architect-and-developer-21892f935768
 
 
+
+## AWS Certified Machine Learning - Specialty 
+
+1. https://aws.amazon.com/blogs/training-and-certification/mapping-your-ai-ml-career-journey/
+
+
+1. Exam Details
+1. Level: Specialty 
+1. Exam Duration: 180 minutes
+1. Exam Format: 65 questions, either multiple choice or multiple responses
+1. Exam Fee: $300
+1. Language: English, Japanese, Korean, and Simplified Chinese.
+
+1. Weightage 
+    1. Data Engineering - 20% 
+    1. Exploratory Data Analysis - 24% 
+    1. Modeling - 36%
+    1. Machine Learning Implementation and Operations - 20% 
+
+1. Prerequisites include 
+    1. at least two years of hands-on experience in ML or deep learning on AWS, 
+    1. understanding basic ML algorithms, 
+    1. experience in hyperparameter optimization, 
+    1. familiarity with ML and deep learning frameworks, and 
+    1. knowledge of model training, deployment, and operational best practices.
+
+1. Step 1: AWS Certified AI Practitioner (CLF-C02)
+1. Step 2: AWS Certified Machine Learning Engineer – Associate (MLA-C01)
+1. Step 3: AWS Certified Machine Learning – Specialty (MLS-C01)
+1. [AWS Cloud Practitioner Essentials - Free](https://explore.skillbuilder.aws/learn/courses/134/aws-cloud-practitioner-essentials)
+
+
+
+1. [EXAM PREP - AWS Certified Machine Learning Engineer - Associate $29/month]]
+
+1. Developers, start your engines 
+
+1. [Getting Started using AWS Free Tier](https://aws.amazon.com/registration-confirmation/)
+
+## [AWS Cloud Practitioner Essentials](https://explore.skillbuilder.aws/learn/courses/134/aws-cloud-practitioner-essentials/lessons/136404/aws-cloud-practitioner-essentials)
+
+
+
+
+
+
+
+## What are the steps to do after you get your AWS account ? 
+
+1. ?? 
+1. [Billing and Cost Management home](https://us-east-1.console.aws.amazon.com/costmanagement/home#/home)
+
+
+
 # AWS Exam structure
 
 1. multiple choice and multiple response (??)

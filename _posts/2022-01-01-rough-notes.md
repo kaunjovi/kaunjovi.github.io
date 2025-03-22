@@ -4,6 +4,10 @@ title: Rough Notes
 categories: [notes] 
 ---
 
+
+1. https://jamwithai.substack.com/p/pre-rag-era-building-an-end-to-end
+
+
 ## GenAI / Links 
 
 1. [Emerging Patterns in Building GenAI Products](https://martinfowler.com/articles/gen-ai-patterns/)
