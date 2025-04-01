@@ -4,6 +4,54 @@ title: AWS Certifications MLA C01
 categories: [certifications] 
 ---
 
+
+## 2025 certifications
+
+1. Do they have certificate? Are they free? 
+
+1. Generative ai — A way of life https://www.analyticsvidhya.com
+1. Introduction to generative ai https://www.cloud.google.com
+    1. https://www.cloudskillsboost.google/course_templates/536
+
+1. Generative ai for everyone https://www.deeplearning.ai
+1. Generative ai for beginners https://github.com/microsoft
+1. Generative ai explained https://www.nvidia.com
+1. Getting started with large language models https://www.analyticsvidhya.com
+1. Generative ai with large language models https://aws.amazon.com
+1. Building llm applications using prompt engineering https://www.independentcourseprovider.com
+1. Generative ai business transformation https://www.ibm.com
+1. Generative ai for data scientists specialization https://www.dataspecializationplatform.com
+
+## 2025 certifications / Paid 
+
+1. AWS certifications
+
+
+## Course Notes : Introduction to Generative AI by Google 
+
+1. https://www.cloudskillsboost.google/course_templates/536/video/520739
+1. Roger Martinez @ LinkedIn 4m Google is Developer Relationship 
+1. What is AI? 
+    1. AI is a discipline e.g. Physics is a discipline of Science 
+    1. Theory and Methods to enable machines to think like Humans. 
+1. What is the difference between AI and ML 
+    1. Sub field of AI. 
+    1. Way to train machine / models with data 
+    1. The trained model then can work on new data and make independent decisions based on whatever is learned. 
+    1. Computers can learn - using ML - without explicit programming. 
+1. What are the different types of ML 
+    1. Supervised - learns from labeled data 
+        1. Predict based on past data. 
+        1. How much did people tip in the past? How much will they? 
+        1. What are the factors that impacted? How can we increase the tip amount? 
+
+    1. Unsupervised - from unlabled data 
+        1. Raw, unlabled data. Discover trends from data. 
+
+1. GenAI = AI to generate content - including synthetic data - how to use that in testing and Test Data Mgmt. 
+
+
+
 ## AWS certifications / What is available @ Q4 2024
 
 1. [AWS certification](https://aws.amazon.com/certification/)
