@@ -56,6 +56,12 @@ categories: [certifications]
 1. Supervised 
     1. Input data X > Model > Learned now > Test input y > Test output x > Is test output x and the actual output X close? 
     1. If no, go back to the Model and optimize. 
+1. Input - Data and lables 
+    1. Learn - relation between Data and lables 
+    1. Given new data - output lable of the data. 
+1. ML input is - Training code + labled data 
+    1. ML output is - Predict or Classify or Cluster (?)
+
 
 1. **Deep Learning as a subset of ML** 
 1. Deep Learning is a type of ML that uses artificial Neural Networks 
@@ -73,14 +79,42 @@ categories: [certifications]
 
 1. **Generative** models - generates new data 
     1. It learns from probability distribution of existing data 
-    1. 
+    1. Input - unstructured data 
+        1. Learn - patterns in unstructured data 
+        1. output - generate new data of that pattern. 
+    1. Definition : GenAI is a type of Artificial Intelligence that can generate new content based on what it has learned from existing content. 
+    1. Learning from existing content - training - creates a **statistical** model. 
+    1. GenAI, on being prompted, uses the statistical model, to predict what the expected response might be and generates that content. 
+
+
 
 1. **GenAI is a subset of Deep Learning** 
+
+1. Gemini - Google's multimodal AI mdodel 
+1. LaMDA - Language Model for Dialog Applications 
+1. Read huge content from internet and build a **foundational model**
+1. That allows them to respond to natural language questions like "what is a cat". 
+
 
 
 1. **LLM is a also a subset of Deep Learning** 
 
 
+1. Game : Is it GenAI or not ? 
+    1. Input (some data) > black box (some ML system) > output (some data). Is it GenAI or not? 
+    1. It is NOT GenAI if the output is NOT natural language, image or audio . 
+
+1. **Transformers** 
+1. natural language processing. 2018. 
+1. Transformer = Encoder + Decoder 
+1. Encoder = Encodes an input sequence and passes it to Decoder 
+1. Decoder = ?? lears how to decode ?? 
+1. Encoder problems. hallucinations. Produces incorrect content. 
+1. **hallucinations** - ARE BAD - caused by 
+    1. Not enough data. 
+    1. Data is noisy. 
+    1. Not enough context 
+    1. or, not given enough constraints. 
 
 
 
