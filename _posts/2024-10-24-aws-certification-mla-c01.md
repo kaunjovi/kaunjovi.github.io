@@ -115,9 +115,57 @@ categories: [certifications]
     1. Data is noisy. 
     1. Not enough context 
     1. or, not given enough constraints. 
+1. **Prompt** - a short piece of text, generally a question, with context and constraints. 
+
+1. **Different types of models** 
+1. Text to text - language translations 
+1. Text to image - . Trained on a large set of images, each with some short text. 
+1. Text to video 
+1. Text to 3D 
+1. Text to Task - e.g. create and itinerary 
+
+1. **Foundation models** 
+1. Vertex AI - Model Garden - includes Foundation Models. 
+1. Language Foundation Model - chat, text, code. 
+1. Vision Foundation Model - stable diffusion 
+
+1. **Vertext AI studio** 
+1. **Vertext AI** - low code no code 
+1. **Gemini** - A multimodal AI model. 
+
+
+1. https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-generative-ai
+1. https://research.google/blog/google-research-2022-beyond-language-vision-and-generative-models/#GenerativeModels
+1. https://cloud.google.com/blog/products/ai-machine-learning/building-an-open-generative-ai-partner-ecosystem
+1. https://www.nytimes.com/2022/10/21/podcasts/hard-fork-generative-artificial-intelligence.html
+1. https://syncedreview.com/2023/04/12/stanford-u-googles-generative-agents-produce-believable-proxies-of-human-behaviours/
+1. https://hai-production.s3.amazonaws.com/files/2023-03/Generative_AI_HAI_Perspectives.pdf
+1. https://www.nber.org/system/files/working_papers/w31161/w31161.pdf
+1. https://www.technologyreview.com/2023/04/27/1072102/the-future-of-generative-ai-is-niche-not-generalized/
+1. https://www2.deloitte.com/us/en/pages/consulting/articles/generative-artificial-intelligence.html
+1. https://www2.deloitte.com/us/en/pages/consulting/articles/responsible-use-of-generative-ai.html
+1. https://hbr.org/2022/11/how-generative-ai-is-changing-creative-work
+1. https://thegradient.pub/nlp-imagenet/
+1. https://blog.google/technology/ai/lamda/
+1. https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf
+1. https://blog.google/technology/ai/google-gemini-ai/#sundar-note
+1. https://arxiv.org/pdf/2104.08691
+1. https://news.mit.edu/2023/large-language-models-in-context-learning-0207
+1. https://research.google/pubs/attention-is-all-you-need/
+1. https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/
+1. https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)
+1. https://blog.lukesalamone.com/posts/what-is-temperature/
+1. https://cloud.google.com/model-garden
+1. https://research.google/blog/auto-generated-summaries-in-google-docs/
+1. https://blog.google/inside-google/googlers/ask-a-techspert/what-is-generative-ai/
+1. https://www.technologyreview.com/2023/04/27/1072102/the-future-of-generative-ai-is-niche-not-generalized/
 
 
 
+## Domino Data Lab 
+
+1. https://university.domino.ai/
+1. Can we get access. Is there a certifiction at the end. 
 
 
 ## AWS certifications / What is available @ Q4 2024
