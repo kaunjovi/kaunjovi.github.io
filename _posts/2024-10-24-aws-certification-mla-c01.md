@@ -50,6 +50,40 @@ categories: [certifications]
 
 1. GenAI = AI to generate content - including synthetic data - how to use that in testing and Test Data Mgmt. 
 
+1. **Machine Learning**
+1. Unsupervised 
+    1. Input Data X > Model > New input to Model > Some output, take it or leave it. 
+1. Supervised 
+    1. Input data X > Model > Learned now > Test input y > Test output x > Is test output x and the actual output X close? 
+    1. If no, go back to the Model and optimize. 
+
+1. **Deep Learning as a subset of ML** 
+1. Deep Learning is a type of ML that uses artificial Neural Networks 
+1. Neural networks can use both labled and unlabled data. This is called **semi-supervised** learning 
+1. Trained on a small amount of labled data and a large amount of unlabled data. 
+
+1. Deep Learning Models are of two types - Generative and Discriminative. 
+
+1. **Discriminative** models - Discriminates between different kind of data instances.  
+    1. used to classify or predict lables. Give them labled data points 
+    1. they learn the relationship between features and lables 
+    1. they look at the conditional probability distribution 
+    1. Given X (input) what is the probablity of Y (output)
+    1. Give a pictture, what is the probability it is a Dog 
+
+1. **Generative** models - generates new data 
+    1. It learns from probability distribution of existing data 
+    1. 
+
+1. **GenAI is a subset of Deep Learning** 
+
+
+1. **LLM is a also a subset of Deep Learning** 
+
+
+
+
+
 
 
 ## AWS certifications / What is available @ Q4 2024
