@@ -5,6 +5,10 @@ categories: [HuggingFace, ai]
 ---
 
 
+## Investigate 
+
+1. HF spaces. Allows you to deploy your code. Free ?? 
+
 
 ## How to start and go about Vibe Coding 
 
