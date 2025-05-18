@@ -6,7 +6,55 @@ categories: [Steamlit, python]
 
 ## Docker - MoveToOwnPage. 
 
-1. 
+1. [Linkedin learning : Docker ](https://www.linkedin.com/learning/learning-docker-17236240/create-a-docker-container-from-dockerfiles-part-2?autoSkip=true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A65eb4388345061d17bc1cba4&resume=false)
+
+1. Command : docker build 
+
+```
+docker build 
+docker build -t our-first-docker-image 
+
+// What is the name of the docker file? If it is not Dockerfile, spell that out. 
+docker build -t our-first-docker-image -f app.Dockerfile 
+docker build -t our-first-docker-image --file app.Dockerfile
+
+// Where is the context. Is it in the same folder. Just put a dot. 
+docker build -t our-first-docker-image . 
+
+
+```
+
+1. Docker images are layers of images over one another. 
+1. So, for every command it creates an impage. So, should we try to use less command? Might be. 
+1. These are called intermediate images. 
+1. Once it is created you can run it. 
+
+```
+docker run our-first-docker-image 
+```
+
+1. **What if the container does not exit immediately after execution?** 
+1. Build the docker image. Use server.Dockerfile. Context is current folder (.). 
+```
+docker build --file server.Dockerfile --tag our-first-docker-server . 
+docker run our-first-docker-server 
+```
+1. find the name of the docker and kill it 
+```
+docker ps 
+docker kill xxx 
+```
+1. This time, be smart. Run it as -d 
+```
+docker run -d our-first-docker-server 
+```
+
+
+
+
+1. **USER command of Linux Ubuntu**
+1. root 
+1. nobody 
 
 
 ## Liquid Neural Networks(LNN) - Move to own page 
