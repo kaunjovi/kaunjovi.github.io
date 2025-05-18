@@ -4,6 +4,30 @@ title: Streamlit, FrontEnd for python script.
 categories: [Steamlit, python] 
 ---
 
+## Docker - MoveToOwnPage. 
+
+1. 
+
+
+## Liquid Neural Networks(LNN) - Move to own page 
+
+1. Problem : How to have good acuracy, good robustness, without having a huge number of parameters.
+1. Huge # of parameters = carbon footprint issue. Accountability goes for a toss. 
+1. LNN - can stay adaptable, even after training. 
+1. Perturbing the signal - add noise to the signal - make the video grainy 
+1. LNN uses a relatively tiny number of parameters / neurons and shows far superior autonomously gleaning context of the task, from a very tiny amount of test data. 
+
+1. [2023/01 Liquid Neural Networks | Ramin Hasani | TEDxMIT](https://www.youtube.com/watch?v=RI35E5ewBuI&t=472s)
+1. [Ramin Hasani, CEO @ Liquid AI](https://www.linkedin.com/in/raminhasani/)
+1. [2024 Adaptable Aviators: future of autonomous navigation Liquid networks](https://www.youtube.com/watch?v=2BoxhZUi01Y)
+1. [Liquid Time-constant Networks by Cornell](https://arxiv.org/abs/2006.04439#)
+
+
+
+
+
+
+
 1. Streamlit, was a startup launched in 2018, 
 1. It was the brainchild of some former GoogleX and Zoox employees 
 1. looking to build an open source project to make it easier to build custom applications to interact with data.
