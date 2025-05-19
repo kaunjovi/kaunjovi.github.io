@@ -8,6 +8,46 @@ categories: [Steamlit, python]
 
 1. [Linkedin learning : Docker ](https://www.linkedin.com/learning/learning-docker-17236240/create-a-docker-container-from-dockerfiles-part-2?autoSkip=true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A65eb4388345061d17bc1cba4&resume=false)
 
+1. Get a list of all the docker running 
+1. and the ones that are not running too 
+```
+docker ps 
+docker ps -a // this is the all option. 
+docker ps -aq // show all, but only the names, not the whole table. 
+docker stop xxx // stop the xxx container. Gracefully. 
+docker stop -t 0 xxx // Stop now. Data loss? I dont care. 
+```
+1. Stop and remove the container in one line 
+
+```
+docker rm xxx // will not remove the container that are running 
+docker stop && docker rm // instead of two commands you could ...
+docker rm -f xxx // will removed running container 
+```
+1. One command to remove all the containers 
+```
+docker ps -aq | xargs docker rm
+```
+
+1. Images are big. They can take a lot of space. Remove them with rmi. 
+```
+docker images // list all the images 
+docker rmi xxx // remove the xxx image. If it is being used by a running container, it will not be removed. 
+docker rmi -f xxx // Doing it forcibly. Might have unpredictable results. 
+```
+
+1. Port binding. Take a port of the actual machine and bind it to a port of the container. 
+``` 
+docker run xxx 
+docker run --name chunnu xxx // now I have given it a name 
+docker run -d --name chunnu xxx // now I am running it in the background. Useful for running servers. 
+docker run -d --name chunnu -p 5001:5000 xxx // binding my 5001 to 5000 of image 
+```
+
+
+
+
+
 1. Command : docker build 
 
 ```
@@ -44,10 +84,19 @@ docker run our-first-docker-server
 docker ps 
 docker kill xxx 
 ```
-1. This time, be smart. Run it as -d 
+1. This time, be smart. Run it as -d. Make it run in background. 
 ```
 docker run -d our-first-docker-server 
 ```
+1. Huh?? I did something. Did not understand 
+```
+docker exec xxx date 
+```
+1. And now we are getting freaky. We are running bash in intereactive mode in the image. 
+```
+docker exect --intereactive --tty xxx bash 
+```
+
 
 
 
