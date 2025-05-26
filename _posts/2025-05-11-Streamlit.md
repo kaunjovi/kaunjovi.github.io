@@ -4,109 +4,22 @@ title: Streamlit, FrontEnd for python script.
 categories: [Steamlit, python] 
 ---
 
-## Docker - MoveToOwnPage. 
-
-1. [Linkedin learning : Docker ](https://www.linkedin.com/learning/learning-docker-17236240/create-a-docker-container-from-dockerfiles-part-2?autoSkip=true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A65eb4388345061d17bc1cba4&resume=false)
-
-1. Get a list of all the docker running 
-1. and the ones that are not running too 
-```
-docker ps 
-docker ps -a // this is the all option. 
-docker ps -aq // show all, but only the names, not the whole table. 
-docker stop xxx // stop the xxx container. Gracefully. 
-docker stop -t 0 xxx // Stop now. Data loss? I dont care. 
-```
-1. Stop and remove the container in one line 
-
-```
-docker rm xxx // will not remove the container that are running 
-docker stop && docker rm // instead of two commands you could ...
-docker rm -f xxx // will removed running container 
-```
-1. One command to remove all the containers 
-```
-docker ps -aq | xargs docker rm
-```
-
-1. Images are big. They can take a lot of space. Remove them with rmi. 
-```
-docker images // list all the images 
-docker rmi xxx // remove the xxx image. If it is being used by a running container, it will not be removed. 
-docker rmi -f xxx // Doing it forcibly. Might have unpredictable results. 
-```
-
-1. Port binding. Take a port of the actual machine and bind it to a port of the container. 
-``` 
-docker run xxx 
-docker run --name chunnu xxx // now I have given it a name 
-docker run -d --name chunnu xxx // now I am running it in the background. Useful for running servers. 
-docker run -d --name chunnu -p 5001:5000 xxx // binding my 5001 to 5000 of image 
-```
+# AWS components - MoveToOwnPage
+1. S3 
+1. EC2 
+1. Elastic IP 
+1. Route XX 
+1. Lambda 
+1. RDS - Relational DB servcies 
+1. Domino - No SQL 
+1. Availability zones 
+1. Queue Service 
+1. 
 
 
 
 
-
-1. Command : docker build 
-
-```
-docker build 
-docker build -t our-first-docker-image 
-
-// What is the name of the docker file? If it is not Dockerfile, spell that out. 
-docker build -t our-first-docker-image -f app.Dockerfile 
-docker build -t our-first-docker-image --file app.Dockerfile
-
-// Where is the context. Is it in the same folder. Just put a dot. 
-docker build -t our-first-docker-image . 
-
-
-```
-
-1. Docker images are layers of images over one another. 
-1. So, for every command it creates an impage. So, should we try to use less command? Might be. 
-1. These are called intermediate images. 
-1. Once it is created you can run it. 
-
-```
-docker run our-first-docker-image 
-```
-
-1. **What if the container does not exit immediately after execution?** 
-1. Build the docker image. Use server.Dockerfile. Context is current folder (.). 
-```
-docker build --file server.Dockerfile --tag our-first-docker-server . 
-docker run our-first-docker-server 
-```
-1. find the name of the docker and kill it 
-```
-docker ps 
-docker kill xxx 
-```
-1. This time, be smart. Run it as -d. Make it run in background. 
-```
-docker run -d our-first-docker-server 
-```
-1. Huh?? I did something. Did not understand 
-```
-docker exec xxx date 
-```
-1. And now we are getting freaky. We are running bash in intereactive mode in the image. 
-```
-docker exect --intereactive --tty xxx bash 
-```
-
-
-
-
-
-1. **USER command of Linux Ubuntu**
-1. root 
-1. nobody 
-
-
-## Liquid Neural Networks(LNN) - Move to own page 
+## Liquid Neural Networks(LNN) - MoveToOwnPage 
 
 1. Problem : How to have good acuracy, good robustness, without having a huge number of parameters.
 1. Huge # of parameters = carbon footprint issue. Accountability goes for a toss. 
@@ -198,3 +111,54 @@ st.line_chart(cases)
 ## Reference
 1. [Streamlit Crash Course: From Zero to Data App](https://youtu.be/d7fnzDQ5qM8?si=Xu9Q_HCzTCx_oRSS)
 1. [He is good - 5 Things I Wish I Knew Before Learning Streamlit](https://www.youtube.com/watch?v=IOYHVPPbZII)
+
+
+
+1. Service Account 
+1. Policy per table / explicity for specific tables 
+1. Unmasking policy - at field level / column level. 
+1. Use policy (has to be done by SF admin) / call to_decrypt function 
+1. SSN - string 
+1. md5# - use the plain text - encryption. rowhaskey 
+
+
+## [Claude 4](https://www.anthropic.com/news/claude-4)
+1. Claude Opus - coding model, with sustained performance on complex, long-running tasks and agent workflows. 
+    1. Opus 4 at $15/$75 per million tokens (input/output) and 
+    1. SWE-bench (72.5%) and Terminal-bench (43.2%).
+1. Claude Sonnet 4 - coding and reasoning while responding more precisely to your instructions.
+    1. Sonnet 4 also available to free users.
+    1. Sonnet 4 at $3/$15.
+1. Claude Code - embeds Claude Opus 4
+    1. supports background tasks via GitHub Actions and 
+    1. native integrations with VS Code and JetBrains, displaying edits directly in your files for seamless pair programming.
+    1. [Claude Code](https://www.anthropic.com/claude-code)
+    1. Command-line AI, from concept to commit
+    1. Claude Code embeds Claude Opus 4—the same model our researchers and engineers use—right in your terminal.
+
+# [Build with Claude](https://www.anthropic.com/learn/build-with-claude)
+
+
+# [Early Days of Agile Development & Is Design Dead? • Martin Fowler & James Lewis • GOTO 2024](https://www.youtube.com/watch?v=xsMUuOwv7IA&list=PLEx5khR4g7PIEQ3L-GI-DF5e6pIm1alq7)
+
+Martin Fowler 
+James Lewis ?? 
+
+
+
+bagita 
+
+Fret modeling 
+Stride model 
+
+Art of doing agile by Jim Shaw 
+
+# [2020, The Art of Agile Development, Second Edition, by James Shore](https://www.youtube.com/watch?v=Ifxb8Bm4BlA)
+1. 2007 - first edition. 
+1. https://www.jamesshore.com/v2/projects/lunch-and-learn/art-of-agile-development
+
+
+# [Scott W. Ambler & Pramod Sadalage • Refactoring Databases](https://amzn.to/3HgdLJ3)
+1. ?? sounds intersesting. Refactoring db, schema and data, as we progress through the dev cycle. Check out. 
+1. Why is it not more famous ? 
+
