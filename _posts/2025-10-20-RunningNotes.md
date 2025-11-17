@@ -8,7 +8,28 @@ categories: [Running Notes]
 ## LangGraph
 
 1. Dictionary 
-1. Typed Dictionary - code the type of the data in the Dictionary as well. 
+
+
+1. **Typed Dictionary**
+1. code the type of the data in the Dictionary as well. 
+1. from typing import TypedDict
+
+1. **Union** 
+1. from typing import Union 
+1. when x can be both int and float 
+1. x: Union[int, float]
+
+1. **Optional**
+1. You could give it a value or it will be None
+1. def some_function ( name : Optional[str]): 
+1. Now name can be a string e.g. "Partha" or None. 
+1. But it can't be 1, or some other data type. 
+
+1. from typing import **Any**
+1. If it can take any value then how is it different from what we already have ?? 
+
+1. square = **lambda** x: x*x
+1. shortcut to write small functions. 
 
 
 
