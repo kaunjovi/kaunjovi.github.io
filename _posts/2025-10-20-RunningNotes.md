@@ -1,9 +1,67 @@
 ---
 layout: post
-title: Running Notes. 
+title: Running Notes 
 categories: [Running Notes] 
 ---
 
+
+## LangGraph
+
+1. Dictionary 
+1. Typed Dictionary - code the type of the data in the Dictionary as well. 
+
+
+
+1. **Reference**
+1. https://docs.langchain.com/oss/python/langgraph/overview
+1. [LangGraph Complete Course for Beginners – Complex AI Agents with Python](https://www.youtube.com/watch?v=jGg_1h0qzaM)
+
+
+
+## XGBoost (eXtreme Gradient Boosting)
+
+1. It is an optimized implementation of **Gradient Boosting** 
+1. and is a type of **ensemble learning method** that **combines multiple weak models to form a stronger model**.
+1. builds decision trees sequentially with each tree attempting to correct the mistakes made by the previous one
+1. XGBoost uses **decision trees** as its base learners 
+    1. combines them sequentially to improve the model’s performance. 
+    1. Each new tree is trained to correct the errors made by the previous tree and 
+    1. this process is called **boosting**.
+1. parallel processing to train models on large datasets quickly
+
+
+
+
+
+
+1. **Reference**
+1. [Implementation of XGBoost (eXtreme Gradient Boosting)](https://www.geeksforgeeks.org/machine-learning/implementation-of-xgboost-extreme-gradient-boosting/)
+1. https://www.geeksforgeeks.org/machine-learning/xgboost/
+1. https://www.linkedin.com/posts/swatee-singh-phd-b237916_ai-agenticai-datascience-activity-7394064479321288704-755g?utm_source=share&utm_medium=member_desktop&rcm=ACoAAACOR8UB3zqZApJHm3jXnrFZcfmFgwNtOq4
+1. 
+
+
+## What is ? 
+1. similar to ZoomInfo, Uplead
+
+
+## TOON vs JSON 
+
+1. TOON - Token-Oriented Object Notation.
+1. ? Do you have pure tabular data ? CSV would be more efficient. 
+    1. So, why are we hearing that Coli. export is CSV is not helping. 
+1. the TOON encoder can be used in Node.js or Python environments for batch conversions without performance loss
+
+1. ** Who made TOON and why? ** 
+1. At Scalevise, we handle thousands of API requests daily across ChatGPT, Claude, and other large language model platforms. 
+1. Every token counts because it costs money.
+1. A large portion of our API spend wasn’t tied to actual content but to data structure overhead
+1. JSON, the web’s default data format, has brackets, commas, and quotes may seem trivial, but at scale, they add up quickly.
+1. That’s when we decided to build our own optimized structure: TOON.
+
+1. **Reference :**
+1. https://medium.com/data-science-in-your-pocket/toon-bye-bye-json-for-llms-91e4fe521b14
+1. https://youtu.be/oCWfB1lnvLA
 
 ## Konnect 
 1. Konnect is the fastest way to deploy and manage API and AI gateways.
@@ -109,16 +167,23 @@ Olivia Chiu Stone
     1. Real quantum hardware 
     1. Quantum algorithms
 
-https://blog.google/technology/research/quantum-echoes-willow-verifiable-quantum-advantage/
-Willow quantum chip
-first-ever algorithm
-quantum computer can successfully run a verifiable algorithm on hardware, surpassing even the fastest classical supercomputers (13,000x faster)
-2019 - Back in 2019, we demonstrated that a quantum computer could solve a problem that would take the fastest classical supercomputer thousands of years.
-2024 - Late last year (2024), our new Willow quantum chip showed how to dramatically suppress errors, solving a major issue that challenged scientists for nearly 30 years
 
 
-Introducing Microsoft Agent Framework
-https://azure.microsoft.com/en-us/blog/introducing-microsoft-agent-framework/
+## Volcano for AI 
+1. https://volcano.dev/docs#installation
+
+
+
+1. https://blog.google/technology/research/quantum-echoes-willow-verifiable-quantum-advantage/
+1. Willow quantum chip
+1. first-ever algorithm
+1. quantum computer can successfully run a verifiable algorithm on hardware, surpassing even the fastest classical supercomputers (13,000x faster)
+1. 2019 - Back in 2019, we demonstrated that a quantum computer could solve a problem that would take the fastest classical supercomputer thousands of years.
+1. 2024 - Late last year (2024), our new Willow quantum chip showed how to dramatically suppress errors, solving a major issue that challenged scientists for nearly 30 years
+
+
+1. Introducing Microsoft Agent Framework
+1. https://azure.microsoft.com/en-us/blog/introducing-microsoft-agent-framework/
 
 
 
@@ -130,3 +195,145 @@ Human limits are features
 Our forgetfulness helps us see patterns and stay creative. AI remembers everything — and often gets trapped in repetition instead of abstraction.
 
 
+## Of course! Here is a longer story, set in Pune, written from the perspective of an 8-year-old.
+
+
+
+
+## My Super Dooper Big Moon Adventure!**
+
+**Chapter 1: My Didi and the Sky Full of Stars**
+
+Hellow! My name is Abhro. I am eight years old and I live in Pune. I like it here. We have big mountains and nice weather, except in summer when it gets so hot I think I will melt like an ice-cream. My most favrit thing is space. I think about it all the time. The sun is a giant, I mean a GIANT ball of fire. If you put one million Earths inside it, it will just go *poof*! And a supernova is when a star gets so old it goes boom! It’s the biggest boom in the whole universe.
+
+Every summer, when school is closed, we have the best time. All the kids from our society go to the big garden in the evening. And there, under the biggest tree you ever saw, sits Didi. She is not my real grandma, but she is every kid's grandma in our whole society. She tells us stories. She told us one about a monkey who built a bridge to Lanka. Another one about a boy who had a moon on his forehead! That one was my favrit.
+
+My best frends are always there with me. There’s Reyansh. He is amazing. He can hear a song one time and then sing it perfectly. He even knows the old songs my dad listens to in the car. Then there is Arshita. She is the tallest in our class. She plays basketball and she runs so fast, she looks like a rocket! And Akshara. She is so pretty. She always has two nice braids with colourful ribbons and she stands like she is always ready for a photo. But she is also very kind and shares her tiffin with me.
+
+**Chapter 2: The Big News from the Newspaper**
+
+One Tuesday morning, I was eating my poha. My Papa was reading the newspaper. Suddenly, he made a loud noise. "WAH!" I got such a fright I spilled my milk. I thought I was in big trouble.
+
+But Papa was smiling! His eyes were all wide. "Abhro! Listen to this! ISRO... you know, our space people... they have done it! They are making a special, one-time-only, 'Chandrayaan Kids Mission'! They will choose five children from all over India to go to the moon for one whole day!"
+
+I think my heart stopped. For a real second. GO TO THE MOON? The actual moon?
+
+I didn't even finish my poha. I ran out of the house. I ran to Reyansh's house first. I banged on his door. "REYANSH! WE CAN GO TO THE MOON!" He was practizing a song on his little keyboard. He stopped and said, "Really? I will compose a moon song! I will sing it for the Earth from up there!"
+
+Then we ran to Arshita's house. She was bouncing a ball in her driveway. When we told her, she got so excited she threw the ball super high and it got stuck on their roof. She said, "I will take my basketball! I bet I can bounce it from one crater to another!"
+
+Lastly, we found Akshara. She was helping her mom water the plants. She heard the news and got a very serious face. She said, "I will need a very good space suit. One that looks nice in pictures. And I will take a pink flag."
+
+We all decided we had to apply.
+
+**Chapter 3: The Application and The Long, Long Wait**
+
+Applying was hard. We had to write an essay. The question was: "Why do you want to go to the moon?"
+
+I thought and thought. Then I wrote: "I want to go to the moon becos it is our closest neighbour in space. I want to see if the marks on it are really holes or just shadows. I want to jump in low gravity and see if I can touch the Earth from there (just kidding). I will bring back a moon rock for my Didi so she can put it next to her tulsi plant. Also, I want to see if there is any cheese, just for checking."
+
+Reyansh wrote that he wants to sing where there is no sound, to see what true silence feels like before a song. Arshita wrote that she wants to test how high she can really jump. Akshara wrote that she wants to show every girl in India that they can be beautiful and smart and an astronaut all at the same time.
+
+We sent our applications. Then the waiting started. It felt like one billion, trillion years. Every day I would ask my mom, "Did ISRO call? Did they send an email?" She would just laugh and say, "No, beta, not today."
+
+I even told Didi about it. She smiled her crinkly-eyed smile and said, "The moon is very patient, Abhro. It has been waiting for us for a long, long time. It can wait a little more for you."
+
+**Chapter 4: The Big Surprise at School**
+
+One normal day, we were in class learning about fractions. I don't like fractions. They are confusing. Suddenly, our principal, Ma'am, came on the loudspeaker. Her voice was all shaky and excited.
+
+"Would students Abhro, Reyansh, Arshita, and Akshara from Class 3B please come to the principal's office immediately. Thank you."
+
+My stomach did a flip. Oh no. What did we do? Did Reyansh sing too loud in the library? Did Arshita bounce a ball in the hallway? Did Akshara and I talk too much during lunch?
+
+We all walked to the office, feeling very scared. But when we opened the door, we saw two people in cool blue ISRO uniforms! And they were smiling! One uncle had a big camera.
+
+The ISRO aunty knelt down and said, "Are you Abhro?"
+
+I could only nod. My voice was gone.
+
+She said, "On behalf of India and ISRO, I would like to tell you that you have been selected for the Chandrayaan Kids Mission. You are going to the moon."
+
+I think I screamed a little bit. Then Reyansh started singing a happy song right there! Arshita jumped so high she almost hit the ceiling! Akshara was crying happy tears and fixing her ribbons. It was the most amazing, crazy, best moment of my whole entire life. Our whole gang was going to the moon!
+
+**Chapter 5: Getting Ready to be Astronauts**
+
+The next few weeks were a super fun blur. We had to go to special training. Not in Pune, but in a big city. We got to wear puffy white astronaut suits. They made a *swish-swish* noise when we walked. Akshara said, "This fabric is not very flattering," but she still looked cool.
+
+We learned about G-forces. They put us in a big machine that spins around super fast. It felt like a giant was squishing my face! It was weird but fun. Arshita loved it and said "AGAIN!" when it stopped.
+
+We learned about zero gravity in a special plane. It goes up and down and for a few minutes, you float! It was the best feeling in the world. I did three somersaults. Reyansh tried to sing but his voice wobbled all over the place. We laughed so hard. Arshita tried to dribble her basketball, but it just floated away and hit an engineer on the head! We said sorry lots of times.
+
+The food was funny. It was all in packets and tubes. You squeeze it into your mouth. I had mashed potato tube. It was okay. Reyansh got mango pulp and he was very happy.
+
+**Chapter 6: Blast Off!**
+
+The big day came. We went to the big ISRO place in Sriharikota. The rocket was there. It was so, so, so big. It was white and orange and it looked like it could punch a hole in the sky. My mom and dad were there. Mom was crying and taking photos. Dad was trying not to cry but his eyes were red.
+
+We waved to everyone. We saw Didi in the crowd! She waved a white hanky. I felt so brave.
+
+We climbed up the tall tower and got into our seats in the rocket. The seats were like big comfy chairs that hugged us very tight.
+
+The countdown started. A loud voice said: "10... 9... 8..." I held Reyansh's hand. "7... 6... 5..." I heard Arshita whisper, "Goodbye, gravity!" "4... 3... 2... 1... IGNITION! MAIN ENGINE START! LIFT OFF!"
+
+There was a ROAR. The whole rocket shook like our old mixer-grinder when mom makes chutney. I was pushed back into my seat. It felt like an elephant was sitting on my chest. It was scary for a minute, but then I saw the blue sky outside the window get darker and darker.
+
+Then, suddenly, the shaking stopped. The roar stopped. It was very quiet. We were in space!
+
+**Chapter 7: Hello, Zero Gravity!**
+
+The first thing that happened was my pencil floated away from my pocket! It just floated in the air. Then I realised I wasn't sitting in my seat anymore. I was floating! The belt was holding me down, but the rest of me was floating.
+
+"WE'RE FLOATING!" I shouted.
+
+Everyone unbuckled. We became like superman! We flew around the cabin. It was so much fun. Arshita did a perfect somersault. Akshara's hair floated all around her head like a halo. She looked like an angel, but she was worried about her ribbons. Reyansh closed his eyes and said, "This is what music feels like inside my head before I sing it."
+
+We looked out the window. The Earth was below us. It was a giant, beautiful blue and white and green marble. I could see India! I think I saw Pune, but it was very small. It made me feel very small, but also very special. We all live on that one beautiful marble.
+
+**Chapter 8: One Small Step for Kids**
+
+After what felt like a short time, the captain said, "Prepare for lunar landing." The moon got bigger and bigger. It was all grey and covered in circles and mountains. It looked like a giant, dusty playground.
+
+We put on our big helmets and big gloves. We looked like real astronauts from TV.
+
+The landing was a soft *thump*. The door opened. I was chosen to go first because my essay said I would. My heart was beating like a drum.
+
+I carefully climbed down the ladder. The ground was soft and dusty. I took the last step.
+
+"One small step for a kid," I said, my voice all shaky, "one giant... jump for kid-kind!" Then I jumped. I JUMPED! I flew up, like, three meters high! It was easy! I landed softly in the dust.
+
+My friends came down next. Arshita immediately took out her basketball. She bounced it. It bounced so high we almost lost it! It went whoosh! She laughed and said, "I am the moon basketball champion!"
+
+Akshara planted the Indian flag. It had a little pink ribbon tied to it, just for her. She posed next to it, and the camera on the rover took her photo. She looked like a movie star.
+
+Reyansh said, "This is my concert." He turned on his microphone inside his helmet and started singing "Saare Jahan Se Achha". We couldn't hear it outside, but we could hear it in our helmets. It was the most beautiful song ever.
+
+I collected rocks. I got a big grey one for Didi and a small white one for my mom.
+
+We looked up. The Earth was in the black sky. It was a bright blue circle. It looked so peaceful and quiet. There were no borders. It was just... home.
+
+**Chapter 9: The Return Home and The Best Story Ever**
+
+Going back was faster. We blasted off from the moon and landed in the sea near India. A big ship came and picked us up.
+
+When we got back to Pune, it was crazy! There was a big parade! People were throwing flowers and shouting our names. We felt like heroes.
+
+The next day, we went straight to the garden. Didi was waiting under the tree. All the other kids were there too, looking at us with big, round eyes.
+
+We walked up to her. I took out the moon rock. "This is for you, Didi. From the moon."
+
+She took it in her wrinkly hands. She didn't say anything for a long time. She just looked at it and smiled. Then she looked at us. Her eyes were shiny.
+
+"In all my years," she said, her voice soft like old paper, "I have told many stories about magic and gods and heroes. But today, the greatest story is not from me. It is from you. You, my children, are the new storytellers."
+
+She made us sit down. "Now," she said, "Abhro, you tell us. Tell us the story of the boy who went to the moon."
+
+So I did. I told them everything. About the scary blast-off, and the funny floating food, and about Arshita's bouncing ball, and Reyansh's silent concert, and Akshara's flag with the pink ribbon. My friends added parts too.
+
+It was the best story we ever told under that tree.
+
+And now, when we sit there, sometimes Didi tells her old stories, and sometimes we tell our new one. And I look up at the moon at night, and I smile. I know a secret. It's not made of cheese. It's made of memories. And I left a little piece of my heart there, right next to my footprint.
+
+The End.
+
+(P.S. My teacher said this story is too long. But I had lots to say. Going to the moon is a big thing you know.)
