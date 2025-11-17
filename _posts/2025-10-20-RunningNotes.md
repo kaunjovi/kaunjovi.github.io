@@ -31,6 +31,54 @@ categories: [Running Notes]
 1. square = **lambda** x: x*x
 1. shortcut to write small functions. 
 
+1. Different **Elements** in LangGraph
+1. **State**
+1. The notebook, whiteboard for the Agents?? / Participants / Nodes. 
+
+1. **Nodes**
+1. Anything that can receive a state. 
+1. Individual functions etc. that does one very specific function in the graph. 
+1. They receive input and give output 
+1. Often the input, output is updated State.
+1. They can use specialized functions call **Tools**
+1. **Tool Nodes** are specialized nodes. 
+1. They call the Tools and write output back in State. 
+
+
+1. **Start Node** : Does not do anything itself, but gets started. 
+1. **End Node**
+
+1. **Graph**
+1. The workflow of the connection of Nodes. 
+1. They work on the some common task and update the State. 
+
+1. **Edge** and **Conditional Edge** (traffic light)
+
+
+1. **State Graph** : Builds and compiles graph 
+
+1. **Runnable** : Anything that can Run. 
+
+1. **Messages** 5 types 
+    1. Human 
+    1. AI 
+    1. System : Set the persona. You are a helpful ... 
+    1. Tool : System message but specific to Tool ?? 
+    1. Function : Represens the result of a function call 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 1. **Reference**
