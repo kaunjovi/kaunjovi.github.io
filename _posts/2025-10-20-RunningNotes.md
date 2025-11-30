@@ -4,6 +4,40 @@ title: Running Notes
 categories: [Running Notes] 
 ---
 
+## **DeepEval**
+1. the open-source LLM evaluation framework
+1. Getting started with DeepEval : https://deepeval.com/docs/getting-started
+
+## **Evidently AI** 
+1. You can’t trust what you don’t test. Make sure your AI is safe, reliable and ready — on every update.
+1. Quick start : https://docs.evidentlyai.com/quickstart_llm
+
+
+## LLM-as-a-Judge Approach
+
+1. Open-Source Frameworks: 
+    1. Libraries like **DeepEval** allow you to implement both single-output and pairwise LLM judges in just a few lines of code. 
+    1. **Evidently AI** is another open-source option focused on evaluating and monitoring ML models.
+1. Application Development Platforms: 
+    1. **LangSmith** and **Langfuse** provide built-in functionality 
+    1. to define and run LLM-as-a-Judge evaluators directly on your application traces and datasets, often with no-code solutions.
+1. Cloud Services: 
+    1. Amazon Bedrock offers a fully managed "LLM-as-a-judge" feature. 
+    1. It provides pre-selected judge models and optimized prompts, requiring you only to prepare your dataset in the required format.
+
+
+## Data, that is ready for AI 
+
+Is your data architecture ready for agents that don’t wait for humans? 
+Agentic AI depends on deep, real-time access to machine data, 
+not just nicely structured tables, 
+but messy logs, traces, and security events. 
+
+We must make a powerful case for a federated data fabric that stitches these sources together 
+into a single, governed view so autonomous systems can act fast without flying blind. 
+
+
+
 
 ## LangGraph
 
