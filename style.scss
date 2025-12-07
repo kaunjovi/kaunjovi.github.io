@@ -40,9 +40,16 @@ ul, ol, dl, figure,
 .container {
   flex: 1 0 auto;
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
+  /* Use most of the available screen while keeping lines readable on large screens */
+  width: 90%;
+  max-width: 1100px; /* reasonable maximum for desktop/laptop reading */
+  padding: 0 20px;
+
+  /* Ensure a good mobile fallback */
+  @include mobile {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
