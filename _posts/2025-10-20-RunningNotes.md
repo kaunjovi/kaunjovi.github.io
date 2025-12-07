@@ -4,6 +4,28 @@ title: Running Notes
 categories: [Running Notes] 
 ---
 
+
+## Certification 
+
+## MCP Certification from Huggingface 
+
+https://huggingface.co/learn/mcp-course/en/unit0/introduction
+https://huggingface.co/mcp-course
+[Hugging Face MCP Course](https://huggingface.co/mcp-course?joined=true)
+[Introduction to Model Context Protocol (MCP)](https://huggingface.co/learn/mcp-course/unit1/introduction#introduction-to-model-context-protocol-mcp)
+[Key Concepts and Terminology](https://huggingface.co/learn/mcp-course/unit1/key-concepts)
+[Architectural Components of MCP](https://huggingface.co/learn/mcp-course/unit1/architectural-components)
+[MCP SDK](https://huggingface.co/learn/mcp-course/unit1/sdk)
+
+
+## MCP resources 
+1. What are the MCP resources. 
+1. How to use them. 
+1. [MCP Resources explained (and how they differ from MCP Tools)](https://medium.com/@laurentkubaski/mcp-resources-explained-and-how-they-differ-from-mcp-tools-096f9d15f767)
+
+
+
+
 ## **DeepEval**
 1. the open-source LLM evaluation framework
 1. Getting started with DeepEval : https://deepeval.com/docs/getting-started
