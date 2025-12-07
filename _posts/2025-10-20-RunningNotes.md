@@ -9,20 +9,52 @@ categories: [Running Notes]
 
 ## MCP Certification from Huggingface 
 
-https://huggingface.co/learn/mcp-course/en/unit0/introduction
-https://huggingface.co/mcp-course
-[Hugging Face MCP Course](https://huggingface.co/mcp-course?joined=true)
-[Introduction to Model Context Protocol (MCP)](https://huggingface.co/learn/mcp-course/unit1/introduction#introduction-to-model-context-protocol-mcp)
-[Key Concepts and Terminology](https://huggingface.co/learn/mcp-course/unit1/key-concepts)
-[Architectural Components of MCP](https://huggingface.co/learn/mcp-course/unit1/architectural-components)
-[MCP SDK](https://huggingface.co/learn/mcp-course/unit1/sdk)
+1. https://huggingface.co/learn/mcp-course/en/unit0/introduction
+1. https://huggingface.co/mcp-course
+1. [Hugging Face MCP Course](https://huggingface.co/mcp-course?joined=true)
+1. [Introduction to Model Context Protocol (MCP)](https://huggingface.co/learn/mcp-course/unit1/introduction#introduction-to-model-context-protocol-mcp)
+1. [Key Concepts and Terminology](https://huggingface.co/learn/mcp-course/unit1/key-concepts)
+1. [Architectural Components of MCP](https://huggingface.co/learn/mcp-course/unit1/architectural-components)
+1. [MCP SDK](https://huggingface.co/learn/mcp-course/unit1/sdk)
+
+
 
 
 ## MCP resources 
 1. What are the MCP resources. 
 1. How to use them. 
+1. Tools are designed to be model-controlled. Model is supposed to look them up and use them. 
+1. Resources are designed to be application-driven
+1. [Example Clients - A list of applications that support MCP integrations](https://modelcontextprotocol.io/clients)
 1. [MCP Resources explained (and how they differ from MCP Tools)](https://medium.com/@laurentkubaski/mcp-resources-explained-and-how-they-differ-from-mcp-tools-096f9d15f767)
 
+
+## [Visual Studio Code - The open source AI code editor](https://code.visualstudio.com/)
+
+
+## LMStudio 
+
+1. Local LLM ? 
+1. Local AI, on Your Computer.
+1. [How to Use LM Studio: A Step-by-Step Guide](https://www.youtube.com/watch?v=9zbFzVXSywg)
+1. Install. Download model. Chat. 
+1. Now which model to use for checking out MCP server. 
+1. How to set up the Open AI like API. 
+
+## [MCP + LM Studio: Local LLM Free Web Search Agent](https://www.youtube.com/watch?v=Y9O9bNSOfXM)
+
+
+## [Notes : My hands-on experiments with Model Context Protocol (MCP): Bridging AI and a Lakehouse](https://medium.com/everyday-ai/my-hands-on-experiments-with-model-context-protocol-mcp-bridging-ai-and-a-lakehouse-6eac25c19c13)
+
+1. Connect with Iceberg using MCP. 
+1. [iceberg-mcp-server](https://github.com/cloudera/iceberg-mcp-server)
+
+
+```bash 
+API_KEY="<your API token>"
+MODEL_NAME="<your model name>"
+BASE_URL="<your Cloudera AI Inference endpoint>"
+```
 
 
 
