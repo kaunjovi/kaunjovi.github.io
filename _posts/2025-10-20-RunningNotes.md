@@ -31,6 +31,25 @@ categories: [Running Notes]
 
 ## [Visual Studio Code - The open source AI code editor](https://code.visualstudio.com/)
 
+## Ollama 
+
+1. Lama 2. We should be able to run it. 
+
+```bash 
+ollama run llama2 
+ollama run mistral 
+ollama run deepseek-r1:8b # find out more about it.
+
+ollama pull mxbai-embed-larg # embedding model 
+
+ollama serve # run the http service. 11434 
+
+>>> /bye # for exit 
+```
+
+
+1. [MCP meets Ollama: Build a 100% local MCP client](https://www.youtube.com/watch?v=C64rVY1eN8k)
+1. [Learn Ollama in 15 Minutes - Run LLM Models Locally for FREE](https://www.youtube.com/watch?v=UtSSMs6ObqY)
 
 ## LMStudio 
 
