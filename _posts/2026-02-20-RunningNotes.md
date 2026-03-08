@@ -5,6 +5,200 @@ categories: [Running Notes]
 ---
 
 
+In cybersecurity, "posture" isn't how you sit—it's how your data is governed and protected. Just like physical posture, a small security "slouch" today can break your system tomorrow.
+AppSec and AI Security
+𝗗𝗶𝘀𝗰𝗼𝘃𝗲𝗿𝘆 (𝗙𝗶𝗻𝗱 𝘁𝗵𝗲 𝗦𝗽𝗶𝗻𝗲): You cannot protect what you don't see. You must map out where your data lives—especially the data feeding your AI models.
+𝗖𝗹𝗮𝘀𝘀𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 (𝗔𝘀𝘀𝗲𝘀𝘀 𝘁𝗵𝗲 𝗦𝘁𝗿𝗲𝘀𝘀): Is this public data, or is it the "backbone" of your company’s intellectual property?
+𝗥𝗲𝗺𝗲𝗱𝗶𝗮𝘁𝗶𝗼𝗻 (𝗥𝗲𝗮𝗹𝗶𝗴𝗻𝗺𝗲𝗻𝘁): This is where tools like n8n, Terraform, and Kubernetes come in to automate security guardrails and ensure your infrastructure stays upright.
+
+
+
+## n8n - Flexible AI workflow automation for technical teams.
+1. https://docs.n8n.io/try-it-out/tutorial-first-workflow/
+2. Your first workflow
+3. https://docs.n8n.io/try-it-out/tutorial-first-workflow/
+   
+
+## kapa.ai 
+1. https://www.kapa.ai/
+1. The answers are in your docs. Nobody can find them.
+1. Kapa knows when it doesn't know. That's the difference. We tried other vendors and nothing came close.
+
+
+
+
+
+## Data 3.0 
+
+1. From Data 2.0: the modern data stack to Data 3.0: the autonomous data stack.
+2. Data 2.0 : dashboards and human analysts 
+3. Data 3.0 : agents, and humans
+4. AI agents, copilots, and applications that must discover, reason about, and act on data autonomously.
+
+
+There are six foundational shifts to Data 3.0:
+
+🔹 Structure : Domain-oriented, semantic-first So agents can build context-aware ground truth.
+
+🔹 Modality : Multi-format, multimodal use. So AI protocols like RAG and MCP and new ones can operate natively.
+
+🔹 Discovery 
+Manual discovery → API-first automatic discoverability 
+So agents can find and use data by intent.
+
+🔹 Orchestration 
+Pipelines → Self-orchestrated sensing systems 
+So data moves faster from signal to action.
+
+🔹 Observability 
+Bolted-on lineage → Built-in lineage 
+So agents can reason about provenance and trust.
+
+🔹 Governance 
+After-the-fact governance → Continuous computational governance 
+So data is instantly safe for agents.
+
+At Nextdata we enable these shifts through autonomous data products, data and its processing that behaves like autonomous applications centered around business domains, business semantic and business context first (not schemas and tables).
+
+Join us for the demonstration of the first shift: the structural shift, from storage-centric and schema-first to domain-centric and semantic-first data processing.
+
+📅 March 24, 2026 | Online
+👉 Reserve your seat: https://luma.com/mxjn7mks
+
+
+## Context Engineering
+
+1. [Context Engineering for Coding Agents](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html)
+2. [Harness Engineering](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html)
+3. [Context Engineering for Agents](https://rlancemartin.github.io/2025/06/23/context_engineering/)
+4. 
+
+
+
+## Your Master Prompt Template
+Role & Context
+You are acting as my expert social media consultant. My background: a tenured IT leader with 25+ years of global experience delivering platforms for top banks and financial institutions. My target audience on LinkedIn is senior IT peers, enterprise architects, and decision-makers in financial services and other regulated industries. The goal of my content is to establish thought leadership by sharing insights that blend emerging tech trends with hard-won, practical enterprise experience.
+
+Task
+Please review the LinkedIn post draft I have provided below.
+
+Your Review Should Include:
+
+A clear rating out of 10, with a brief explanation.
+
+Strengths: What is working well (e.g., hook, evidence, targeting).
+
+Areas for Improvement: Specific, actionable suggestions on elements like:
+
+The hook and opening lines.
+
+Structure and logical flow.
+
+Credibility and use of evidence/data.
+
+Targeting and relevance to my niche (finance/enterprise IT).
+
+The call-to-action (CTA) and engagement potential.
+
+Clarity, conciseness, and word choice.
+
+A Polished Rewrite (Optional): If the changes are minor, provide a "clean" version of the post incorporating the feedback, so I can see the final product.
+
+Formatting Tips: Any suggestions for line breaks, emojis (use sparingly and professionally), or visual formatting to improve readability on LinkedIn.
+
+My Post Draft:
+[Paste your draft LinkedIn post here]
+
+
+
+1. The Coming of Agentic Process Outsourcing 
+
+
+1. 
+
+AI models are fast becoming the new commodity, and not the differentiator.
+
+The real moat? Your data. And the enterprise-grade fundamentals we've valued for decades: security, stability, scalability,  and observability. 
+
+This is playing out in the real world. A new report from Azul (cited by The New Stack) shows that 62% of enterprises are now using Java for production AI workloads—up from 50% last year.
+
+Why? Because while Python dominates prototyping, Java's robust ecosystem is what scales AI in the high-stakes, mission-critical environments we operate in, especially in finance.
+
+The gold rush on models is plateauing out. The hard work of building reliable, secure systems on top of them has just begun.
+
+What enterprise IT "old guard" principles do you think are becoming more important in the AI era? Repost if you agree that fundamentals still matter.
+
+https://thenewstack.io/2026-java-ai-apps/
+
+
+
+## FastMCP 
+
+1. Jeremiah Lowin https://www.linkedin.com/in/jlowin/
+1. Washington, District of Columbia, United States
+
+
+## LLM fast 
+
+https://www.seangoedecke.com/fast-llm-inference/?utm_source=perplexity
+
+
+
+## secure data 
+
+- FastAPI (via Pydantic) has a SecretStr
+
+
+## Webmcp 
+
+1. Agentic for web 
+1. https://github.com/webmachinelearning/webmcp
+
+
+
+## Context Engineering: A Guide With Examples
+
+
+## What Is Context Engineering?
+
+1. Context engineering is the practice of designing systems that decide what information an AI model sees before it generates a response.
+1. the principles behind context engineering have existed for quite a while. 
+1. This new abstraction allows us to reason about the most and ever-present issue of designing the information flow that goes in and out of AI systems.
+1. Instead of writing perfect prompts for individual requests, 
+1. you create systems that gather relevant details from multiple sources and 
+1. organize them within the model’s context window. 
+1. This means your system pulls together conversation history, user data, external documents, and available tools, then formats them so the model can work with them.
+1. How ???
+1. but as the conversation goes on, your chatbot often forgets the earliest and most important pieces of your instructions, 
+1. your code assistant loses track of project architecture, and 
+1. your RAG tool can’t connect information across complex documents and domains.
+1. writing a clever prompt is just one small part of a much larger challenge: context engineering.
+
+## how it works, 
+## when to use it 
+
+## [How Long Contexts Fail](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html)
+
+1. with a large enough window, 
+1. you can simply throw everything into a prompt you might need – tools, documents, instructions, and more – and let the model take care of the rest.
+1. 
+1. Long contexts kneecapped RAG enthusiasm (no need to find the best doc when you can fit it all in the prompt!), 
+1. enabled MCP hype (connect to every tool and models can do any job!), and fueled enthusiasm for agents2.
+1. 
+1. But in reality, longer contexts do not generate better responses. 
+1. Overloading your context can cause your agents and applications to fail in suprising ways. 
+1. Contexts can become poisoned, distracting, confusing, or conflicting. 
+1. This is especially problematic for agents, which rely on context to gather information, synthesize findings, and coordinate actions.
+1. 
+1. Let’s run through the ways contexts can get out of hand, then review methods to mitigate or entirely avoid context fails.
+
+
+
+
+
+
+
+
 ## Certification 
 
 ## MCP Certification from Huggingface 
