@@ -46,6 +46,91 @@ categories: [Running Notes]
 
 ## Semantic first 
 
+1. Semantic Layers: dbt Semantic Layer, AtScale, and Cube.
+1. Graph Databases: Neo4j and Amazon Neptune.
+1. BI Platforms: Power BI, Tableau Semantics, and Looker.
+
+1. [Semantic data](https://www.thoughtworks.com/en-in/insights/decoder/s/semantic-data)
+2. Semantic data is an important step in AI-readiness, 
+   1. but it also bridges the gap between abstract data and day-to-day organizational language.
+3. Semantic data powers knowledge graphs, AI systems and search. It enables smarter, more context-aware applications.
+4. Semantic data is data structured and organized in a way that adds meaning. 
+   1. This enables machines (and, by extension, humans too) to understand context and relationships across a data set.
+
+
+1. **Semantic data can improve data-driven decision making.**
+1. Many businesses struggle with fragmented data spread across different departments and systems (e.g., "customer" in sales might be "client" in logistics and "counterparty" in finance). 
+1. With semantic layers across — a core feature of semantic data — you have an intermediary that can translate disparate definitions into a unified, consistent view.
+
+1. **It can simplify data access for non-technical users.**
+1. Semantic data abstracts the complexity of underlying data structures. This means non-technical users won’t need to write complex SQL queries or understand intricate data schemas — they can access and analyze data using more familiar business terms.
+
+1. **It can improve search (internal and external tools) by better connecting fragmented information.**
+1. Semantic data helps to connect scattered information, such as customer feedback across support tickets, social media and reviews, to form a comprehensive understanding of customer sentiment and identify patterns.
+1. 
+1. **Semantic data can also power AI, and is particularly important in an age of increasing unstructured data and generative AI.**
+1. With additional contextual information, semantic data can support conversational interfaces and applications.
+1. 
+1. **It also has compliance and governance benefits too**
+1. explicitly defining data semantics can help ensure consistency and accuracy as well providing transparency on data lineage and provenance.
+
+1. Financial Information Business Ontology (FIBO) 
+2. Enterprise Data Management (EDM) Council, FIBO
+   
+
+
+## [Design-First Collaboration](https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html)
+
+1. When I pair program with a colleague on something complex, 
+1. we don't start at the keyboard. 
+1. We go to the whiteboard. We sketch components, debate data flow, argue about boundaries. 
+1. We align on what the system needs to do before discussing how to build it. 
+1. Only after this alignment — sometimes quick, sometimes extended — do we sit down and write code. 
+1. The whiteboarding is not overhead. 
+1. It is where the real thinking happens, and it is what makes the subsequent code right. 
+1. The principle is simple: whiteboard before keyboard.
+1. 
+1. With AI coding assistants, this principle vanishes entirely. 
+1. The speed is seductive: describe a feature, receive hundreds of lines of implementation in seconds. 
+1. The AI may understand the requirement perfectly well — an email notification service with retry logic, say. 
+1. But understanding what to build and collaborating on how to build it are two different activities, and AI collapses them into one. 
+1. It does not pause to discuss which components to create, whether to use existing infrastructure or introduce new abstractions, what the interfaces should look like. 
+1. It jumps from requirement to implementation, making every technical design decision silently along the way.
+1. 
+1. I have come to think of this as the “Implementation Trap.” 
+1. The AI produces tangible output so quickly that the natural checkpoint between thinking about design and writing code disappears. 
+1. The result is not just misaligned code. 
+1. It is the cognitive burden of untangling design decisions I was never consulted on, bundled inside an implementation I now have to review line by line.
+
+1. The Implementation Trap is not simply that AI skips design. 
+1. In a meaningful sense, the AI does make design decisions when it generates code — about scope, component boundaries, data flow, interfaces, error handling. 
+1. But those decisions arrive silently, embedded in the implementation. 
+1. There is no moment where I can say “wait, we already have a queue system” or “that interface won't work with our existing services.” 
+1. The first time I see the AI's design thinking is when I am reading code, which is the most expensive and cognitively demanding place to discover a disagreement.
+1. 
+1. This, is why reviewing AI-generated code feels so much more exhausting than reviewing a colleague's work. 
+1. When a human pair submits code after a whiteboarding session, I am reviewing implementation against a design I already understand and agreed to. 
+1. When AI generates code from a single prompt, I am simultaneously evaluating 
+   1. scope (did it build what I needed?), 
+   2. architecture (are the component boundaries right?), 
+   3. integration (does it fit our existing infrastructure?), 
+   4. contracts (are the interfaces correct?), and 
+   5. code quality (is the implementation clean?) — all at once, all entangled.
+
+
+
+
+
+
+
+
+
+
+
+## dbt Semantic Layer
+
+
+
 ## [Colrows](https://www.colrows.com/)
 1. Constrain LLMs with governed semantics, examples, and rules to ensure deterministic, explainable answers in production.
 1. Dashboards That Build Themselves
