@@ -5,11 +5,13 @@ categories: [Running Notes]
 ---
 
 
-In cybersecurity, "posture" isn't how you sit—it's how your data is governed and protected. Just like physical posture, a small security "slouch" today can break your system tomorrow.
-AppSec and AI Security
-𝗗𝗶𝘀𝗰𝗼𝘃𝗲𝗿𝘆 (𝗙𝗶𝗻𝗱 𝘁𝗵𝗲 𝗦𝗽𝗶𝗻𝗲): You cannot protect what you don't see. You must map out where your data lives—especially the data feeding your AI models.
-𝗖𝗹𝗮𝘀𝘀𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 (𝗔𝘀𝘀𝗲𝘀𝘀 𝘁𝗵𝗲 𝗦𝘁𝗿𝗲𝘀𝘀): Is this public data, or is it the "backbone" of your company’s intellectual property?
-𝗥𝗲𝗺𝗲𝗱𝗶𝗮𝘁𝗶𝗼𝗻 (𝗥𝗲𝗮𝗹𝗶𝗴𝗻𝗺𝗲𝗻𝘁): This is where tools like n8n, Terraform, and Kubernetes come in to automate security guardrails and ensure your infrastructure stays upright.
+## cybersecurity posture 
+1. In cybersecurity, "posture" isn't how you sit—it's how your data is governed and protected. Just like physical posture, a small security "slouch" today can break your system tomorrow.
+1. AppSec and AI Security
+1. 𝗗𝗶𝘀𝗰𝗼𝘃𝗲𝗿𝘆 (𝗙𝗶𝗻𝗱 𝘁𝗵𝗲 𝗦𝗽𝗶𝗻𝗲): You cannot protect what you don't see. You must map out where your data lives—especially the data feeding your AI models.
+1. 𝗖𝗹𝗮𝘀𝘀𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 (𝗔𝘀𝘀𝗲𝘀𝘀 𝘁𝗵𝗲 𝗦𝘁𝗿𝗲𝘀𝘀): Is this public data, or is it the "backbone" of your company’s intellectual property?
+1. 𝗥𝗲𝗺𝗲𝗱𝗶𝗮𝘁𝗶𝗼𝗻 (𝗥𝗲𝗮𝗹𝗶𝗴𝗻𝗺𝗲𝗻𝘁): This is where tools like n8n, Terraform, and Kubernetes come in to automate security guardrails and ensure your infrastructure stays upright.
+1. 
 
 
 
@@ -23,6 +25,45 @@ AppSec and AI Security
 1. https://www.kapa.ai/
 1. The answers are in your docs. Nobody can find them.
 1. Kapa knows when it doesn't know. That's the difference. We tried other vendors and nothing came close.
+
+
+## OpenClaw (formerly Clawdbot/Moltbot)
+2. https://openclaw.ai/
+3. Clears your inbox, sends emails, manages your calendar, checks you in for flights.
+4. All from WhatsApp, Telegram, or any chat app you already use.
+5. Future of personal AI assistant. 
+6. OpenClaw runs a local gateway that connects messaging apps to a coding agent powered by Claude. 
+7. You send messages through WhatsApp, Telegram, or the terminal, and the agent responds by running commands on your machine: searching files, executing scripts, and reading logs. 
+8. Your text arrives through 
+   1. WhatsApp (Baileys protocol), 
+   2. Telegram (Bot API), 
+   3. Discord, iMessage, or CLI.
+9. [OpenClaw (Clawdbot) Tutorial: Control Your PC from WhatsApp](https://www.datacamp.com/tutorial/moltbot-clawdbot-tutorial)
+
+
+## https://nixos.org/
+
+
+## Semantic first 
+
+## [Colrows](https://www.colrows.com/)
+1. Constrain LLMs with governed semantics, examples, and rules to ensure deterministic, explainable answers in production.
+1. Dashboards That Build Themselves
+2. At the core of Colrows is an open, searchable, and fully autonomous Semantic Layer—
+3. the invisible infrastructure that powers 
+4. AI agents, copilots, and intelligent workflows across the enterprise. 
+5. Continuously learning from data, metadata, and business context, 
+6. it becomes the single source of truth that bridges human intent and enterprise systems. 
+7. This foundation accelerates AI adoption by making organizational knowledge instantly accessible and actionable. 
+8. Built on the same semantic core, Colrows introduces two specialized AI agents—
+   1. the AI Data Analyst, who transforms natural language into insights and visualizations, and 
+   2.  the AI Data Engineer, who automates data transformations and pipeline design. 
+9. Together, they enable enterprises to operate with a self-evolving data intelligence layer that fuels every AI-driven initiative.
+10. [Knowledge Drift and Semantic Decay: The New Technical Debt](https://blog.colrows.com/knowledge-drift-and-semantic-decay-the-new-technical-debt-11b25224d408)
+11. Semantic decay happens when systems continue to store data faithfully but lose track of what that data is supposed to represent and unlike broken pipelines, semantic decay doesn’t announce itself.
+12. [Agents That Maintain Your Data Systems](https://blog.colrows.com/agents-that-maintain-your-data-systems-b649576fb954)
+    
+
 
 
 
