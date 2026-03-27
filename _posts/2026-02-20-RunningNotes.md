@@ -4,200 +4,92 @@ title: Running Notes
 categories: [Running Notes] 
 ---
 
+## Plumery introduces AI Fabric for AI-ready core banking
 
-## cybersecurity posture 
-1. In cybersecurity, "posture" isn't how you sit—it's how your data is governed and protected. Just like physical posture, a small security "slouch" today can break your system tomorrow.
-1. AppSec and AI Security
-1. 𝗗𝗶𝘀𝗰𝗼𝘃𝗲𝗿𝘆 (𝗙𝗶𝗻𝗱 𝘁𝗵𝗲 𝗦𝗽𝗶𝗻𝗲): You cannot protect what you don't see. You must map out where your data lives—especially the data feeding your AI models.
-1. 𝗖𝗹𝗮𝘀𝘀𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 (𝗔𝘀𝘀𝗲𝘀𝘀 𝘁𝗵𝗲 𝗦𝘁𝗿𝗲𝘀𝘀): Is this public data, or is it the "backbone" of your company’s intellectual property?
-1. 𝗥𝗲𝗺𝗲𝗱𝗶𝗮𝘁𝗶𝗼𝗻 (𝗥𝗲𝗮𝗹𝗶𝗴𝗻𝗺𝗲𝗻𝘁): This is where tools like n8n, Terraform, and Kubernetes come in to automate security guardrails and ensure your infrastructure stays upright.
-1. 
+1. https://ibsintelligence.com/ibsi-news/plumery-introduces-ai-fabric-for-ai-ready-core-banking/
+2. 
 
+## GoodData Brings AI-Native Data Intelligence to Financial Services
 
+1. https://www.gooddata.com/press-releases/gooddata-brings-ai-native-data-intelligence-to-financial-services/
+2. 
 
-## n8n - Flexible AI workflow automation for technical teams.
-1. https://docs.n8n.io/try-it-out/tutorial-first-workflow/
-2. Your first workflow
-3. https://docs.n8n.io/try-it-out/tutorial-first-workflow/
-   
+## Building Agentic GraphOS: The 16-Layer Architecture Behind Production-Ready Knowledge Graphs
 
-## kapa.ai 
-1. https://www.kapa.ai/
-1. The answers are in your docs. Nobody can find them.
-1. Kapa knows when it doesn't know. That's the difference. We tried other vendors and nothing came close.
+1. https://medium.com/@aiwithakashgoyal/building-agentic-graphos-the-16-layer-architecture-behind-production-ready-knowledge-graphs-9ca632bc74c5
 
+## Build time-aware knowledge graphs with Temporal Agents 
 
-## OpenClaw (formerly Clawdbot/Moltbot)
-2. https://openclaw.ai/
-3. Clears your inbox, sends emails, manages your calendar, checks you in for flights.
-4. All from WhatsApp, Telegram, or any chat app you already use.
-5. Future of personal AI assistant. 
-6. OpenClaw runs a local gateway that connects messaging apps to a coding agent powered by Claude. 
-7. You send messages through WhatsApp, Telegram, or the terminal, and the agent responds by running commands on your machine: searching files, executing scripts, and reading logs. 
-8. Your text arrives through 
-   1. WhatsApp (Baileys protocol), 
-   2. Telegram (Bot API), 
-   3. Discord, iMessage, or CLI.
-9. [OpenClaw (Clawdbot) Tutorial: Control Your PC from WhatsApp](https://www.datacamp.com/tutorial/moltbot-clawdbot-tutorial)
-
-
-## https://nixos.org/
-
-
-## Semantic first 
-
-1. Semantic Layers: dbt Semantic Layer, AtScale, and Cube.
-1. Graph Databases: Neo4j and Amazon Neptune.
-1. BI Platforms: Power BI, Tableau Semantics, and Looker.
-
-1. [Semantic data](https://www.thoughtworks.com/en-in/insights/decoder/s/semantic-data)
-2. Semantic data is an important step in AI-readiness, 
-   1. but it also bridges the gap between abstract data and day-to-day organizational language.
-3. Semantic data powers knowledge graphs, AI systems and search. It enables smarter, more context-aware applications.
-4. Semantic data is data structured and organized in a way that adds meaning. 
-   1. This enables machines (and, by extension, humans too) to understand context and relationships across a data set.
-
-
-1. **Semantic data can improve data-driven decision making.**
-1. Many businesses struggle with fragmented data spread across different departments and systems (e.g., "customer" in sales might be "client" in logistics and "counterparty" in finance). 
-1. With semantic layers across — a core feature of semantic data — you have an intermediary that can translate disparate definitions into a unified, consistent view.
-
-1. **It can simplify data access for non-technical users.**
-1. Semantic data abstracts the complexity of underlying data structures. This means non-technical users won’t need to write complex SQL queries or understand intricate data schemas — they can access and analyze data using more familiar business terms.
-
-1. **It can improve search (internal and external tools) by better connecting fragmented information.**
-1. Semantic data helps to connect scattered information, such as customer feedback across support tickets, social media and reviews, to form a comprehensive understanding of customer sentiment and identify patterns.
-1. 
-1. **Semantic data can also power AI, and is particularly important in an age of increasing unstructured data and generative AI.**
-1. With additional contextual information, semantic data can support conversational interfaces and applications.
-1. 
-1. **It also has compliance and governance benefits too**
-1. explicitly defining data semantics can help ensure consistency and accuracy as well providing transparency on data lineage and provenance.
-
-1. Financial Information Business Ontology (FIBO) 
-2. Enterprise Data Management (EDM) Council, FIBO
-   
-
-
-## [Design-First Collaboration](https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html)
-
-1. When I pair program with a colleague on something complex, 
-1. we don't start at the keyboard. 
-1. We go to the whiteboard. We sketch components, debate data flow, argue about boundaries. 
-1. We align on what the system needs to do before discussing how to build it. 
-1. Only after this alignment — sometimes quick, sometimes extended — do we sit down and write code. 
-1. The whiteboarding is not overhead. 
-1. It is where the real thinking happens, and it is what makes the subsequent code right. 
-1. The principle is simple: whiteboard before keyboard.
-1. 
-1. With AI coding assistants, this principle vanishes entirely. 
-1. The speed is seductive: describe a feature, receive hundreds of lines of implementation in seconds. 
-1. The AI may understand the requirement perfectly well — an email notification service with retry logic, say. 
-1. But understanding what to build and collaborating on how to build it are two different activities, and AI collapses them into one. 
-1. It does not pause to discuss which components to create, whether to use existing infrastructure or introduce new abstractions, what the interfaces should look like. 
-1. It jumps from requirement to implementation, making every technical design decision silently along the way.
-1. 
-1. I have come to think of this as the “Implementation Trap.” 
-1. The AI produces tangible output so quickly that the natural checkpoint between thinking about design and writing code disappears. 
-1. The result is not just misaligned code. 
-1. It is the cognitive burden of untangling design decisions I was never consulted on, bundled inside an implementation I now have to review line by line.
-
-1. The Implementation Trap is not simply that AI skips design. 
-1. In a meaningful sense, the AI does make design decisions when it generates code — about scope, component boundaries, data flow, interfaces, error handling. 
-1. But those decisions arrive silently, embedded in the implementation. 
-1. There is no moment where I can say “wait, we already have a queue system” or “that interface won't work with our existing services.” 
-1. The first time I see the AI's design thinking is when I am reading code, which is the most expensive and cognitively demanding place to discover a disagreement.
-1. 
-1. This, is why reviewing AI-generated code feels so much more exhausting than reviewing a colleague's work. 
-1. When a human pair submits code after a whiteboarding session, I am reviewing implementation against a design I already understand and agreed to. 
-1. When AI generates code from a single prompt, I am simultaneously evaluating 
-   1. scope (did it build what I needed?), 
-   2. architecture (are the component boundaries right?), 
-   3. integration (does it fit our existing infrastructure?), 
-   4. contracts (are the interfaces correct?), and 
-   5. code quality (is the implementation clean?) — all at once, all entangled.
+1. https://medium.com/@aiwithakashgoyal/temporal-agents-in-graphos-building-time-aware-knowledge-graphs-with-multi-level-ingestion-ee448441929c
+2. 
 
 
 
+## Spec-Driven-Development 
 
-
-
-
-
-
-
-
-## dbt Semantic Layer
-
-
-
-## [Colrows](https://www.colrows.com/)
-1. Constrain LLMs with governed semantics, examples, and rules to ensure deterministic, explainable answers in production.
-1. Dashboards That Build Themselves
-2. At the core of Colrows is an open, searchable, and fully autonomous Semantic Layer—
-3. the invisible infrastructure that powers 
-4. AI agents, copilots, and intelligent workflows across the enterprise. 
-5. Continuously learning from data, metadata, and business context, 
-6. it becomes the single source of truth that bridges human intent and enterprise systems. 
-7. This foundation accelerates AI adoption by making organizational knowledge instantly accessible and actionable. 
-8. Built on the same semantic core, Colrows introduces two specialized AI agents—
-   1. the AI Data Analyst, who transforms natural language into insights and visualizations, and 
-   2.  the AI Data Engineer, who automates data transformations and pipeline design. 
-9. Together, they enable enterprises to operate with a self-evolving data intelligence layer that fuels every AI-driven initiative.
-10. [Knowledge Drift and Semantic Decay: The New Technical Debt](https://blog.colrows.com/knowledge-drift-and-semantic-decay-the-new-technical-debt-11b25224d408)
-11. Semantic decay happens when systems continue to store data faithfully but lose track of what that data is supposed to represent and unlike broken pipelines, semantic decay doesn’t announce itself.
-12. [Agents That Maintain Your Data Systems](https://blog.colrows.com/agents-that-maintain-your-data-systems-b649576fb954)
-    
-
-
-
-
-
-
-## Data 3.0 
-
-1. From Data 2.0: the modern data stack to Data 3.0: the autonomous data stack.
-2. Data 2.0 : dashboards and human analysts 
-3. Data 3.0 : agents, and humans
-4. AI agents, copilots, and applications that must discover, reason about, and act on data autonomously.
-
-
-There are six foundational shifts to Data 3.0:
-
-🔹 Structure : Domain-oriented, semantic-first So agents can build context-aware ground truth.
-
-🔹 Modality : Multi-format, multimodal use. So AI protocols like RAG and MCP and new ones can operate natively.
-
-🔹 Discovery 
-Manual discovery → API-first automatic discoverability 
-So agents can find and use data by intent.
-
-🔹 Orchestration 
-Pipelines → Self-orchestrated sensing systems 
-So data moves faster from signal to action.
-
-🔹 Observability 
-Bolted-on lineage → Built-in lineage 
-So agents can reason about provenance and trust.
-
-🔹 Governance 
-After-the-fact governance → Continuous computational governance 
-So data is instantly safe for agents.
-
-At Nextdata we enable these shifts through autonomous data products, data and its processing that behaves like autonomous applications centered around business domains, business semantic and business context first (not schemas and tables).
-
-Join us for the demonstration of the first shift: the structural shift, from storage-centric and schema-first to domain-centric and semantic-first data processing.
-
-📅 March 24, 2026 | Online
-👉 Reserve your seat: https://luma.com/mxjn7mks
+1. [Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)
+2. 
 
 
 ## Context Engineering
 
-1. [Context Engineering for Coding Agents](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html)
-2. [Harness Engineering](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html)
-3. [Context Engineering for Agents](https://rlancemartin.github.io/2025/06/23/context_engineering/)
-4. 
+1. [Context Engineering: The Next Evolution in Prompt Design](https://medium.com/@tahasamavati/context-engineering-the-next-evolution-in-prompt-design-3bf68d1de841)
+
+A few years ago, many predicted that prompt engineering would quickly become obsolete. 
+Instead, it evolved and grew more essential, giving rise to context engineering 
+Context engineering — a broader, richer discipline that optimizes not just prompts, but the entire context an AI model sees: instructions, inputs, tools, memory, and relevant history. 
+Context engineering is about systematically architecting this environment so models deliver reliable, useful results — on the first try.
+
+Prompt engineering isn’t merely “asking questions.” 
+It’s the practice of carefully designing, structuring, and refining instructions to shape how AI responds. 
+Context engineering expands on this by architecting all relevant context — tool definitions, schemas, temporal grounding, memory, and application state — so the model has exactly what it needs, in the form it needs it.
+
+
+**What Exactly Is Context Engineering?**
+
+1. Context engineering is the iterative process of 
+1. crafting, optimizing, and testing the inputs provided to AI systems, 
+1. ensuring they have precisely the information they need, 
+1. structured in the right way, at the right time, to perform their tasks effectively. 
+
+1. This includes:
+   1. Structuring inputs and outputs (e.g., JSON Schema, Pydantic/dataclasses)
+   2. Managing dynamic elements (user inputs, dates, locales, feature flags)
+   3. Utilizing Retrieval‑Augmented Generation (RAG) and long‑term memory
+   4. Tool integration (function calling) with schema‑validated inputs and constrained outputs
+   5. Handling historical context and application state, plus evaluation signals
+   6. Essentially, you’re not just writing prompts; you’re designing the operating environment your model works in.
+
+
+1. [Context Engineering for Agents Jun 23, 2025](https://rlancemartin.github.io/2025/06/23/context_engineering/)
+3. LLMs are like a new kind of operating system. 
+4. The LLM is like the CPU and its context window is like the RAM, 
+   1. serving as the model’s working memory. 
+5. Just like RAM, the LLM context window has limited capacity to handle various sources of context. 
+6. And just as an operating system curates what fits into a CPU’s RAM, “context engineering” plays a similar role. 
+8. What are the types of context that we need to manage when building LLM applications? 
+9. Context engineering is an umbrella that applies across a few different context types:
+   1. Instructions – prompts, memories, few‑shot examples, tool descriptions, etc
+   2. Knowledge – facts, memories, etc
+   3. Tools – feedback from tool calls
+
+
+
+
+
+
+
+
+
+**Context engineering is curating what the model sees so that you get a better result.**
+
+Context engineering is the systematic, iterative process of designing, managing, and optimizing the information (data, instructions, tools) provided within an LLM's context window to improve task performance. Often considered an evolution of prompt engineering for AI agents, it ensures the model receives precise, relevant data to avoid context rot and enhance reliability. 
+
+1. https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html
+2. Context Engineering for Coding Agents
+3. How about context engineering for chatbots with specialized domains. 
+
+
 
 
 
