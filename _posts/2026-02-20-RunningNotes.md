@@ -4,6 +4,19 @@ title: Running Notes
 categories: [Running Notes] 
 ---
 
+
+
+## Summary of Best Practices AI ready Data Platform for 2025-2026
+
+1. Storage: Adopt Apache Iceberg as the single standard for all tabular data. Insist on open formats to avoid vendor lock-in for AI workloads.
+1. Compute: Implement a multi-engine architecture. Use Spark for ETL, Trino for federated queries, and GPU clusters for training, all reading from the same Iceberg tables.
+2. Semantics: Invest heavily in a semantic layer (dbt + a metric store) before deploying AI agents. If your AI agents don’t have a glossary, they will hallucinate business logic.
+3. Vectors: Do not create a separate "AI database." Use vector search capabilities within your primary data platform or a tool that integrates tightly with your Iceberg catalog to maintain lineage and governance.
+4. Agents: Shift from building dashboards to building APIs. Your data platform’s success in the AI era will be measured by how many production applications (powered by AI agents) are calling its APIs, not by how many Tableau reports are running on it.
+
+In short: the best enterprise data platform for the AI era is no longer a database; it is an operating system for data that manages the lifecycle from raw blob to semantic API, with open formats as its kernel and governance as its security model.
+
+
 ## Plumery introduces AI Fabric for AI-ready core banking
 
 1. https://ibsintelligence.com/ibsi-news/plumery-introduces-ai-fabric-for-ai-ready-core-banking/
