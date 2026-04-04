@@ -4,6 +4,158 @@ title: Running Notes
 categories: [Running Notes] 
 ---
 
+## Multi-Agent Architecture in AI: A Quick Read
+
+In contrast to a single monolithic AI agent, a **multi-agent architecture** consists of multiple autonomous agents that interact, collaborate, or compete(??) to solve complex tasks. 
+Each agent typically has a specialized role, local knowledge, and limited capabilities, yet together they achieve goals beyond any individual’s reach.
+
+### How It Works
+- Agents communicate via message passing, shared memory, or environmental signals.
+- Coordination mechanisms include:
+  - **Centralized** (one controller delegates tasks)
+  - **Decentralized** (agents negotiate or use market-based protocols)
+  - **Hierarchical** (higher-level agents manage lower-level ones)
+
+### Key Benefits
+- **Scalability & Robustness** – Add agents without redesign; failure of one doesn’t collapse the system.
+- **Specialization** – Each agent excels at a narrow task (e.g., perception, planning, execution).
+- **Resilience** – No single point of failure; agents can compensate for others’ errors.
+- **Parallelism** – Agents act simultaneously, speeding up large workflows.
+
+### Real-World Examples
+- **Autonomous vehicles** – Lane-keeping, obstacle avoidance, and navigation agents working together.
+- **Robotic swarms** – Search-and-rescue drones dividing areas and sharing discoveries.
+- **Software development** – One agent writes code, another reviews, a third runs tests.
+- **Trading systems** – Multiple agents tracking different markets and executing strategies.
+
+### Common Challenges
+- **Coordination overhead** – Communication and consensus can become expensive.
+- **Emergent behavior** – Unpredictable outcomes from simple agent rules (may be good or bad).
+- **Security & trust** – Malicious agents can disrupt the system; requires authentication and reputation mechanisms.
+- **Debugging complexity** – Harder to trace failures across interacting agents.
+
+### Popular Frameworks
+- **AutoGen** (Microsoft) – Conversational agents for code, planning, and tool use.
+- **CrewAI** – Role‑based agent collaboration with orchestration.
+- **LangGraph** – Graph‑based multi‑agent workflows.
+- **JADE** – FIPA‑compliant Java framework for classical multi‑agent systems.
+
+### When to Use It
+Multi‑agent architecture shines when tasks are **modular**, require **diverse expertise**, or need **geographic distribution**. For simpler, tightly coupled problems, a single agent may be more efficient.
+
+
+
+## Link
+1. https://www.linkedin.com/feed/update/urn:li:activity:7443846488708759553/?utm_source=share&utm_medium=member_desktop&rcm1. =ACoAAACOR8UB3zqZApJHm3jXnrFZcfmFgwNtOq4
+1. What problems are you not solving today because you think they're unsolvable?
+1. https://www.linkedin.com/posts/suman-biswas-63a3b262_autonomousai-aiagents-openclaw-share-7439355018161545216-8T-n?utm_source=share&utm_medium=member_desktop&rcm=ACoAAACOR8UB3zqZApJHm3jXnrFZcfmFgwNtOq4
+2. 𝐈𝐭'𝐬 𝐧𝐨𝐭 𝐭𝐡𝐞 𝐀𝐠𝐞𝐧𝐭𝐢𝐜 𝐞𝐫𝐚 𝐚𝐧𝐲𝐦𝐨𝐫𝐞. 𝐈𝐭'𝐬 𝐭𝐡𝐞 𝐀𝐮𝐭𝐨𝐧𝐨𝐦𝐨𝐮𝐬 𝐞𝐫𝐚.
+
+## [OpenClaw](https://openclaw.ai/)
+
+
+
+I think each of us is observing a major effort in shifting from #OpenAgents → #Guardrails → #TrustedAgenticAI. 
+
+AI agents that can act across systems is becoming the new normal—but how do we define what “safe” means?
+
+Solutions like NVIDIA NemoClaw introduce sandboxing, policy enforcement, and runtime controls— which I consider a critical step toward securing agent execution.
+
+What are agent guardrails?
+They define what agents can access and execute, enforcing boundaries across data, tools, and environments.
+
+Where is the real challenge?
+Guardrails control how agents act—but not fully why or whether they should:
+• Who defines the right policies?
+• How are they validated as conditions change?
+• Who owns the outcome when agents make decisions?
+
+Why it matters?
+As agents move from automation → autonomy, security alone isn’t enough. The real challenge is governance, accountability, and continuous validation at scale.
+
+The shift is clear: from “controlling agents” → “trusting and governing agent-driven decisions”, but is the governance catching up?
+
+
+optimal architecture is no longer a single platform, 
+but a composable, data-fabric-like layer built on three pillars: Open Formats, Semantic Context, and Agentic Interfaces.
+
+
+1. **Open Table Formats (OTF):**
+2. Apache Iceberg is the undisputed winner here. 
+3. The current thinking is that proprietary storage formats (like those in legacy warehouses) are a liability for AI. 
+4. AI models and engines (Pandas, Spark, Flink, TensorFlow) need direct access to data without vendor-imposed API bottlenecks. 
+5. Iceberg provides the "universal connector."
+
+6. **Separation of Storage & Compute:** 
+7. This is no longer just about cost savings; it’s about elasticity for AI workloads. 
+8. Training a large model requires bursting to thousands of GPUs for a short period. 
+9. The platform must allow compute clusters to spin up, access petabytes of data via Iceberg, and spin down without locking storage.
+
+10. **Unified Batch & Streaming:**
+11. Current thinking holds that if your data platform isn't real-time (via Kafka, Pulsar, or Flink) but treats streaming as a separate silo, it will fail for AI. 
+12. AI agents require "freshness" (context from the last 5 seconds), not just batch historical data.
+
+
+**The Semantic Layer: The "Killer Component" for AI**
+1. The biggest lesson learned from early AI adopters is that feeding raw data to AI models fails. 
+1. Raw data lacks business context. 
+1. The current thinking prioritizes the Semantic Layer as the central architectural component.
+
+In the AI era, the Semantic Layer (implemented via tools like dbt, Cube, or embedded in platforms like Databricks or Snowflake) serves two critical functions:
+
+
+**For Retrieval-Augmented Generation (RAG):** 
+1. You cannot just dump a data lake into a vector database. 
+1. The current best practice is to use the semantic layer to define units of knowledge. 
+1. Instead of retrieving a row of a table, the platform retrieves a "business entity" (e.g., "Customer 404’s lifetime value, including churn risk calculated by our ML model").
+
+**For Text-to-SQL/Agents:**
+1. LLMs are terrible at guessing database schemas. 
+1. The platform must expose a curated, well-documented semantic layer (a "knowledge graph") that tells the AI what columns mean, how tables join, and what the business definitions are.
+
+
+**Governance: The "Agentic" Shift**
+Governance used to be about preventing data breaches (RBAC). 
+In the AI era, governance is about orchestrating machine identity.
+
+Current thinking introduces **Agentic Governance**:
+
+**Data Products:**
+1. The "Data Mesh" concept (domains owning their data) has matured. 
+1. The current best practice is that domains don’t just produce tables; 
+1. they produce data products with SLAs, schemas, and
+1. crucially—pre-approved AI endpoints. 
+1. A marketing domain doesn't just give access to a table; 
+2. they expose a "Marketing Insights API" that the central AI agent can call.
+
+**Vector Database Governance:**
+1. A major headache currently is the proliferation of "shadow vector databases" where engineers embed proprietary data into vectors and lose lineage. 
+1. The current thinking mandates that vector stores (Pinecone, Milvus, or native platform features) must be integrated into the central data platform’s governance framework to prevent "AI data sprawl."
+   
+
+**The Platform Engineering Layer**
+For the last decade, enterprises built "self-service" platforms for data analysts (SQL). 
+For the AI era, the platform must serve three distinct personas equally well, which requires a new level of sophistication:
+
+1. **The Data Engineer**: Needs Git-like workflows, 
+   1. CI/CD for data (Dagster, Airflow, or Prefect), and 
+   2. declarative infrastructure (Infrastructure as Code).
+2. **The Data Scientist/ML Engineer**: 
+   1. Needs native access to GPUs, 
+   2. feature stores (Feast or Tecton) to prevent training/serving skew, and 
+   3. model registries. 
+   4. The feature store must be inside the data platform, not a separate tool, to ensure the features used in training are the same ones served in real-time inference.
+3. **The Application Developer (The New King)**: In the AI era, data platforms are no longer just for BI dashboards. 
+   1. They are backend infrastructure for production applications. 
+   2. Therefore, the platform must expose APIs first. 
+   3. The current best practice is to treat the data platform as a "backend for AI agents," 
+   4. providing low-latency APIs (gRPC or REST) for vector search, real-time features, and semantic lookup.
+
+**The "Unstructured" Mandate**
+1. Traditional platforms focused on structured (rows/columns) and semi-structured (JSON) data. 
+1. AI is fueled by unstructured data (PDFs, videos, audio, code).
+1. Unify Structured and Unstructured: It cannot be a data warehouse and a separate document store. The best modern platforms (Databricks, Snowflake, Google BigQuery) now treat unstructured data as a first-class citizen, allowing you to store blobs and run inference (via built-in AI functions) directly on them without moving the data.
+1. Built-in Embedding Generation: The platform must handle the vectorization pipeline. The current preference is for platforms that can take a PDF, chunk it, call an embedding model (hosted or local), and store the vector inside the governed platform rather than exporting data to an external vector database.
 
 
 ## Summary of Best Practices AI ready Data Platform for 2025-2026
@@ -15,6 +167,24 @@ categories: [Running Notes]
 4. Agents: Shift from building dashboards to building APIs. Your data platform’s success in the AI era will be measured by how many production applications (powered by AI agents) are calling its APIs, not by how many Tableau reports are running on it.
 
 In short: the best enterprise data platform for the AI era is no longer a database; it is an operating system for data that manages the lifecycle from raw blob to semantic API, with open formats as its kernel and governance as its security model.
+
+**The Vendor Landscape (The "Bifurcation")**
+
+1. **The Open Ecosystem (Databricks)**: The prevailing wisdom for mature tech companies or those with strong engineering teams is to build on Databricks using Apache Iceberg (via their acquisition of Tabular) and Unity Catalog. 
+1. The logic is control, open formats, and best-in-class MLflow for the AI lifecycle.
+
+**The Managed Polaris (Snowflake):** For enterprises with less engineering bandwidth or those heavily invested in SQL, 
+1. Snowflake is the current choice. 
+1. Their strategy revolves around Snowpark (for Python/ML) and Cortex (AI functions). 
+1. The current critique is that while Snowflake is easier to manage, the "openness" of Iceberg interoperability is still evolving compared to the Databricks stack.
+
+
+**Why This Architecture Works for Financial Institutions**
+1. No vendor lock‑in – Iceberg + Polaris means you can switch from Snowflake to Databricks to Trino without rewriting pipelines. Regulators require long‑term data retention; open formats guarantee you are not trapped.
+1. AI‑native from the start – The vector store, feature store, and LLM serving all read the same Iceberg tables. No exporting data to “AI silos.”
+1. Strong governance – The unified catalog enforces policies across all engines, including GPU clusters. Auditors see a single source of truth for both data and AI artifacts.
+1. Legacy integration – CDC captures mainframe changes into Iceberg without stopping core banking systems.
+1. Real‑time + batch unified – Flink writes streaming results to Iceberg tables, which are immediately available for Spark or Trino. No lambda architecture duplication.
 
 
 ## Plumery introduces AI Fabric for AI-ready core banking
