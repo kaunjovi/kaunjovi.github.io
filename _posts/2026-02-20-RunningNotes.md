@@ -4,6 +4,102 @@ title: Running Notes
 categories: [Running Notes] 
 ---
 
+
+1. Teams, Slack, Zendesk - Meet users team where they work
+1. Agent Orchestration Platform - why do we need it? How does this work with A2A?  
+2. Building the foundations for agentic AI at scale
+   1. https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/building-the-foundations-for-agentic-ai-at-scale
+
+## Semantic Layer, Ontologies, Knowledge Graph, Data Product
+
+1. https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/building-the-foundations-for-agentic-ai-at-scale
+2. The semantic layer turns data into knowledge. 
+3. It sits between raw data and AI applications and 
+4. codifies the business meaning of data into a machine-readable form that humans can understand. 
+5. Rather than treating data as disconnected tables or files, the semantic layer defines 
+6. what things are, how they relate, and what rules govern them.
+7. In practice, this layer is most often implemented through ontologies and knowledge graphs. 
+8. Ontologies define how the attributes and relationships between data add up to business reality. 
+9. Knowledge graphs operationalize this vocabulary by linking real-world data across systems into a connected network of entities. 
+10. Without this shared semantic foundation, agents may act on incomplete or conflicting interpretations of the same data, increasing error rates and operational risk as scale grows.
+11. Data products turn curated data into reusable, business-ready assets. 
+12. They package data with **clear ownership**, **quality standards**, **semantics**, and **interfaces for consumption**. 
+13. Through a product mindset, ( what is this ? )
+14. companies treat data as a performance asset that can be reused across multiple use cases and domains. 
+15. Reusable data products allow agents to draw on trustworthy predictive and generative insights at scale, 
+   1. while observability records how agents use data, 
+   2. creating the traceability needed for oversight and enabling feedback loops that improve upstream data and models.
+
+## How to use Claude Code ? What can be done for Kiro ?  
+
+1. Claude Code is an **Agent Orchestration Platform** in Disguise
+1. After diving into the architecture, it’s clear: 
+    1. this isn’t just an interface; 
+    1. it’s developer infrastructure. 
+    1. If you want to move from "chatting" to "automating," you need to understand the underlying engine.
+
+1. **CLAUDE.md is your "System Prompt" on steroids**
+    1. It’s loaded on every single turn, not just at session start. 
+    1. With a 40K character budget, you should be using it for more than just style guides.
+    1. The Hierarchy: Global → Project → Modular Rules → Local Notes.
+    1. The Play: Use it to enforce architectural "never-do-this" rules and file conventions.
+
+2. Parallel Agents are (virtually) free
+    1. Because forked sub-agents share a **prompt cache via byte-identical context**, 
+    1. running 5 agents costs roughly the same as 1. 
+    1. The system is purpose-built for parallel workflows (fork/teammate/worktree).
+
+3. Stop clicking "Allow"
+    1. Stop the friction. There is a five-level permission cascade (policy > flag > local > project > user).
+    1. Pro Tip: Configure your settings.json once. The system even uses an LLM classifier to decide if an action is safe in "Auto" mode.
+    1. 
+
+4. Master the 5 Compaction Strategies
+1. Context pressure is the silent productivity killer. Claude Code uses five tiers of thinning: 
+    1. Microcompact, 
+    1. context collapse, 
+    1. session memory, 
+    1. full compact, and 
+    1. PTL truncation.
+1. The Play: Use /compact proactively as a "save point" before starting a new sub-task.
+
+5. **Hooks**: The "Hidden" Extension API
+   1. There are 25+ lifecycle events (PreToolUse, SessionStart, etc.).
+   2. Automation: Use hooks to auto-inject test outputs, git diffs, or fresh documentation into every prompt without typing a word.
+
+
+6. Sessions are Persistent JSONL
+   1. Never start a "clean" session unless you have to. Use --continue.
+   2. The session memory extracts task specs, errors, and learnings over time. 
+   3. Starting fresh is like closing your IDE every hour you're throwing away your mental model.
+
+
+7. Smart Tool Batching
+The engine handles concurrent reads (parallel) vs. serial mutations (conflict-safe) automatically. Plus, MCP servers are loaded deferred—they cost zero tokens until the moment they are invoked.
+
+8. Interruption is Free
+Thanks to async generators, there is zero penalty for redirecting the model mid-stream. If you see it hallucinating, kill it immediately and pivot.
+
+9. Built for Unsupervised Execution
+With 10-tier exponential backoff, OAuth auto-refresh, and a 90s watchdog timer, this is designed to run in the background while you grab coffee.
+
+The Takeaway: The 10x developers aren't better "prompters" they are better configurators. 
+Claude Code is infrastructure, not just an interface. Stop chatting with it and start orchestrating it.
+
+
+## Onyx - AI chat 
+1. https://onyx.app/integrations
+1. Summarize a thread at Teams. 
+1. 
+1. Claude only runs Claude models.
+1. Onyx works with any LLM (Claude, GPT, Gemini, local models).
+2. But does it have Cowork, Skills, Projects etc?
+3. 
+4. https://deepresearch-bench.github.io/
+5. DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+6. https://huggingface.co/spaces/muset-ai/DeepResearch-Bench-Leaderboard
+
+
 ## Multi-Agent Architecture in AI: A Quick Read
 
 In contrast to a single monolithic AI agent, a **multi-agent architecture** consists of multiple autonomous agents that interact, collaborate, or compete(??) to solve complex tasks. 
@@ -35,13 +131,16 @@ Each agent typically has a specialized role, local knowledge, and limited capabi
 - **Debugging complexity** – Harder to trace failures across interacting agents.
 
 ### Popular Frameworks
+- **LangGraph** – Graph‑based multi‑agent workflows.
 - **AutoGen** (Microsoft) – Conversational agents for code, planning, and tool use.
 - **CrewAI** – Role‑based agent collaboration with orchestration.
-- **LangGraph** – Graph‑based multi‑agent workflows.
 - **JADE** – FIPA‑compliant Java framework for classical multi‑agent systems.
 
 ### When to Use It
-Multi‑agent architecture shines when tasks are **modular**, require **diverse expertise**, or need **geographic distribution**. For simpler, tightly coupled problems, a single agent may be more efficient.
+Multi‑agent architecture shines when tasks are **modular**, require **diverse expertise**, or need **geographic distribution**. 
+
+### When NOT to Use It
+For simpler, tightly coupled problems, a single agent may be more efficient.
 
 
 
