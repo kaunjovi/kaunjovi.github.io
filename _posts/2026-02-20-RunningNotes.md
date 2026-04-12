@@ -4,11 +4,122 @@ title: Running Notes
 categories: [Running Notes] 
 ---
 
+## [Read Medium](https://medium.com/)
+1. [Stop building dashboards](https://medium.com/dashboards-suck/stop-building-dashboards-what-high-impact-data-teams-do-instead-c36290240461)
+2. [The Expert Way to Decide the Data Model for Any Data Engineering Problem](https://medium.com/@anchitgupt/the-expert-way-to-decide-the-data-model-for-any-data-engineering-problem-5ff383ba8bca)
+3. [Why Parquet Is Not Enough Anymore](https://medium.com/@elalaouisara/why-parquet-is-not-enough-anymore-11ac121aa166)
+4. [SQL Is Quietly Taking Over Data Engineering—Again](https://medium.com/towards-data-engineering/sql-is-quietly-taking-over-data-engineering-again-1dec44ca2c7d)
+5. [Failed Uber’s System Design](https://medium.com/@emilyhustlenyc/i-failed-ubers-system-design-interview-last-month-here-s-every-question-they-asked-bdaf1bd6e64b)
+6. [Anthropic Says Engineers Won’t Exist in a Year. It’s Also Paying Them $570K Today.](https://medium.com/@kanishks772/anthropic-says-engineers-wont-exist-in-a-year-it-s-also-paying-them-570k-today-5ee2a673f1ef)
+7. [AI Is Reshaping Data Engineering in 2026](https://medium.com/expocomputing/how-ai-is-reshaping-data-engineering-in-2026-12291d2d1b76)
+8. [7 Data & AI Predictions for 2026](https://medium.com/@salmabakouk/7-data-ai-predictions-for-2026-00d4211c62d8)
+9. [Agile Is Dead. AI Killed It.](https://medium.com/@brian_carpizo/agile-is-dead-ai-killed-it-welcome-back-waterfall-e41bfabdd408)
+
+
 
 1. Teams, Slack, Zendesk - Meet users team where they work
 1. Agent Orchestration Platform - why do we need it? How does this work with A2A?  
 2. Building the foundations for agentic AI at scale
    1. https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/building-the-foundations-for-agentic-ai-at-scale
+
+## Publish queue 
+
+1. https://levelup.gitconnected.com/claude-code-just-released-a-feature-that-genuinely-scares-me-and-i-use-ai-every-day-4f23cd3051c0
+1. Agentic addiction is a thing now. Too early 
+
+
+
+## Columnar Formats (Parquet & Arrow)
+Parquet for “Cold” disk storage
+Apache Arrow for “Hot” in-memory processing
+https://medium.com/@Rohan_Dutt/10-system-design-topics-every-data-engineer-is-expected-to-know-in-2026-interviews-d74dc4e3b1bb
+
+Vectorized Execution: Modern CPUs can process an entire “vector” of values (e.g., 1024 integers) in a single instruction (SIMD). 
+
+## Message Queues (Kafka vs. RabbitMQ vs. SQS Serverless Queue )
+
+1. the choice usually sits between the Smart Pipe (RabbitMQ or SQS) and the Dumb Pipe, Smart Consumer (Kafka).
+2. In Kafka, you can “rewind” your consumer to last Tuesday to re-calculate a metric. You cannot do this in RabbitMQ or SQS.
+3. RabbitMQ excels when you need complex logic (e.g., “Send messages with header X to Queue Y”). Kafka expects the consumer to do the filtering.
+
+## Consensus (Raft vs. Paxos)
+
+1. Paxos was the original mathematical proof, 
+2. Raft is the 2026 industry standard because it is easier to understand and implement.
+   1. Embedded Consensus: Databases like CockroachDB and TiDB build Raft into their storage layer. 
+3. In giant systems, the biggest risk is the **Split-Brain scenario** where two nodes both think they are the leader and make conflicting changes. 
+4. Consensus algorithms prevent this by requiring a Quorum (a majority) for every decision. 
+5. This is how Kubernetes maintains cluster state and how Amazon Aurora handles fast failovers.
+6. The industry has moved away from using external consensus tools like Zookeeper.
+7. KRaft (Kafka Raft): Kafka 3.x+ removed Zookeeper. It moved consensus logic inside the Kafka brokers. 
+8. Embedded Consensus: Databases like CockroachDB and TiDB build Raft into their storage layer. 
+9. Byzantine Fault Tolerance (BFT): Standard Raft assumes nodes are honest but might fail. 2026 interviews for high security or Web3 platforms often ask about BFT. This is a tougher type of consensus that handles nodes that are actively malicious or lying.
+
+1. https://medium.com/@Rohan_Dutt/10-system-design-topics-every-data-engineer-is-expected-to-know-in-2026-interviews-d74dc4e3b1bb
+
+
+## Idempotency & Exactly-Once Processing
+
+1. https://medium.com/@Rohan_Dutt/10-system-design-topics-every-data-engineer-is-expected-to-know-in-2026-interviews-d74dc4e3b1bb
+2. Idempotency ensures that performing an operation multiple times has the same effect as performing it once.
+3. As we move toward event-driven architectures in 2026, the ability to handle retries gracefully via **Exactly-Once Semantics (EoS)** is what separates a junior script-writer from a senior systems architect.
+4. This example demonstrates an idempotent “Sink” that uses a Hash-based Deduplication Store (simulated here with a set)
+
+1. Upsert Logic: Using INSERT ... ON CONFLICT (SQL) or merge() (Delta Lake/Hudi) to ensure that late-arriving duplicates simply update existing records rather than creating new ones.
+2. Stateful Processing: How **Apache Flink uses “Checkpoints”** to roll back the entire system state to a consistent point in time if a failure occurs.
+
+
+## Data Contracts & Schema Evolution
+
+1. https://medium.com/@Rohan_Dutt/10-system-design-topics-every-data-engineer-is-expected-to-know-in-2026-interviews-d74dc4e3b1bb
+
+1. In 2026, “Data Contracts” have replaced manual QA and “broken pipeline” Slack alerts. 
+2. A Data Contract is a formal agreement between a data provider and a consumer that defines the structure, quality, and semantics of the data being exchanged.
+3. The biggest bottleneck in modern data platforms is “upstream drift” — when a backend engineer changes a database schema and unintentionally breaks a downstream dashboard. 
+4. Data Contracts turn this “silent failure” into a “build failure,” preventing bad data from ever entering the warehouse.
+   
+5. **Pydantic-Based Contract Enforcement**
+6. **Schema Registries**: Using **Confluent Schema Registry** or **AWS Glue** to enforce Avro/Protobuf schemas at the message-bus level.
+7. **Contract-as-Code**: Storing contracts in **YAML or JSON within a Git repo** that both producers and consumers reference.
+8. **Governance via CI/CD**: Running “Contract Compatibility” checks during a Pull Request to prevent merging breaking changes.
+
+1. Observability-Driven Failover: Using Prometheus or OpenTelemetry signals to automatically trigger traffic redirection via Service Mesh (like Istio)
+   
+
+## Qwen 
+
+1. https://medium.com/@stawils/qwen-just-quietly-became-the-most-dangerous-open-source-ai-model-b5bcf7b2743c
+   
+
+## SDLC pipeline 
+
+1. https://medium.com/@brettluelling/sdlc-for-agentic-ai-engineering-5813abfdbc12
+
+
+## If You Understand These 5 AI Terms, You’re Ahead of 90% of People
+
+1. https://pub.towardsai.net/if-you-understand-these-5-ai-terms-youre-ahead-of-90-of-people-c7622d353319
+   
+
+## Semantic Layer in an Open-Source Architecture
+
+1. https://medium.com/@grom_65116/semantic-layer-in-an-open-source-architecture-98fbbb0d0df3
+
+
+## AI-ready data will be the biggest topic of 2026
+
+1. https://barrmoses.medium.com/10-data-ai-predictions-for-2026-adf2750cccba
+2. [I Spent 20 Years Building Data Warehouses. Here’s Why GenAI Just Changed Our Playbook.](https://medium.com/towards-data-engineering/i-spent-20-years-building-data-warehouses-heres-why-genai-just-changed-our-playbook-01fc14431881)
+
+
+
+
+## Claude Code Channels
+
+1. https://levelup.gitconnected.com/claude-code-just-released-a-feature-that-genuinely-scares-me-and-i-use-ai-every-day-4f23cd3051c0
+2. Agentic addiction is a thing now. Too early 
+
+
 
 ## Semantic Layer, Ontologies, Knowledge Graph, Data Product
 
