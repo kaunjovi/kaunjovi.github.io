@@ -4,6 +4,31 @@ title: Running Notes
 categories: [Running Notes] 
 ---
 
+
+
+## 4/13 
+
+1. [Data Architecture Patterns for Enterprise-Scale AI Adoption](https://medium.com/@uchit86/data-architecture-patterns-for-enterprise-scale-ai-adoption-69547f51f520)
+2. [Deep Agents, code and check](https://pub.towardsai.net/langchain-just-released-deep-agents-and-it-changes-how-you-build-ai-systems-cc2371b04714)
+3. [Claude / ClaudeCode / Skills](https://medium.com/@tort_mario/skills-for-claude-code-the-ultimate-guide-from-an-anthropic-engineer-bcd66faaa2d6)
+4. [Claude / Claude managed agents][https://reliable-data-engineering.netlify.app/posts/article_claude_managed_agents/]
+5. [AI PM](https://medium.com/agileinsider/ai-pms-at-netflix-dont-write-prds-here-s-what-they-actually-do-536e4e1f2ef0)
+6. [Sam Altman / OpenAI](https://medium.com/predict/you-have-no-idea-how-screwed-sam-altman-really-is-7a66baaa5a5d)
+7. [Read more : Causal Inference Methods](https://medium.com/@uvstharun183/%C3%A9-causal-inference-methods-every-data-scientist-should-know-72ea6d84ecc1)
+8. [Anthropic / Mythos drama](https://dinmaybrahma.medium.com/opus-has-been-dethroned-meet-the-ai-that-even-anthropic-is-afraid-to-release-76803c6893f4)
+9. [CDAIO / How to pick your data team](https://medium.com/@reliabledataengineering/building-a-data-team-from-0-to-10-what-wed-do-differently-2267292821e3)
+10. [DataGeek / Research papers - data - 2026](https://medium.com/data-science-collective/6-research-papers-every-data-scientist-should-read-in-2026-eeb660fd2db1)
+11. [DataWorkers / SQL Monkey to AI Architect](https://medium.com/predict/how-ai-is-reshaping-the-data-engineering-role-6081da17a28e)
+12. [AIAgent / How to test - Google ADK](https://pub.towardsai.net/how-to-test-your-ai-agent-with-google-adk-so-it-doesnt-embarrass-you-in-production-096f5f6bb290)
+13. [Enterprise + AI Data Platform](https://medium.com/@community_md101/ai-data-platform-for-enterprise-how-businesses-benefit-from-enterprise-ai-322a7c124dd2)
+14. [AiDeveloper / 4 Observability Layers](https://pub.towardsai.net/4-observability-layers-every-developer-needs-for-production-ai-agents-a-complete-guide-24db9cbcb83c)
+15. [AI Code Assistants for Data Engineering](https://medium.com/@reliabledataengineering/ai-code-assistants-for-data-engineering-i-tested-6-tools-for-sql-and-python-e20183f3154e)
+16. [Can something be done with our code ? 10 GenAI Use Cases in ETL You Can Implement Today](https://medium.com/@Rohan_Dutt/10-genai-use-cases-in-etl-you-can-implement-today-0a5ba84dfc75)
+17. [AI-powered-Enterprise-Data / Semantic layer - Data Ontology](https://pub.towardsai.net/ontology-the-hidden-layer-that-makes-ai-actually-work-875c3079fd55)
+18. [AI-powered-Enterprise-Data / Context Engineering](https://medium.com/@reliabledataengineering/context-engineering-is-now-the-most-critical-data-engineering-skill-and-90-of-engineers-dont-166ac340beef)
+    
+
+
 ## [Read Medium](https://medium.com/)
 1. [Stop building dashboards](https://medium.com/dashboards-suck/stop-building-dashboards-what-high-impact-data-teams-do-instead-c36290240461)
 2. [The Expert Way to Decide the Data Model for Any Data Engineering Problem](https://medium.com/@anchitgupt/the-expert-way-to-decide-the-data-model-for-any-data-engineering-problem-5ff383ba8bca)
@@ -16,10 +41,43 @@ categories: [Running Notes]
 9. [Agile Is Dead. AI Killed It.](https://medium.com/@brian_carpizo/agile-is-dead-ai-killed-it-welcome-back-waterfall-e41bfabdd408)
 
 
+## [Vanderbilt University]()
+1. [AI Agents and Agentic AI Architecture in Python](https://www.coursera.org/learn/ai-agents-architecture-python#outcomes)
+2. https://www.coursera.org/learn/ai-agents-architecture-python#outcomes
 
-1. Teams, Slack, Zendesk - Meet users team where they work
-1. Agent Orchestration Platform - why do we need it? How does this work with A2A?  
-2. Building the foundations for agentic AI at scale
+
+## [Ontology, Taxonomy, Data Model, Context Graph & Friends](https://medium.com/response42/ontology-taxonomy-data-model-context-graph-friends-56a605e14355)
+
+1. We need an ontology-driven semantic layer feeding a context graph for the agent.
+2. ontology is the meaning system: concepts + relationships + constraints
+
+```
+Customer: "A person or organization that can place orders"
+Order: "A commercial transaction created by one Customer"
+Product: "An item or service that can be purchased"
+
+Rules:
+ - "Order has exactly one Customer"
+ - "Order contains at least one Product"
+ - "ActiveCustomer = Customer with Order in last 90 days"
+```
+
+Ontology answers questions such as:
+What counts as a Customer?
+Can an Order exist alone? (No.)
+What makes someone an Active Customer?
+Use it for:
+
+defining what things mean in your domain (Customer vs Prospect vs Active Customer)
+documenting business rules
+machine reasoning
+
+
+
+
+3. Teams, Slack, Zendesk - Meet users team where they work
+4. Agent Orchestration Platform - why do we need it? How does this work with A2A?  
+5. Building the foundations for agentic AI at scale
    1. https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/building-the-foundations-for-agentic-ai-at-scale
 
 ## Publish queue 
