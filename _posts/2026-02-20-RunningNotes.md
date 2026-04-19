@@ -1,10 +1,15 @@
----
-layout: post
-title: Running Notes 
-categories: [Running Notes] 
----
 
 
+
+
+## 4/18 Saturday 
+1. **data load tool (dlt): load data anywhere**
+   1. https://dlthub.com/product/dlt
+   2. https://www.datacamp.com/tutorial/python-dlt
+
+1. **Cobrix**
+   1. https://github.com/AbsaOSS/cobrix
+   2. 
 
 ## 4/13 
 
