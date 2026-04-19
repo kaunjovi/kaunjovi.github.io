@@ -23,8 +23,8 @@ categories: [MCP Toolbox for Databases]
    3. built in OpenTelemetry(??) support. 
    4. Tools(??) are in a centralized location ( lookup ) allowing to be reused. 
    
-8. MCP clients - IDE, ADK (??)
-9. Talks to MCP toolbox ( server for the defined db capabilities )
+8. MCP clients - IDE, **ADK (Agent Developement Kit)** (??)
+9. Talks to MCP toolbox ( server for the defined db ca  pabilities )
 10. Talks to different databases. 
 
 11. Example query **Forecast liquor sales**
