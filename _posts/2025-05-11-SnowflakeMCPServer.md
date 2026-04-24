@@ -19,6 +19,18 @@ categories: [Snowflake-Managed MCP Server, Composio, LlamaIndex]
 4. Managed Infrastructure: Hosted within Snowflake
 
 
+## MCP url
+ 
+1. https://<account_URl>/api/v2/databases/{database}/schemas/{schema}/mcp-servers/{name}
+
+
+## Composio - https://composio.dev/toolkits/snowflake
+1. Snowflake Integration for AI Agents
+2. [Quickstart with Composio](https://docs.composio.dev/docs/quickstart)
+
+## LlamaIndex is an AgentSDK like Claude Agents SDK
+
+
 ```
 CREATE [ OR REPLACE ] MCP SERVER [ IF NOT EXISTS ] <server_name>
   FROM SPECIFICATION $$
@@ -61,16 +73,4 @@ DESCRIBE MCP SERVER <server_name>;
 DROP MCP SERVER <server_name>;
 ```
 
-## MCP url
- 
-1. https://<account_URl>/api/v2/databases/{database}/schemas/{schema}/mcp-servers/{name}
-
-
-
-
-## Composio - https://composio.dev/toolkits/snowflake
-1. Snowflake Integration for AI Agents
-2. [Quickstart with Composio](https://docs.composio.dev/docs/quickstart)
-
-## LlamaIndex is an AgentSDK like Claude Agents SDK
 

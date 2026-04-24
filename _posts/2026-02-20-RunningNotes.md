@@ -2,6 +2,61 @@
 
 
 
+## 4/24 
+
+𝗗𝗮𝘆 𝟭 𝗼𝗳 𝟯: 𝗛𝗼𝘄 𝗟𝗟𝗠𝘀 𝘀𝗵𝗼𝘂𝗹𝗱 𝗺𝗮𝗻𝗮𝗴𝗲 𝗸𝗻𝗼𝘄𝗹𝗲𝗱𝗴𝗲
+
+**Old way** : chunk documents, embed them, search at query time, hope the right fragments surface.
+
+**𝗔𝗻𝗱𝗿𝗲𝗷 𝗞𝗮𝗿𝗽𝗮𝘁𝗵𝘆** - link ?? 
+𝗛𝗲𝗿𝗲'𝘀 𝘁𝗵𝗲 𝗰𝗼𝗿𝗲 𝗶𝗱𝗲𝗮: 𝘀𝘁𝗼𝗽 𝘁𝗿𝗲𝗮𝘁𝗶𝗻𝗴 𝘁𝗵𝗲 𝗟𝗟𝗠 𝗮𝘀 𝗮 𝘀𝗲𝗮𝗿𝗰𝗵 𝗲𝗻𝗴𝗶𝗻𝗲. 𝗧𝗿𝗲𝗮𝘁 𝗶𝘁 𝗮𝘀 𝗮 𝗰𝗼𝗺𝗽𝗶𝗹𝗲𝗿.
+
+## Operation 1 : Ingest
+
+𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗮 𝗻𝗲𝘄 𝘀𝗼𝘂𝗿𝗰𝗲 𝗱𝗼𝗰𝘂𝗺𝗲𝗻𝘁 𝗶𝗻𝘁𝗼 𝘁𝗵𝗲 𝘄𝗶𝗸𝗶. 𝟵 𝘀𝘁𝗲𝗽𝘀
+
+1. Read the full source document
+2. Read schema (extraction rules for the source type)
+3. Read index.md to identify existing pages and prevent duplicates
+4. Create source-{title}.md with key content from this document
+5. Create or update entity pages (people, companies, tools)
+6. Create or update concept pages (technical ideas, methods)
+7. Update topic pages with new synthesis reflecting the source
+8. Add [[wikilinks]] between all touched pages
+9. Update index.md and append to log.md
+
+B. Query
+
+𝗔𝗻𝘀𝘄𝗲𝗿𝗶𝗻𝗴 𝗮 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻 𝗳𝗿𝗼𝗺 𝗰𝗼𝗺𝗽𝗶𝗹𝗲𝗱 𝘄𝗶𝗸𝗶. 𝟱 𝘀𝘁𝗲𝗽𝘀:
+
+ 1. Read index.md to identify relevant pages
+ 2. Pull 3-8 pre-synthesized wiki pages
+ 3. Follow cross-references (like Wikipedia browsing)
+ 4. Compose answer with citations to wiki pages (which cite original sources)
+ 5. (Optional) Save the answer as a new wiki page (query --save pattern)
+
+ C. Lint
+
+ 𝗣𝗲𝗿𝗶𝗼𝗱𝗶𝗰 𝗵𝗲𝗮𝗹𝘁𝗵 𝗰𝗵𝗲𝗰𝗸. 𝟰 𝗰𝗵𝗲𝗰𝗸𝘀:
+
+ - Contradiction scan: flag pages with conflicting claims
+ - Orphan detection: find pages with no incoming links
+ - Staleness check: flag pages not updated despite newer relevant sources
+ - Gap analysis: identify referenced topics that lack their own page
+
+ --------------------------------------------------
+
+The key architectural point: Ingest is write-heavy (single-writer model), Query is read-only (concurrent-safe), Lint is a maintenance sweep. Each ingestion is committed as a git snapshot, giving full rollback capability.
+
+(𝗗𝗮𝘆 𝟮): 𝗧𝗵𝗲 𝗮𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁'𝘀 𝘃𝗶𝗲𝘄 — 𝗰𝗼𝗻𝗰𝘂𝗿𝗿𝗲𝗻𝗰𝘆 𝗺𝗼𝗱𝗲𝗹, 𝘀𝗰𝗮𝗹𝗲 𝗯𝗼𝘂𝗻𝗱𝗮𝗿𝗶𝗲𝘀, 𝗮𝗻𝗱 𝘄𝗵𝗲𝗻 𝘁𝗼 𝘂𝘀𝗲 𝗪𝗶𝗸𝗶 𝘃𝘀 𝗥𝗔𝗚 𝘃𝘀 𝗛𝘆𝗯𝗿𝗶𝗱.
+
+What's your current approach when your documents exceed the context window?
+#LLMWiki #RAG #KnowledgeManagement #AI
+
+
+
+
+
 ## 4/18 Saturday 
 1. **data load tool (dlt): load data anywhere**
    1. https://dlthub.com/product/dlt
