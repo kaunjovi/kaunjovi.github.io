@@ -1,6 +1,8 @@
 
 ## 5/1 
 
+1. [TODO] Must have a lint to go through all the notes. Things should belong to their own pages. Other pages must refer to that page rather than repeating the information. 
+
 ## [MemPalace](https://github.com/MemPalace/mempalace) 
 1. MCP server for **semantic search** and **knowledge graph**
 2. MemPalace stores your conversation history as verbatim text and retrieves it with semantic search. 
@@ -14,7 +16,57 @@
 7.  alternative backends can be dropped in without touching the rest of the system.
 8.  Nothing leaves your machine unless you opt in.
 
-## 
+## [ChromaDB](??)
+
+1. **Reference** 
+2. [Chroma DB Tutorial: A Step-By-Step Guide](https://www.datacamp.com/tutorial/chromadb-tutorial-step-by-step-guide)
+3. [Course - Vector Databases: An Introduction with Chroma DB](https://www.coursera.org/learn/vector-databases-introduction-with-chromadb)
+
+4. **What is ChromaDB?**
+5. ChromaDB is an open-source, AI-native **vector database** 
+6. designed to make building large language model (LLM) applications easier 
+7. by providing a **pluggable knowledge base**. 
+8. It specializes in storing and searching **vector embeddings**, 
+   1. which are numerical representations of unstructured data 
+   2. like text, images, or audio.
+
+9. **What is a vector database?**
+10. Vector Embeddings represent data (usually unstructured data like text) in numerical vector formats within a high-dimensional space. 
+11. Traditional databases like SQL are not optimized for storing and querying large vector data.
+12. Vector stores are databases explicitly designed for efficiently storing and retrieving vector embeddings. 
+13. Vector stores can index and quickly search for similar vectors using similarity algorithms, 
+14. which allows applications to find related vectors given a target vector query. **Semantic Search**
+15. For example, in the case of a personalized chatbot, the user inputs a prompt for the generative AI model. 
+16. Using a similarity search algorithm, the model searches for similar text within a collection of documents. The resulting information is then used to generate a highly personalized and accurate response. This retrieval of information is made possible through embedding and vector indexing within vector stores.
+
+
+5. Developer Friendly : Install and get started quickly
+6. Flexibile: 
+   1. It can run **in-memory** for rapid prototyping, as a persistent local database, or 
+   2. in a **client-server** mode for production.
+7. Works well with others
+   1. Supports official SDKs for **Python** and JavaScript/TypeScript, and 
+   2. integrates with popular AI frameworks like **LangChain** and **LlamaIndex**.
+8.  Ready to go 
+   1. By default, it can handle tokenization and embedding generation using models like all-MiniLM-L6-v2, 
+   2. though you can swap these for models from OpenAI, Google, or Hugging Face.
+
+## How it works
+1. Collection Creation: Data is organized into "collections" (similar to tables in SQL).
+1. Embedding: Raw data (text, images) is converted into high-dimensional vectors.
+1. Storage: These vectors are stored alongside metadata and original documents, often using SQLite for management and HNSW(??) for indexing.
+1. Querying: When you search, Chroma converts your query into a vector and finds the "closest" matches based on semantic similarity.
+
+## Use Cases
+1. Retrieval-Augmented Generation (RAG): Providing external, private data to LLMs to prevent hallucinations.
+1. Semantic Search: Finding information based on meaning rather than just keywords.
+1. Recommendation Systems: Identifying similar products or content based on user preferences.
+1. Anomaly Detection: Spotting suspicious patterns in financial or healthcare data.
+
+## We need 
+1. Some embedding model - Plug in any embedding model—OpenAI, HuggingFace, Google Gemini, or a custom function
+   1. By default, Chroma converts the text into the embeddings using all-MiniLM-L6-v2 
+   2. When your collection receives the text, it automatically converts it into embedding.
 
 
 ## 4/28 
