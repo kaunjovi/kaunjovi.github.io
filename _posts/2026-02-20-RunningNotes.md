@@ -4,17 +4,48 @@
 1. [TODO] Must have a lint to go through all the notes. Things should belong to their own pages. Other pages must refer to that page rather than repeating the information. 
 
 ## [MemPalace](https://github.com/MemPalace/mempalace) 
-1. MCP server for **semantic search** and **knowledge graph**
-2. MemPalace stores your conversation history as verbatim text and retrieves it with semantic search. 
-3. It does not summarize, extract, or paraphrase. 
-4. The index is structured — 
+
+1. **Reference**
+2. https://mempalaceofficial.com/concepts/the-palace.html
+3. 
+4. MCP server for **semantic search** and **knowledge graph**
+5. MemPalace stores your conversation history as verbatim text and retrieves it with semantic search. 
+6. It does not summarize, extract, or paraphrase. 
+7. The index is structured — 
    1. people and projects become wings, 
    2. topics become rooms, and 
    3. original content lives in drawers — so searches can be scoped rather than run against a flat corpus.
-5. The retrieval layer is pluggable. 
-6.  The current default is ChromaDB; the interface is defined in mempalace/backends/base.py and 
-7.  alternative backends can be dropped in without touching the rest of the system.
-8.  Nothing leaves your machine unless you opt in.
+8. The retrieval layer is pluggable. 
+9.  The current default is ChromaDB; the interface is defined in mempalace/backends/base.py and 
+10. alternative backends can be dropped in without touching the rest of the system.
+11. Nothing leaves your machine unless you opt in.
+
+
+12. **Wings** : Wings are the top-level organizational unit.
+13. A person or project. As many as you need.
+14. Every project, person, or topic gets its own wing in the palace. 
+15. **Rooms** : Rooms are named ideas. 
+16. They're auto-detected from your folder structure during mempalace init, and you can create additional rooms manually.
+17. Specific topics within a wing. 
+18. Examples: auth-migration, graphql-switch, ci-pipeline.
+19. **Halls** : Halls are the conceptual categories that describe how related memories connect within a wing:
+    1.  hall_facts — decisions made, choices locked in
+    2.  hall_events — sessions, milestones, debugging
+    3.  hall_discoveries — breakthroughs, new insights
+    4.  hall_preferences — habits, likes, opinions
+    5.  hall_advice — recommendations and solutions
+20. **Tunnels** : Connections between wings. 
+21. When the same room appears in different wings, the graph layer can treat that as a cross-wing connection.
+22. Same room. Three wings. The graph can use that shared room name as a bridge.
+```
+wing_kai       / hall_events / auth-migration  → "Kai debugged the OAuth token refresh"
+wing_driftwood / hall_facts  / auth-migration  → "team decided to migrate auth to Clerk"
+wing_priya     / hall_advice / auth-migration  → "Priya approved Clerk over Auth0"
+```
+
+
+
+
 
 ## [ChromaDB](??)
 
@@ -59,9 +90,10 @@
 
 ## Use Cases
 1. Retrieval-Augmented Generation (RAG): Providing external, private data to LLMs to prevent hallucinations.
-1. Semantic Search: Finding information based on meaning rather than just keywords.
-1. Recommendation Systems: Identifying similar products or content based on user preferences.
-1. Anomaly Detection: Spotting suspicious patterns in financial or healthcare data.
+   1. [ChromaDB With LangChain: A RAG Example](https://www.datacamp.com/tutorial/chromadb-tutorial-step-by-step-guide)
+2. Semantic Search: Finding information based on meaning rather than just keywords.
+3. Recommendation Systems: Identifying similar products or content based on user preferences.
+4. Anomaly Detection: Spotting suspicious patterns in financial or healthcare data.
 
 ## We need 
 1. Some embedding model - Plug in any embedding model—OpenAI, HuggingFace, Google Gemini, or a custom function
