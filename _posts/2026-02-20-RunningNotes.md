@@ -1,10 +1,305 @@
 
+## 5/1 
+
+## [MemPalace](https://github.com/MemPalace/mempalace) 
+1. MCP server for **semantic search** and **knowledge graph**
+2. MemPalace stores your conversation history as verbatim text and retrieves it with semantic search. 
+3. It does not summarize, extract, or paraphrase. 
+4. The index is structured — 
+   1. people and projects become wings, 
+   2. topics become rooms, and 
+   3. original content lives in drawers — so searches can be scoped rather than run against a flat corpus.
+5. The retrieval layer is pluggable. 
+6.  The current default is ChromaDB; the interface is defined in mempalace/backends/base.py and 
+7.  alternative backends can be dropped in without touching the rest of the system.
+8.  Nothing leaves your machine unless you opt in.
+
+## 
+
+
+## 4/28 
+
+Build your own LLM Wiki from scratch                                                                                    
+Today: working code. No framework needed.
+
+You need three things: an LLM API, a folder of markdown files, and git.
+
+Step 1: Write your schema
+schema.md defines page types, naming conventions, extraction rules, and cross-reference policy. 
+This is the single most important file. Start simple. Refine after a few ingestions.
+
+Step 2: Seed with empty index.md and log.md
+The LLM populates these during the first ingestion.
+
+Step 3: Ingest your first source
+Drop a document into sources/. The ingestion script:
+Reads source + schema + current index
+Asks the LLM to generate wiki pages per the schema
+For existing pages, merges new info into existing content
+Updates index.md and log.md
+git commit
+
+Expect 4-8 pages from a single paper or article.
+
+Step 4: Query
+The query script:
+- Reads index.md to find relevant pages
+- Loads 3-8 wiki pages + follows one level of [[wikilinks]]
+- Synthesizes an answer with citations back to wiki pages
+- With --save flag, writes the answer as a new wiki page
+
+Step 5: Lint periodically
+The lint script reads all pages and checks for:
+- Contradictions between pages
+- Orphan pages with no incoming links
+- Stale pages not updated despite newer sources
+- Missing pages referenced in links but not yet created
+- Claims without source attribution
+
+ Report gets appended to log.md.
+
+ —
+
+ Existing Implementations
+
+ If you want to skip the build:
+
+1. [LLM wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f#llm-wiki)
+   1. [click here](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
+2. [mcptube-vision](https://github.com/0xchamin/mcptube)
+   1. mcptube-vision (v2) is an open-source tool designed to turn YouTube videos into an AI-queryable, persistent knowledge base, inspired by Andrej Karpathy's "LLM Wiki" concept. 
+   2. It operates as both a Command Line Interface (CLI) and a Model Context Protocol (MCP) server, allowing AI agents to "watch" and analyze video content for deep insights. 
+3. [Memoriki](https://github.com/AyanbekDos/memoriki)
+   1. Personal knowledge base with real memory.
+   2. Wiki gives structure. MemPalace gives memory.
+4. [mempalace](https://github.com/MemPalace/mempalace)
+   1. Local-first AI memory. Verbatim storage, pluggable backend, 96.6% R@5 raw on LongMemEval — zero API calls.
+   
+
+ - llmwiki.app — Claude via MCP with a web UI. Closest to Karpathy's canonical description.
+ - llm-wiki-compiler — Two-phase pipeline with SHA-256 change tracking and paragraph-level source attribution.
+ - mcptube-vision — YouTube-focused variant. Processes video frames + transcripts.
+ - Memoriki — Combines semantic search with temporal knowledge graphs.
+
+ —
+ Three days, one pattern.
+ Day 1: the flow — 3 operations, 18 steps.
+ Day 2: the architecture — concurrency, scale, when to use it.
+ Day 3: the code — directory structure, scripts, ship it.
+#GenerativeAI #AI #LLM #RAG
+
+
+## 4/26 
+
+[Data Products: The Essential Context for Enterprise AI](https://moderndata101.substack.com/p/data-products-the-essential-context)
+
+What are the six deliberate layers - in OpenAI ?? 
+
+Two engineers, three months, a production system used daily by roughly 4,000 people across the company. 
+The headline wasn’t the output; it was the architecture.
+
+1. The agent was built on **six deliberate layers** of context grounding every query: 
+   1. schema metadata (that is ok) and lineage (where do we get that for??), 
+   2. curated expert descriptions (that is fine) 
+   3. historical query patterns (from where? and what do i do with that?)
+   4. code-derived definitions from pipelines, ( what will we do of that)
+   5. institutional knowledge pulled from Slack and docs, (dont need that - just yet) 
+   6. persistent memory of past corrections (what of that??)
+2. Separately, the agent could issue live queries to inspect schemas when context was missing or stale (not right now. wait.)
+
+
+transformational rise of the modern data stack with Tristan Handy from dbt in the past and 
+in our own reference architectures. 
+The general evolution over the past decade has transformed data architectures across ingestion, transformation, warehousing, and 
+storage to centralize data and make it quickly and easily accessible. 
+The idea is then with cleanly organized data, 
+teams could simply write SQL to derive data from their data warehouses, 
+power charts/dashboards, and 
+enable business intelligence across an entire organization.
+
+**The agent frenzy**
+In 2024 moving into 2025 as LLM capabilities increased, 
+essentially every single organization wanted to build and deploy agents on top of their existing data stacks. 
+We’ve previously discussed how we define agents, 
+but from an organizational point of view the natural allure of more work being done with greater efficiency and less time naturally led to the gravitation towards agentic workflows. 
+Companies attempted to build “chat with your data” chatbots, 
+support agents, etc. 
+The frenzy was both bottoms-up and tops-down – developers wanted to make use of the newest, 
+shiniest LLM capability and leadership applied AI adoption pressure to increase automation and reduce costs.
+
+
+**Hitting the wall**
+1. Despite the initial optimism, 
+2. it quickly became clear that most of these efforts failed. 
+3. Organizations tried to deploy their agents but ran into a wall. 
+4. MIT famously published their **“State of AI in Business 2025”** report which stated that with AI deployments, 
+5. “most fail due to brittle workflows, lack of contextual learning, and misalignment with day-to-day operations.”
+
+
+as evidenced through SQL benchmarks like **Spider 2.0** and **Bird Bench**
+
+Our query comes in. “What was revenue growth last quarter?” 
+that is typically easily answered by a quick glance at a **Looker** or **Tableau** dashboard
+
+head of the data platform steps in and says – 
+“we’ve built semantic layers to solve this exact problem. 
+We capture our revenue definition there.” 
+
+challenge #2 – where are the right data sources? Which ones are the right sources of truth?
+data agents need access to a repository of up-to-date business definitions and data sources to overcome these problems.
+
+**Context layer, context OS, context engine, contextual data layer, ontology**
+there needs to be up-to-date and maintained context that 
+not only understands how an enterprise works and 
+how the data systems are structured, but 
+also maintains the tribal knowledge to tie everything together.
+
+**Context Layer vs. Semantic Layer**
+A traditional semantic layer in the context of BI is great for specific metric definitions (like revenue, churn, ARPU). However, they are usually hand constructed by data teams using very specific syntax through a dedicated layer like LookML and are connected directly to a BI tool like Looker.
+
+**Data Context Layer as a superset of Semantic Layer**
+1. data context layer should essentially become a superset of what a semantic layer would traditionally cover. 
+2. Sure, specific metric definitions can be hard-coded, but a modern context layer should include more to ensure agent autonomy – 
+3. canonical entities, 
+4. identity resolution, 
+5. specific instructions to dissect tribal knowledge, 
+6. proper governance guidance, and more.
+
+7. **Accessing the right data**: ensuring all the right data is accessible. 
+8. This is table stakes. 
+9. Ideally an organization would be implementing some form of the modern data stack with some degree of unification through a lakehouse architecture. 
+10. Even then, we’d want to ensure the agent has access to all the data it needs, 
+11. which may extend beyond just what’s available in warehouses and operational apps. 
+12. This includes tribal knowledge captured in internal systems, GDrive/Slack, etc.
+
+13. **Automated context construction**
+15. Dats is accessible? If yes, then the next step is starting the construction of the context layer. 
+16. The benefit of using LLMs is that a lot of the initial context gathering can be done in an automated way. 
+17. An emphasis of focus should be on high signal context – 
+18. for example, looking through past query history can be high signal in determining the most referenced tables and most common joins, and data modeling solutions like dbt or LookML can provide clear definitions for business metrics.
+19. 
+
+1. **Agents** 
+1. once the context layer is properly constructed, 
+1. it just needs to be exposed to agents and accessible real-time. This can typically be done through API or MCP
+
+1. **Keep it updated**
+1. While the initial system has been set up correctly, 
+2. data systems are never static and as a result the context layer shouldn’t be either. 
+3. Data sources and formats can change upstream and 
+4. individuals may have custom instructions they’ll want to add and modify based on changing business requirements. 
+5. In the case a data agent provides incorrect data and requires accuracy refinement, 
+6. that should of course be incorporated back into the context layer. 
+7. In this way the context layer becomes a living and constantly evolving corpus.
+   
+
+1. Context Layer 
+   1. Natural Language : context.md - 
+      1. For CRM data, do this ... 
+      2. For XYZ data, do that ... 
+2. LookML syntax : orders.view.lkml 
+3. Metrics SQL
+   1. revenue.sql 
+
+Palantir has a long history of constructing ontologies for organizations 
+that provide clear context from messy data, and have built a big business doing so.
+
+
+
+1. A Data Product is context packaged as a first-class asset.
+1. A **Data Product** is a managed unit of data 
+2. that is treated like a product (what does that mean??)
+3. rather than as a byproduct of some operational system.
+   1. It has an owner.
+   2. It has a contract describing what it guarantees and what it doesn’t.
+   3. It has a named consumer in mind.
+   4. It has a lifecycle: versioned changes, deprecation windows, sunset.
+   5. It is discoverable in a catalog,
+   6. It is addressable through a stable interface, and 
+   7. accompanied by its own semantics, lineage, and quality signals.
+
+
+
+Schema metadata and lineage: a Data Product carries its schema and its upstream lineage as part of its specification.
+Historical query patterns: usage telemetry is a natural byproduct of a Data Product served through a governed interface.
+Curated expert descriptions: the Data Product’s owner writes these as part of its contract.
+Code-derived definitions: the transformation logic that produces the product is its definition, and it’s already versioned.
+Institutional knowledge: the product’s semantic layer captures the decisions that tribal knowledge otherwise preserves.
+Memory of past corrections: a governed product that reviews and incorporates feedback accumulates this automatically.
+
+
+
+
+
+Making it work is not primarily a model problem.
+The industry spent 2025 discovering this, and the consensus across OpenAI, a16z, MIT, Palantir, and others is that the missing piece is context infrastructure: durable, managed, versioned, available to agents.
+
+The right shape for that context is the Data Product.
+This is not a new idea, but the AI era has made it load-bearing. 
+A Data Product is what an enterprise builds once, and agents consume forever, 
+in contrast to the status quo of agents assembling context per query.
+
+1. **The architectural choice of where the Data Product exists**
+1. …determines whether this strategy is portable across the enterprise or 
+1. locked into a single compute platform. 
+1. The data gravity platforms (Databricks, Snowflake, Palantir) are building strong context surfaces tied to their compute. 
+1. DataOS is building for the enterprise whose data is in more than one place, and intends to keep it that way.
+
+The missing layer for enterprise AI is the Data Product, and the right way to build Data Products is above the engine, not inside it.
+
+
+
+
+## [Inside OpenAI’s in-house data agent](https://openai.com/index/inside-our-in-house-data-agent/)
+
+
+
+
+
+
+## [Your Data Agents Need Context](https://a16z.com/your-data-agents-need-context/)
+
+Recently in the world of data and AI agents, 
+context layers and graphs have emerged as an interesting topic of discussion. 
+In fact, it’s difficult today to have a conversation with an organization working with data and AI and not have the topic of context come up.
+
+And for good reason. Over the past year, the market has realized that data and analytics agents are essentially useless without the right context – they aren’t able to tease apart vague questions, decipher business definitions, and reason across disparate data effectively.
+
+It’s not their fault, of course. The modern data stack has undergone a decade+ transition from disparate data sources to consolidated data and cleaned definitions (which is good), but even then the consolidation is never perfect and a lot of messiness is introduced. The general market evolution has been as follows:
+
+
+## [20260129 -Inside OpenAI’s in-house data agent](https://openai.com/index/inside-our-in-house-data-agent/)
+
+1. agent is powered by ?? GPT‑5.2 and 
+2. designed to reason over OpenAI’s data platform. 
+3. It’s available wherever employees already work: 
+   1. as a Slack agent, 
+   2. through a web interface, 
+   3. inside IDEs, in the Codex CLI via MCP⁠(opens in a new window), and 
+   4. directly in OpenAI’s internal ChatGPT app through a MCP connector⁠(opens in a new window).
+
+4. User interface ( ....)
+5. UI Agent API 
+6. Supported by pre-processed offline - internal data KB, company context 
+
+## How it reasons through problems. 
+1. Rather than following a fixed script, the agent evaluates its own progress. 
+2. If an intermediate result looks wrong (e.g., if it has zero rows due to an incorrect join or filter), 
+3. the agent investigates what went wrong, adjusts its approach, and tries again. 
+4. Throughout this process, it retains full context, and carries learnings forward between steps. 
+5. This **closed-loop, self-learning** process shifts iteration from the user into the agent itself, 
+6. enabling faster results and consistently higher-quality analyses than manual workflows.
+
+
+
 
 
 
 ## 4/24 
 
-𝗗𝗮𝘆 𝟭 𝗼𝗳 𝟯: 𝗛𝗼𝘄 𝗟𝗟𝗠𝘀 𝘀𝗵𝗼𝘂𝗹𝗱 𝗺𝗮𝗻𝗮𝗴𝗲 𝗸𝗻𝗼𝘄𝗹𝗲𝗱𝗴𝗲
+## 𝗛𝗼𝘄 𝗟𝗟𝗠𝘀 𝘀𝗵𝗼𝘂𝗹𝗱 𝗺𝗮𝗻𝗮𝗴𝗲 𝗸𝗻𝗼𝘄𝗹𝗲𝗱𝗴𝗲
+
+https://www.linkedin.com/feed/update/urn:li:activity:7451634712130920448/
 
 **Old way** : chunk documents, embed them, search at query time, hope the right fragments surface.
 
@@ -13,47 +308,52 @@
 
 ## Operation 1 : Ingest
 
-𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗮 𝗻𝗲𝘄 𝘀𝗼𝘂𝗿𝗰𝗲 𝗱𝗼𝗰𝘂𝗺𝗲𝗻𝘁 𝗶𝗻𝘁𝗼 𝘁𝗵𝗲 𝘄𝗶𝗸𝗶. 𝟵 𝘀𝘁𝗲𝗽𝘀
+1. **The key architectural point**: Ingest is write-heavy (single-writer model), 
+2. Read the full source document
+3. Read schema (extraction rules for the source type)
+4. Read index.md to identify existing pages and prevent duplicates
+5. Create source-{title}.md with key content from this document
+6. Create or update entity pages (people, companies, tools)
+7. Create or update concept pages (technical ideas, methods)
+8. Update topic pages with new synthesis reflecting the source
+9. Add [[wikilinks]] between all touched pages
+10. Update index.md and append to log.md
 
-1. Read the full source document
-2. Read schema (extraction rules for the source type)
-3. Read index.md to identify existing pages and prevent duplicates
-4. Create source-{title}.md with key content from this document
-5. Create or update entity pages (people, companies, tools)
-6. Create or update concept pages (technical ideas, methods)
-7. Update topic pages with new synthesis reflecting the source
-8. Add [[wikilinks]] between all touched pages
-9. Update index.md and append to log.md
+## Operation 2 : Query
 
-B. Query
+1. **The key architectural point**: Query is read-only (concurrent-safe), 
+1. Read index.md to identify relevant pages
+2. Pull 3-8 pre-synthesized wiki pages
+3. Follow cross-references (like Wikipedia browsing)
+4. Compose answer with citations to wiki pages (which cite original sources)
+5. (Optional) Save the answer as a new wiki page (query --save pattern)
 
-𝗔𝗻𝘀𝘄𝗲𝗿𝗶𝗻𝗴 𝗮 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻 𝗳𝗿𝗼𝗺 𝗰𝗼𝗺𝗽𝗶𝗹𝗲𝗱 𝘄𝗶𝗸𝗶. 𝟱 𝘀𝘁𝗲𝗽𝘀:
+## Operation 3 : Lint
 
- 1. Read index.md to identify relevant pages
- 2. Pull 3-8 pre-synthesized wiki pages
- 3. Follow cross-references (like Wikipedia browsing)
- 4. Compose answer with citations to wiki pages (which cite original sources)
- 5. (Optional) Save the answer as a new wiki page (query --save pattern)
+1. **The key architectural point**: Lint is a maintenance sweep. 
+2. Contradiction scan: flag pages with conflicting claims
+3. Orphan detection: find pages with no incoming links
+4. Staleness check: flag pages not updated despite newer relevant sources
+5. Gap analysis: identify referenced topics that lack their own page
 
- C. Lint
-
- 𝗣𝗲𝗿𝗶𝗼𝗱𝗶𝗰 𝗵𝗲𝗮𝗹𝘁𝗵 𝗰𝗵𝗲𝗰𝗸. 𝟰 𝗰𝗵𝗲𝗰𝗸𝘀:
-
- - Contradiction scan: flag pages with conflicting claims
- - Orphan detection: find pages with no incoming links
- - Staleness check: flag pages not updated despite newer relevant sources
- - Gap analysis: identify referenced topics that lack their own page
-
- --------------------------------------------------
-
-The key architectural point: Ingest is write-heavy (single-writer model), Query is read-only (concurrent-safe), Lint is a maintenance sweep. Each ingestion is committed as a git snapshot, giving full rollback capability.
+Each ingestion is committed as a git snapshot, giving full rollback capability.
 
 (𝗗𝗮𝘆 𝟮): 𝗧𝗵𝗲 𝗮𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁'𝘀 𝘃𝗶𝗲𝘄 — 𝗰𝗼𝗻𝗰𝘂𝗿𝗿𝗲𝗻𝗰𝘆 𝗺𝗼𝗱𝗲𝗹, 𝘀𝗰𝗮𝗹𝗲 𝗯𝗼𝘂𝗻𝗱𝗮𝗿𝗶𝗲𝘀, 𝗮𝗻𝗱 𝘄𝗵𝗲𝗻 𝘁𝗼 𝘂𝘀𝗲 𝗪𝗶𝗸𝗶 𝘃𝘀 𝗥𝗔𝗚 𝘃𝘀 𝗛𝘆𝗯𝗿𝗶𝗱.
 
 What's your current approach when your documents exceed the context window?
 #LLMWiki #RAG #KnowledgeManagement #AI
 
+𝐃𝐚𝐲 𝟐 𝐨𝐟 𝟑: 𝐋𝐋𝐌 𝐖𝐢𝐤𝐢 𝐚𝐫𝐜𝐡𝐢𝐭𝐞𝐜𝐭𝐮𝐫𝐞
 
+ Yesterday: the 18-step flow behind Karpathy's LLM Wiki pattern.
+ Today: the engineering decisions underneath it.
+ ---
+ THE DEVELOPER ANALOGY
+
+ RAG is like running grep across your codebase every time someone asks "how does auth work?" Raw match
+
+
+ RAG is like running grep across your codebase every time someone asks "how does auth work?" Raw match
 
 
 
