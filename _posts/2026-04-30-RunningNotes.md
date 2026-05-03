@@ -1,10 +1,425 @@
 
+## 5/2 
+
+## What is the market already doing in terms of semantic graphs 
+Microsoft Fabric IQ creates a persistent semantic graph that maps datasets to real‑world entities, relationships, and operational rules. 
+Collibra’s Model Context Protocol (MCP) server delivers governed business terms, lineage, and quality signals directly into any copilot or chatbot. 
+Starburst’s AIDA assistant reasons across federated data with a 3× accuracy lift when a governed semantic layer is present. 
+
+## suman - something about AI registry 
+## john - something about moonshot - Moonshot AI’s Kimi K2.6 j
+
+## 8 is the one 
+
+
+## [How to Develop An Open Source Ontology & AI Pipeline](https://dhirajpatra.medium.com/how-to-develop-an-open-source-ontology-ai-pipeline-20b31aecb2da)
+
+In Palantir (specifically the Foundry platform), 
+the Ontology is the “digital twin” of an organization. 
+It is a semantic layer that sits on top of raw data and transforms technical tables into real-world business concepts.
+instead of a data scientist looking for TABLE_CX_892 and a business user looking for "Customer 123," 
+both go to the Ontology to find the "Customer" object.
+
+The Ontology maps fragmented data into three core components:
+**Objects**: The “nouns” (e.g., Aircraft, Employee, Invoice).
+**Links**: The “verbs” or relationships (e.g., an Employee belongs to a Department, an Aircraft is assigned to a Flight).
+**Actions**: The “kinetics” or changes (e.g., “Cancel Flight” or “Update Salary”). When a user performs an action in a Foundry app, it writes back to the underlying data.
+
+The Pipeline: How it Works
+The journey from raw data to the Ontology follows a specific flow:
+Data Integration: Raw data is ingested from various sources (ERPs, CRMs, S3 buckets, SQL databases).
+Transformation (The “Pipeline”): Data engineers use tools like Code Repositories (Python/Spark) or Pipeline Builder (no-code) to clean and join data into “backing datasets.”
+Indexing: These backing datasets are mapped to the Ontology. For example, a row in your cleaned_flight_data table becomes a unique Flight Object.
+Application Layer: Once indexed, the data is available in user-friendly apps like Workshop (app builder) or Quiver (analysis tool) without needing to write any more SQL or code.
+
+
+## How to build an “Open Ontology”
+
+1. **Step 1: Data Integration (The Foundation)**
+2. Instead of Palantir’s “Data Connection,” use tools that move data from your sources into a central Data Lakehouse.
+3. Tools: Airbyte or Fivetran (Ingestion), combined with dbt (data build tool) for cleaning.
+4. Action: Create “Bronze” (raw), “Silver” (cleaned), and “Gold” (business-ready) tables.
+5. **Step 2: Define the “Noun” (Object Modeling)**
+6. In Palantir, you create an “Object.” 
+7. In an open stack, you define a Semantic Model.
+8. Tools: Cube.js, dbt Semantic Layer, or AtScale.
+9. Action: Instead of just a table orders, you define a "Sales" entity in a YAML file. 
+10. You tell the system that "Revenue" is SUM(price) and that every "Sale" is linked to a "Customer ID."
+11. **Step 3: Map the “Verbs” (Relationship Graph)**
+12. Palantir’s “Links” are simply joins that are pre-defined so users don’t have to write them.
+13. Tools: Graph Databases (Neo4j) or Semantic Knowledge Graphs (using RDF/OWL standards).
+14. Action: Use a tool like Stardog or simply well-documented foreign key relationships in your Semantic Layer (Cube.js) to define how “Aircaft” relates to “Maintenance Log.”
+15. **Step 4: The “Kinetics” (Action Framework)**
+16. Palantir’s “Actions” allow you to “write back” to the database (e.g., clicking a button to “Approve Invoice”).
+17. Tools: Retool, Appsmith, or Streamlit.
+18. Action: Build a small front-end app. When a user clicks “Approve,” the app triggers a Python script or a SQL command that updates your database and logs the change.
+19. **Step 5: AI/ML Integration**
+20. This is where you, as a Data Scientist, have an advantage.
+21. Tools: MLflow or BentoML.
+22. Action: Wrap your ML model in an API. Connect this API to your Semantic Layer so that “Predicted Churn” becomes just another property of the “Customer” object, updated every 24 hours.
+
+
+## What is an enterprise context layer?
+
+1. the **governed infrastructure** between your data stack and AI systems. 
+1. It encodes what data means — 
+   1. business definitions, 
+   2. relationships, 
+   3. operational rules, 
+   4. lineage, and 
+   5. policies
+2. so AI agents reason correctly at inference time rather than guess from raw records. 
+3. Unlike a semantic layer, it also captures 
+   1. decision history, 
+   2. authority attribution, and 
+   3. policy applicability: 
+4. the properties that make context AI-grade. 
+5. Without it, 95% of GenAI pilots (MIT, 2025) fail to reach production.
+
+
+## Semantic knowledge graphs (KGs)
+
+1. Semantic knowledge graphs (KGs) use standardized formats like RDF and OWL 
+2. to create a machine-readable "semantic layer" that turns raw data into interconnected knowledge. 
+3. Unlike standard databases, these graphs focus on the meaning (semantics) and logical relationships between data points. 
+5. **RDF (Resource Description Framework)**: 
+6. The foundation that models data as "triples" (Subject > Predicate > Object). 
+7. For example: . It uses URIs (unique web identifiers) to ensure every entity and relationship can be linked globally across different systems. 
+8. RDF is a data model for representing information as triples and graphs. 
+9. It is concerned with identifiers, edges, and values.
+10. **OWL (Web Ontology Language)**: 
+11. A rich modeling language built on top of RDF that adds logic and constraints. 
+12. It allows you to define complex hierarchies, property characteristics (like "inverse" or "transitive"), and class equivalencies. 
+13. OWL is an ontology language built on RDF. 
+14. It specifies classes, properties, and logical relationships that interpret and constrain what the RDF data means.
+
+[Ontology Reasoning in Knowledge Graphs, 2024](https://medium.com/data-science/ontology-reasoning-in-knowledge-graphs-7e563cc5b62a)
+[You Don’t Need a PhD to Build an Ontology](https://medium.com/@irregularbi/you-dont-need-a-phd-to-build-an-ontology-f50ff00b6db9)
+**OrionBelt Ontology Builder** is a browser-based ontology editor built with Streamlit and rdflib.
+
+[Cube.js, the Open Source Dashboard Framework](https://medium.com/cube-dev/cube-js-the-open-source-dashboard-framework-ultimate-guide-af38bc9955a1)
+[Implementing a Semantic Layer with dbt: A Hands-On Guide](https://www.datacamp.com/tutorial/semantic-layer-with-dbt)
+[#dbt / Understanding the Semantic Layer](https://medium.com/data-driven-diaries/understanding-the-semantic-layer-c98c88c50e5e)
+[#dbt /  Getting started with data lineage / might be only useful if you have used dbt for transformation.](https://www.getdbt.com/blog/getting-started-with-data-lineage)
+
+[A CTO’s field guide to building, governing, and scaling meaning across data, retrieval, knowledge graphs, and agents](https://gauravagg2016.medium.com/ontology-engineering-as-the-semantic-operating-system-of-the-ai-first-enterprise-e8db15bc0957)
+
+## Ontology engineering precondition for safe autonomous action at enterprise scale
+
+1. Every major cloud provider has released agent runtime infrastructure (Google Agent Builder, AWS Bedrock Agents, Azure AI Foundry) that is designed for enterprise-scale autonomous action.
+1. The regulatory environment for AI systems is tightening: the EU AI Act’s requirements for traceable, auditable AI decision-making are structurally aligned with what a semantic control plane provides
+1. the competitive differentiation window is open but closing: the enterprises that build their semantic operating systems in 2025–2026 will have identity graphs, SHACL conformance histories, and domain ontology depth that are expensive and slow to replicate from zero.
+
+## Meaning. Enterprise wide. Centralized. Owned. Understood by humans and agents alike. 
+
+1. The same business word means different things in different systems, teams, and agent workflows.
+   1. Is a customer the same as an account?
+   2. Is a product the same as an offer?
+   3. Is a subscriber the same as a payer?
+   4. Is a diagnosis term equivalent to a billing code?
+   5. Is a service outage a network event, a customer-impact event, or both?
+2. 
+3. In a human-mediated enterprise, that drift created friction and meeting time. 
+4. In an AI-mediated enterprise, it creates compounding failures at machine speed.
+
+
+## What are the various layers ( arranged in the order of value ) meta-data for enterprise data ? 
+
+1. https://gauravagg2016.medium.com/ontology-engineering-as-the-semantic-operating-system-of-the-ai-first-enterprise-e8db15bc0957
+   
+2. **Business Glossary** 
+3. Definitions. Provided by business. Human readable. 
+4. As is the case of any free text, is open to interpretation. 
+5. Not - in a formal definition. ( What is the formal definiton ?? )
+6. Cannot - be queried by reasoner. ( What does that mean ?? )
+
+7. **Database schema**
+8. You can get it from the database, e.g. Iceberg, Starburst etc. 
+9. Tables, columns, data types, relationships.
+10. Cannot - tell what is the meaning of that data. (Give an example?? )
+
+1. **(BI) Semantic Layer**
+1. Definitions of business metrics, joins etc. 
+1. These are used in query time by BI tools e.g. ??, ?? 
+1. Cannot - be used by AI agents. ( Why ?? )
+
+1. **Taxonomy (SKOS)**
+1. Hierarchical classification ( why do we need them?? )
+1. Synonym relationships ( what are they?? what is the use ?? )
+1. No - properties, constraints, and instance level facts ( which one had instance level facts ?? )
+
+1. **Knowledge Graph / Property Graph** 
+1. Connections allowing graph traversals. 
+1. Not - a web of meanings, but a web of links. 
+
+1. **Ontology**
+2. RDF / OWL / SHACL 
+3. Classes (data products??), 
+4. Properties ( column level details ?? )
+5. axioms ( ?? )
+6. equivalences (??)
+7. constraints ( foreign keys etc.?? )
+8. inference rules (??)
+9. Supports machine reasoning and runtime validation (??)
+
+
+5. **RDF (Resource Description Framework)**: 
+6. The foundation that models data as "triples" (Subject > Predicate > Object). 
+7. For example: . It uses URIs (unique web identifiers) to ensure every entity and relationship can be linked globally across different systems. 
+8. RDF is a data model for representing information as triples and graphs. 
+9. It is concerned with identifiers, edges, and values.
+
+
+10. **OWL (Web Ontology Language)**: 
+11. A rich modeling language built on top of RDF that adds logic and constraints. 
+12. It allows you to define complex hierarchies, property characteristics (like "inverse" or "transitive"), and class equivalencies. 
+13. OWL is an ontology language built on RDF. 
+14. It specifies classes, properties, and logical relationships that interpret and constrain what the RDF data means.
+
+
+
+
+
+Key Features and Benefits 
+
+1. **Automated Reasoning**
+2. By using OWL's formal logic, systems can infer new facts that aren't explicitly written down. 
+3. If the graph knows "A is the father of B" and "father" is a sub-property of "parent," 
+4. it automatically infers "A is the parent of B". 
+5. **Open-World Assumption**
+6. Unlike traditional databases, OWL assumes that if information is missing, it is simply unknown rather than false. 
+7. This makes it ideal for the "messy" reality of the web where data is often incomplete. 
+8. **Interoperability**
+9. Because they follow W3C Semantic Web Standards, these graphs can integrate data from diverse, siloed sources by mapping them to a common vocabulary or ontology. 
+10. **Data Validation**
+11. While OWL handles logic, SHACL (Shapes Constraint Language) is often used alongside it to validate the actual structure and quality of the RDF data against specific shapes or schemas. 
+
+12. To build and query these graphs, developers typically use: 
+   1. **SPARQL**: The standard query language for RDF, similar to SQL but designed for graph pattern matching. 
+   2. **Triple Stores**: Specialized databases like GraphDB or Apache Jena that are optimized for storing and reasoning over RDF/OWL data. 
+   3. **Protégé**: A widely used open-source editor for designing OWL ontologies. 
+
+AI responses may include mistakes.
+
+[2] https://atlan.com/know/rdf-vs-owl/
+[3] https://rushdb.com/blog/knowledge-graphs-semantic-reasoning-meets-graph-architecture
+[4] https://milvus.io/ai-quick-reference/what-is-the-purpose-of-semantic-web-in-the-context-of-knowledge-graphs
+[5] https://www.youtube.com/watch?v=4fKm-NXZamI
+[6] https://www.youtube.com/watch?v=kcRggv2e7-o
+[7] https://www.w3.org/RDF/
+[8] https://en.wikipedia.org/wiki/Resource_Description_Framework
+[9] https://www.w3.org/OWL/
+[10] https://www.youtube.com/watch?v=WIflwx2EC54
+[11] https://www.ontotext.com/knowledgehub/fundamentals/what-is-a-knowledge-graph/
+[12] https://medium.com/vaticle/knowledge-graph-representation-grakn-ai-or-owl-506065bd3f24
+[13] https://bryon.io/from-facts-to-knowledge-the-layer-cake-of-rdfs-and-owl-e84819d8075d
+[14] https://www.linkedin.com/pulse/great-graph-divide-deep-dive-rdfowl-property-graphs-geraci-wh73c
+[15] https://graphdb.ontotext.com/documentation/11.3/introduction-to-semantic-web.html
+[16] https://enterprise-knowledge.com/cutting-through-the-noise-an-introduction-to-rdf-lpg-graphs/
+[17] https://link.springer.com/book/9798868818226
+
+
+
+
+
+
+
+## Books 
+
+1. [12 AI Books Worth Reading in 2026 — If You Actually Build Things](https://medium.com/data-science-collective/12-ai-books-worth-reading-in-2026-if-you-actually-build-things-3de8e3dfd8a8)
+
+
+
+## What is AI-Ready Data?**
+
+1. [AI-Ready Data vs. Analytics-Ready Data](https://medium.com/@community_md101/ai-ready-data-vs-analytics-ready-data-f67ef0804341)
+1. **Who consumes AI-Ready Data**
+1. AI-ready data is built for a very different kind of consumer. The consumer here is not a human analyst, but a model: LLMs, machine learning systems, and increasingly, autonomous agents.
+1. **How is AI-Ready Data Consumed**
+1. These systems do not read dashboards or interpret charts. They consume data as tokens, embeddings, features, and context windows, and they reason statistically rather than intuitively.
+1. **What does “good” look like for AI-Ready Data?**
+1. Because models consume data differently, “good” means something fundamentally different.
+1. 
+1. **Context**: There is no way for models to experience the world, they must always infer it. 
+1. Without sufficient surrounding context, like historical state, user intent, environmental conditions, and system constraints, models are forced to guess (popularly known as “hallucinate”). 
+1. And when models guess, they do so confidently.
+1. **Completeness**: Unlike humans, models cannot pause and ask for clarification or fill in gaps with judgment. 
+1. Missing data is not interpreted as uncertainty but treated as absence. This leads to brittle outputs that appear coherent but are logically incomplete. Complete data gives models the full boundary of the problem space they are expected to operate within.
+1. **Timeliness**: An AI system trained or prompted on stale data is reasoning about a world that no longer exists. In dynamic systems, yesterday’s truth becomes today’s liability. Fresh data anchors model behaviour to current reality, reducing drift between what the model believes and what is actually happening.
+1. **Semantically rich**: Models do not understand meaning unless meaning is explicitly encoded. Relationships, hierarchies, intent, and constraints must be expressed in the data itself. Semantic richness is what allows models to distinguish between similar-looking signals and reason correctly across domains, rather than hallucinating connections that were never there.
+1. 
+1. Together, these properties reflect how AI systems are NOT intuitive. They are literal, probabilistic, and unforgiving. AI-ready data is not about making data elegant but about making reality legible to a machine in machine language.
+1. 
+
+
+
+
+[SDLC That Ships Features End-to-End](https://medium.com/@brettluelling/how-we-built-a-16-agent-sdlc-that-ships-features-end-to-end-2a3621fc9e64)
+
+https://github.com/garrytan/gstack
+
+
+## Corporate Chanakya (CC)
+
+1. Your work speaks for itself : Name what you delivered. Every time.
+2. You speak up in every meeting equally : Pick the one room where it counts most. Watch VM 
+3. You wait for results to get noticed : Decision makers need context, not proof. Hmm.. what to do of this ? 
+4. You build relationships when you need them : Start before you need anything from anyone. Who are you meeting this week ? 
+5. You communicate how hard you worked : Talk about what changed because of you. What is the message? 
+6. Your best work happens behind closed doors : Find one way to make the output visible.
+7. You make yourself easier to manage : Being liked keeps you comfortable. Being visible gets you promoted. Where are you visible ? 
+8. You stay loyal to people who cannot advocate for you : Know whose voice actually reaches the room. Damn. D cant speak. SS is woman scorned (?). V is insipid. 
+9. You perform competence under pressure : Trust lands harder than polish every time.
+10. You assume visibility feels like self-promotion : Presence is clarity. Start there. Are you present in the right discussions? 
+
+
+## CUDA (Compute Unified Device Architecture)
+
+1. Speaker(??) - leather jacket with chains hanging from zips (??). All black and frankly not too high quality looking either. But very meticulously done hairline. Age : 65 ? 
+
+1. CUDA (Compute Unified Device Architecture) is a parallel computing platform and programming model developed by NVIDIA 
+1. that allows software to use GPUs for general-purpose processing (GPGPU). 
+1. It enables developers to use C++ and other languages to 
+1. speed up data-intensive applications—like AI, scientific simulation, and image processing—
+1. by harnessing thousands of GPU cores simultaneously.
+1. **NVIDIA Ecosystem**: It is a proprietary technology requiring NVIDIA GPUs and includes the CUDA Toolkit, libraries (like cuDNN, cuBLAS), compilers, and tools.
+2. CUDA acts as a bridge, allowing the host (CPU) to send tasks to the device (GPU) via kernels—functions executed in parallel by many threads
+1. **Usage** : deep learning, high-performance computing (HPC), finance, and computer graphics
+
+All GPUs are architecturally compatible (??). Ok. Why?? 
+
+journey started 20 years ago. GeForce RTX 5090. 
+Programmable what? pixel shader. 
+make an accelerator programmable. 
+
+fusion of 3d graphics and artificial intelligence. DLSS 5 
+
+Federated - if others are not able to build their success stories on your platforma, it is not going far. 
+Controllable - if it is not controllable, it is not your, you might as well not  feed it much at all. 
+
+**Structured Data is the foundation of Trustworthy AI**
+
+cudaX libraries - algorithm company. 70 libraries + 40 models 
+cuDNN - Deep Neural Networks. 
+cuDF - for structured data. Data frames. 
+cuVS - for vector stores. reading data at enterprise scale ? 
+
+multi modality perception and understanding - ai to read a PDF 
+
+Semantic data. Unstructured data. AI data. 
+
+IBM inventor of SQL - domain specific language 
+IBM watsonx.data 
+system 360 - general purpose computing 
+
+Data for the era of AI 
+
+Accelerate Data Processing // On cloud // and on Prem 
+
+Dell 
+Google, BigQuery 
+
+Amazon were the first cloud partners of NVIDIA 
+Amazon Bedrock 
+Amazon SageMaker AI
+OpenAI to AWS 
+
+Confidential computing - even the operators can't touch your data or model. 
+
+**CoreWeave** - worlds first AI native cloud. 
+
+**Palantir** ontology platform. Working with Dell. 
+
+Vertically integrated and horizontally open (?? )
+
+25 companies building next Quntum GPU hybrid system
+
+AI natives 
+
+miniCUDA (??)
+ampere (??)
+
+You need install base. You need developers / users using it to create new things. 
+
+inference inflection has arrived 
+
+[NVIDIA GTC Keynote 2026](https://www.youtube.com/live/jw_o0xr8MWU?si=tIyyOkYKOP6Q2mAf)
+
+
+How do you make sure that the answers are correct 
+spyder 
+birt 
+feedback 
+
+Enterprise Context Layer ( Data Context Layer )
+Ontology 
+Taxonomy 
+Business Rules 
+Glossary Definitions 
+Synonyms 
+
+Semantic Layer 
+Data definition 
+Column description 
+Metrics (?)
+Logic (?)
+
+
+[From Dashboards to AI Decisions: Rethinking Enterprise Intelligence](https://starburstdata.ondemand.goldcast.io/on-demand/b2f3950e-1530-4344-9ad2-64a8dd5b0b5c?__hstc=81614408.f9a947593140bfd97ebcb97600ef34c0.1777691441068.1777691441068.1777691441068.1&__hssc=81614408.2.1777691441068&__hsfp=2084a4d51d5540dadca31207244bc581&submissionGuid=fba61f69-09d0-4412-ab84-eb0befd799ab)
+
+## Logical layers 
+
+1. Agents 
+1. Agentic Control Plane 
+1. Business Control Layer 
+1. Analytics Engine 
+
+
+## AI Data Assistant (AIDA) by Starburst 
+
+AIDA leverages a ReAct (reason–act–observe) framework to move beyond query generation into true analytical reasoning, combining live data sampling and metadata analysis to reach a well-grounded answer. The result is an assistant that reasons through problems like an analyst, not just a text-to-query translator. 
+1. AIDA tailors responses based on user role, 
+   1. delivering detailed technical explanations for data practitioners and 
+   2. concise, decision-ready summaries for business leaders.
+
+1. Ask questions across all your data ( and not only the centralized one )
+   1. Show insights 
+   2. Make decisions and 
+   3. Take actions 
+
+Shared Enterprise Context ?? 
+
+AI driven decisions 
+Context 
+Data Layer 
+
+
+
+Starburst announced AIDA (AI Data Assistant), an AI assistant designed to reason across distributed enterprise data sources without requiring data movement or centralization[1]
+business-user-facing tool, not a developer platform
+AIDA’s thesis is that the dominant pattern of centralizing data before applying AI is architecturally wrong for most enterprises.
+OpenAI leads adoption at 64%, followed by Azure OpenAI at 62% and Google Gemini at 54%, according to Futurum Group’s 1H 2026 
+AI Platforms Decision Maker Survey (n=820)
+
+The Semantic Layer is Finally Code, Not Just a Concept,’ March 2026
+
+The global Data Intelligence, Analytics, & Infrastructure (DIAI) market is projected to grow at a 16.9% CAGR to surpass US$1.2 trillion by 2031, according to Futurum’s 1H 2026 Data Intelligence, Analytics, & Infrastructure Market Sizing & Five-Year Forecast. 
+
+Perhaps the most forward-looking aspect of this news is the introduction of the agentic layer and the support for the Model Context Protocol (MCP). The industry is rapidly moving away from simple chatbots toward agentic AI workflows where AI can take actions.
+
+This bring your own model (BYOM) philosophy is essential. During demonstrations, Starburst used Claude 4.6 Sonnet to analyze complex Formula 1 and financial datasets. However, the platform remains model-agnostic, allowing businesses to optimize for cost, performance, or accuracy based on their specific needs.
+
+This transition from conversational intelligence to intelligent action, facilitated by an Agent Gateway, is the next frontier of enterprise productivity.
+
+Does Starburst partner with semantic layer vendors such as AtScale or dbt
+
+Ref : https://futurumgroup.com/insights/can-starbursts-aida-crack-the-enterprise-ai-data-access-problem/
+Ref : https://www.starburst.io/press-releases/starburst-announces-its-ai-data-assistant-to-bring-ai-to-the-business-user/
+
+
 ## 5/1 
 
 1. [TODO] Must have a lint to go through all the notes. Things should belong to their own pages. Other pages must refer to that page rather than repeating the information. 
-
-
-
 
 
 ## 4/28 
