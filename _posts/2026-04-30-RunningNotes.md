@@ -22,8 +22,8 @@ Observability and more.
 6. Choose your framework - crewai, langgraph etc. 
 7. MCP compatible. 
 
-8. **AgentCore Gateway**
-9. Actis as a MCP server and exposes targets like API, lamda functions, 
+8.  **AgentCore Gateway**
+9.  Actis as a MCP server and exposes targets like API, lamda functions, 
 10. Connections to Salesforce, JIRA, 
 11. Agent can discover and call anything it needs to integrate with 
 
@@ -51,7 +51,44 @@ Observability and more.
    1. supports token refresh etc. 
    2. machine to machine and delegated access. 
 30. **Secure Token Vault** - for storing credentials - OAuth token, client keys, etc. 
-31. 
+
+
+## [AgentCore Runtime Basics](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/xQjTIMMzTfzhWan9bjG9oNQwCKsybVIJ)
+
+1.  **Center AgentCore Runtime** - agent runs in it. Fully managed. Serverless environment. 
+2.  Sessions upto 8 hours 
+    1.  stops after 15 minutes of inactivity 
+3.  Payloads upto 100 megabytes 
+4.  Each sessions runs in its own micro VM (??) - dedicated CPU, memory, filesystem, and auto clean up 
+5.  Choose your model - claude, gemini, whatever 
+6.  Choose your framework - crewai, langgraph etc. 
+7.  MCP compatible. 
+
+1. Start an agent ? **InvokeAgentRuntime**
+1. **runtimeSessionId** - a client calling in? Must provide runtimeSessionId. AgentCore uses that to isolate the conversation. 
+1. protocols supported 
+   1. HTTP - simple request / response patter 
+   2. MCP - agnet to tool interaction 
+
+2. **AgentCore Runtime Service Contract** 
+3. How to code your agent, so it can communicte with the (managed) hosting layer. 
+4. What endpoints you must expose
+5. AgentCore will sping it up, manage it and route traffic to it 
+6. The agents have to created in a specific way 
+7. That is the contract. 
+8. Want to run on **HTTP** ? 
+   1. Host must be 0.0.0.0 
+   2. Port must be 8080
+   3. Container must be ARM64 (??)
+   4. Must have two endpoints 
+      1. /invocations - get some job done. Should accept a HTTP POST. Can return JSON or SSE 
+      2. /ping - HTTP GET. Health and status checks (JSON)
+Want to run a **MCP**? Your agent is reaching out to a tools server that talks MCP 
+ 
+
+
+## [Strands Agents SDK](https://strandsagents.com/docs/user-guide/quickstart/overview/)
+1. Can support Python (fuller support, use this) and typescript
 
 
 
