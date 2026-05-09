@@ -1,4 +1,157 @@
 
+## 5/9 
+
+AgentCore Identity: Secure Agent Authentication
+
+1. What are the different services of AWS Amazon Bedrock AgentCore
+2. Production ready agents 
+3. Strands Agents SDK 
+4. AWS SDK boto3 
+5. Bedrock as the model provider 
+
+What do you need to scale up a POC for real users ? 
+Application Hosting 
+Memory 
+Observability and more. 
+
+1. **Center AgentCore Runtime** - agent runs in it. Fully managed. Serverless environment. 
+2. Sessions upto 8 hours 
+3. Payloads upto 100 megabytes 
+4. Each sessions runs in its own micro VM (??) - dedicated CPU, memory, filesystem, and auto clean up 
+5. Choose your model - claude, gemini, whatever 
+6. Choose your framework - crewai, langgraph etc. 
+7. MCP compatible. 
+
+8. **AgentCore Gateway**
+9. Actis as a MCP server and exposes targets like API, lamda functions, 
+10. Connections to Salesforce, JIRA, 
+11. Agent can discover and call anything it needs to integrate with 
+
+12. **AgentCore Memory**
+13. Short Term - what is happening in session. E.g. a coding assistant refactoring code. 
+14. Long Term - User preferences. Store insights. Generate session summaries. etc. 
+
+15. **Built in tools**
+16. Code interpreter - run python, typescript or javascript, inside a secure (Bedrock) managed environment. 
+17. Browser tool - let agents interact with live web pages
+18. Both tools are integrated with IAM (secure)
+
+19. **AgentCore Observability service**
+20. Every step is there - reasoning, tool calls and outcome 
+21. telemetry flows into CloudWatch by default - latency, token usage, session count, error rates (??)
+
+22. **AgentCore Identity** : Every request is verified. 
+23. Even if it comes from previously trusted sources. 
+24. Each agent has a unique identity
+25. And fine grain permissions 
+26. Amazon Cognito built for Agent 
+27. Both inbound and outbound authentication mechanisms
+28. inbound - OAuth 2.0 flows - use an identify provider 
+29. outbound - use the SDK - use annotiations - @requireaccesstokens 
+   1. supports token refresh etc. 
+   2. machine to machine and delegated access. 
+30. **Secure Token Vault** - for storing credentials - OAuth token, client keys, etc. 
+31. 
+
+
+
+
+
+
+## AWS AgentCore Gateway  
+
+1. Building on AgentCore’s quality loop—the validation architecture is where this gets genuinely exciting.
+2. Two validation paths work in parallel. 
+3. Batch evaluation runs proposed changes against curated test datasets before anything touches production—catching regressions on cases you already know matter. 
+4. Wire it into your CI/CD pipeline and no configuration change ships without passing known-good benchmarks.
+5. Then A/B testing takes it live. 
+6. **AgentCore Gateway** splits production traffic between current and candidate versions at configurable percentages. 
+7. Online evaluations score every session. 
+8. Results include **confidence intervals** and **p-values**—statistical rigor, not gut feel.
+9. 
+10. The key insight: configurations ship as immutable versioned bundles. Swapping a prompt or model becomes a configuration change, not a code change. Rollback is instant.
+11. The flywheel compounds—each winning configuration becomes the baseline for the next cycle.
+12. 
+13. Is your team still shipping agent improvements blind, or building systematic validation into the loop?
+
+
+[Context Data Products as real differentiators in the AI era.](https://medium.com/@arrufus/context-data-products-as-real-differentiators-in-the-ai-era-1664c951bac3)
+
+Did you realise that the data products you’ve dedicated two years to building are mostly invisible to AI agents? 
+After doing the hard work of having the domain teams build and own their own pipelines, 
+making data discoverable in the catalogue, and 
+federating governance and stewardship, 
+your AI agents still cannot answer business questions using your data products. 
+And it’s not because the data is wrong, but because data products were designed for human analysts, not autonomous systems.
+
+The Context Gap
+Traditional data products bundle raw data with basic metadata: 
+schema descriptions, 
+ownership tags, and 
+quality scores. 
+
+That worked when humans were the primary consumers: 
+a data analyst could look at a table, r
+ead the documentation and work out how to use it. 
+
+AI agents operate differently. They need:
+Semantic context. What does this field mean in business terms?
+Temporal context — when was this relevant?
+Usage context — how have others successfully used this data?
+confidence context — how reliable is this for decision-making?
+
+Without this layered understanding, 
+even the most sophisticated AI model is pattern-matching in the dark. 
+Knowledge graphs are a critical enabler for generative AI, 
+precisely because they provide structured, 
+relationship-aware context that flat metadata catalogues cannot.
+
+
+Context data products are an evolution of traditional data products. They bundle data with rich contextual intelligence: structured through ontologies, semantic layers, and knowledge graphs — so that both humans and AI agents can reason over it.
+
+A traditional data product says: “Here’s the customer transaction table.” 
+
+A context data product says: “Here’s customer transaction data, filtered for active segments, enriched with lifetime value calculations, with an ontology defining what ‘active’ means in this domain, 
+lineage showing how that definition was derived, and 
+examples of analyses that used this successfully.”
+
+It is machine-readable, meaning it is semantically structured so that an agent can navigate relationships, resolve ambiguity, and take autonomous action.
+
+
+Ontology-Driven Domain Modelling
+An ontology formally defines what entities exist in your business, how they relate and what rules govern them. Palantir’s Foundry platform demonstrates this at scale: its Ontology layer maps datasets to real-world counterparts, i.e. physical assets, customer orders, and financial transactions, creating a digital twin with semantic and operational capabilities. Defence, finance, and healthcare organisations use this to connect AI reasoning directly to governed data.
+
+## [Open Data Product Specification - ODPS](https://opendataproducts.org/)
+
+1. enabling scalable governance, monetization, and AI-native integration — all through a modular, machine-readable YAML specification. 
+1. Product Strategy linking data product KPIs to shared business objectives. Together with in-spec referencing for SLAs, Data Quality, Access, and Pricing Plans, it enables measurable, outcome-driven governance and consistent, reusable metadata across large-scale data ecosystems.
+
+## [MLG of ODPS](https://github.com/Open-Data-Product-Initiative/odps-knowledge-base/blob/main/resources/Minimum%20Lovable%20Governance%20for%20Data%20Products%20Whitepaper.pdf)
+
+Minimum Lovable Governance (MLG) is designed to be adopted incrementally. 
+Organizations can start with a single data product, define minimal governance, and reuse components as adoption grows.
+Over time, automation and AI assistants can be layered on top. 
+Governance maturity increases without disruptive transformation programs. 
+MLG rewards progress rather than perfection.
+Minimum Lovable Governance scales by repetition, not transformation.
+
+1. Start with one data product
+2. Select a product that is already shared or business-critical.
+3. Define minimum governance once
+4. Set ownership, access rules, and quality expectations for that product.
+5. Extract reusable components
+6. Turn access, quality, SLA, and usage rules into reusable definitions.
+7. Apply components to the next product
+8. Reuse the same governance blocks instead of redefining them.
+9. Automate enforcement
+10. Let platforms enforce rules, not people.
+11. Repeat and refine
+12. Governance improves through reuse, not redesign.
+
+1. Jarkko Moilanen (Ph.D.) - Agentic AI Adoption in Data Exchange. Open (Source) Data Product Specification
+2. https://www.linkedin.com/in/jarkkomoilanen/
+
+
 ## 5/2 
 
 ## What is the market already doing in terms of semantic graphs 
