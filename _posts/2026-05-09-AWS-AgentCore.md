@@ -1,10 +1,35 @@
 
+
+## [Amazon Bedrock AgentCore Built-in Tools](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/66A0zdrYFrMZyzt4fv3YGz3D9JELc_lN)
+
+
+
 ## [Amazon Bedrock AgentCore Identity Basics](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/RG1RmAO7xxjYtTh9OAz_skGLjgXjo9_P)
 
 
 1. **Workload Identity**
 2. Way for agents to prove who they are w/out hardcoding credentials anywhere 
-3. **Agent Identity**
+3. Workload Identity gives each identity a secure portable identity
+4. They can be used across trust domains (what is ??)
+5. **Agent Identity**
+6. Specialized Workload Identity. 
+7. Have agent specific metadata 
+   1. uniqueId, name, arn, OAuth settings, and policy attributes 
+8. Agent identfy as themselves and not on behlf of the user 
+
+1. **Inbound Authentication**
+2. Who is allowed to invoke your agent ? 
+   1. Supports AWS SigV4. IAM-based permissions to restrict access. 
+   2. Is external usrs accessing the agent ? Can use JWT based / ...
+      1. When the user send request they send a token from a registered Id provider 
+      2. Runtime automatically checks for validity of the token 
+      3. 
+
+1. **Outbound Authentication**
+2. How does the 
+
+[Github : AgentCore samples](https://github.com/awslabs/agentcore-samples/tree/main/01-tutorials/03-AgentCore-identity) 
+
 
 
 
