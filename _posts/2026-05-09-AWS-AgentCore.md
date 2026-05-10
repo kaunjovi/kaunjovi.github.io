@@ -1,7 +1,26 @@
 
+## [Using Amazon Bedrock AgentCore Built-in Tools with the Strands Agents SDK](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/72p-Xb4G0H4GW0NAPJhZ0oqsTBtwUMCO)
+
+
 
 ## [Amazon Bedrock AgentCore Built-in Tools](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/66A0zdrYFrMZyzt4fv3YGz3D9JELc_lN)
 
+1. Tool #1 : **Code interpretor**
+2. Secure, Sandboxed environment, where the Agent could write and run code on demand 
+   1. Python, javascript and typescript
+   2. csv, xls and json
+3. Run custom logic, interpret data etc. 
+   1. Pull large dataset from S3 - GB scale 
+4. Code execution - upto 15 minutes, extendable to 8 hours 
+5. Fully managed - done have to provide infra, manage dependencies etc. 
+6. Files and data created during session is available throughout the session lifetime. 
+7. Tool #2 : **Browser Tool**
+8. Testing webapplications, scraping information, 
+9. Agent could take screenshot of the website and try to understand that as well 
+10. Supports 
+    1.  **Live view**. So you can see what the agent is doing on the browser in real time. 
+    2.  **Replay** : So you can see what had happened. 
+    3.  
 
 
 ## [Amazon Bedrock AgentCore Identity Basics](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/RG1RmAO7xxjYtTh9OAz_skGLjgXjo9_P)
