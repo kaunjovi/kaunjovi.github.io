@@ -1,53 +1,117 @@
-AgentCore Identity: Secure Agent Authentication
 
-1. What are the different services of AWS Amazon Bedrock AgentCore
-2. Production ready agents 
-3. Strands Agents SDK 
-4. AWS SDK boto3 
-5. Bedrock as the model provider 
+## [Amazon Bedrock AgentCore Identity Basics](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/RG1RmAO7xxjYtTh9OAz_skGLjgXjo9_P)
 
-What do you need to scale up a POC for real users ? 
-Application Hosting 
-Memory 
-Observability and more. 
 
-1. **Center AgentCore Runtime** - agent runs in it. Fully managed. Serverless environment. 
-2. Sessions upto 8 hours 
-3. Payloads upto 100 megabytes 
-4. Each sessions runs in its own micro VM (??) - dedicated CPU, memory, filesystem, and auto clean up 
-5. Choose your model - claude, gemini, whatever 
-6. Choose your framework - crewai, langgraph etc. 
-7. MCP compatible. 
+1. **Workload Identity**
+2. Way for agents to prove who they are w/out hardcoding credentials anywhere 
+3. **Agent Identity**
 
-8.  **AgentCore Gateway**
-9.  Actis as a MCP server and exposes targets like API, lamda functions, 
-10. Connections to Salesforce, JIRA, 
-11. Agent can discover and call anything it needs to integrate with 
 
-12. **AgentCore Memory**
-13. Short Term - what is happening in session. E.g. a coding assistant refactoring code. 
-14. Long Term - User preferences. Store insights. Generate session summaries. etc. 
 
-15. **Built in tools**
-16. Code interpreter - run python, typescript or javascript, inside a secure (Bedrock) managed environment. 
-17. Browser tool - let agents interact with live web pages
-18. Both tools are integrated with IAM (secure)
+## Adding Memory to Agents with Amazon Bedrock AgentCore Memory
 
-19. **AgentCore Observability service**
-20. Every step is there - reasoning, tool calls and outcome 
-21. telemetry flows into CloudWatch by default - latency, token usage, session count, error rates (??)
+1. Lesson 8 of 15
+1. https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/RIYzpTyKOucys_Pza4ctdPtGbWqpNHBK
+2. [Git AgentCore Memory toosl from Strands](https://github.com/strands-agents/tools/blob/main/src/strands_tools/agent_core_memory.py)
+3. MemoryClient from boto3 
+4. /summaries/{actorId}/{sessionId}
+5. We can let the agent decide when to store memories. That might not be reliable. 
+6. We can advise that in the system prompt and still there is not guarantee
+7. Another way is to have hooks (Strands)
+   1. on_agent_initialized()
+8. 
 
-22. **AgentCore Identity** : Every request is verified. 
-23. Even if it comes from previously trusted sources. 
-24. Each agent has a unique identity
-25. And fine grain permissions 
-26. Amazon Cognito built for Agent 
-27. Both inbound and outbound authentication mechanisms
-28. inbound - OAuth 2.0 flows - use an identify provider 
-29. outbound - use the SDK - use annotiations - @requireaccesstokens 
+
+## Amazon Bedrock AgentCore Memory Basics
+
+1. https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/JA6nNXaFRKx-H7T7vHU-_7QqQpdS1Nd3
+
+1. **How does it work?** 
+1. Configure / set up memory, calling up memory space, memory strategy etc. 
+1. Interact during sessions 
+1. Store events. Retrieve them. During the session. 
+1. Improve quality of interactions with historical context from long term memory
+
+17. What is session (identified by sessionID )? 
+    1.  One conversation, inclduing multiple back and forth. 
+18. **Short Term** - what is happening in session. E.g. a coding assistant refactoring code. 
+    1.  Running history of what has happened so far in the current conversation / session. 
+    2.  Stores raw **events**. 
+        1.  User messages. Agent responses.
+        2.  Tool calls and the results that came back. 
+        3.  System events ?? 
+        4.  State changes ?? 
+    3.  It is a chronological record of activities that happened during a specific session / conversation. 
+    4.  You have to **create** the memory resources. **Programmatically** store and retrieve events. 
+    5.  
+19. **Event** 
+    1.  memoryid - id of the memory resource created to store events 
+    2.  sessionid, 
+    3.  actorid - entity associated with the event. Is it the end user / the agent 
+    4.  payload 
+        1.  multiple possible 
+        2.  conversational payload for messages 
+        3.  blob for images / files 
+    5.  Retreiver a single event ? **GetEvent** API. 
+    6.  Retrieve list of events ? **ListEvents** API. Give it memoryId, actorId and sessionId
+    7.  You can manually delete via **DeleteEvent** API. 
+    8.  Or you can set expiration event. Auto expiration and deleted. 
+    9.  
+20. **Long Term** - User preferences. Store insights. Generate session summaries. etc. 
+    1.  Do not store all events. Store summaries. 
+    2.  Assuming a customer says he likes a particular brand, keep that in the long term. 
+        1.  You dont have to manually store it. 
+        2.  A process goes on in the background, finds the relevant stuff, and puts it in Long Term membory. 
+21. **Memory Strategy** is created when the memory resource is created. 
+   1. Strategies include 
+   2. summarization : 
+   3. semantic memory : 
+   4. user preference : 
+   5. Or custome strategy : 
+22. **RetreieveMemoryRecords** 
+    1.  memoryId
+    2.  namespace 
+    3.  searchCriteria : Semantic query 
+23. **ListMemoryRecords** - list all, w/out search. 
+24. **DeleteMemoryRecord** - delete long term memory. 
+
+25. **Center AgentCore Runtime** - agent runs in it. Fully managed. Serverless environment. 
+26. Sessions upto 8 hours 
+27. Payloads upto 100 megabytes 
+28. Each sessions runs in its own micro VM (??) - dedicated CPU, memory, filesystem, and auto clean up 
+29. Choose your model - claude, gemini, whatever 
+30. Choose your framework - crewai, langgraph etc. 
+31. MCP compatible. 
+
+32. **AgentCore Gateway**
+33. Actis as a MCP server and exposes targets like API, lamda functions, 
+34. Connections to Salesforce, JIRA, 
+35. Agent can discover and call anything it needs to integrate with 
+
+36. **AgentCore Memory**
+37. Short Term - what is happening in session. E.g. a coding assistant refactoring code. 
+38. Long Term - User preferences. Store insights. Generate session summaries. etc. 
+
+39. **Built in tools**
+40. Code interpreter - run python, typescript or javascript, inside a secure (Bedrock) managed environment. 
+41. Browser tool - let agents interact with live web pages
+42. Both tools are integrated with IAM (secure)
+
+43. **AgentCore Observability service**
+44. Every step is there - reasoning, tool calls and outcome 
+45. telemetry flows into CloudWatch by default - latency, token usage, session count, error rates (??)
+
+46. **AgentCore Identity** : Every request is verified. 
+47. Even if it comes from previously trusted sources. 
+48. Each agent has a unique identity
+49. And fine grain permissions 
+50. Amazon Cognito built for Agent 
+51. Both inbound and outbound authentication mechanisms
+52. inbound - OAuth 2.0 flows - use an identify provider 
+53. outbound - use the SDK - use annotiations - @requireaccesstokens 
    1. supports token refresh etc. 
    2. machine to machine and delegated access. 
-30. **Secure Token Vault** - for storing credentials - OAuth token, client keys, etc. 
+54. **Secure Token Vault** - for storing credentials - OAuth token, client keys, etc. 
 
 
 ## [AgentCore Runtime Basics](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/xQjTIMMzTfzhWan9bjG9oNQwCKsybVIJ)
@@ -154,4 +218,17 @@ Observability and more.
 11. The flywheel compounds—each winning configuration becomes the baseline for the next cycle.
 12. 
 13. Is your team still shipping agent improvements blind, or building systematic validation into the loop?
+
+AgentCore Identity: Secure Agent Authentication
+
+1. What are the different services of AWS Amazon Bedrock AgentCore
+2. Production ready agents 
+3. Strands Agents SDK 
+4. AWS SDK boto3 
+5. Bedrock as the model provider 
+
+What do you need to scale up a POC for real users ? 
+Application Hosting 
+Memory 
+Observability and more. 
 
