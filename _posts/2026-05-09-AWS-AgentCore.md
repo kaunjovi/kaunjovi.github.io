@@ -1,7 +1,23 @@
 
 
+## [Observe your Agentic Applications with Amazon Bedrock AgentCore Observability](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/jMMtv2vJFrgaLJCEvDcKIoMxR9EU3KOU)
+
+
+
 ## [Amazon Bedrock AgentCore Observability](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/Qja9YaoUqTRgL2flvLCmB6q1agn_KVd3)
 
+1. They are supposed to act autonomously. So, you have to deeply understand what they are doing in prod, step by step 
+1. Full tracing 
+1. telemetry (??) and 
+1. Metrics 
+1. Monitor, debug and understan what is going on 
+1. If you turn on observability - it emits run time metrics 
+1. See them in Amazon CloudWatch
+
+1. Each user has a session. That is tracked from start to finish. 
+1. Within session - traces and spans - 
+2. Please turn on CloudWatch transaction search 
+3. **AWS Distro for Open Telemetry (ADOT) SDK**
 
 
 ## [Using Amazon Bedrock AgentCore Built-in Tools with the Strands Agents SDK](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/72p-Xb4G0H4GW0NAPJhZ0oqsTBtwUMCO)
