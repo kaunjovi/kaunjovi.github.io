@@ -1,6 +1,16 @@
 
+
+## [Amazon Bedrock AgentCore Observability](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/Qja9YaoUqTRgL2flvLCmB6q1agn_KVd3)
+
+
+
 ## [Using Amazon Bedrock AgentCore Built-in Tools with the Strands Agents SDK](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/72p-Xb4G0H4GW0NAPJhZ0oqsTBtwUMCO)
 
+1. Let LLM answer. And then write a code, run it, to confirm that the answer was correct. 
+   1. Why not do the latter to begin with ? 
+   2. What is the largest prime number under 100 
+2. Or, might be there is a need for a basic prototyping? You could do this here. 
+3. **bedrock_agentcore.tools.code_interpretor_client**
 
 
 ## [Amazon Bedrock AgentCore Built-in Tools](https://html.cdn.contentraven.com/crcloud/uploads/aws_partners_11276/encryptedfile/693416/v1.0/index.html#/lessons/66A0zdrYFrMZyzt4fv3YGz3D9JELc_lN)
