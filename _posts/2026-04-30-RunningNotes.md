@@ -1,4 +1,95 @@
 
+
+## [5/13 - Microsoft vs Palantir: Two Paths to Enterprise Ontology](https://pub.towardsai.net/microsoft-vs-palantir-two-paths-to-enterprise-ontology-and-why-microsofts-bet-on-semantic-6e72265dce21)
+
+1. Palantir built ontology for intelligence work (graph data + human reasoning). 
+1. Microsoft built it for agentic systems (semantic contracts + autonomous action). 
+
+Layer 1: The Ontology Item (The Foundation)
+This isn’t metadata about your data. 
+This is a formal semantic model that defines
+
+**Entity Types** — Not just table schemas, but business concepts:
+
+Customer
+  ├─ Properties: CustomerID, Tier, RiskScore, LifetimeValue
+  ├─ Constraints: RiskScore must be 0-100
+  └─ Relationships: has_many Orders, belongs_to Region
+
+**Typed Relationships** — Not just foreign keys, but semantic links
+
+Shipment --[belongs_to]--> Customer
+Shipment --[contains]--> LineItem
+Shipment --[monitored_by]--> IoTSensor
+Shipment --[governed_by]--> ComplianceRule
+
+**Business Rules** — Executable logic that defines valid states
+
+Rule: "High-Risk Shipment Alert"
+  IF: Shipment.RiskScore > 80 
+  AND: Shipment.Status = "In Transit"
+  AND: IoTSensor.Temperature > Threshold
+  THEN: Trigger_Action(Notify_Customer, Escalate_to_Operations)
+
+**Permitted Actions** — What agents are allowed to do
+
+Action: Reroute_Shipment
+  ├─ Requires: Operations_Manager_Role OR System_Emergency_Override
+  ├─ Validates: Destination must be valid Warehouse
+  └─ Triggers: Update_Shipment_Status, Log_Audit_Trail
+
+**semantic bindings**
+The ontology becomes a semantic abstraction layer over your physical data
+When an AI agent asks “Who are our high-risk enterprise customers?”, it’s reasoning at the ontology level, not writing SQL
+
+Entity: Customer
+  ├─ Ontology Definition: [Business concept of who a customer is]
+  ├─ Data Binding: customers_table in OneLake
+  ├─ Mapping:
+      Customer.CustomerID → customers.customer_id
+      Customer.Tier → CASE WHEN annual_revenue > 1M THEN 'Enterprise'...
+      Customer.RiskScore → ml_models.risk_predictions.score
+
+**What does the agent know?**
+1. What these entities mean (from ontology definitions)
+1. How they relate (from relationship graph)
+1. What’s valid (from business rules)
+1. What it can do (from permitted actions)
+1. No prompt engineering about data schemas. No RAG pipeline wiring. The semantic contract IS the grounding.
+
+
+
+
+## [5/13 - Google vs Microsoft vs Palantir: The Enterprise Ontology Race](https://medium.com/@cloudpankaj/google-vs-microsoft-vs-palantir-the-enterprise-ontology-race-and-the-layer-all-three-are-missing-e965b2d635d9)
+
+1. [OWL Portability Layer](https://github.com/cloudbadal007/owl-portability-layer)
+2. OWL - ?? 
+3. Ontology first: Domain classes and properties live in ontologies/*.ttl as the single semantic source of truth.
+4. SHACL as policy: Constraints (including SPARQL-based rules) enforce approvals and thresholds without scattering logic in adapters.
+5. Dict → RDF: Payloads are lifted to RDF for validation, then passed unchanged to adapters when validation passes.
+6. Pluggable targets: Register PalantirFoundryAdapter, FabricIQAdapter, or MCPAdapter under short keys; swap target_platform only.
+
+7. semantic layer that grounds enterprise AI agents in meaning rather than just data
+8. Microsoft entered it with Fabric IQ. 
+9. Palantir has been running it for a decade with Foundry. 
+10. Google has entered with the Knowledge Catalog and Enterprise Knowledge Graph
+
+
+11. **Knowledge Catalog** 
+12. formerly Dataplex Universal Catalog
+13. Google - Knowledge Catalog (formerly Dataplex Universal Catalog)
+14. The core shift: from a passive metadata registry to an active, AI-powered context graph.
+15. Automatically extracts semantics from structured and unstructured data using Gemini
+16. Exposes context to AI agents via MCP tools, Context APIs, and pre-verified “golden queries”
+
+17. **Enterprise Knowledge Graph** : This is the entity resolution and reconciliation layer
+18. Uses schema.org as its common ontology foundation
+19. Converts relational BigQuery data into RDF triples via the Entity Reconciliation API
+
+
+20. **Agentic Data Cloud** by Google 
+
+
 ## 5/9 
 
 AgentCore Identity: Secure Agent Authentication
