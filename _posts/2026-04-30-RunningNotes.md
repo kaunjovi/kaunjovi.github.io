@@ -1,5 +1,49 @@
 
 
+## [5/13 - The Ontology Stack: Grounding AI in Domain Knowledge]()
+
+## [5/13 - Agentic Mesh Your Enterprise Agents Are Missing](https://pub.towardsai.net/mcp-a2a-owl-ontology-i-built-the-agentic-mesh-your-enterprise-agents-are-missing-84ec0487ddd4)
+
+**Agentic Mesh** — a production pattern that wires together three protocols your enterprise already has access to:
+**MCP (Model Context Protocol)** — the tool-access layer
+**A2A (Agent2Agent Protocol)** — the agent communication layer
+**OWL Ontology + SHACL** — the shared semantic contract that prevents both layers from lying to each other
+
+[Agentic Mesh Blueprint](https://github.com/cloudbadal007/agentic-mesh-blueprint)
+
+Agentic Mesh isn’t a product. It’s a pattern
+
+AGENT COMMUNICATION (A2A)             │
+│  Agent Cards • Task Lifecycle • SSE Streaming    │
+├─────────────────────────────────────────────────┤
+│          SEMANTIC CONTRACT (OWL + SHACL)         │
+│  Shared Classes • Constraints • Reasoner         │
+├─────────────────────────────────────────────────┤
+│              TOOL ACCESS (MCP)                    │
+│  MCP Servers • Resources • JSON-RPC 2.0     
+
+
+
+**SHACL (Shapes Constraint Language)** 
+It defines rules about your ontology classes — what’s required, what’s forbidden, what shape the data must take before it’s allowed to propagate through the mesh.
+formal, machine-readable rules that say “a ComplianceHold cannot be released without Legal sign-off.” 
+This isn’t a business rule buried in code. 
+It’s a semantic guardrail that every agent in the mesh can reason over
+
+
+
+Agents discover each other via Agent Cards, negotiate task delegation, and exchange results through Google’s Agent2Agent protocol. But crucially, every A2A message carries ontology-annotated payloads — not raw JSON. 
+This means that when an agent receives a request, it can validate it against the shared OWL ontology and SHACL constraints before taking action.
+
+
+
+## [5/13 - I Tried to Migrate a Palantir Foundry Ontology to Fabric IQ — the OWL Exit Ramp](https://medium.com/@cloudpankaj/i-tried-to-migrate-a-palantir-foundry-ontology-to-fabric-iq-heres-what-broke-what-it-cost-and-f5e6c554aa44)
+
+1. [OWL portability layer](https://github.com/cloudbadal007/owl-portability-layer)
+
+your business rules live in OWL/SHACL, not in either vendor’s proprietary format
+
+
 ## [5/13 - Microsoft vs Palantir: Two Paths to Enterprise Ontology](https://pub.towardsai.net/microsoft-vs-palantir-two-paths-to-enterprise-ontology-and-why-microsofts-bet-on-semantic-6e72265dce21)
 
 1. Palantir built ontology for intelligence work (graph data + human reasoning). 
