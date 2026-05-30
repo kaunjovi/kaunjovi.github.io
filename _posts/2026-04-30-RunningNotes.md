@@ -1,6 +1,614 @@
 
 
-## [5/13 - The Ontology Stack: Grounding AI in Domain Knowledge]()
+## 5/30 
+
+Upskill on AI agents in 90 minutes
+https://www.databricks.com/learn/training/level-your-ai-agent-skills#data-video
+kaunjovi+databricks@gmail.com 
+
+
+
+
+## 5/18 
+
+## Introduction to MCP (Model Context Protocol)
+
+1. https://anthropic.skilljar.com/introduction-to-model-context-protocol/303756
+2. https://modelcontextprotocol.io/docs/getting-started/intro
+3. 
+
+
+
+```
+kaunjovi@devbook ~ % uv --version 
+uv 0.11.14 (3fdfdc7d4 2026-05-12 aarch64-apple-darwin)
+```
+
+
+
+### What - what is the problem that MCP solves ? 
+
+1. Provide context and tools to LLM without the developer of the tools to have to do the plumbing everytime. 
+1. MCP Client can talk to multiple MCP servers which has 
+   1. Tools 
+   2. Resources 
+   3. Prompts 
+
+**ListToolsRequest** - give me a list of tools available. Response is **ListToolsResult**
+**CallToolsRequest** - run a particular tools with all arguments. Response is **CallToolsResult**
+
+1. User > Server > MCP client > MCP Server > 
+1. User - asks some question to the server e.g. "What are the DP available?"
+1. The server asks the MCP client, "List all the tools available." 
+1. MCP client - receives the question, and sends **ListToolsRequest** to MCP server. Gets **ListToolsResult** is response. 
+1. Client then sends the list to the Server
+1. The server sends it directly to LLM to make sense of it. 
+1. LLM understands it and tells exactly what tool to call and with what parameters. 
+1. Servers sends that the MCP client. 
+1. MCP client sends a **CallToolsRequest** to the MCP server. 
+1. MCP server sends it to the services available in the background, and the service will do its job and send the response. 
+1. The response is wrapped in **CallToolsResult** and send back to the MCP client. 
+1. The server hands the **toolResul** to the LLM. 
+1. LLM now has all the informaiton to stitch together a final response and sends it back to the user. 
+
+
+
+
+
+
+## 5/17
+
+## AI / ML certifications 
+
+### Anthropic Academy (Free Courses with Certificates)
+
+https://anthropic.skilljar.com/
+
+Anthropic Academy is the company's dedicated learning platform, offering a library of self-paced, hands-on video courses—completely free. The curriculum is structured into three main tracks:
+
+AI Fluency: Foundational courses like "Claude 101" for beginners, as well as specialized modules for educators and students.
+Product Training: Focuses on applying Claude in everyday tasks, including enterprise deployment guidance for AWS and Google Cloud.
+Developer Deep-Dives: Technical tracks covering the Claude API, Model Context Protocol (MCP), and Claude Code for building applications.
+
+You can access these courses through the Anthropic Academy portal hosted on Skilljar, or find them on Coursera. 
+Upon completing the video modules, exercises, and integrated quizzes, you will receive a free digital certificate that can be downloaded or shared on professional networks like LinkedIn. 
+This is an excellent way to get structured, official recognition for your practical skills with Claude.
+
+### 🌱 Foundation & Career Certifications
+
+*   **IBM AI Engineering Professional Certificate (Coursera)**: Covers machine learning, deep learning, generative AI, and AI engineering best practices. It's designed to build a portfolio that demonstrates real-world proficiency to employers.
+*   **Google AI Professional Certificate (Coursera)**: A great entry point for beginners, focusing on the fundamental concepts and practical applications of AI and machine learning.
+*   **DeepLearning.AI TensorFlow Developer Professional Certificate**: A hands-on program focusing specifically on building and training powerful models using TensorFlow, one of the industry's leading frameworks.
+*   **AI CERTs AI+ Engineer™**: A vendor-neutral certification that provides end-to-end expertise in building, deploying, and scaling intelligent systems. It covers everything from neural networks and NLP to deployment architecture.
+*   **MIT xPRO Certificate Programs**: Options like "Designing and Building AI Products" offer a prestigious, university-backed credential. These programs often blend technical knowledge with strategic thinking, ideal for product leaders.
+
+### ☁️ Cloud Platform Certifications
+AI is deeply integrated with the cloud. These certifications from major providers are some of the most sought-after for developers and engineers.
+
+*   **Amazon Web Services (AWS)**
+    *   **AWS Certified AI Practitioner**: A foundational certification for those new to AI/ML on AWS. Great for non-technical roles too.
+    *   **AWS Certified Generative AI Developer – Professional**: A newer, advanced certification focused on integrating foundation models, RAG, and agents into business workflows.
+*   **Microsoft Azure**
+    *   **Azure AI Fundamentals (AI-900)**: The perfect starting point for understanding core AI concepts on the Azure platform.
+    *   **Azure AI Engineer Associate (AI-102)**: The gold standard for enterprise AI roles, this is a highly hands-on cert covering Azure OpenAI Service, RAG, and Prompt Flow.
+*   **Google Cloud**
+    *   **Professional Machine Learning Engineer**: An advanced certification with a strong focus on MLOps, scalable pipelines, and deploying models using Vertex AI and other Google Cloud tools.
+
+### 🧠 Deep Learning & AI Engineering Specializations
+For those who want to build the underlying models and systems, these certifications offer deep technical validation.
+
+*   **DeepLearning.AI LLM Engineering Specialization (Coursera)**: Co-created with OpenAI, this is a highly practical and up-to-date program for mastering LLM-powered applications.
+*   **NVIDIA Deep Learning Institute (DLI)**: Offers a range of instructor-led workshops and self-paced courses where you can earn certifications that prove your ability to develop applications using NVIDIA-accelerated computing.
+
+### ✨ Generative AI & LLM Certifications
+Specialize in the most cutting-edge area of AI with certifications from the companies leading the charge.
+
+*   **NVIDIA-Certified Associate Generative AI Multimodal (NCA-GENM)**: An entry-level cert validating skills in building AI systems that work across text, image, and audio.
+*   **NVIDIA-Certified Professional Generative AI LLMs**: An intermediate-level credential for professionals with 2-3 years of experience in designing, training, and fine-tuning LLMs.
+*   **ISTQB® Certified Tester – Testing with Generative AI (CT-GenAI)**: A unique specialist certification for QA professionals on using generative AI for software testing, including prompt engineering and risk management.
+
+### 🛡️ Ethics, Governance & Security
+As AI becomes more widespread, proving you can build and manage it responsibly is a massive differentiator.
+
+*   **ISACA Advanced in AI Security Management (AAISM)**: Designed for security managers to implement enterprise AI solutions while identifying and mitigating AI-specific security risks.
+*   **CompTIA SecAI+**: A vendor-neutral professional certification focusing on both the security of AI systems and the application of AI in cybersecurity.
+*   **Various Ethics Certifications**: Credentials like the **Certified Ethical Emerging Technologist (CEET)** or **Certified Responsible AI and Governance Specialist (CRAIGS)** validate expertise in applied technology ethics and governance frameworks.
+
+### 🏢 Vendor-Specific Hardware & Software
+Some certifications are specifically designed for professionals working within a particular technology ecosystem.
+
+*   **Cisco AI Technical Practitioner (AITECH)**: Validated expertise in automating workflows, analyzing data, and designing AI-powered solutions on Cisco infrastructure. The exam was available starting December 18, 2025.
+*   **Databricks Machine Learning Professional**: A "hottest hands-on cert" for data engineers focused on building and deploying ML pipelines in production using the Databricks platform.
+*   **Alibaba Cloud Generative AI Engineer**: Best for engineers building solutions on the Alibaba Cloud platform.
+
+### 🔬 Quality Assurance & Testing
+A unique specialization that merges AI skills with software testing methodologies.
+
+*   **ISTQB® CT-GenAI**: As mentioned above, this is the leading specialist certification for applying generative AI to software testing. It covers prompt engineering for test design, risk mitigation for AI-specific issues like hallucinations, and integrating AI into the testing infrastructure.
+
+### 💡 How to Choose the Right AI Certification
+To pick the best credential, consider your experience level, your career goals, and which technology ecosystem you work in (or want to work in).
+
+*   **Define Your Career Goal**: If you want to be an engineer building and deploying models, look at cloud or vendor-specific certifications. If you're a business leader, a foundational or strategy-focused program might be a better fit.
+*   **Align with Your Technology Stack**: If your company uses Microsoft Azure, the **AI-102** is a strategic choice. For AWS-centric companies, the **AWS Generative AI Developer** cert is ideal. Choosing a certification aligned with your current tools provides immediate, practical value.
+*   **Consider Your Experience Level**: Beginners should start with **AI-900 (Azure)** or the **AWS Certified AI Practitioner**. Experienced ML engineers can jump to the **Google Professional ML Engineer** or **NVIDIA's professional-level certs**.
+*   **Factor in Cost and Time**: Free options from Google or self-paced courses on Coursera offer flexibility. University programs from Stanford or MIT provide prestige but have a higher price tag.
+
+Given the rapid pace of change, it is always best to verify the most current details directly on the official certification providers' websites.
+
+I hope this comprehensive guide helps you find the right path to showcase your expertise. Do any of these roles or ecosystems particularly resonate with your career goals?
+
+## [The Best RAG Architectures for AI Agents Every Developer Must Know](https://medium.com/@pankaj_pandey/the-best-rag-architectures-for-ai-agents-every-developer-must-know-434c97cf1645)
+
+
+## [9 RAG Architectures Every AI Engineer Should Actually Understand]
+
+What is RAG (in plain terms)?
+User Query → Retrieve Data → Feed to LLM → Generate Answer
+
+how you retrieve
+what you retrieve
+how you validate
+and how the model reasons
+
+## Standard RAG (The Starting Point)
+This is what 90% of tutorials show.
+Embed documents
+Store in vector DB
+Retrieve top-k chunks
+Send to LLM
+👉 Works well for:
+
+FAQs
+internal docs
+basic search
+
+**Conversational RAG**
+Add memory 
+
+**Corrective RAG (CRAG)**
+Flow becomes:
+Retrieve documents
+Evaluate their quality
+Fix or re-retrieve if needed
+
+**Adaptive RAG**
+Adaptive RAG decides:
+
+how many sources to retrieve
+how deep to search
+whether to use multiple strategies
+A smart backend router for queries.
+
+**Self-RAG**
+The model:
+
+generates an answer
+critiques itself
+improves the response
+
+**Fusion RAG**
+Instead of asking one query, it asks multiple.
+User asks:
+
+“How to scale Node.js app?”
+
+System generates:
+
+“Node.js scaling techniques”
+“horizontal scaling node”
+“load balancing node apps”
+
+**HyDE (Hypothetical Document Embedding)**
+
+**Agentic RAG**
+where RAG meets agents.
+planning
+tool usage
+multi-step reasoning
+User asks:
+
+“Analyze sales drop and suggest strategy”
+
+Agent might:
+
+Fetch data
+Run analysis
+Retrieve docs
+Generate insights
+
+**GraphRAG**
+Traditional RAG uses chunks.
+
+GraphRAG uses:
+👉 relationships
+
+Works best for:
+
+enterprise knowledge
+research
+connected data
+
+## [Vectorless Agentic RAG](https://ai.plainenglish.io/vectorless-agentic-rag-is-quietly-replacing-traditional-rag-architectures-472c35a108f2)
+
+Embeddings → Vector Database → Retrieval → LLM
+
+Convert documents into embeddings
+2. Store embeddings in vector DB
+3. Convert user query into embeddings
+4. Retrieve “similar” chunks
+5. Send chunks to LLM
+6. 
+
+
+## [SDD Writing Specifications for AI: BDD as the Missing Link — Spec-Driven Development](https://medium.com/@wasowski.jarek/sdd-writing-specifications-for-ai-bdd-as-the-missing-link-spec-driven-development-ad1b540b7f75)
+
+1. A specification is a **execution contract**. It is not a document to archive or audit. 
+1. What should be the content of the **SDD (Spec Driven Development)**
+   1. GitHub shipped Spec Kit, 
+   2. AWS shipped Kiro, 
+2. **Software 3.0** - description of intent in natural language 
+3. **The New Code** : Sean Grove of OpenAI made the sharpest case in his widely discussed talk “The New Code” 
+
+1. **A quick recap of the Traditional Engineering Documentation**
+   1. **BRS (Business Requirements Specification)** — a business document describing requirements from the organization’s perspective, a precursor to the SRS. 
+   2. **SRS (Software Requirements Specification)** — a classic engineering document describing functional and non-functional requirements, typically 50–200 pages of prose. 
+   3. **HLD (High-Level Design)** — an architectural document describing system components and their interactions. 
+   4. **LLD (Low-Level Design)** — a detailed document describing the internal structure of modules: classes, methods, and call sequences.
+
+2. In practice — if / when it worked — it worked mainly because the developer filled in the gaps. 
+3. All four formats were supposed to be unambiguous, and all four always had holes. 
+4. Those holes were patched with **domain memor**y and a dense network of **informal hallway conversations**. 
+5. AI doesn’t have that network, doesn’t walk the hallways, and doesn’t pretend to know what it doesn’t know.
+
+## BDD (Behavior-Driven Development) - developed in 2003, before the consumer arrived. 
+
+1. On Christmas Eve 2003, **Dan North** registered the domain jbehave.org and 
+1. wrote the first lines of a tool meant to replace JUnit. He wasn’t doing it to invent a new form of testing — he was solving a pedagogical problem: 
+1. the developers he was teaching TDD kept getting stuck on the word “test.” 
+1. North swapped the word “test” for the word “behavior” — and suddenly an entire category of questions about what to test disappeared. Writing behavior is natural. Writing tests isn’t.
+1. BDD (Behavior-Driven Development) — a methodology for describing system behavior in natural language, readable by the business and executable by machines, 
+1. using **Given/When/Then scenarios**. 
+1. Over two decades BDD traced a spectacular arc: peak popularity in 2015, 
+1. a long decline 2018–2024 (when SmartBear handed off Cucumber and Tricentis killed SpecFlow), 
+1. then an unexpected renaissance in the AI era. 
+1. That renaissance isn’t coincidental — and it’s not because BDD suddenly “works better.” 
+1. It’s because the reader BDD was designed for from the beginning finally appeared.
+
+1. **Gherkin** — the DSL used in .feature files to write BDD scenarios
+
+1. BDD framework (Cucumber, Reqnroll, Behave)
+2. **Aslak Hellesøy**, Cucumber’s creator, once said provocatively: “BDD is not test automation — it’s collaborative requirements analysis combined with TDD.”
+
+```
+Feature: ATM cash withdrawal
+Scenario: Sufficient balance
+  Given the account balance is $100
+    And the card is active
+  When the customer requests a $20 withdrawal
+  Then the ATM dispenses $20
+    And the account balance is $80
+```
+
+
+6. [How We Built an AI Second Brain for 60K Knowledge Workers](https://medium.com/@AnalyticsAtMeta/how-we-built-an-ai-second-brain-for-60k-knowledge-workers-78c507dd795b)
+7. ??
+
+## [5/17 - We Build AI for a Living. Half Our Company Does Not Want to Use It.](https://ai.gopubby.com/we-build-ai-for-a-living-half-our-company-does-not-want-to-use-it-cf7e3d716c07) 
+
+## [5/17 - Three Companies Tried Replacing Data Analysts With AI. Six Months Later, Here’s What Actually Changed.](https://pub.towardsai.net/three-companies-tried-replacing-data-analysts-with-ai-f9930095ae17)
+
+## [5/17 - The Stanford AI Index 2026: What the Data Actually Says](https://ivopbernardo.medium.com/the-stanford-ai-index-2026-what-the-data-actually-says-57cb928e93d9)
+
+
+
+
+## [5/18 - We Build AI for a Living. Half Our Company Does Not Want to Use It.](https://www.weeai.dev/blogs/developer-divide-ai-coding-tools)
+
+We called a townhall last month to talk about AI coding tools. 
+Not a casual Slack poll. A planned, company-wide session. 
+The AI Solutions team — my team — had been using Claude Code, Cursor, and custom agent workflows for months. 
+The Software Engineering team, the one building the core product, had not. 
+Same company. Same office. Two completely different relationships with the tools we sell.
+I walked in expecting a conversation about which tools to standardize. 
+What I got was a lesson in the technology adoption curve that I should have seen coming.
+The divide is not about tools.
+The divide is not about whether AI coding tools work. 
+Everyone agrees they produce code. 
+The divide is about whether you trust what they produce, and whether you think the speed is worth the risk.
+Here is the moment that made me take the “**almost right**” problem seriously.
+We had a spec. Frontend and backend teams had agreed on the API contract. 
+Route names, request bodies, response shapes. All documented. 
+An engineer used an AI coding tool to generate the backend endpoint. The code was clean. It compiled. 
+The endpoint responded correctly when tested in isolation.
+The frontend got a 404.
+**The confidence is the dangerous part**
+The code looked correct. It passed linting. It returned the right data shape. 
+If you tested the endpoint by itself, everything worked. 
+The bug only appeared when frontend and backend talked to each other. 
+That is not a hallucination. It is a misunderstanding. 
+And it is the kind of bug that slips through code review if you are not looking for it.
+
+METR, one of the few organizations running rigorous randomized studies on AI coding productivity, found that developers using AI tools were 19% slower on average. But the developers themselves estimated they were 20% faster. 
+The perception gap is not small. It is a full 39 percentage points in the wrong direction.
+https://metr.org/blog/2026-02-24-uplift-update/
+https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
+
+
+
+
+https://medium.com/data-science-collective/i-spent-6-months-tuning-claude-code-heres-the-exact-setup-that-finally-worked-b41c67628478
+https://ai.plainenglish.io/if-ai-can-code-why-are-big-tech-founders-coding-again-6791526cde51
+https://medium.com/@pabhishek192/how-i-built-a-metadata-driven-data-pipeline-framework-using-databricks-04fed5b8a271
+https://medium.com/@AnalyticsAtMeta/how-we-built-an-ai-second-brain-for-60k-knowledge-workers-78c507dd795b
+https://ai.gopubby.com/we-build-ai-for-a-living-half-our-company-does-not-want-to-use-it-cf7e3d716c07
+https://pub.towardsai.net/three-companies-tried-replacing-data-analysts-with-ai-f9930095ae17https://pub.towardsai.net/three-companies-tried-replacing-data-analysts-with-ai-f9930095ae17
+https://ivopbernardo.medium.com/the-stanford-ai-index-2026-what-the-data-actually-says-57cb928e93d9
+https://medium.com/@wasowski.jarek/sdd-writing-specifications-for-ai-bdd-as-the-missing-link-spec-driven-development-ad1b540b7f75
+https://medium.com/@reliabledataengineering/the-last-generation-of-data-engineers-e095cd5437b2
+
+1. **Deep dive into context engineering for AI agents**
+2. https://code.likeagirl.io/deep-dive-into-context-engineering-for-ai-agents-584bf3e578df
+3. **Context engineering**. 
+4. Still evolving. Nobody knows for sure. 
+5. Talking points 
+6. Treat context as a resource - constrained and has associated cost. 
+7. Context **retrieval** - pull only what is required and when it is required 
+   1. Context **pollution** - too much informaiton. conflicting information. 
+8. Context **offloading** - offload info to some external source 
+9. Context **isolation** - one subtask should not contaminate others. 
+10. Context reduction - once in a while, reduce. 
+11. Context **rot** - even when the context window has not filled up, if it is too full, degradation sets in. 
+   1. Information at the start and the end is more reliably recalled than things in the middle.
+   2. Enterprise data is effectively unbounded and frequently updated that even if the model could ingest everything, 
+   3. that would not mean it could maintain a coherent understanding over it.
+12. Context **compaction** - counter the rot 
+13. Context **folding** - new concept 
+    1.  https://openreview.net/forum?id=JaLXQnA2wi
+    2.  a framework that empowers agents to actively manage their working context
+    3.  An agent can procedurally branch into a sub-trajectory to handle a subtask and then fold it upon completion, 
+    4.  collapsing the intermediate steps while retaining a concise summary of the outcome
+
+
+14. [What the Heck is Apache Iggy?](https://progrockrec.medium.com/what-the-heck-is-apache-iggy-6f7f5ab312f7)
+15. Why are people moving to Rust? 
+16. Apache Kafka has been the 800-pound gorilla since LinkedIn open-sourced it back in 2011
+17. Piotr Gankiewicz back in April 2023
+18. persistent message streaming platform (Kafka), not a message broker (RabbitMQ).
+
+
+[AI makes you way less productive unless](https://michalmalewicz.medium.com/this-ai-game-undermines-all-you-do-28c9acaec440)
+
+
+## FDE - Forward Deployed Engineer
+1. A Forward Deployed Engineer (FDE) is a hybrid technical role where 
+2. engineers embed directly with customers to solve complex technical problems, customize software, and own technical success. 
+3. Pioneered by firms like Palantir, 
+4. these engineers build production systems directly within a client's environment, bridging the gap between abstract tech capabilities and operational reality. 
+5. **Core Responsibilities**
+6. **Customer Integration**: Sitting side-by-side with clients (often on-site) to ensure products fit their specific infrastructure and real-world workflows.
+7. **Custom Development**: Writing production code and adapting software to solve immediate customer pain points rather than generic product roadmaps.
+8. **Feedback Loop**: Acting as the bridge between the customer and their own product engineering team, feeding operational insights back to the core team.
+9. **AI & System Deployment**: Specializing in deploying complex technologies—like AI models, RAG pipelines, and data integration platforms—into legacy enterprise systems. 
+10. [What is Forward Deployed Engineering? A guide to the role, benefits, and real enterprise examples](https://invisibletech.ai/blog/what-is-forward-deployed-engineering)
+11. 
+
+Claude code - free vouchers 
+claude co-work - ?? - 
+Partners ?? 
+.claudeignore 
+
+Harness over claude code 
+
+## [How I Built a Metadata-Driven Data Pipeline Framework Using Databricks.](https://medium.com/@pabhishek192/how-i-built-a-metadata-driven-data-pipeline-framework-using-databricks-04fed5b8a271)
+1. metadata-driven data pipeline framework using **Databricks**
+2. pipeline behavior is controlled using configuration files (metadata) instead of hardcoded logic
+3. Metadata (YAML-Based Pipeline Configuration)
+   1. Source details
+   1. File formats
+   1. Target tables
+   1. Transformations
+   1. Validation rules
+
+
+```yaml 
+pipeline_name: customer_ingestion
+
+source:
+type: csv
+path: /mnt/raw/customers/
+
+target:
+catalog: demo
+schema: bronze
+table: customers
+
+load_type: incremental
+
+primary_key:
+— customer_id
+```
+
+1. Databricks Workflows to orchestrate the pipelines
+   1. notebook execution
+   2. dependency management
+   3. retries
+   4. scheduling
+
+1. Further reading about Databricks : Medallion Architecture Using Databricks — Part 2
+
+
+
+## [5/16 - Data Engineering Trends in 2026](https://medium.com/towards-data-engineering/data-engineering-trends-in-2026-adapt-or-become-a-ticket-taker-a45de072b10d)
+
+## [5/16 - The Best RAG Architectures for AI Agents Every Developer Must Know](https://medium.com/@pankaj_pandey/the-best-rag-architectures-for-ai-agents-every-developer-must-know-434c97cf1645)
+
+Some recent research and papers formalized this into three principles: 
+autonomous strategy, iterative execution, and interleaved tool use.
+
+https://weaviate.io/
+One foundation for search, RAG, agents, and everything that comes next
+
+```
+# Pure vector search
+response = collection.query.near_vector(
+    near_vector=[0.1, 0.1, 0.1],
+    limit=5
+)
+
+# Semantic search
+response = collection.query.near_text(
+    query="login issues after OS upgrade",
+    limit=5
+)
+
+# Hybrid search (vector + keyword)
+response = collection.query.hybrid(
+    query="login issues after OS upgrade",
+    alpha=0.75,
+    limit=5
+)
+```
+
+1. The alpha parameter controls the blend. 
+1. For legal, compliance, and medical domains where exact terminology matters, we push alpha toward 0.5. 
+1. For conversational queries, closer to 0.8.
+
+
+## Self-correcting RAG with LangGraph 
+1. Corrective RAG (CRAG), implemented as a state machine in LangGraph
+1. Instead of blindly trusting retrieval results, an LLM grades them for relevance before generating an answer. 
+1. If the documents are weak, it rewrites the query and falls back to web search.
+
+
+## Semantic caching cuts the bill 
+Before any of these hits the LLM, add a semantic cache. 
+Identical and near-identical queries get served from cache instead of burning tokens.
+Redis makes this straightforward with RedisVL
+
+[Semantic Caching for LLMs using RedisVL](https://docs.redisvl.com/en/0.4.1/user_guide/03_llmcache.html)
+
+## Ragas (Retrieval-Augmented Generation Assessment Suite)
+
+[RAGAS](https://www.geeksforgeeks.org/artificial-intelligence/ragas/)
+
+RAGAS (Retrieval-Augmented Generation Assessment Suite) is an 
+open-source evaluation framework developed by Hugging Face 
+to quantitatively assess the quality of RAG systems. 
+It measures how well a system retrieves and utilises external context 
+to generate accurate, faithful and relevant responses. 
+Unlike traditional metrics that only compare text similarity, 
+RAGAS evaluates the entire RAG pipeline i.e 
+from context retrieval to answer generation hence helping developers to identify performance bottlenecks across the workflow.
+
+1. **Answer Relevancy**: Measures how closely the generated response matches the user’s query intent.
+1. **Faithfulness**: Evaluates whether the response stays true to the retrieved evidence.
+1. **Context Precision**: Assesses how relevant the retrieved chunks are to the query.
+1. **Context Recall**: Determines whether all necessary information was retrieved.
+1. **Evaluation Dataset**: Represents the structured input including questions, contexts, responses and reference answers used for metric computation.
+
+## How to regression test Data chatbot
+
+RAGAS – built‑in metrics for faithfulness, answer correctness, etc.
+
+DeepEval – unit‑testing style for LLMs, with Pytest integration.
+
+LangSmith – if you’re using LangChain, its evaluation and tracing suite is a natural fit.
+
+RAG (handbooks) and 
+MCP tools (data-product metadata)
+
+Golden Test Set (and Keep It Alive)
+
+Create a file of test cases that represent the most frequent and high-risk user requests. Each case should include:
+
+user_query (possibly multi-turn)
+
+expected_tool_calls (which tools, with what arguments)
+
+expected_retrieved_documents (IDs or key phrases)
+
+expected_answer_facts (specific pieces of information that must appear)
+
+must_not_contain (hallucinated or deprecated mentions)
+
+1. **Organise by category:**
+   1. Pure RAG – handbook questions like “What are the ACID guarantees in Delta Lake?”
+   2. Pure MCP – “List all data products tagged ‘finance’.”
+   3. Hybrid – “Which data product should I use for streaming ingestion according to the handbook?”
+   4. Edge cases – vague queries, empty history, safety boundaries.
+
+
+
+
+## [5/16 - Stanford’s AI Report 2026](https://medium.com/@usabilitycounts/stanfords-ai-report-2026-ai-isn-t-going-anywhere-neither-are-you-if-you-pay-attention-c27729b07f5b)
+??
+
+## [5/16 - Artificial Intelligence Index Report](https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf)
+
+1. [Book : Crossing the Chasm, by 	Geoffrey A. Moore](https://en.wikipedia.org/wiki/Crossing_the_Chasm)
+1. That chasm is where careers will quietly bend.
+1. People who treat AI as a serious instrument — not a toy, not a threat — will be the ones writing the playbook everyone else eventually copies.
+1. The opportunity isn’t the tool. The opportunity is being early enough to define what good use of it looks like for everyone else.
+1. Quality is contextual. 
+
+
+## [Bikash Debnath - spec driven coding ]
+??
+
+
+
+
+## [5/13 - The Ontology Stack: Grounding AI in Domain Knowledge](https://medium.com/@jingwang.physics/the-ontology-stack-grounding-ai-in-domain-knowledge-644ef1087c24)
+
+
+**What Is an Ontology?**
+
+An ontology is a formal framework of rules, relationships, and agreed vocabulary that makes domain knowledge machine-readable. 
+The difference between an ontology and a taxonomy is the difference between a map and a rulebook. 
+A taxonomy only classifies *what things are*. 
+An ontology captures four dimensions of meaning simultaneously, which is what enables a system to reason rather than just store.
+
+take the concept “Poodle.” 
+A taxonomy tells you it is a Dog, which is a Mammal, which is an Animal. 
+An ontology goes further. 
+It records what a poodle is like — `weight: 5kg`, `lifespan: 14yr`, `hypoallergenic: true`. 
+It records how it relates — *owned by* a Person, *can develop* a Disease, *bred for* Companionship. 
+And it records what rules apply — 
+it cannot be a Cat; 
+if `age < 1yr` it is a Puppy. 
+
+
+Those four dimensions together are what let a system compare (“find small dogs with a lifespan over 14 years that are hypoallergenic”), combine data from a vet and a breeder without confusion, and reason — inferring a lease violation without being told explicitly.
+
+The core components of an ontology are controlled vocabulary, relationships, and constraints. Controlled vocabulary means precise, agreed definitions for every key term, with synonyms explicitly mapped. Relationships are verbs that link concepts: a disease *causes* symptoms, a treatment *is associated with* a disease. These enable inference — new knowledge derived from existing facts. Constraints are both hard rules (“never recommend a financial product to under-18s”) and soft guidelines (“prefer cheaper tests unless reliability is compromised”).
+
+The two foundational standards are 
+**OWL (Web Ontology Language)** : which handles complex class hierarchies, reasoning, and inference, and 
+**RDF (Resource Description Framework)** : which is the underlying data model OWL builds on. 
+
+Together they form the backbone of the semantic web — which links data across sources so “car” on one site and “automobile” on another are understood as the same concept.
+
+## The Knowledge Stack
+
+
+1. The **ontology layer** sits at the top as the governance layer. 
+   1. It defines the controlled vocabulary, constraints, and semantic relationships that act as guardrails for everything below it.
+   2. Building it requires expert consensus, and it is the layer that prevents hallucination and drift at the source.
+2. Below it is the **knowledge graph**: entities as nodes, relationships as edges. 
+   1. This is the layer that enables structured reasoning, data lineage, and explainability. 
+   2. It takes the categories defined in the ontology and populates them with real-world instances. 
+   3. The same pattern underpins Google Search, supply chain management, and clinical diagnostics.
+3. Below that is **RAG (Retrieval-Augmented Generation)** 
+   4. which combines semantic and keyword search across both structured and unstructured data. 
+   5. RAG is where the model gains access to information beyond its training data, 
+   6. but it needs the knowledge graph and ontology above it to do more than fuzzy similarity matching.
+4. At the bottom is the **AI agen**t itself: 
+   1. the layer that interprets tasks and generates responses through natural language. Without grounding from the layers above, it hallucinates and drifts. With those guardrails in place, it becomes domain-aware.
+
+
+
+
 
 ## [5/13 - Agentic Mesh Your Enterprise Agents Are Missing](https://pub.towardsai.net/mcp-a2a-owl-ontology-i-built-the-agentic-mesh-your-enterprise-agents-are-missing-84ec0487ddd4)
 
