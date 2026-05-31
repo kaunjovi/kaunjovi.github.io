@@ -1,10 +1,145 @@
 
 
-## 5/30 
+## TOSETUP : Setup Clawdbot locally in a safe (data) and safe (dollar) way. 
+To set up an AI helper locally that is completely free, secure, and easy to manage, the most effective method is to combine **OpenClaw** with **Ollama** for local LLM and **Docker Sandboxes** for strong security. This approach gives you a powerful AI assistant while keeping your main laptop safe and allowing for easy setup and teardown.
 
-Upskill on AI agents in 90 minutes
+### 🛡️ The Recommended Setup: Docker Sandboxes + OpenClaw + Ollama
+
+This combination uses Docker's **sandboxes (microVMs)** to provide strong isolation from your host machine, and Ollama to serve a large language model (LLM) locally—eliminating any API costs.
+
+*   **Isolation**: Docker Sandboxes run agents like OpenClaw inside a lightweight **microVM** with its own kernel, filesystem, and network stack. This hardware-level separation protects your main system and personal files, even if the AI makes a mistake or tries to execute harmful commands. The agent also can't access your host's localhost directly, and a network proxy can block unwanted internet access.
+*   **Cost**: **Ollama** is a free, open-source tool to run LLMs on your own hardware. You can download popular open-source models like Llama or Qwen, and all processing stays on your machine. No API keys mean no hidden costs.
+*   **Ephemerality**: Docker Sandboxes are designed to be **disposable**. You can create a sandbox for a session, and when you're done, destroy it with one command. It's a "spin up, work, tear down" cycle—simple and clean.
+*   **Ease of Setup**: The official Docker blog provides a guide to get started with OpenClaw in a sandbox in **"2-ish commands"**. The steps involve:
+    1.  Enabling Docker Model Runner in Docker Desktop.
+    2.  Running a script to start the sandbox, which automatically discovers and connects to the local models you have pulled with Ollama.
+
+### 🧐 Evaluating Other Sandboxing Methods
+
+While Docker Sandboxes offer a strong balance of security and ease, several other isolation methods exist, each with different trade-offs.
+
+*   **Standard Docker Containers**: These are more lightweight than microVMs but share the host's Linux kernel, which can be a security risk if the AI code finds a kernel vulnerability to escape the container.
+*   **Dedicated Sandboxing Tools**: Tools like `contai` or `sand` provide a "batteries-included" approach, often pre-configured for specific AI agents. They abstract away the complexity of Docker but may be less flexible.
+*   **Virtual Machines (VMs)**: Using a full VM (e.g., VirtualBox, UTM) provides the strongest isolation by running a completely separate operating system. However, VMs are resource-heavy and slower to start and stop, making them less convenient for a "disposable" workflow.
+
+### 💡 Best Practices for a Secure Environment
+
+To ensure your sandbox remains secure and isolated, follow these best practices:
+
+*   **Run on a Separate Device/User**: If possible, use a spare computer or create a dedicated user account on your main machine to run the sandbox. This adds an extra layer of protection between the agent and your personal data.
+*   **Use Dedicated Accounts**: Never give the AI agent access to your primary online accounts (email, social media, etc.). Create dedicated, limited-permission accounts for the agent to use.
+*   **Limit Internet Access**: Configure the sandbox's network proxy to deny connections to arbitrary internet hosts. Only allow access to essential services like your local Ollama server.
+*   **Control Skills and Permissions**: Be selective about which skills (tools) you enable for OpenClaw. Start with only the most essential and community-vetted ones to minimize risk.
+*   **Regular Updates**: Ensure OpenClaw, Ollama, Docker, and your sandboxing tools are regularly updated to incorporate the latest security patches.
+
+### 🚀 Summary: A Step-by-Step Deployment Architecture
+
+1.  **Install Prerequisites**: Install Docker Desktop (with Model Runner enabled) and Ollama on your **host machine**.
+2.  **Pull a Model**: Use Ollama to pull a local model (e.g., `ollama pull qwen3-coder`).
+3.  **Deploy the Sandbox**: Use Docker's `sbx` CLI to create a new sandbox for OpenClaw. The sandbox will run as an isolated microVM.
+4.  **Configure OpenClaw**: Inside the sandbox, configure OpenClaw to use your host's Ollama endpoint as the LLM provider. The sandbox's proxy will handle the connection securely.
+5.  **Operate the Agent**: Run your OpenClaw commands within the sandbox. The agent can install packages, modify files, and execute tasks, all without affecting your host system.
+6.  **Tear Down**: When finished, stop the sandbox. The entire isolated environment and any changes made within it are discarded.
+
+By adopting this architecture, you build a powerful, cost-effective, and secure AI assistant that respects your privacy and leaves your main system untouched.
+
+1. [Run OpenClaw Securely in Docker Sandboxes](https://www.docker.com/blog/run-openclaw-securely-in-docker-sandboxes/) - The official Docker guide to running OpenClaw with local models in isolated microVMs in "2-ish commands"[reference:0].
+2. [How to Use Ollama to Run Large Language Models Locally](https://realpython.com/ollama/) - The definitive tutorial for running LLMs on your own machine without API keys or ongoing costs[reference:1].
+3. [Why MicroVMs: The Architecture Behind Docker Sandboxes](https://www.docker.com/blog/why-microvms-the-architecture-behind-docker-sandboxes/) - An in-depth technical explanation of how Docker Sandboxes provide stronger isolation than traditional containers, crucial for zero-safety-risk setups[reference:2].
+4. [RFC: Skill Security Framework — Permission Manifests, Signing, and Sandboxing](https://github.com/openclaw/openclaw/issues/10890) - An official OpenClaw proposal detailing critical security risks in skill permissions and practical countermeasures for a safe setup[reference:3].
+5. [Explain OpenClaw: Docker Model Runner](https://github.com/centminmod/explain-openclaw/blob/master/03-deploy/docker-model-runner.md) - A comprehensive step-by-step runbook for configuring OpenClaw with Docker Model Runner for zero API costs and complete privacy[reference:4].
+
+
+## TOREAD : https://moderndata101.substack.com/p/the-semantic-medallion
+
+1. Graph of data at enterprise layer, in four lines ? 
+2. Book : SHACL for the Practitioner
+3. **SHACL (Shapes Constraint Language)** is a W3C standard for validating and describing data in Resource Description Framework (RDF) knowledge graphs.
+4. Unlike **OWL (Web Ontology Language)**, which is used for logical reasoning and inferencing, SHACL is strictly focused on validation and defining data quality. 
+
+## TODO : Have a open source, openai compatible, local LLM running on the laptop. 
+
+
+
+## TODO: Collect Bagde : Upskill on AI agents in 90 minutes
 https://www.databricks.com/learn/training/level-your-ai-agent-skills#data-video
 kaunjovi+databricks@gmail.com 
+
+AI agents fundamentals 
+Introduction to ai agents 
+
+## What is an AI agent? 
+1. A **intelligent** tool, that uses 
+2. an AI model, and 
+3. other tools, to 
+4. iteratively plan and execute sequence of actions 
+5. to complete a complex task  
+
+1. Complex task - examples - summarizing a document, write a piece of code etc. 
+
+2. **Prompt engineering - zero shot** 
+3. one question - one answer 
+4. when was ACME founded ? ACME was founded in 1919. 
+
+5. **Prompt engineering - multi shot** 
+6. One question, augmented with an example - one answer. 
+7. Learning by example. Show what is the correct answer to another example question. 
+8. When was ACME found? E.g. When was FOOBAR found? 1945 - now the answer is just the year - 1919 
+
+9. **Prompt engineering - chain of thought** 
+10. The problem needs some reasoning, breaking the problem down to steps and then solving the steps correctly to arrive at an answer. 
+11. Ask the Model to think out loud
+12. Ability to Reason + Ability to Act = ReAct (Reason + Action) example  
+13. Act = when to go and use a tool e.g. retreieve meta data from the Enterprise Data Governance platform 
+14. **Common themes of Agents across the enterprises.** 
+15. Document processing - retrieve data from documents such as contracts, images etc. , at scale (Naah). Categorize, index, make that available (hmmm, might be )
+16. Knowledge base + Search - RAG + AI model 
+17. Machine Learning + AI - (naah ). speech to text ( reverse ), image generation 
+18. **Examples in Databricks world**
+19. Databricks assistant - chatbot, ask questions about the platform. Help us writing scripts 
+20. Customer support - 
+21. Sales agent - internal tooling 
+22. **Powering agents with Databricks Mosaic AI**
+
+23. LLM - input text - output text 
+24. I can speak in english to the LLM and it can communicate back in english 
+25. My input - **prompt**
+26. 
+27. **Prompt engineering** : the engineering involved in forming precise prompts so the GenAI model does the required task effectively.
+28. Some examples : providing examples. asking the LLM to think out loud. 
+29. Different models went to different schools and hence there is a difference in what they are good at and how they respond to the same questions. 
+30. **Mosaic AI** : Same chat interface that we all know 
+    1.  but you can choose which LLM to talk to
+    2.  you can compare side by side 
+31. Prompt engineering : Chain of Thought : AI playground 
+32. UI / Sidebar menu / AI submenu / Palyground 
+    1.  Parameters 
+    2.  Temperature 
+    3.  Top P 
+    4.  Top K 
+    5.  Max Tokens  
+33. Once you start conversation - apart from the response show 
+   1. How long did it take
+   2. How many tokens 
+   3. How many $$s 
+   4. Some parameters like - is the prompt well written, was it safe etc. 
+   5. And finally, based on the answer 
+      1. What are some follow up questions 
+34. Allow the user to add System Prompt over the prompt. 
+35. **Data Intelligence** 
+36. 
+
+
+33. **What are some of the LLM models, open source available?**
+    1.  Llama 3.2 (Meta) - run with Ollama - Meta’s model cards, Ollama’s GitHub, etc. 
+    2.  Phi-3 Mini / Phi-3.5 Mini (Microsoft)
+    3.  Gemma 2 (Google)
+    4.  Mistral 7B (Mistral AI)
+    5.  Qwen2.5 (Alibaba)
+
+
+
+
 
 
 
