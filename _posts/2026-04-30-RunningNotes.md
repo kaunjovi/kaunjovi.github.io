@@ -1,4 +1,37 @@
 
+## [6/1 - What “AI-Ready Data” Actually Means (And Why Most Teams Get It Wrong)](https://medium.com/predict/what-ai-ready-data-actually-means-and-why-most-teams-get-it-wrong-fd0fe7a0b649)
+
+## [6/1 - Ontology and Graph Databases: Enterprise AI From Theory to Production Reality (Part II)](https://medium.com/@nebulagraph/ontology-and-graph-databases-enterprise-ai-from-theory-to-production-reality-part-ii-6b72415eb2b3)
+
+
+1. Clean data - is not equal to - AI ready data. 
+2. Missing piece is **context**
+3. More data - is not equal to - AI ready data. 
+4. AI does not need more, it needs **right things**, clearly defined. 
+5. When is Data, AI ready ? 
+6. Data - more, clean - is not enough. 
+7. Semantic organization is required to make it AI ready. This is done by **Ontology layer**
+8. Business semantics - needs to be **queryable**, **enforceable**
+
+
+## Tutorials 
+
+1. [Youtube Claude channel](https://www.youtube.com/@claude/videos)
+
+
+
+## [Vibe Coding in Production: How Anthropic Uses AI to Write Code](https://www.youtube.com/watch?v=78EYLieMpvc)
+
+
+
+## Universal Semantic Layer 
+
+1. https://thedatagovernanceplaybook.substack.com/p/semantic-layer-vs-data-catalog-why
+2. https://www.strategy.com/software/strategyone/product-tour
+
+## Sridhar Vembu at Zoho
+
+
 
 ## TOSETUP : Setup Clawdbot locally in a safe (data) and safe (dollar) way. 
 To set up an AI helper locally that is completely free, secure, and easy to manage, the most effective method is to combine **OpenClaw** with **Ollama** for local LLM and **Docker Sandboxes** for strong security. This approach gives you a powerful AI assistant while keeping your main laptop safe and allowing for easy setup and teardown.
@@ -136,6 +169,39 @@ Introduction to ai agents
     3.  Gemma 2 (Google)
     4.  Mistral 7B (Mistral AI)
     5.  Qwen2.5 (Alibaba)
+
+
+## TODO : Put a test in place that the AgentDa is not commenting on anything irrelevant like that on politics, religion etc.? 
+1. How - to put the guardrail + to test that it is happening? 
+
+## TODO : Have some examples, news paper clips, about AI leading to embarassing failures for the firms? 
+1. **Examples of failure of GenAI** 
+1. AirCanda - refund policy - chatbot made up 
+2. Chevrolet chatbot identifying Ford as the best choice. 
+
+1. **What are Agentic AI systems?**
+2. Non-Agentic / static workflow : Hardcoded prompt-response system. 
+3. Agentic (dynamic, iterative) workflow : Planning by AI, Tool calling by AI, Execution by AI. Iterative. 
+
+1. TODO : Find the source of the quote : 90% of GenAI projects do not go to production. 
+2. TODO : How do. you measure if the response is good ? 
+3. **AI playground**: Prototype and test an Agent. No code (How??)
+4. **Mosaic AI agent framework** : Know Python ? Code agent. Author and deploy. Build agents from scratch. 
+5. **Agent Bricks (beta)** : Build domain specific AI agent. You focus on data, system will build the agent. 
+   1. production ready agents for your enterprise data - 
+   2. Extract key information from your document 
+   3. Turn your docs into an expert Agent chatbot
+
+
+1. Information Extraction / Next generation of OCR 
+   1. Legal document, contracts etc. extract key informaton from the document. 
+2. Custom LLM 
+   1. Summarize a document etc. 
+   2. Generate a report 
+3. Knowledge assistnace 
+   1. Ingestion of document (??)
+   2. Leverage them to create a chatbot 
+4. Multiple Agent Supervisor 
 
 
 
