@@ -1,4 +1,39 @@
 
+
+
+
+
+## [6/5 - vscode extnsion list]
+1. Markdown All in One - Zhang 
+
+
+## [6/1 - Replacing RAG in 2026 - for code, not for data](https://buzzgrewal.medium.com/ai-agents-dont-need-vector-search-anymore-inside-the-agentic-search-stack-replacing-rag-in-2026-58efcabe4f6f)
+
+1. May 2025 - Anthropic took out vector search from Claude code. 
+2. Claude Code's creator Boris Cherny
+3. Cursor hired Boris Cherny and Cat Wu, the leads behind Claude Code’s agentic search, directly from Anthropic in July 2025
+4. September 2025 engineering post “Effective context engineering for AI agents
+5. rather than pre-processing all relevant data, agents maintain lightweight identifiers (file paths, stored queries, web links, etc.) and use these references to dynamically load data into context at runtime using tools.
+6. they expose retrieval as a set of tools, and let the LLM decide what to call, when, and how often
+7. agent-as-retriever, agentic search, vectorless RAG, just-in-time context loading, or simply tool-use retrieval
+8. start with agentic search and only add semantic search if you need it
+9. Amazon Science published “Keyword search is all you need” (AAAI 2026, arXiv:2602.23368) 
+
+
+## [6/1 - FAQ on Metadata, Semantics, Taxonomy, Ontology, Knowledge Graphs, and Context](https://sanjmo.medium.com/faq-on-metadata-semantics-taxonomy-ontology-knowledge-graphs-and-context-c4a53bfda395)
+
+1. First, people take the well-known techniques of semantics, call them context, and declare the whole topic brand new, as if AI agents had just unleashed it on us. 
+1. Second, experts explain metadata, semantics, taxonomy, ontology, knowledge graphs, and context without a single example, which leaves the audience more confused than when the conversation began.
+
+1. Physical data + Metadata (base)
+1. Ontology + Taxonomy 
+1. Knowledge graph 
+1. Semantic Layer 
+1. Context Layer (top)
+
+1. https://sanjmo.medium.com/faq-on-metadata-semantics-taxonomy-ontology-knowledge-graphs-and-context-c4a53bfda395
+
+
 ## [6/1 - What “AI-Ready Data” Actually Means (And Why Most Teams Get It Wrong)](https://medium.com/predict/what-ai-ready-data-actually-means-and-why-most-teams-get-it-wrong-fd0fe7a0b649)
 
 ## [6/1 - Ontology and Graph Databases: Enterprise AI From Theory to Production Reality (Part II)](https://medium.com/@nebulagraph/ontology-and-graph-databases-enterprise-ai-from-theory-to-production-reality-part-ii-6b72415eb2b3)
@@ -12,6 +47,85 @@
 6. Data - more, clean - is not enough. 
 7. Semantic organization is required to make it AI ready. This is done by **Ontology layer**
 8. Business semantics - needs to be **queryable**, **enforceable**
+9. **Graph database** are natural fit to implement
+1. The hidden tax of unorganized data 
+1. Data w/out semantics is just noise. 
+   1. raw data 
+   2. Ontology layer - creates semantic organization - entities, relationships, rules. 
+   3. AI layer 
+2. **How Ontology layer does it.** 
+3. Naming things inconsistently 
+4. Define relations explicitly - the relationships are typed, directed and constrained. 
+   1. typed 
+   2. directed 
+   3. constrained : Order must have at least one lineitem 
+5. Inheritance and classification 
+   1. Inheritance 
+   2. classification 
+
+
+**Graph Models - good fit - Ontology layer**
+
+1. **Graph databases** are a natural fit for the ontology layer because they natively support:
+1. Each Node has a lable - Customer, Product, etc. 
+   1. Each Node has a property - what is required and what is optional 
+2. Each edge has a type - purchased, shipped-to etc. 
+3. Relationship - Customer can place and Order. A Supplier can not place an Order. 
+
+
+1. Customer_marketing - anyone with an email 
+1. Customer_finance - someone who has at least on paid transaction 
+1. Ontology fixes this 
+
+[Diagram for ontology layer](https://medium.com/@nebulagraph/ontology-and-graph-databases-enterprise-ai-from-theory-to-production-reality-part-ii-6b72415eb2b3)
+
+How to 
+1. Select one business domain 
+1. Identify - core entitites - and their relationships 
+   1. Elimiate - synonyms and homonyms 
+      1. Ploysemy - one word multiple meanings 
+      2. synonyms - multiple word same meanings 
+   
+## [6/1 - Graph Algorithms](https://nebula-graph.io/posts/graph-algorithms-and-how-can-they-solve-real-business-problems) 
+
+1. 
+Nodes / Vertices : Entities. Customer, Product etc. 
+1. Edges : Relationships. Purchased, shipped to etc.
+
+**What is Ontology?**
+1. 2,000-year-old branch of philosophy
+2. Aristotle's formulation, ontology was "first philosophy"
+   1. What is an entity? 
+   2. What classes do entities belong to? 
+   3. What properties define them? And crucially, 
+   4. how do entities relate to one another? 
+
+3. **Objects / Classes / Nouns / Nodes / Vertices**  
+4. What categories of things exist in this domain. 
+5. These are the nouns in the machine's world. 
+6. Examples: Person, Company, City.
+7. **Entity Instances / Hmm, this one might not be for us**
+8. Specific individuals within those categories. 
+9. Under "Person," you might have "John Smith"; under "City," "San Francisco."
+10. **Properties / This one is also going to be different. These would be prop for Objects**  
+11. Attributes that characterize each entity. 
+12. Examples: "John Smith's age is 35," "San Francisco's population is 873,000."
+13. **Links (Relationships)**
+14. How entities connect to one another. Examples: "John Smith works at Company X," "Company X is headquartered in San Francisco."
+15. How do you do that in Data world? 
+16. **Constraints**
+17. Logical boundaries that prevent errors. 
+18. For instance, "A person cannot be employed by two mutually exclusive employers at the same time" or "A company's founding date must precede its dissolution date."
+19. How do you do that in Data world? 
+20. 
+
+1. **Why is Ontology important all of a sudden?** 
+1. the explosion of enterprise data, 
+1. the limitations of large language models, and 
+1. the acute need for deterministic AI in production environments.
+2. https://nebula-graph.io/posts/ontology-and-graph-databases-the-missing-link-in-enterprise-ai
+
+
 
 
 ## Tutorials 
@@ -31,56 +145,6 @@
 
 ## Sridhar Vembu at Zoho
 
-
-
-## TOSETUP : Setup Clawdbot locally in a safe (data) and safe (dollar) way. 
-To set up an AI helper locally that is completely free, secure, and easy to manage, the most effective method is to combine **OpenClaw** with **Ollama** for local LLM and **Docker Sandboxes** for strong security. This approach gives you a powerful AI assistant while keeping your main laptop safe and allowing for easy setup and teardown.
-
-### 🛡️ The Recommended Setup: Docker Sandboxes + OpenClaw + Ollama
-
-This combination uses Docker's **sandboxes (microVMs)** to provide strong isolation from your host machine, and Ollama to serve a large language model (LLM) locally—eliminating any API costs.
-
-*   **Isolation**: Docker Sandboxes run agents like OpenClaw inside a lightweight **microVM** with its own kernel, filesystem, and network stack. This hardware-level separation protects your main system and personal files, even if the AI makes a mistake or tries to execute harmful commands. The agent also can't access your host's localhost directly, and a network proxy can block unwanted internet access.
-*   **Cost**: **Ollama** is a free, open-source tool to run LLMs on your own hardware. You can download popular open-source models like Llama or Qwen, and all processing stays on your machine. No API keys mean no hidden costs.
-*   **Ephemerality**: Docker Sandboxes are designed to be **disposable**. You can create a sandbox for a session, and when you're done, destroy it with one command. It's a "spin up, work, tear down" cycle—simple and clean.
-*   **Ease of Setup**: The official Docker blog provides a guide to get started with OpenClaw in a sandbox in **"2-ish commands"**. The steps involve:
-    1.  Enabling Docker Model Runner in Docker Desktop.
-    2.  Running a script to start the sandbox, which automatically discovers and connects to the local models you have pulled with Ollama.
-
-### 🧐 Evaluating Other Sandboxing Methods
-
-While Docker Sandboxes offer a strong balance of security and ease, several other isolation methods exist, each with different trade-offs.
-
-*   **Standard Docker Containers**: These are more lightweight than microVMs but share the host's Linux kernel, which can be a security risk if the AI code finds a kernel vulnerability to escape the container.
-*   **Dedicated Sandboxing Tools**: Tools like `contai` or `sand` provide a "batteries-included" approach, often pre-configured for specific AI agents. They abstract away the complexity of Docker but may be less flexible.
-*   **Virtual Machines (VMs)**: Using a full VM (e.g., VirtualBox, UTM) provides the strongest isolation by running a completely separate operating system. However, VMs are resource-heavy and slower to start and stop, making them less convenient for a "disposable" workflow.
-
-### 💡 Best Practices for a Secure Environment
-
-To ensure your sandbox remains secure and isolated, follow these best practices:
-
-*   **Run on a Separate Device/User**: If possible, use a spare computer or create a dedicated user account on your main machine to run the sandbox. This adds an extra layer of protection between the agent and your personal data.
-*   **Use Dedicated Accounts**: Never give the AI agent access to your primary online accounts (email, social media, etc.). Create dedicated, limited-permission accounts for the agent to use.
-*   **Limit Internet Access**: Configure the sandbox's network proxy to deny connections to arbitrary internet hosts. Only allow access to essential services like your local Ollama server.
-*   **Control Skills and Permissions**: Be selective about which skills (tools) you enable for OpenClaw. Start with only the most essential and community-vetted ones to minimize risk.
-*   **Regular Updates**: Ensure OpenClaw, Ollama, Docker, and your sandboxing tools are regularly updated to incorporate the latest security patches.
-
-### 🚀 Summary: A Step-by-Step Deployment Architecture
-
-1.  **Install Prerequisites**: Install Docker Desktop (with Model Runner enabled) and Ollama on your **host machine**.
-2.  **Pull a Model**: Use Ollama to pull a local model (e.g., `ollama pull qwen3-coder`).
-3.  **Deploy the Sandbox**: Use Docker's `sbx` CLI to create a new sandbox for OpenClaw. The sandbox will run as an isolated microVM.
-4.  **Configure OpenClaw**: Inside the sandbox, configure OpenClaw to use your host's Ollama endpoint as the LLM provider. The sandbox's proxy will handle the connection securely.
-5.  **Operate the Agent**: Run your OpenClaw commands within the sandbox. The agent can install packages, modify files, and execute tasks, all without affecting your host system.
-6.  **Tear Down**: When finished, stop the sandbox. The entire isolated environment and any changes made within it are discarded.
-
-By adopting this architecture, you build a powerful, cost-effective, and secure AI assistant that respects your privacy and leaves your main system untouched.
-
-1. [Run OpenClaw Securely in Docker Sandboxes](https://www.docker.com/blog/run-openclaw-securely-in-docker-sandboxes/) - The official Docker guide to running OpenClaw with local models in isolated microVMs in "2-ish commands"[reference:0].
-2. [How to Use Ollama to Run Large Language Models Locally](https://realpython.com/ollama/) - The definitive tutorial for running LLMs on your own machine without API keys or ongoing costs[reference:1].
-3. [Why MicroVMs: The Architecture Behind Docker Sandboxes](https://www.docker.com/blog/why-microvms-the-architecture-behind-docker-sandboxes/) - An in-depth technical explanation of how Docker Sandboxes provide stronger isolation than traditional containers, crucial for zero-safety-risk setups[reference:2].
-4. [RFC: Skill Security Framework — Permission Manifests, Signing, and Sandboxing](https://github.com/openclaw/openclaw/issues/10890) - An official OpenClaw proposal detailing critical security risks in skill permissions and practical countermeasures for a safe setup[reference:3].
-5. [Explain OpenClaw: Docker Model Runner](https://github.com/centminmod/explain-openclaw/blob/master/03-deploy/docker-model-runner.md) - A comprehensive step-by-step runbook for configuring OpenClaw with Docker Model Runner for zero API costs and complete privacy[reference:4].
 
 
 ## TOREAD : https://moderndata101.substack.com/p/the-semantic-medallion
