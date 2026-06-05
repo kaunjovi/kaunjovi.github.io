@@ -1,5 +1,17 @@
 
 
+## [6/5 - Why dont you see more Knowledge Graph](https://medium.com/graph-praxis/ontology-drift-why-your-knowledge-graph-is-slowly-going-wrong-234fa238826c)
+
+1. **Ontology Drift** - the phenomenon where the underlying structure and relationships in a knowledge graph become outdated or misaligned with the real-world domain it represents.
+   
+
+## [6/5 - What the Heck is Duckle?](https://progrockrec.medium.com/what-the-heck-is-duckle-4227dc863d9d)
+
+1. Some local AI powered data engineering too. Read more ?? 
+
+## [6/5 - Chroma Context-1. Tailor made for document retrieval](https://levelup.gitconnected.com/i-replaced-my-rag-agents-brain-with-a-20b-model-it-got-smarter-3ea48d84c2c9)
+
+1. Read more ?? 
 
 
 
