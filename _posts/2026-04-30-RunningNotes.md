@@ -1,4 +1,33 @@
 
+## [6/5 - The Semantic Layer: The Governed Interface that makes AI trustworthy at scale](https://medium.com/@shubhodaya.hampiholi/the-semantic-layer-the-governed-interface-that-makes-ai-trustworthy-at-scale-ba6d59451cb0)
+
+
+Section 4: 
+## Anatomy of a Semantic Layer — What It Actually Contains
+Metric 
+Entity 
+Dimensional 
+Access 
+
+
+Context modeling GL 
+Recording sessions 
+Training video
+
+Business process f/w 
+
+Distillation board ? 
+
+Generating o/p : ?? Diagram that you can download. 
+
+ECM - 19 domains - somson
+
+
+
+
+
+
+
 
 ## [6/5 - Why dont you see more Knowledge Graph](https://medium.com/graph-praxis/ontology-drift-why-your-knowledge-graph-is-slowly-going-wrong-234fa238826c)
 
