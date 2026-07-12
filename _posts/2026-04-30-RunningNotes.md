@@ -1,4 +1,10 @@
 
+
+
+$$
+
+
+
 ## [6/5 - The Semantic Layer: The Governed Interface that makes AI trustworthy at scale](https://medium.com/@shubhodaya.hampiholi/the-semantic-layer-the-governed-interface-that-makes-ai-trustworthy-at-scale-ba6d59451cb0)
 
 
