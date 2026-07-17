@@ -7,7 +7,13 @@ https://claude.com/resources/courses
 [Course : Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action)
 
 
-[Certification : Architect foundation](https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification) 
+
+1. Claude Certified Developer - Foundations: for developers. Covers building, integrating, and shipping production applications and agents using the Claude API, Claude Code, custom tools, and MCP servers.
+
+
+## Claude Certified Architect - Professional
+1. for experienced solution architects. Covers designing and leading enterprise-scale deployments, integration architecture, optimization at scale, and governance.
+1. [Certification : Architect foundation](https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification) 
 
 1. List of pre-read. Free. 
    1. https://anthropic-partners.skilljar.com/ai-fluency-framework-foundations 
@@ -16,7 +22,7 @@ https://claude.com/resources/courses
    4. https://anthropic-partners.skilljar.com/claude-101
    5. https://anthropic-partners.skilljar.com/claude-in-amazon-bedrock
    6. https://anthropic-partners.skilljar.com/introduction-to-model-context-protocol
-   7. https://anthropic-partners.skilljar.com/claude-code-in-action
+   7. DONE https://anthropic-partners.skilljar.com/claude-code-in-action
    
 
 [Course : Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action)

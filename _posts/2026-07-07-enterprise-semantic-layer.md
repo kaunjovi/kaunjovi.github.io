@@ -25,15 +25,16 @@
 19. This has been a challange to achieve at scale.  
 
 
+
 ###  Tool bound semantics vs. Platform Native Semantics 
 1. **Tool bound semantic** 
-1. Embed business logic inside specific BI tools (like DAX in Power BI or LookML in Looker)
-1. Issue : creates silos. When you use multiple tools, definitions diverge, governance becomes fragmented, and you end up maintaining the same logic in multiple places
-1. **Platform native semantics**
-2. manage your business semantics within your core data platform, alongside the data itself
-3. single, governed abstraction layer that exposes metrics and definitions to all consuming surfaces via open APIs (REST, JDBC, etc.)
-4. This approach is often described as "headless BI," where the logic is decoupled from the visualization layer
-1. We would prefer to go with **Platform Native Semantics**. 
+2. Embed business logic inside specific BI tools (like DAX in Power BI or LookML in Looker)
+3. Issue : creates silos. When you use multiple tools, definitions diverge, governance becomes fragmented, and you end up maintaining the same logic in multiple places
+4. **Platform native semantics**
+5. manage your business semantics within your core data platform, alongside the data itself
+6. single, governed abstraction layer that exposes metrics and definitions to all consuming surfaces via open APIs (REST, JDBC, etc.)
+7. This approach is often described as "headless BI," where the logic is decoupled from the visualization layer
+8. We would prefer to go with **Platform Native Semantics**. 
 
 
 ## Question : 
@@ -44,6 +45,9 @@
 1. Please resond exclusively in English. 
 2. Please provide a section with the links
 
+## Reference 
+
+1. [How Anthropic enables self-service data analytics with Claude](https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude?blaid=8747576)
 
 
 ## Governed, platform-native semantic layer, leveraging deep integration between Snowflake and Collibra
