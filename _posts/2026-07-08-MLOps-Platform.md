@@ -181,3 +181,29 @@ https://futureagi.com/blog/best-llmops-platforms-2026/
 18. URL: https://domino.ai
 
 ## Question : What are the considerations to choose the best ML platform? What are the top 10 questions to ask? 
+
+
+## Feature store / AWS SageMaker
+
+1. What is a Feature Store and why do I need one? | AWS (2025)
+2. URL: https://aws.amazon.com/sagemaker/ai/feature-store/
+3. Feature Store Documentation | Amazon SageMaker (2026)
+4. URL: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html
+5. Feature Stores in Machine Learning: A Comprehensive Guide | Tecton (2025)
+6. URL: https://www.tecton.ai/blog/what-is-a-feature-store/
+7. Why feature stores are fundamental to modern MLOps | Databricks (2025)
+8. URL: https://www.databricks.com/glossary/feature-store
+9. Feature Store vs. Data Warehouse: Key Differences for ML Teams | Dataiku (2026)
+10. URL: https://www.dataiku.com/blog/feature-store-vs-data-warehouse/
+11. SageMaker Feature Store offline and online stores explained | AWS (2025)
+12. URL: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-online-offline.html
+
+## Feature store / Domino Datalabs
+
+Offline Store: This is a large-scale, historical data repository used for batch model training and backtesting. In Domino, the data itself remains on the original data source. The platform supports several offline store types, including Snowflake, Amazon Redshift, Google BigQuery, and local files.
+
+1. In Feast (the open‑source project behind Domino's feature store), the offline store is typically stored as:
+1. Parquet files in a cloud storage bucket (e.g., S3, GCS, Azure Blob) with a Hive‑compatible table format (e.g., AWS Glue or Hive Metastore)
+1. A dedicated table in Snowflake or BigQuery (e.g., analytics.feature_store_offline)
+
+
