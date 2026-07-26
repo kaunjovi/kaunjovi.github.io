@@ -1,4 +1,41 @@
 
+
+## Ontology Layer 
+1. The Ontology answers "What is this thing and how does it relate to everything else?"
+2. OSI YAML → Snowflake View
+3. In our implementation, the Ontology is not a separate system. It is embedded in the OSI YAML that creates the Semantic View. 
+4. Relationship definitions (from/to tables, cardinalities), business term mappings, class hierarchies
+5. The Ontology is not separately queryable in Snowflake as a graph—it's compiled into the view's join logic.
+6. The true, human-readable ontology (with class hierarchies, formal axioms, and inference rules) lives in Collibra's glossary and is used to generate the YAML—but Collibra does not execute it.
+7. We define it in the OSI YAML as relationships, business term mappings, and logical rules. 
+8. It answers "what things mean and how they connect."
+
+
+## Semantic Layer 
+1. The Semantic Layer answers "How do we calculate this number?"
+2. OSI YAML → Snowflake View
+3. It contains the information on Metrics, dimensions, joins, filters, aggregations
+4. Metrics : Revenue = SUM(amount) WHERE transaction_type = 'sale' AND status = 'completed'
+5. Dimensions : Defines the dimension: Region comes from customer.address.region.
+6. Joins : Defines the join: Sales → Customers on customer_id
+7. Filters : ?? 
+8. Aggregation : ?? 
+
+
+## Snowflake Semantic View  = Information of ( Semantic Layer + Ontology Layer )
+1. It is the runtime, executable manifestation of the semantic logic defined in an OSI YAML file. 
+2. The Semantic View is the executable artifact that contains both the semantic layer (metrics/calculations) AND the ontology (relationships/meaning).
+3.  You can store semantic business concepts directly in the database in a Semantic View, which is a schema-level object. 
+4.  You can define business metrics and model business entities and their relationships.
+5.  For example, for a critical business concept like gross revenue, the data might be stored in a table column named amt_ttl_pre_dsc in the database, making it difficult for business users to find and interpret.
+6.  if net revenue within a company always means gross revenue after discounts, the semantic view can define it consistently as a metric with the correct aggregation: SUM(gross_revenue * (1 - discount)).
+7.  [YAML specification for semantic views](https://docs.snowflake.cn/en/en/user-guide/views-semantic/semantic-view-yaml-spec)
+8.  YAML is better than the DDL approach for our specific case. 
+9.  [YAML vs DDL authoring for semantic views](https://docs.snowflake.cn/en/user-guide/views-semantic/yaml-vs-ddl)
+10. artifacts related to the semantic view are referred to as logical objects.
+
+
+
 ## Reference 
 
 1. [How Anthropic enables self-service data analytics with Claude](https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude?blaid=8747576)
