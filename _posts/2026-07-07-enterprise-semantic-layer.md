@@ -35,6 +35,30 @@
 10. artifacts related to the semantic view are referred to as logical objects.
 
 
+## What is NOT contained in Semantic View 
+1. Data Product readiness (DQ scores, completeness, validity, timeliness) are metadata about the Data Products and signify **Operational health**. It is in **Collibra**, and exposed via API. Cortex interacts with the API to get this information. The infomration itself does not sit in the YAML. 
+   1. The DQ scores, completeness etc. will change with time. Every time they change they the Semantic Layer can't be updated.  
+2. **Confidentiality labels (HC/C, PII, etc.)** are not supposed to be in the Semantic View. The Semantic View is for business logic, not security policy. 
+   1. The HC/C, PII etc. will impact what will be encrypted / masked. DO NOT touch this in YAML file. Let Snowflake, masking policies and RBAC handle them. 
+3. **Data Owner and Data Steward** of any Data Product. 
+   1. When a user asks "Who owns the Customer Data Product?", the agent recognizes this as a governance query, invokes the Collibra API endpoint for that specific Data Product asset (using its UUID or fully qualified name), and extracts the custom fields for Data_Owner and Data_Steward. It returns those names directly to the user.
+   2. we could periodically sync these ownership attributes from Collibra into a small, dedicated operational metadata table in Snowflake (separate from the Semantic View). This table is exclusively for governance lookups (e.g., data_product_governance with columns: dp_name, owner, steward, last_dq_score). We then give the Cortex Agent read access to this table. The agent runs a simple SELECT against this table to fetch the steward/owner names.
+
+## DRAFT - Questions for Data Agent for Demo. 
+
+1. What is our current total customer count as of today?"
+2. (Tests: Basic metric retrieval from Semantic View. Expects instant number.)
+3. "What does 'Customer' formally mean in ACME's data—does it include inactive accounts?"
+4. (Tests: Ontology definition retrieval from Collibra; proves the Agent understands the meaning of the entity, not just the raw rows.)
+5. "Show me customer count broken down by region and segment for Q2 2026."
+6. (Tests: Dimensional roll-up, joins, and aggregation logic from the Semantic Layer.)
+7. "What was our month-over-month customer growth rate for the last six months?"
+8. (Tests: Complex time-series calculation and window functions compiled in the Semantic View.)
+9. "Is the Customer Data Product ready for today's operations—what is its latest ACTIVATE quality score?"
+10. (Tests: Governance/readiness lookup from Collibra/observability; shows the Agent distinguishes operational health from business metrics.)
+11. "Who owns the Customer Data Product, and who is the Steward I should contact for a definition change?"
+12. (Tests: Ownership/governance metadata retrieval from Collibra; demonstrates real-time escalation support.)
+
 
 ## Reference 
 
