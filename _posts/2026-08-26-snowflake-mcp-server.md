@@ -1,8 +1,30 @@
----
-layout: post
-title: Snowflake MCP Server
-categories: [Snowflake-Managed MCP Server, Composio, LlamaIndex] 
---- 
+
+Create or edit .vscode/mcp.json in your project:
+
+
+```
+{
+  "mcpServers": {
+    "snowflake-managed": {
+      "type": "sse",  // Snowflake-managed servers use Server-Sent Events
+      "url": "https://<account_url>/api/v2/databases/<database>/schemas/<schema>/mcp-servers/<server_name>",
+      "headers": {
+        "Authorization": "Bearer <YOUR_PAT_TOKEN>"
+      }
+    }
+  }
+}
+```
+
+## Security & Auditing Best Practices
+
+1. Use the Least-Privileged Role: When creating your PAT, bind it to a role with only the minimum permissions required (e.g., SELECT on specific views/tables). This prevents leaking a secret with access to a highly-privileged role.
+2. Apply a Network Policy: Restrict PAT usage to specific IP addresses by applying a network policy to the user. For human users (TYPE=PERSON), they must be subject to a network policy to authenticate with the token.
+3. Enforce Read-Only Access: If using a community server like @bossforce.ai/mcp-snowflake that cannot enforce read-only at the server level, ensure the database role bound to the PAT has only SELECT permissions.
+4. Use Environment Variables: Store the PAT in environment variables (as shown above) rather than hardcoding it in the configuration file to reduce the risk of token leakage.
+5. Avoid Recursive Loops: Prevent configurations where the MCP server could call itself or create circular dependencies, which can lead to runaway costs.
+6.  Verify Third-Party Servers: Before using any community MCP server, review its code and the tools it exposes to avoid vulnerabilities like tool poisoning or tool shadowing.
+
 
 ## Snowflake-Managed MCP Server 
 1. [Documentation of Snowflake-managed MCP server](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp)
