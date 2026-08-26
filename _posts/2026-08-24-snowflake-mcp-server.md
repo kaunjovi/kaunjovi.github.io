@@ -1,12 +1,26 @@
+## Assume 
+1. Usage of Claude as VSCODE plugin. 
+2. Assume usage of Snowflake-Managed MCP Server only. 
+3. Assume dev environment is Windows and it is preferrable to leverage environment variables for storing sensitive informaiton like Environment Variables. 
+4. 
+
+## Set Windows Environment Variables
+1. Press Win + R, type sysdm.cpl, and press Enter.
+2. Go to the Advanced tab → Environment Variables.
+3. Under User variables, click New.
+4. Set Variable name to SNOWFLAKE_PAT and Variable value to your token.
+5. Click OK and restart VSCode for the variable to take effect.
+
+
 
 Create or edit .vscode/mcp.json in your project:
 
 
-```
+```json
 {
   "mcpServers": {
     "snowflake-managed": {
-      "type": "sse",  // Snowflake-managed servers use Server-Sent Events
+      "type": "sse",  
       "url": "https://<account_url>/api/v2/databases/<database>/schemas/<schema>/mcp-servers/<server_name>",
       "headers": {
         "Authorization": "Bearer <YOUR_PAT_TOKEN>"
@@ -15,6 +29,23 @@ Create or edit .vscode/mcp.json in your project:
   }
 }
 ```
+
+## .vscode/mcp.json
+
+```json 
+{
+  "servers": {
+    "snowflake-managed": {
+      "type": "http",
+      "url": "https://<account_url>/api/v2/databases/<database>/schemas/<schema>/mcp-servers/<server_name>",
+      "headers": {
+        "Authorization": "Bearer ${env:SNOWFLAKE_PAT}"
+      }
+    }
+  }
+
+```
+
 
 ## Security & Auditing Best Practices
 
