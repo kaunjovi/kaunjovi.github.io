@@ -24,3 +24,14 @@ The semantic layer is the dictionary that maps the language of the business onto
 4. [Your Data Agents Need Context](https://a16z.com/your-data-agents-need-context/)
 5. [Agentic Builders](https://medium.com/agentic-builders)
 6. [How to Use Graphify](https://medium.com/agentic-builders/how-to-use-graphify-turn-any-folder-into-a-knowledge-graph-d51b38eb60b6)
+
+
+Frank La Salla
+BITS Hyderabad 
+Abhishek Gaikwad, ... and 
+
+EA - 
+
+Hyderabad
+Roopa Bharvnai - Hyd - ISB 
+Rahul 
