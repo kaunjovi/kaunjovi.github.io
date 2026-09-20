@@ -12,15 +12,33 @@ categories: [notes]
 
 ### Free Claude course : Claude Code 101 
 
-1. https://academy.claude.com/courses/claude-code-101/what-is-claude-code
-2. It can access the web - e.g. to look up on the latest documentation of an API (can it?? how to check??)
+1. **Claude code is an Agentic coding assistant** 
+2. https://academy.claude.com/courses/claude-code-101/what-is-claude-code
+3. It can access the web - e.g. to look up on the latest documentation of an API (can it?? how to check??)
 
-3. context memory - it can hold a lot but not infinite. 
+4. context memory - it can hold a lot but not infinite. 
    1. This is the agentic part - it does not hold the entire codebase in memory 
    2. 
 ```
 /context 
 ```
+
+1. **Free lesson : How Claude Code works**
+2. https://academy.claude.com/courses/claude-code-101/how-claude-code-works
+3. The Agentic Loop 
+4. You prompt - it springs into action, does something, checks if it is done 
+   1. If not done it does the thing all over again. 
+   2. Through these iterations, it leaarns itself, and / or takes inputs from human operator 
+5. Context window 
+   1. The note book as it interacts with external world. 
+   2. Once it is almost full it /compacts the conversation. 
+6. Tools 
+   1. Read file tool 
+   2. Search web tool etc. 
+7. Permissions 
+   1. Plan mode - read only 
+   2. Auto - write to files, but ask before running a shell command. 
+   3. 
 
 
 
