@@ -4,6 +4,11 @@
 3. Assume dev environment is Windows and it is preferrable to leverage environment variables for storing sensitive informaiton like Environment Variables. 
 4. 
 
+## Question : 
+When Claude calls the Snoflake managed MCP server, it is backed by a Cortex Agent. So, the call is first intercepted and worked up by the Cortex Agent and then further analysed by Cortex agent. This makes the process slow and costly. How do we handle something like this. 
+
+
+
 ## Set Windows Environment Variables
 1. Press Win + R, type sysdm.cpl, and press Enter.
 2. Go to the Advanced tab → Environment Variables.

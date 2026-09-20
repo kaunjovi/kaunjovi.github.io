@@ -4,8 +4,86 @@ title: Rough Notes
 categories: [notes] 
 ---
 
+### Free AI courses 
 
-1. https://jamwithai.substack.com/p/pre-rag-era-building-an-end-to-end
+1. https://academy.genai.works/free-courses-ai
+2. Before you begin, ask any questions that you might need to have clarification on. 
+3. 
+
+### Free Claude course : Claude Code 101 
+
+1. https://academy.claude.com/courses/claude-code-101/what-is-claude-code
+2. It can access the web - e.g. to look up on the latest documentation of an API (can it?? how to check??)
+
+3. context memory - it can hold a lot but not infinite. 
+   1. This is the agentic part - it does not hold the entire codebase in memory 
+   2. 
+```
+/context 
+```
+
+
+
+### GPT-6 Astra just ended software.
+
+1. https://michalmalewicz.medium.com/gpt-6-astra-just-ended-software-e6047997b667
+2. OpenAI has released their latest Astra model.
+3. AGI is finally here
+4. Sol was OUR star. Astra is “all the stars”
+5. The SaaS MRR model(???) is dying as more and more users look for one-time payment alternatives
+6. Amazon has had 4 (Sev-1) outages in just one week between February and March of 2026. Their memos showed “AI-assisted” code changes as the primary culprit.
+7. A six-hour outage cost them around $6.3M in orders lost. It was a deploy that went live with no approval or even documentation.
+8. The 2024 Sonos app rewrite was utterly broken when it went live. Took a year of fixes and tens of millions of dollars. They even kicked out the CEO. Many disgruntled users never came back to the brand.
+9. Vibe coding resulted in an 84% jump in new Apple App store submissions in a single quarter. It was the largest bump in a dacade.
+10. AI coding is mesmerizing if you know software architecture. 
+11. I installed Omarchy linux (???) on it and the laptop has gained a new life. It’s also “agentic” now, with AI deeply embedded into the OS.
+12. 
+
+### Databricks introduced a new database that could change everything
+1. **May 2025**, Databricks **acquired Neon**, the company that provides serverless Postgres
+2. **Databricks introduced Lakebase**, a serverless, Postgres-compatible transactional database architecture that separates compute from storage to enable low-latency applications and AI agents.
+3. PostgreSQL is an **OLTP (Online Transaction Processing)** DB. 
+4. **High Concurrency**: To support thousands of users and processes simultaneously reading and writing data without interfering with each other.
+5. **High Throughput for Writes**: To quickly process a large volume of minor, frequent updates, inserts, and deletes.
+6. most OLTP systems manage data in a row format (records are stored next to each other)
+7. A database page is the I/O unit created and managed by the database software itself. 
+8. A page contains metadata, actual data, or indexes, and it usually doesn’t include a mix of data types (e.g., a page for data only or a page for indexes only)
+9. When the database needs to read data, it doesn’t fetch a single row from the disk; it reads the entire page containing that row into memory. 
+10. Likewise, when it writes data, it writes the whole modified page back to disk.
+11. **Problem with Write** / **Write Ahead Log (WAL)**
+12. When you modify data, the affected page is brought into memory, changed there, and eventually flushed back to disk. 
+13. But memory is volatile; if the machine crashes before that flush happens, the change is gone.
+14. OLTP databases such as PostgreSQL use a Write-Ahead Log (WAL) to provide durability
+15. WAL is a separate, append-only structure on disk
+16. PostgreSQL acknowledges a commit as soon as the change is durably in the WAL; it doesn’t wait for the actual page to be written back to disk at all. 
+17. **What is Databricks trying to achieve with Lakebase**
+18. Has compute and storage separate.
+    1.  The first one is to leverage object storage for the storage layer.
+19. Stores data in an “open“ format to enable interoperability.
+20. Has the ability to “branch out“
+21. Reference 
+    1.  https://blog.dataengineerthings.org/databricks-introduced-a-new-database-that-could-change-everything-99e24709846f
+    2.  https://www.databricks.com/blog/object-storage-wal-lakebase-postgres-agentic-era
+    3.  https://www.vldb.org/pvldb/vol19/p4385-pandis.pdf
+
+
+
+### From Messy Data Models to Agentic Data Catalogs
+
+1. [Building an AI Data Architect with OKF and Gemini](https://medium.com/google-cloud/from-messy-data-models-to-agentic-data-catalogs-building-an-ai-data-architect-with-okf-and-gemini-75a20caee9ed)
+1. Can we do the same without using Gemini ??
+
+## MCP is Dead 
+1. Do not use MCP 
+2. Use direct CLI + direct API call instead. 
+3. (??) How to interact with Collibra w/out MCP server from Claude. 
+4. https://uxplanet.org/mcp-is-dead-cf16b667ba6d
+
+
+
+
+
+5.  https://jamwithai.substack.com/p/pre-rag-era-building-an-end-to-end
 
 
 ## GenAI / Links 
