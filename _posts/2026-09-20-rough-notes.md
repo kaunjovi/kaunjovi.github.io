@@ -4,6 +4,41 @@ title: Rough Notes
 categories: [notes] 
 ---
 
+
+
+### Pedhapati hacked just by changing model. 
+
+1. https://www.cbsnews.com/news/openai-hack-anthropic-claude-vulnerabilities/ 
+1. 3 guys hacked OpenAI using a rival Anthropic model
+1. Mohan Pedhapati, one of the three researchers from a company called Hacktron who broke into OpenAI, said that more advanced AI models allow veteran hackers like him to do their work much more easily — and raise the risks of criminals doing the same. 
+2. **huggingface breach**
+3. Similar to GPT-5.6 Sol - lets call it persistent Sol 
+4. Persistent-Sol had access to Artifactory - used that as a message board 
+5. and then used Artifactory to get access to internet (???)
+6. then got full admin access to Artifactory (Artifactory - what are you doing???)
+7. PHASEONE10841 
+8. 3rd wave - persistent Astra 
+   
+   
+
+## GenAI companies 
+
+2. OpenAI - December 2015 by Sam Altman, Greg Brockman, Ilya Sutskever, and others 
+   1. ChatGPT: A conversational AI assistant launched in November 2022 that accelerated global mainstream adoption of generative AI.
+   2. Codex & Developer Tools: AI systems designed to assist with software programming, debugging, and API integrations. 
+   3. https://openai.com/news/
+   4. GPT 6 - sep 2026 
+3. Anthropic - 2021 by former OpenAI researchers, including CEO Dario Amodei and President Daniela Amodei
+   1. Organized as a public benefit corporation (PBC) headquartered in San Francisco, California
+   2. **Claude** 
+   3. https://www.anthropic.com/news
+   4. Introducing Claude Fable 5.1 and Claude Mythos 5.1 - Septempber 2026 
+   5. 
+
+1. **METR**
+
+
+
 ### Free AI courses 
 
 1. https://academy.genai.works/free-courses-ai
@@ -28,7 +63,7 @@ categories: [notes]
 3. The Agentic Loop 
 4. You prompt - it springs into action, does something, checks if it is done 
    1. If not done it does the thing all over again. 
-   2. Through these iterations, it leaarns itself, and / or takes inputs from human operator 
+   2. Through these iterations, it learns itself, and / or takes inputs from human operator 
 5. Context window 
    1. The note book as it interacts with external world. 
    2. Once it is almost full it /compacts the conversation. 
