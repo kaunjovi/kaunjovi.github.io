@@ -5,16 +5,23 @@ date: 2026-09-23
 categories: [AI, Certification, Claude]
 ---
 
-## Exam Domains Overview
+## Claude Certified Architect – Professional (CCAR-P)
+
+1. https://tutorialsdojo.com/ccar-p-claude-certified-architect-professional-study-guide/
+2. [Claude Cheat Sheets](https://tutorialsdojo.com/other-cheat-sheets/claude-cheat-sheets/)
+3. [Claude Code Cheat Sheet](https://tutorialsdojo.com/claude-code/)
+4. 
+
+## CCAR-P Exam Domains Overview
 
 ---
-Integration – 19%
-Solution Design and Architecture – 17%
-Evaluation, Testing, and Optimization – 16%
-Governance, Safety, and Risk Management – 14%
-Claude Models, Prompting, and Context Engineering – 13%
-Stakeholder Communication and Lifecycle Management – 14%
-Developer Productivity and Operational Enablement – 7%
+1. Integration – 19%
+2. Solution Design and Architecture – 17%
+3. Evaluation, Testing, and Optimization – 16%
+4. Governance, Safety, and Risk Management – 14%
+5. Claude Models, Prompting, and Context Engineering – 13%
+6. Stakeholder Communication and Lifecycle Management – 14%
+7. Developer Productivity and Operational Enablement – 7%
 
 ---
 
@@ -123,6 +130,7 @@ Failure Surface: Adding agents or autonomous loops increases the risk of error p
 
 
 
+
 ## Some concepts. They need home. 
 
 1. **Primancy effect** - LLMs tend to recall information placed at the beginning of the context. 
@@ -132,3 +140,15 @@ Failure Surface: Adding agents or autonomous loops increases the risk of error p
 
 
 
+## Mock Question 
+1. A global retailer uses Claude to review inbound freight quotes before selecting carriers for weekly shipments. 
+2. The system must first extract shipment costs and service terms, then validate the results against procurement policies, and finally generate a recommendation for the transportation team. 
+3. Because the stages follow consistent rules and later stages depend on the output of earlier stages, the company needs a predictable and auditable architectural pattern.
+4. 
+5. Which architectural pattern best meets these requirements?
+6. 
+7. Use a fixed workflow where each step is a discrete, sequenced LLM call for extracting quote details, validating policy compliance, and generating the recommendation.
+8. Use a single monolithic prompt that asks Claude to interpret the quotes and autonomously decide whether additional processing or external actions are required.
+9. Use an autonomous agent that dynamically creates its own processing plan and selects tools based on each set of inbound freight quotes.
+10. Use parallel LLM calls that independently extract, validate, and generate the recommendation at the same time without waiting for preceding results.
+11. 
