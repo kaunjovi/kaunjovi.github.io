@@ -54,3 +54,16 @@ date: 2026-10-01
 - Amundi is the largest European asset manager, backed by Crédit Agricole.
 - UBS is tied to the world's largest international private wealth bank.
 - PIMCO is a global bond market titan controlled by parent Allianz.
+
+
+---
+
+## The U.S. Retirement Fee Blueprint
+
+| Investment Strategy | Asset Class / Vehicle | Primary Provider Examples | Typical 401(k)/IRA Institutional Fee |
+|---------------------|-----------------------|---------------------------|--------------------------------------|
+| Passive Core | S&P 500 / Total Market Index | Vanguard (Institutional), BlackRock (CITs) | 0.02% – 0.05% |
+| Target Date (Passive) | BlackRock LifePath, Vanguard Target Retirement | BlackRock, Vanguard | 0.04% – 0.08% |
+| Target Date (Active) | TIAA Lifecycle (Nuveen) | Nuveen / TIAA | 0.35% – 0.45% |
+| Active Public Growth | Large-Cap / International Equity | Capital Group (R-6 Shares), Schroders | 0.30% – 0.55% |
+| Alternative Private Credit | Hybrid "Interval" Accounts | Blackstone/Vanguard, KKR/Capital Group | 1.00% – 1.30% |
