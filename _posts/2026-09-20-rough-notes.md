@@ -6,6 +6,8 @@ categories: [notes]
 
 
 
+
+
 ### Pedhapati hacked just by changing model. 
 
 1. https://www.cbsnews.com/news/openai-hack-anthropic-claude-vulnerabilities/ 
