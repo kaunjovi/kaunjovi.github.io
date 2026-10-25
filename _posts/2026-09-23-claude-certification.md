@@ -5,6 +5,49 @@ date: 2026-09-23
 categories: [AI, Certification, Claude]
 ---
 
+
+## Running Claude on Windows, with proper isolation 
+
+1. On Windows, Claude Code's built-in sandboxing (sandboxed Bash tool) is not supported on native Windows; you must use WSL2 or another isolation solution.
+2. Claude Code's built-in sandboxing only covers shell commands; 
+   1. file tools (Read/Edit/Write), MCP servers, and hooks run outside the sandbox.
+3. **WSL2 + Claude Code's Built-in Sandbox (Official Recommended Path)**
+   1. process-level sandboxing
+   2. Confirm or install WSL2 in PowerShell: wsl -l -v to check the version, use wsl --install -d Ubuntu to install if needed.
+   3. Enter the WSL2 environment, install dependencies (e.g., in Ubuntu): sudo apt install bubblewrap socat.
+   4. Run claude in the WSL2 terminal, then execute the /sandbox command to enable and configure sandbox mode (auto-allow or regular permissions).
+   5. Your Windows project files will be accessible under /mnt/c/... in WSL2, and you can operate on them directly.
+4. **Option 2: Docker Sandboxes**
+   1. Each agent runs in a dedicated microVM, with only the project workspace mounted in, keeping the host machine completely isolated;
+   2. docker sandbox run claude [path]
+5. **Option 3: Community Docker/WSL Solutions (Simpler Wrapping)**
+
+
+## Docker Sandboxes
+
+1. https://medium.com/@vasanthank29/docker-sandboxes-running-claude-code-and-other-coding-agents-in-isolated-microvms-94cff12b2342
+2. Docker Sandboxes: Running Claude Code and Other Coding Agents in Isolated MicroVMs
+3. Docker Sandboxes let you run Claude Code, Codex, Copilot CLI, Gemini CLI, Kiro and other coding agents with full autonomy inside a disposable microVM, so a mistake or an attack stays inside the box instead of reaching your machine.
+4. Docker Sandboxes moves fast. This guide uses the standalone sbx CLI as documented in October 2026.
+5. don’t ask the program to behave, put it somewhere it cannot do damage.
+6. When you run claude in your terminal, it is just a process: a running program managed by your operating system's kernel (the core part of the OS that controls memory, files, network and hardware). A process inherits your user account. Whatever you can read, delete or upload, it can too. There is no wall at all.
+7. A container (what docker run gives you) is still a normal process, but the kernel shows it a filtered view of the world
+8. This is excellent for packaging and running trusted applications. But every container on the machine still talks to the same host kernel. 
+9. Containers are a fence, not a wall.
+10. A virtual machine (VM) goes further. A piece of software called a hypervisor uses hardware virtualization features built into modern CPUs (Intel VT-x, AMD-V, Apple’s Virtualization framework) to create a fake computer: virtual CPU, virtual memory, virtual disk. That fake computer boots its own kernel. Code inside the VM talks to its kernel, not yours. To reach your host, an attacker must find a bug in the hypervisor itself, which is a much smaller and much more heavily scrutinized surface.
+11. A microVM keeps the strong part of a VM (separate kernel, hypervisor boundary) and throws away the heavy part. 
+12. It emulates only the handful of devices a server workload needs, boots a minimal kernel, and starts in a fraction of the time. The same idea powers serverless platforms that run untrusted customer code side by side.
+13. Docker Sandboxes is a tool from Docker that gives each AI coding agent its own disposable microVM, with its own filesystem, network and Docker daemon, so the agent can run unattended without touching your host.
+14. Docker started the project to answer a simple question developers kept asking: how do I run Claude Code or Gemini CLI safely?
+15. moved to one microVM per sandbox and to a standalone CLI called sbx. You no longer need Docker Desktop to use it.
+16. sbx run claude
+17. Installed packages, pulled images and agent history survive sbx stop and come back on the next sbx run. A sandbox is deleted only when you run sbx rm (or start it with --rm for a throwaway session).
+18. This “start closed, open as needed” pattern is called an **allowlist**, and 
+    1.  it is the same approach firewalls in production networks use. 
+    2.  The benefit is that a surprise destination (for example a paste site or an unknown IP) shows up in the log as blocked instead of quietly succeeding.
+
+
+
 ## Prerequisites
 
 The prerequisite that stops everyone: **Partner Network + a work email**.
