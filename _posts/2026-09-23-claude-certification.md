@@ -46,6 +46,54 @@ categories: [AI, Certification, Claude]
     1.  it is the same approach firewalls in production networks use. 
     2.  The benefit is that a surprise destination (for example a paste site or an unknown IP) shows up in the log as blocked instead of quietly succeeding.
 
+## What Claude Code Taught Me the Hard Way
+1. https://william-toby-miller.medium.com/what-claude-code-taught-me-the-hard-way-17e83e8748c9
+
+
+## keyring 
+
+1. A keyring is a secure, encrypted storage mechanism built into your operating system or programming environment that keeps passwords, API tokens, and sensitive data hidden from plain text files.
+2. Systems like Windows (Credential Locker) use OS-native encryption to lock credentials behind your user account login or a master passphrase.
+3. OS-level keyrings restrict access so that only authorized applications or your active user session can rerieve specific credentials.
+4. (Storing passwords with Python keyring)[https://www.geeksforgeeks.org/python/storing-passwords-with-python-keyring/]
+5. [Securely Storing Credentials in Python with Keyring](https://medium.com/@forsytheryan/securely-storing-credentials-in-python-with-keyring-d8972c3bd25f)
+
+
+```bash
+pip install keyring
+```
+
+
+```python
+import keyring as kr
+
+# User can use the alias if they want
+kr.set_password("GeeksforGeeks","Dwaipayan","Geeks@123")
+
+# retrieve the password, programatically 
+print(kr.get_password("GeeksforGeeks","Dwaipayan"))
+
+# delete it 
+kr.delete_password("GeeksforGeeks", "Dwaipayan")
+
+```
+
+```python
+import keyring as kr
+service_name = 'db_connection'
+user_name = 'db_login'
+pwd = 'pwd123'
+# Store a credential
+kr.set_password(service_name, user_name, pwd)
+# Retrieve a credential
+password = kr.get_password("service_name", "username")
+print(f"password: {password}")
+#pwd123
+```
+
+
+ 
+
 
 
 ## Prerequisites
